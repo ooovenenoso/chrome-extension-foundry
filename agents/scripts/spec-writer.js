@@ -60,7 +60,7 @@ await mkdir(specDir, { recursive: true });
 await writeFile(join(specDir, 'GOAL.md'), spec);
 await writeFile(join(specDir, 'BACKLOG.md'), backlog);
 
-console.log(`spec · ${pool.week} · ${candidate.id} · ${wordCount} words · status: drafted`);
+console.log(`spec · ${pool.slot || pool.week || 'unknown'} · ${candidate.id} · ${wordCount} words · status: drafted`);
 exit(0);
 
 function fillTemplate(template, c) {

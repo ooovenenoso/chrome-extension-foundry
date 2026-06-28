@@ -192,9 +192,12 @@ Scaffolds the \`${extId}\` MV3 extension per \`${specPath}\` §11.
 }
 
 function checkSections(spec) {
+  // Sections may appear as `## §1`, `## §1. Mission`, `## §1 Mission`, etc.
+  // Match on the leading §N marker (with optional `.` or space + name).
   const required = ['§1', '§2', '§3', '§4', '§5', '§6', '§7', '§8', '§9', '§10'];
   for (const s of required) {
-    if (!spec.includes(`## ${s}`)) return `missing section ${s}`;
+    const re = new RegExp(`^##\\s+${s}(?:[.\\s]|$)`, 'm');
+    if (!re.test(spec)) return `missing section ${s}`;
   }
   return null;
 }
