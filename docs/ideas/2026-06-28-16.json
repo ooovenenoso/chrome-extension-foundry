@@ -1,0 +1,218 @@
+{
+  "slot": "2026-06-28-16",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T14:20:46.379Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "cold-email-template-tester",
+      "name": "Cold Email Template Tester",
+      "pitch": "Renders email templates in iframe sandboxes simulating each client. Offers spam score proxy via regex heuristics. Quota-based: 10 free previews/month.",
+      "pain": "Outreach teams can't preview how their emails render across Gmail, Outlook, and Apple Mail before sending.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-email-template-tester-mf2t0g",
+          "url": "https://example.invalid/ai-idea/cold-email-template-tester"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tone-dna",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "sla-pulse-monitor",
+      "name": "SLA Pulse Monitor",
+      "pitch": "Injects live timers into Zendesk/Intercom/HubSpot ticket views. Built with MutationObserver to track ticket state changes. Per-seat SaaS bridges to existing helpdesk APIs.",
+      "pain": "Support reps miss SLA deadlines because they lack real-time countdown visibility on tickets.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sla-pulse-monitor-l8fj95",
+          "url": "https://example.invalid/ai-idea/sla-pulse-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "sales-deck-version-auditor",
+      "name": "Sales Deck Version Auditor",
+      "pitch": "Watches Google Slides/Canva decks for version changes, pushes Slack/email alerts when decks update. Auto-renames files with version stamps. Freemium for solo reps.",
+      "pain": "Sales reps accidentally send outdated decks to prospects, damaging credibility in deals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-deck-version-auditor-2fym0c",
+          "url": "https://example.invalid/ai-idea/sales-deck-version-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "gmail-thread-unsubscriber",
+      "name": "Gmail Thread Unsubscriber",
+      "pitch": "Adds one-click unsubscribe buttons to Gmail threads using list-unsubscribe headers. Shows bulk unsubscribe dashboard. Bridges to SendGrid/Mailchimp for power users.",
+      "pain": "Managing email unsubscriptions requires clicking through multiple pages and confirming in email clients.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-thread-unsubscriber-4loox9",
+          "url": "https://example.invalid/ai-idea/gmail-thread-unsubscriber"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 3,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.5,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10)",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-oak-git-alternative-designed-for",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "dependency-diff-viewer",
+      "name": "Dependency Diff Viewer",
+      "pitch": "Parses package-lock changes, fetches changelogs, shows semantic diff summary inline on GitHub PRs. Builds in 2-3 weeks with simple API calls to npm registry.",
+      "pain": "Code reviewers waste time hunting changelogs to understand what an npm/yarn update actually modifies.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-dependency-diff-viewer-6d1g4t",
+          "url": "https://example.invalid/ai-idea/dependency-diff-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "npm-dependency-cve-radar",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "figma-css-snippet-fetcher",
+      "name": "Figma CSS Snippet Fetcher",
+      "pitch": "Uses Figma's plugin API to extract styles from selected frames, outputs Tailwind/CSS/React Native. Freemium with export limits, then per-seat unlock.",
+      "pain": "Frontend devs manually translate Figma styles to CSS, losing time on repetitive styling work.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-figma-css-snippet-fetcher-uma8u7",
+          "url": "https://example.invalid/ai-idea/figma-css-snippet-fetcher"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "confluence-staleness-detector",
+      "name": "Confluence Staleness Detector",
+      "pitch": "Overlays green/yellow/red freshness indicators on Confluence pages based on last-edit age and Jira ticket links. Uses Confluence REST API, ship in under a week.",
+      "pain": "Engineers waste hours following outdated runbooks because docs don't show when they were last updated.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-confluence-staleness-detector-ho7is0",
+          "url": "https://example.invalid/ai-idea/confluence-staleness-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.06
+      }
+    }
+  ]
+}

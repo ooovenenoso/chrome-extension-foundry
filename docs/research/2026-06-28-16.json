@@ -1,0 +1,155 @@
+{
+  "slot": "2026-06-28-16",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T14:20:46.177Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-sla-pulse-monitor-l8fj95",
+          "title": "SLA Pulse Monitor",
+          "url": "https://example.invalid/ai-idea/sla-pulse-monitor",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Injects live timers into Zendesk/Intercom/HubSpot ticket views. Built with MutationObserver to track ticket state changes. Per-seat SaaS bridges to existing helpdesk APIs.",
+          "monetization": "per_seat",
+          "pain": "Support reps miss SLA deadlines because they lack real-time countdown visibility on tickets."
+        },
+        {
+          "source_id": "ai-screenshot-metadata-stripper-1b4ps4",
+          "title": "Screenshot Metadata Stripper",
+          "url": "https://example.invalid/ai-idea/screenshot-metadata-stripper",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Strips EXIF/XMP metadata before download or clipboard copy. Uses Canvas API re-encoding for zero-server processing. Simple one-click toggle, no friction.",
+          "monetization": "stripe_tip_jar",
+          "pain": "People accidentally expose device names, timestamps, and GPS coords when sharing screenshots."
+        },
+        {
+          "source_id": "ai-dependency-diff-viewer-6d1g4t",
+          "title": "Dependency Diff Viewer",
+          "url": "https://example.invalid/ai-idea/dependency-diff-viewer",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses package-lock changes, fetches changelogs, shows semantic diff summary inline on GitHub PRs. Builds in 2-3 weeks with simple API calls to npm registry.",
+          "monetization": "freemium_saas",
+          "pain": "Code reviewers waste time hunting changelogs to understand what an npm/yarn update actually modifies."
+        },
+        {
+          "source_id": "ai-figma-css-snippet-fetcher-uma8u7",
+          "title": "Figma CSS Snippet Fetcher",
+          "url": "https://example.invalid/ai-idea/figma-css-snippet-fetcher",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Uses Figma's plugin API to extract styles from selected frames, outputs Tailwind/CSS/React Native. Freemium with export limits, then per-seat unlock.",
+          "monetization": "freemium_saas",
+          "pain": "Frontend devs manually translate Figma styles to CSS, losing time on repetitive styling work."
+        },
+        {
+          "source_id": "ai-cold-email-template-tester-mf2t0g",
+          "title": "Cold Email Template Tester",
+          "url": "https://example.invalid/ai-idea/cold-email-template-tester",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Renders email templates in iframe sandboxes simulating each client. Offers spam score proxy via regex heuristics. Quota-based: 10 free previews/month.",
+          "monetization": "quota_based",
+          "pain": "Outreach teams can't preview how their emails render across Gmail, Outlook, and Apple Mail before sending."
+        },
+        {
+          "source_id": "ai-llm-prompt-cost-calculator-y8b2fv",
+          "title": "LLM Prompt Cost Calculator",
+          "url": "https://example.invalid/ai-idea/llm-prompt-cost-calculator",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Parses API responses to estimate token counts and multiplies by current pricing. No backend needed—calculates client-side. Useful for freelancers billing clients.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users running many AI conversations lose track of how much they're spending across ChatGPT, Claude, and Gemini."
+        },
+        {
+          "source_id": "ai-confluence-staleness-detector-ho7is0",
+          "title": "Confluence Staleness Detector",
+          "url": "https://example.invalid/ai-idea/confluence-staleness-detector",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Overlays green/yellow/red freshness indicators on Confluence pages based on last-edit age and Jira ticket links. Uses Confluence REST API, ship in under a week.",
+          "monetization": "per_seat",
+          "pain": "Engineers waste hours following outdated runbooks because docs don't show when they were last updated."
+        },
+        {
+          "source_id": "ai-gmail-thread-unsubscriber-4loox9",
+          "title": "Gmail Thread Unsubscriber",
+          "url": "https://example.invalid/ai-idea/gmail-thread-unsubscriber",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Adds one-click unsubscribe buttons to Gmail threads using list-unsubscribe headers. Shows bulk unsubscribe dashboard. Bridges to SendGrid/Mailchimp for power users.",
+          "monetization": "freemium_saas",
+          "pain": "Managing email unsubscriptions requires clicking through multiple pages and confirming in email clients."
+        },
+        {
+          "source_id": "ai-schema-registry-checker-3paiw5",
+          "title": "Schema Registry Checker",
+          "url": "https://example.invalid/ai-idea/schema-registry-checker",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Validates JSON schemas against a registry (Kafka Schema Registry, AWS Glue) before deploys. Browser-side overlay in GitHub/GitLab diff views. Simple REST client, quick to build.",
+          "monetization": "per_seat",
+          "pain": "Backend devs push breaking schema changes and only find out after integration tests fail."
+        },
+        {
+          "source_id": "ai-sales-deck-version-auditor-2fym0c",
+          "title": "Sales Deck Version Auditor",
+          "url": "https://example.invalid/ai-idea/sales-deck-version-auditor",
+          "timestamp": "2026-06-28T14:20:46.175Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Watches Google Slides/Canva decks for version changes, pushes Slack/email alerts when decks update. Auto-renames files with version stamps. Freemium for solo reps.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps accidentally send outdated decks to prospects, damaging credibility in deals."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T14:20:46.177Z",
+        "dedup_against": 50,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
