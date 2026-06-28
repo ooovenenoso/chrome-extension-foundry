@@ -2,19 +2,22 @@ name: daily-idea-digest
 
 on:
   schedule:
+    # 2x daily Mon-Fri.
+    # 13:00 UTC = 09:00 America/Puerto_Rico (AST, UTC-4)
+    # 01:00 UTC = 21:00 AST previous day
     - cron: '0 1,13 * * 1-5'
   workflow_dispatch:
     inputs:
       slot:
-        description: 'Override slot YYYY-MM-DD-HH (UTC).'
+        description: 'Override slot YYYY-MM-DD-HH (UTC). Default = now.'
         required: false
         type: string
       count:
-        description: 'Ideas per run (1-50).'
+        description: 'Ideas per run (1-50). Default 10.'
         required: false
         type: string
       skip_pr:
-        description: 'Skip pr-drafter.'
+        description: 'Skip the pr-drafter step (set true for research-only runs).'
         required: false
         type: boolean
         default: false
@@ -48,7 +51,9 @@ jobs:
             SLOT=$(date -u +%Y-%m-%d-%H)
           fi
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
-      - name: research-collector
+          echo "Slot: $SLOT"
+
+      - name: research-collector (AI + dedup)
         id: research
         run: |
           COUNT="${{ inputs.count || 10 }}"
@@ -57,43 +62,44 @@ jobs:
             --out docs/research/ \
             --model "${MINIMAX_MODEL}" \
             --count "${COUNT}"
+
       - name: idea-scorer
         run: |
           node agents/scripts/idea-scorer.js \
             --in "docs/research/${{ steps.slot.outputs.slot }}.json" \
             --out docs/ideas/
+
       - name: validate-contracts
         run: npm run validate
+
       - name: Check threshold
         id: check
         run: |
           SLOT="${{ steps.slot.outputs.slot }}"
           POOL="docs/ideas/${SLOT}.json"
+          # Default outputs (overwritten if pool exists + threshold met).
+          printf 'spec_threshold=false\n' > "$GITHUB_OUTPUT"
+          printf 'top_name=\n' >> "$GITHUB_OUTPUT"
+          printf 'top_score=0\n' >> "$GITHUB_OUTPUT"
+          printf 'top_id=\n' >> "$GITHUB_OUTPUT"
           if [ ! -f "$POOL" ]; then
-            echo "spec_threshold=false" >> "$GITHUB_OUTPUT"
-            echo "top_name=" >> "$GITHUB_OUTPUT"
-            echo "top_score=0" >> "$GITHUB_OUTPUT"
-            echo "top_id=" >> "$GITHUB_OUTPUT"
+            echo "no pool — silent"
             exit 0
           fi
           TOP_SCORE=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.score_total || 0);")
           TOP_NAME=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.name || '');")
           TOP_ID=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.id || '');")
           THRESHOLD=$(node -e "console.log(require('./agents/contracts/scoring-rubric.v1.json').thresholds.min_score_for_spec);")
-          if (( $(echo "$TOP_SCORE >= $THRESHOLD" | bc -l) )); then
-            echo "spec_threshold=true" >> "$GITHUB_OUTPUT"
-            echo "top_name=$TOP_NAME" >> "$GITHUB_OUTPUT"
-            echo "top_score=$TOP_SCORE" >> "$GITHUB_OUTPUT"
-            echo "top_id=$TOP_ID" >> "$GITHUB_OUTPUT"
-          else
-            echo "spec_threshold=false" >> "$GITHUB_OUTPUT"
-            echo "top_name=$TOP_NAME" >> "$GITHUB_OUTPUT"
-            echo "top_score=$TOP_SCORE" >> "$GITHUB_OUTPUT"
-            echo "top_id=$TOP_ID" >> "$GITHUB_OUTPUT"
+          echo "top=$TOP_SCORE threshold=$THRESHOLD"
+          if [ "$(echo "$TOP_SCORE >= $THRESHOLD" | bc -l)" = "1" ]; then
+            printf 'spec_threshold=true\n' > "$GITHUB_OUTPUT"
+            printf 'top_name=%s\n' "$TOP_NAME" >> "$GITHUB_OUTPUT"
+            printf 'top_score=%s\n' "$TOP_SCORE" >> "$GITHUB_OUTPUT"
+            printf 'top_id=%s\n' "$TOP_ID" >> "$GITHUB_OUTPUT"
           fi
-      - name: spec-writer
+
+      - name: spec-writer (if spec_threshold=true)
         if: steps.check.outputs.spec_threshold == 'true'
-        id: spec
         run: |
           SLOT="${{ steps.slot.outputs.slot }}"
           node agents/scripts/spec-writer.js \
@@ -110,7 +116,11 @@ jobs:
           if ! git diff --cached --quiet; then
             # Pull rebase in case another workflow push landed first.
             git pull --rebase --autostash origin main || git pull --rebase origin main
-            git commit -m "chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}${{ steps.check.outputs.spec_threshold == 'true' && ' (+ spec)' || '' }}"
+            MSG="chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}"
+            if [ "${{ steps.check.outputs.spec_threshold }}" = "true" ]; then
+              MSG="$MSG (+ spec)"
+            fi
+            git commit -m "$MSG"
             git push
           fi
 
@@ -124,7 +134,7 @@ jobs:
           fi
           node agents/scripts/pr-drafter.js --spec "$SPEC"
 
-      - name: Open PR with scaffold (uses peter-evans/create-pull-request)
+      - name: Open PR with scaffold
         if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
         id: cpr
         uses: peter-evans/create-pull-request@v6
@@ -162,4 +172,4 @@ jobs:
           message: |
             daily-idea-digest · ${{ steps.slot.outputs.slot }}
             Top: ${{ steps.check.outputs.top_name }} (score ${{ steps.check.outputs.top_score }})
-            ${{ steps.cpr.outputs.pull-request-number && format('PR opened: #{0}', steps.cpr.outputs.pull-request-number) || 'Spec drafted (PR opening skipped or failed)' }}
+            ${{ steps.cpr.outputs.pull-request-number && format('PR opened: #{0}', steps.cpr.outputs.pull-request-number) || 'Spec drafted (PR step skipped or failed)' }}
