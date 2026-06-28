@@ -1,0 +1,337 @@
+{
+  "slot": "2026-06-28-19",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T14:29:14.011Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 24,
+      "entries": [
+        {
+          "source_id": "ai-dead-code-path-detector-90m4jl",
+          "title": "Dead Code Path Detector",
+          "url": "https://example.invalid/ai-idea/dead-code-path-detector",
+          "timestamp": "2026-06-28T14:29:14.003Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Instruments the page to log which conditional branches execute, then surfaces unused paths in a DevTools panel. Buildable as a content script with runtime instrumentation. Emerging interest in code quality tooling as bundle sizes grow.",
+          "monetization": "per_seat",
+          "pain": "Production JavaScript bundles contain dead code paths that are impossible to trace without runtime analysis"
+        },
+        {
+          "source_id": "ai-api-latency-scatterplot-r539zh",
+          "title": "API Latency Scatterplot",
+          "url": "https://example.invalid/ai-idea/api-latency-scatterplot",
+          "timestamp": "2026-06-28T14:29:14.003Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Captures network request timing and plots against query parameter combinations to spot latency patterns. Uses built-in Performance API and a simple D3 scatterplot. Niche but high value for backend-heavy teams.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Slow API endpoints are hard to correlate with request parameters without custom logging infrastructure"
+        },
+        {
+          "source_id": "ai-json-ld-structured-data-inspector-8xx5pk",
+          "title": "JSON-LD Structured Data Inspector",
+          "url": "https://example.invalid/ai-idea/json-ld-structured-data-inspector",
+          "timestamp": "2026-06-28T14:29:14.003Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses all JSON-LD from the page, validates against schema.org, and reports errors inline with the source. Simple DOM parsing + schema.org API lookup. Growing importance as SEO increasingly depends on structured data.",
+          "monetization": "per_seat",
+          "pain": "Validating JSON-LD structured data requires external tools or manual copy-pasting to schema validators"
+        },
+        {
+          "source_id": "ai-third-party-script-cost-reporter-qnd2kw",
+          "title": "Third-Party Script Cost Reporter",
+          "url": "https://example.invalid/ai-idea/third-party-script-cost-reporter",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Uses Resource Timing API to report each external script's download time, execution time, and blocking impact. Lightweight panel overlay. Supply chain security concerns are driving demand for script auditing.",
+          "monetization": "per_seat",
+          "pain": "Third-party scripts silently bloat page weight and block rendering but impact is invisible until production"
+        },
+        {
+          "source_id": "ai-http-archive-file-analyzer-66yk1j",
+          "title": "HTTP Archive File Analyzer",
+          "url": "https://example.invalid/ai-idea/http-archive-file-analyzer",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Imports HAR files, renders waterfall charts, flags slow requests, and exports summaries. Pure file parsing + visualization, no external dependencies. Useful for sharing capture sessions with teammates.",
+          "monetization": "stripe_tip_jar",
+          "pain": "HAR files are opaque without visualization tools and no browser has built-in HAR analysis"
+        },
+        {
+          "source_id": "ai-dom-mutation-reporter-eo6t9i",
+          "title": "DOM Mutation Reporter",
+          "url": "https://example.invalid/ai-idea/dom-mutation-reporter",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Hooks MutationObserver to log all DOM mutations with stack traces and timestamps. Helps debug React/Vue/Svelte re-render cascades. Directly useful for performance debugging.",
+          "monetization": "per_seat",
+          "pain": "JavaScript frameworks dynamically update the DOM and there's no easy way to track what changed and why"
+        },
+        {
+          "source_id": "ai-email-tracking-pixel-detector-akcozf",
+          "title": "Email Tracking Pixel Detector",
+          "url": "https://example.invalid/ai-idea/email-tracking-pixel-detector",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Scans rendered email content for 1x1 images and network requests matching known tracker domains. Browser-level analysis is novel. Privacy awareness is rising sharply post-GDPR.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Marketing emails contain invisible tracking pixels that report when and where I opened them"
+        },
+        {
+          "source_id": "ai-password-breach-monitor-ocsj56",
+          "title": "Password Breach Monitor",
+          "url": "https://example.invalid/ai-idea/password-breach-monitor",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 8
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Scrapes form fields on page load, checks hashes against breach databases locally, alerts silently. Requires careful UX to avoid being creepy. High consumer demand for proactive breach alerting.",
+          "monetization": "freemium_saas",
+          "pain": "I have no way to know if my accounts are compromised without manually checking Have I Been Pwned"
+        },
+        {
+          "source_id": "ai-social-media-tracker-map-sjoy1j",
+          "title": "Social Media Tracker Map",
+          "url": "https://example.invalid/ai-idea/social-media-tracker-map",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Visualizes tracker connections on social platforms as a live graph. Uses RequestMapGenerator concept adapted for real-time. Strong consumer interest in understanding data collection.",
+          "monetization": "stripe_tip_jar",
+          "pain": "I can't see all the trackers active on social media sites without loading separate network analyzers"
+        },
+        {
+          "source_id": "ai-conference-lead-qualifier-7lg9z4",
+          "title": "Conference Lead Qualifier",
+          "url": "https://example.invalid/ai-idea/conference-lead-qualifier",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scans uploaded business cards or typed notes, enriches with LinkedIn/company data via public APIs. Mobile-first workflow with desktop enrichment. Trade show ROI tools are underserved.",
+          "monetization": "per_seat",
+          "pain": "Collecting business cards at conferences leaves me with a pile of contacts and no context for outreach"
+        },
+        {
+          "source_id": "ai-cold-email-reply-analyzer-73v35y",
+          "title": "Cold Email Reply Analyzer",
+          "url": "https://example.invalid/ai-idea/cold-email-reply-analyzer",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Provides unique tracking links and subjects per email variant, reports reply rates aggregated in a panel. Simple link cloaking + reply detection. Sales tooling market is growing rapidly.",
+          "monetization": "per_seat",
+          "pain": "I send outreach sequences but have no visibility into which subject lines or copy actually get replies"
+        },
+        {
+          "source_id": "ai-linkedin-headline-optimizer-gs8i4b",
+          "title": "LinkedIn Headline Optimizer",
+          "url": "https://example.invalid/ai-idea/linkedin-headline-optimizer",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes current headline against engagement patterns from public data, suggests rewrites. Uses LLM for suggestions with A/B variant generation. Recruitment tools market is expanding.",
+          "monetization": "quota_based",
+          "pain": "Writing LinkedIn headlines that get profile views requires guesswork and constant testing"
+        },
+        {
+          "source_id": "ai-ai-conversation-token-counter-c9zwal",
+          "title": "AI Conversation Token Counter",
+          "url": "https://example.invalid/ai-idea/ai-conversation-token-counter",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Intercepts API calls to LLMs, tracks token counts per conversation and cumulatively. Displays running total in extension badge. Demand is exploding as AI usage becomes mainstream.",
+          "monetization": "stripe_tip_jar",
+          "pain": "I lose track of how many tokens I've used in AI conversations and can't budget for the month"
+        },
+        {
+          "source_id": "ai-ai-output-history-vault-3ogm9n",
+          "title": "AI Output History Vault",
+          "url": "https://example.invalid/ai-idea/ai-output-history-vault",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Captures and stores AI outputs to local IndexedDB with search and tagging. Simple overlay panel for recall. Growing need as people use AI for substantive work.",
+          "monetization": "stripe_tip_jar",
+          "pain": "My AI chat history gets lost when tabs close and there's no persistent scratchpad for important outputs"
+        },
+        {
+          "source_id": "ai-ai-prompt-diff-viewer-wy0vdj",
+          "title": "AI Prompt Diff Viewer",
+          "url": "https://example.invalid/ai-idea/ai-prompt-diff-viewer",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Creates lightweight diffs between consecutive prompts sent to AI APIs, stores locally. Side-by-side diff view in panel. Directly useful for power users tweaking prompts.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Iterating on AI prompts without version history means losing track of what worked and what didn't"
+        },
+        {
+          "source_id": "ai-web-article-summarizer-pro-56knaa",
+          "title": "Web Article Summarizer Pro",
+          "url": "https://example.invalid/ai-idea/web-article-summarizer-pro",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts article content via Readability, sends to local LLM or API, returns structured summary with key points. Buildable with reader mode APIs. Productivity tools remain consistently popular.",
+          "monetization": "freemium_saas",
+          "pain": "Long articles require reading the full piece to extract key takeaways, eating up valuable time"
+        },
+        {
+          "source_id": "ai-reading-time-budget-keeper-m5sn84",
+          "title": "Reading Time Budget Keeper",
+          "url": "https://example.invalid/ai-idea/reading-time-budget-keeper",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Tracks time spent on article-heavy sites, warns when approaching daily reading budget. Simple time tracking + configurable thresholds. News fatigue is a real pain point.",
+          "monetization": "stripe_tip_jar",
+          "pain": "I fall down rabbit holes of articles without realizing I've spent an hour on content I don't need"
+        },
+        {
+          "source_id": "ai-tab-group-auto-namer-uj4ybd",
+          "title": "Tab Group Auto-Namer",
+          "url": "https://example.invalid/ai-idea/tab-group-auto-namer",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses AI to analyze tab URL and content, auto-names tab groups intelligently. Chrome tab group API is now stable. Real workflow improvement for power browsers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Managing dozens of tabs with default labels makes finding the right tab a frustrating search"
+        },
+        {
+          "source_id": "ai-kubernetes-pod-status-checker-iwy5ih",
+          "title": "Kubernetes Pod Status Checker",
+          "url": "https://example.invalid/ai-idea/kubernetes-pod-status-checker",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devops",
+          "notes": "Connects to k8s API with local config, surfaces pod status in extension badge. Requires some config but very actionable for devops. K8s adoption continues to grow.",
+          "monetization": "per_seat",
+          "pain": "Checking Kubernetes pod status requires either kubectl access or logging into a cloud console"
+        },
+        {
+          "source_id": "ai-quota-usage-pulse-fjkckj",
+          "title": "Quota Usage Pulse",
+          "url": "https://example.invalid/ai-idea/quota-usage-pulse",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses API responses for rate limit headers, tracks usage over time, warns before exhaustion. Generic approach works across many APIs. Developer frustration with quotas is universal.",
+          "monetization": "quota_based",
+          "pain": "API rate limits hit unexpectedly because I have no visibility into my usage against limits"
+        },
+        {
+          "source_id": "ai-external-link-auditor-195te0",
+          "title": "External Link Auditor",
+          "url": "https://example.invalid/ai-idea/external-link-auditor",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Validates all external links on a page on demand, reports status codes in a sortable table. Fetch API + batch checking. QA tooling demand remains steady.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Checking if external links are broken requires clicking each one or running separate crawler tools"
+        },
+        {
+          "source_id": "ai-cookie-consent-gdpr-score-s6zg61",
+          "title": "Cookie Consent GDPR Score",
+          "url": "https://example.invalid/ai-idea/cookie-consent-gdpr-score",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Analyzes cookie banners, consent management platforms, and cookie storage against GDPR criteria, outputs compliance score. Rule-based analysis is tractable. GDPR awareness is high.",
+          "monetization": "stripe_tip_jar",
+          "pain": "I can't quickly assess if a site's cookie consent is compliant with GDPR requirements"
+        },
+        {
+          "source_id": "ai-webgl-frame-rate-monitor-ivqrut",
+          "title": "WebGL Frame Rate Monitor",
+          "url": "https://example.invalid/ai-idea/webgl-frame-rate-monitor",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Uses requestAnimationFrame timing to calculate real FPS, overlays live counter. Minimal API surface, works on any WebGL page. Game devs and 3D web developers need this.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging WebGL performance requires external GPU profilers that don't run in CI or browser contexts"
+        },
+        {
+          "source_id": "ai-page-scroll-heatmap-generator-16dneg",
+          "title": "Page Scroll Heatmap Generator",
+          "url": "https://example.invalid/ai-idea/page-scroll-heatmap-generator",
+          "timestamp": "2026-06-28T14:29:14.004Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::analytics",
+          "notes": "Tracks scroll depth buckets across sessions, generates visual heatmap overlay. Local-only storage, exportable reports. Simpler alternative to full analytics suites for small sites.",
+          "monetization": "per_seat",
+          "pain": "Understanding where visitors scroll on my landing page requires expensive analytics tools"
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T14:29:14.011Z",
+        "dedup_against": 70,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

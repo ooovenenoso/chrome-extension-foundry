@@ -1,0 +1,488 @@
+{
+  "slot": "2026-06-28-19",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T14:29:14.221Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "cold-email-reply-analyzer",
+      "name": "Cold Email Reply Analyzer",
+      "pitch": "Provides unique tracking links and subjects per email variant, reports reply rates aggregated in a panel. Simple link cloaking + reply detection. Sales tooling market is growing rapidly.",
+      "pain": "I send outreach sequences but have no visibility into which subject lines or copy actually get replies",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-email-reply-analyzer-73v35y",
+          "url": "https://example.invalid/ai-idea/cold-email-reply-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tone-dna",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "ai-conversation-token-counter",
+      "name": "AI Conversation Token Counter",
+      "pitch": "Intercepts API calls to LLMs, tracks token counts per conversation and cumulatively. Displays running total in extension badge. Demand is exploding as AI usage becomes mainstream.",
+      "pain": "I lose track of how many tokens I've used in AI conversations and can't budget for the month",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-conversation-token-counter-c9zwal",
+          "url": "https://example.invalid/ai-idea/ai-conversation-token-counter"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "json-ld-structured-data-inspector",
+      "name": "JSON-LD Structured Data Inspector",
+      "pitch": "Parses all JSON-LD from the page, validates against schema.org, and reports errors inline with the source. Simple DOM parsing + schema.org API lookup. Growing importance as SEO increasingly depends on",
+      "pain": "Validating JSON-LD structured data requires external tools or manual copy-pasting to schema validators",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-json-ld-structured-data-inspector-8xx5pk",
+          "url": "https://example.invalid/ai-idea/json-ld-structured-data-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "kubernetes-pod-status-checker",
+      "name": "Kubernetes Pod Status Checker",
+      "pitch": "Connects to k8s API with local config, surfaces pod status in extension badge. Requires some config but very actionable for devops. K8s adoption continues to grow.",
+      "pain": "Checking Kubernetes pod status requires either kubectl access or logging into a cloud console",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-kubernetes-pod-status-checker-iwy5ih",
+          "url": "https://example.invalid/ai-idea/kubernetes-pod-status-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-recall-local-project-memory-for-",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "quota-usage-pulse",
+      "name": "Quota Usage Pulse",
+      "pitch": "Parses API responses for rate limit headers, tracks usage over time, warns before exhaustion. Generic approach works across many APIs. Developer frustration with quotas is universal.",
+      "pain": "API rate limits hit unexpectedly because I have no visibility into my usage against limits",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-quota-usage-pulse-fjkckj",
+          "url": "https://example.invalid/ai-idea/quota-usage-pulse"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-deprecation-pulse",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "email-tracking-pixel-detector",
+      "name": "Email Tracking Pixel Detector",
+      "pitch": "Scans rendered email content for 1x1 images and network requests matching known tracker domains. Browser-level analysis is novel. Privacy awareness is rising sharply post-GDPR.",
+      "pain": "Marketing emails contain invisible tracking pixels that report when and where I opened them",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-tracking-pixel-detector-akcozf",
+          "url": "https://example.invalid/ai-idea/email-tracking-pixel-detector"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "curl-request-cloner",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "conference-lead-qualifier",
+      "name": "Conference Lead Qualifier",
+      "pitch": "Scans uploaded business cards or typed notes, enriches with LinkedIn/company data via public APIs. Mobile-first workflow with desktop enrichment. Trade show ROI tools are underserved.",
+      "pain": "Collecting business cards at conferences leaves me with a pile of contacts and no context for outreach",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-conference-lead-qualifier-7lg9z4",
+          "url": "https://example.invalid/ai-idea/conference-lead-qualifier"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-openknowledge-open-source-ai-fir",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "linkedin-headline-optimizer",
+      "name": "LinkedIn Headline Optimizer",
+      "pitch": "Analyzes current headline against engagement patterns from public data, suggests rewrites. Uses LLM for suggestions with A/B variant generation. Recruitment tools market is expanding.",
+      "pain": "Writing LinkedIn headlines that get profile views requires guesswork and constant testing",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-headline-optimizer-gs8i4b",
+          "url": "https://example.invalid/ai-idea/linkedin-headline-optimizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "ai-output-history-vault",
+      "name": "AI Output History Vault",
+      "pitch": "Captures and stores AI outputs to local IndexedDB with search and tagging. Simple overlay panel for recall. Growing need as people use AI for substantive work.",
+      "pain": "My AI chat history gets lost when tabs close and there's no persistent scratchpad for important outputs",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-output-history-vault-3ogm9n",
+          "url": "https://example.invalid/ai-idea/ai-output-history-vault"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-recall-local-project-memory-for-",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "ai-prompt-diff-viewer",
+      "name": "AI Prompt Diff Viewer",
+      "pitch": "Creates lightweight diffs between consecutive prompts sent to AI APIs, stores locally. Side-by-side diff view in panel. Directly useful for power users tweaking prompts.",
+      "pain": "Iterating on AI prompts without version history means losing track of what worked and what didn't",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-prompt-diff-viewer-wy0vdj",
+          "url": "https://example.invalid/ai-idea/ai-prompt-diff-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "dependency-diff-viewer",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "page-scroll-heatmap-generator",
+      "name": "Page Scroll Heatmap Generator",
+      "pitch": "Tracks scroll depth buckets across sessions, generates visual heatmap overlay. Local-only storage, exportable reports. Simpler alternative to full analytics suites for small sites.",
+      "pain": "Understanding where visitors scroll on my landing page requires expensive analytics tools",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-page-scroll-heatmap-generator-16dneg",
+          "url": "https://example.invalid/ai-idea/page-scroll-heatmap-generator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-oak-git-alternative-designed-for",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "api-latency-scatterplot",
+      "name": "API Latency Scatterplot",
+      "pitch": "Captures network request timing and plots against query parameter combinations to spot latency patterns. Uses built-in Performance API and a simple D3 scatterplot. Niche but high value for backend-hea",
+      "pain": "Slow API endpoints are hard to correlate with request parameters without custom logging infrastructure",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-latency-scatterplot-r539zh",
+          "url": "https://example.invalid/ai-idea/api-latency-scatterplot"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-deprecation-pulse",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "dead-code-path-detector",
+      "name": "Dead Code Path Detector",
+      "pitch": "Instruments the page to log which conditional branches execute, then surfaces unused paths in a DevTools panel. Buildable as a content script with runtime instrumentation. Emerging interest in code qu",
+      "pain": "Production JavaScript bundles contain dead code paths that are impossible to trace without runtime analysis",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-dead-code-path-detector-90m4jl",
+          "url": "https://example.invalid/ai-idea/dead-code-path-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "npm-dependency-cve-radar",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "third-party-script-cost-reporter",
+      "name": "Third-Party Script Cost Reporter",
+      "pitch": "Uses Resource Timing API to report each external script's download time, execution time, and blocking impact. Lightweight panel overlay. Supply chain security concerns are driving demand for script au",
+      "pain": "Third-party scripts silently bloat page weight and block rendering but impact is invisible until production",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-third-party-script-cost-reporter-qnd2kw",
+          "url": "https://example.invalid/ai-idea/third-party-script-cost-reporter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "dom-mutation-reporter",
+      "name": "DOM Mutation Reporter",
+      "pitch": "Hooks MutationObserver to log all DOM mutations with stack traces and timestamps. Helps debug React/Vue/Svelte re-render cascades. Directly useful for performance debugging.",
+      "pain": "JavaScript frameworks dynamically update the DOM and there's no easy way to track what changed and why",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-dom-mutation-reporter-eo6t9i",
+          "url": "https://example.invalid/ai-idea/dom-mutation-reporter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "external-link-auditor",
+      "name": "External Link Auditor",
+      "pitch": "Validates all external links on a page on demand, reports status codes in a sortable table. Fetch API + batch checking. QA tooling demand remains steady.",
+      "pain": "Checking if external links are broken requires clicking each one or running separate crawler tools",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-external-link-auditor-195te0",
+          "url": "https://example.invalid/ai-idea/external-link-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-deck-version-auditor",
+        "jaccard_with_nearest": 0.03
+      }
+    }
+  ]
+}
