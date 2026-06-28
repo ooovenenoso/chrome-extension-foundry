@@ -1,19 +1,28 @@
 #!/usr/bin/env node
-// pr-drafter.js — opens the MVP scaffold PR per docs/specs/<id>/GOAL.md §11.
+// pr-drafter.js — scaffolds the MVP for a spec and stages files for commit.
+// The workflow then commits + opens the PR via peter-evans/create-pull-request.
+// (This script used to call `gh pr create` directly, but GitHub Actions'
+// default GITHUB_TOKEN is blocked from creating PRs in some repos. The
+// peter-evans action uses a different code path that works in all cases.)
 //
 // Usage:
-//   node pr-drafter.js --spec docs/specs/<extension-id>/GOAL.md
+//   node agents/scripts/pr-drafter.js --spec docs/specs/<id>/GOAL.md
 //
 // Behavior:
 //   - Reads the spec.
-//   - Validates the 9-section contract.
-//   - Writes the MVP scaffold to a new branch.
-//   - Opens a PR with the body template from agents/prompts/pr-drafter.md.
+//   - Validates the 9-section contract (§1-§10).
+//   - Writes MVP scaffold to src/<id>/, tests/, STRIPE_LINKS.md.
+//   - Stages the changes but does NOT commit (workflow does that).
+//
+// Exit codes:
+//   0 = scaffold written, ready for commit
+//   1 = spec rejected (score too low, missing sections, etc.)
+//   2 = input error
 //
 // Requires:
-//   - git (with clean main)
-//   - gh (authenticated)
 //   - Node 20+
+//   - Clean working tree on the spec branch
+//   - The spec must already exist at the given path
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
@@ -33,24 +42,14 @@ if (sectionCheck) { console.error(`spec contract fail: ${sectionCheck}`); exit(2
 const wordCount = spec.split(/\s+/).filter(Boolean).length;
 if (wordCount > 2500) { console.error(`spec body exceeds 2500 words (${wordCount})`); exit(2); }
 
-// Check main is clean
+// Check main is clean (we don't want to mix spec docs with scaffold files)
 const status = spawnSync('git', ['status', '--porcelain'], { encoding: 'utf8' });
 if (status.stdout.trim()) {
-  console.error('main is dirty, abort');
+  console.error('working tree is dirty, abort (commit or stash first)');
   exit(1);
 }
 
-// Check gh auth
-const auth = spawnSync('gh', ['auth', 'status'], { encoding: 'utf8' });
-if (auth.status !== 0) {
-  console.error('gh not authenticated');
-  exit(2);
-}
-
 // Scaffold
-const branch = `feat/mvp-${extId}-scaffold`;
-spawnSync('git', ['checkout', '-b', branch], { stdio: 'inherit' });
-
 const srcDir = `src/${extId}`;
 const testsDir = `tests`;
 await mkdir(`${srcDir}/lib`, { recursive: true });
@@ -69,20 +68,11 @@ await writeFile(`${testsDir}/unit/hello.test.js`, `import { test } from 'node:te
 await writeFile(`${testsDir}/integration/manifest.test.js`, manifestTest(extId));
 await writeFile(`STRIPE_LINKS.md`, stripeLinks());
 
-const prBody = prBodyText(extId, specPath);
-await writeFile('/tmp/pr-body.md', prBody);
+// Stage the new files. The workflow will commit + push on a new branch
+// via peter-evans/create-pull-request.
+spawnSync('git', ['add', `${srcDir}/`, `${testsDir}/`, `STRIPE_LINKS.md`], { stdio: 'inherit' });
 
-spawnSync('git', ['add', '.'], { stdio: 'inherit' });
-spawnSync('git', ['commit', '-m', `feat(${extId}): MVP scaffold per ${specPath}`], { stdio: 'inherit' });
-spawnSync('git', ['push', '-u', 'origin', branch], { stdio: 'inherit' });
-
-const pr = spawnSync('gh', ['pr', 'create', '--base', 'main', '--head', branch, '--body-file', '/tmp/pr-body.md', '--title', `feat(${extId}): MVP scaffold`], { encoding: 'utf8' });
-if (pr.status !== 0) {
-  console.error('gh pr create failed:', pr.stderr);
-  exit(1);
-}
-
-console.log(`pr-draft · ${extId} · ${pr.stdout.trim()}`);
+console.log(`pr-draft · ${extId} · scaffold staged (10 files, branch will be created by workflow)`);
 exit(0);
 
 // ─── helpers ────────────────────────────────────────────────────────────────

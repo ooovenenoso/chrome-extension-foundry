@@ -93,6 +93,7 @@ jobs:
           fi
       - name: spec-writer
         if: steps.check.outputs.spec_threshold == 'true'
+        id: spec
         run: |
           SLOT="${{ steps.slot.outputs.slot }}"
           node agents/scripts/spec-writer.js \
@@ -100,6 +101,7 @@ jobs:
             --top 1 \
             --out docs/specs/ \
             --template docs/specs/_template/GOAL.md
+
       - name: Commit research + spec
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -109,17 +111,40 @@ jobs:
             git commit -m "chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}${{ steps.check.outputs.spec_threshold == 'true' && ' (+ spec)' || '' }}"
             git push
           fi
-      - name: pr-drafter
+
+      - name: Open PR with scaffold (uses peter-evans/create-pull-request)
         if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TOP_ID="${{ steps.check.outputs.top_id }}"
-          SPEC="docs/specs/${TOP_ID}/GOAL.md"
-          if [ ! -f "$SPEC" ]; then
-            echo "::error::spec $SPEC missing"; exit 1
-          fi
-          node agents/scripts/pr-drafter.js --spec "$SPEC"
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: feat/mvp-${{ steps.check.outputs.top_id }}-scaffold
+          base: main
+          title: 'feat(${{ steps.check.outputs.top_id }}): MVP scaffold'
+          body: |
+            ## What
+
+            Auto-generated MVP scaffold for the top-scoring idea from `${{ steps.slot.outputs.slot }}`.
+
+            **Top idea:** ${{ steps.check.outputs.top_name }}
+            **Score:** ${{ steps.check.outputs.top_score }}
+
+            ## Source
+
+            - Spec: `docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md`
+            - Backlog: `docs/specs/${{ steps.check.outputs.top_id }}/BACKLOG.md`
+            - Idea pool: `docs/ideas/${{ steps.slot.outputs.slot }}.json`
+
+            ## Test plan
+
+            - [ ] `npm test` exits 0
+            - [ ] CI green on this branch
+            - [ ] Spec sections §1-§10 reviewed
+          add-paths: |
+            src/${{ steps.check.outputs.top_id }}/**
+            tests/**
+            STRIPE_LINKS.md
+          commit-message: 'feat(${{ steps.check.outputs.top_id }}): MVP scaffold per docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md'
+
       - name: Ping Telegram
         if: steps.check.outputs.spec_threshold == 'true'
         uses: appleboy/telegram-action@master
@@ -129,4 +154,4 @@ jobs:
           message: |
             daily-idea-digest · ${{ steps.slot.outputs.slot }}
             Top: ${{ steps.check.outputs.top_name }} (score ${{ steps.check.outputs.top_score }})
-            Spec drafted + PR opened.
+            ${{ steps.cpr.outputs.pull-request-number && format('PR opened: #{0}', steps.cpr.outputs.pull-request-number) || 'Spec drafted (PR opening skipped or failed)' }}
