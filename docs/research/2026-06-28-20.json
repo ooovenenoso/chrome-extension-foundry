@@ -1,0 +1,155 @@
+{
+  "slot": "2026-06-28-20",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T14:32:45.026Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-test-flakiness-tracker-xg5dfq",
+          "title": "Test Flakiness Tracker",
+          "url": "https://example.invalid/ai-idea/test-flakiness-tracker",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses CI test output history from common CI providers to flag tests with rising failure variance. Buildable in 2-3 weeks by hooking into CI APIs and localizing pattern detection. The niche is narrow but nobody does flaky test prediction specifically, most tools only report past failures.",
+          "monetization": "per_seat",
+          "pain": "Developers waste hours debugging tests that fail randomly without understanding flakiness patterns or root causes."
+        },
+        {
+          "source_id": "ai-graphql-field-usage-analyzer-9172ev",
+          "title": "GraphQL Field Usage Analyzer",
+          "url": "https://example.invalid/ai-idea/graphql-field-usage-analyzer",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Injects into GraphQL playground or intercepts network to build a field usage heatmap over time. Ship as a devtools panel that shows dead-field candidates. GraphQL ecosystem tooling is still fragmented compared to REST ecosystem.",
+          "monetization": "per_seat",
+          "pain": "GraphQL developers maintain resolver code for fields nobody queries, accumulating schema bloat and wasted backend work."
+        },
+        {
+          "source_id": "ai-linkedin-employee-export-w9594x",
+          "title": "LinkedIn Employee Export",
+          "url": "https://example.invalid/ai-idea/linkedin-employee-export",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Extracts visible employee names, titles, and headcount from any LinkedIn company page into CSV/JSON. Buildable by DOM scraping LinkedIn's public pages. Demand spike from LinkedIn's increasingly restricted API makes client-side scraping tools valuable.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps manually screenshot or copy-paste employee data from LinkedIn profiles to build account org charts."
+        },
+        {
+          "source_id": "ai-sitemap-health-monitor-b26sml",
+          "title": "Sitemap Health Monitor",
+          "url": "https://example.invalid/ai-idea/sitemap-health-monitor",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Crawls a site's XML sitemap and checks every URL for HTTP errors, redirect chains, and missing meta tags. Simple to build with a background service worker crawler. Freemium for 100 pages monthly, paid for unlimited crawling and alerting.",
+          "monetization": "freemium_saas",
+          "pain": "SEO specialists lose ranking due to broken internal links, redirect chains, and missing canonical tags they only discover after drops."
+        },
+        {
+          "source_id": "ai-cron-expression-visualizer-d256td",
+          "title": "Cron Expression Visualizer",
+          "url": "https://example.invalid/ai-idea/cron-expression-visualizer",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Highlights cron strings on any page and renders a human-readable timeline showing next 10 run times. Built with the popular cron-parser library and a custom timeline renderer. Small devtools utility with high utility density for anyone touching scheduled jobs.",
+          "monetization": "freemium_saas",
+          "pain": "Developers misread cron expressions and schedule jobs to run at wrong times, causing data inconsistencies or missed SLAs."
+        },
+        {
+          "source_id": "ai-email-template-variable-extractor-yttepw",
+          "title": "Email Template Variable Extractor",
+          "url": "https://example.invalid/ai-idea/email-template-variable-extractor",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes common email template providers (Gmail, HubSpot, Outreach) to auto-extract {{variable}} patterns and categorize them. Simple text parsing with provider-specific DOM workarounds. Low competition in extension form versus web apps.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales ops teams manually count and categorize merge fields across dozens of email templates to build variable inventories."
+        },
+        {
+          "source_id": "ai-console-log-pattern-analyzer-r9uvai",
+          "title": "Console Log Pattern Analyzer",
+          "url": "https://example.invalid/ai-idea/console-log-pattern-analyzer",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Aggregates console output during development sessions and surfaces repeated patterns, grouping similar messages and surfacing anomalies. Buildable with console method interception and basic TF-IDF similarity scoring. Useful daily driver for any JS developer.",
+          "monetization": "per_seat",
+          "pain": "Frontend developers drowning in browser console noise struggle to find the 3 meaningful errors amid 200 routine logs."
+        },
+        {
+          "source_id": "ai-lottie-animation-inspector-8z8xia",
+          "title": "Lottie Animation Inspector",
+          "url": "https://example.invalid/ai-idea/lottie-animation-inspector",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Detects Lottie JSON payloads on any page and renders a devtools panel showing layer structure, frame counts, and playback controls. Ships as a devtools extension leveraging Lottie's open-source player. Gap in browser devtools for this popular animation format.",
+          "monetization": "freemium_saas",
+          "pain": "Frontend developers debugging Lottie animations waste time manually inspecting JSON payload structure and frame data."
+        },
+        {
+          "source_id": "ai-web-monetization-header-debugger-icrok8",
+          "title": "Web Monetization Header Debugger",
+          "url": "https://example.invalid/ai-idea/web-monetization-header-debugger",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 2
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Inspects outgoing Web Monetization header presence and validates Coil/Wallet address formatting. Shows real-time payment stream status when visiting supported sites. Niche but growing with renewed interest in browser-based monetization alternatives.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Content creators using Web Monetization protocols have no easy way to verify their payment stream is actually working."
+        },
+        {
+          "source_id": "ai-api-response-time-benchmarker-n3vl75",
+          "title": "API Response Time Benchmarker",
+          "url": "https://example.invalid/ai-idea/api-response-time-benchmarker",
+          "timestamp": "2026-06-28T14:32:45.022Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercepts API calls and logs timing metrics, then displays a sortable table comparing endpoints across environments. Can tag requests with environment labels via URL patterns. Simple but fills a gap since most APM tools require server-side agents.",
+          "monetization": "per_seat",
+          "pain": "Backend developers comparing API latency across staging, QA, and production environments lack easy browser-side tooling."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T14:32:45.026Z",
+        "dedup_against": 94,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

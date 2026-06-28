@@ -1,0 +1,248 @@
+{
+  "slot": "2026-06-28-20",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T14:32:45.233Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-template-variable-extractor",
+      "name": "Email Template Variable Extractor",
+      "pitch": "Scrapes common email template providers (Gmail, HubSpot, Outreach) to auto-extract {{variable}} patterns and categorize them. Simple text parsing with provider-specific DOM workarounds. Low competitio",
+      "pain": "Sales ops teams manually count and categorize merge fields across dozens of email templates to build variable inventories.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-template-variable-extractor-yttepw",
+          "url": "https://example.invalid/ai-idea/email-template-variable-extractor"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cold-email-template-tester",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "api-response-time-benchmarker",
+      "name": "API Response Time Benchmarker",
+      "pitch": "Intercepts API calls and logs timing metrics, then displays a sortable table comparing endpoints across environments. Can tag requests with environment labels via URL patterns. Simple but fills a gap ",
+      "pain": "Backend developers comparing API latency across staging, QA, and production environments lack easy browser-side tooling.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-response-time-benchmarker-n3vl75",
+          "url": "https://example.invalid/ai-idea/api-response-time-benchmarker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "linkedin-employee-export",
+      "name": "LinkedIn Employee Export",
+      "pitch": "Extracts visible employee names, titles, and headcount from any LinkedIn company page into CSV/JSON. Buildable by DOM scraping LinkedIn's public pages. Demand spike from LinkedIn's increasingly restri",
+      "pain": "Sales reps manually screenshot or copy-paste employee data from LinkedIn profiles to build account org charts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-employee-export-w9594x",
+          "url": "https://example.invalid/ai-idea/linkedin-employee-export"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "page-scroll-heatmap-generator",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "sitemap-health-monitor",
+      "name": "Sitemap Health Monitor",
+      "pitch": "Crawls a site's XML sitemap and checks every URL for HTTP errors, redirect chains, and missing meta tags. Simple to build with a background service worker crawler. Freemium for 100 pages monthly, paid",
+      "pain": "SEO specialists lose ranking due to broken internal links, redirect chains, and missing canonical tags they only discover after drops.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sitemap-health-monitor-b26sml",
+          "url": "https://example.invalid/ai-idea/sitemap-health-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "test-flakiness-tracker",
+      "name": "Test Flakiness Tracker",
+      "pitch": "Parses CI test output history from common CI providers to flag tests with rising failure variance. Buildable in 2-3 weeks by hooking into CI APIs and localizing pattern detection. The niche is narrow ",
+      "pain": "Developers waste hours debugging tests that fail randomly without understanding flakiness patterns or root causes.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-test-flakiness-tracker-xg5dfq",
+          "url": "https://example.invalid/ai-idea/test-flakiness-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "graphql-field-usage-analyzer",
+      "name": "GraphQL Field Usage Analyzer",
+      "pitch": "Injects into GraphQL playground or intercepts network to build a field usage heatmap over time. Ship as a devtools panel that shows dead-field candidates. GraphQL ecosystem tooling is still fragmented",
+      "pain": "GraphQL developers maintain resolver code for fields nobody queries, accumulating schema bloat and wasted backend work.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-graphql-field-usage-analyzer-9172ev",
+          "url": "https://example.invalid/ai-idea/graphql-field-usage-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "cron-expression-visualizer",
+      "name": "Cron Expression Visualizer",
+      "pitch": "Highlights cron strings on any page and renders a human-readable timeline showing next 10 run times. Built with the popular cron-parser library and a custom timeline renderer. Small devtools utility w",
+      "pain": "Developers misread cron expressions and schedule jobs to run at wrong times, causing data inconsistencies or missed SLAs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cron-expression-visualizer-d256td",
+          "url": "https://example.invalid/ai-idea/cron-expression-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "console-log-pattern-analyzer",
+      "name": "Console Log Pattern Analyzer",
+      "pitch": "Aggregates console output during development sessions and surfaces repeated patterns, grouping similar messages and surfacing anomalies. Buildable with console method interception and basic TF-IDF sim",
+      "pain": "Frontend developers drowning in browser console noise struggle to find the 3 meaningful errors amid 200 routine logs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-console-log-pattern-analyzer-r9uvai",
+          "url": "https://example.invalid/ai-idea/console-log-pattern-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}
