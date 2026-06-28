@@ -37,11 +37,12 @@ if (!candidate) { console.error(`no candidate at rank ${topN}`); exit(2); }
 const rejection = checkRejects(candidate);
 if (rejection) {
   await mkdir(join(outDir, '_rejected'), { recursive: true });
+  const slotId = pool.slot || pool.week || 'unknown';
   await writeFile(
-    join(outDir, '_rejected', `${pool.week}-${candidate.id}.md`),
+    join(outDir, '_rejected', `${slotId}-${candidate.id}.md`),
     `# Rejected\n\n**Reason:** ${rejection}\n\n**Candidate:** ${candidate.name}\n**Score:** ${candidate.score_total}\n`,
   );
-  console.log(`spec · ${pool.week} · ${candidate.id} · rejected (${rejection})`);
+  console.log(`spec · ${slotId} · ${candidate.id} · rejected (${rejection})`);
   exit(1);
 }
 
