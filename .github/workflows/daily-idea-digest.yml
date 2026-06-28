@@ -108,9 +108,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git add docs/research/ docs/ideas/ docs/specs/
           if ! git diff --cached --quiet; then
+            # Pull rebase in case another workflow push landed first.
+            git pull --rebase --autostash origin main || git pull --rebase origin main
             git commit -m "chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}${{ steps.check.outputs.spec_threshold == 'true' && ' (+ spec)' || '' }}"
             git push
           fi
+
+      - name: pr-drafter (scaffold files to working tree)
+        if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
+        run: |
+          TOP_ID="${{ steps.check.outputs.top_id }}"
+          SPEC="docs/specs/${TOP_ID}/GOAL.md"
+          if [ ! -f "$SPEC" ]; then
+            echo "::error::spec $SPEC missing"; exit 1
+          fi
+          node agents/scripts/pr-drafter.js --spec "$SPEC"
 
       - name: Open PR with scaffold (uses peter-evans/create-pull-request)
         if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
@@ -139,10 +151,6 @@ jobs:
             - [ ] `npm test` exits 0
             - [ ] CI green on this branch
             - [ ] Spec sections §1-§10 reviewed
-          add-paths: |
-            src/${{ steps.check.outputs.top_id }}/**
-            tests/**
-            STRIPE_LINKS.md
           commit-message: 'feat(${{ steps.check.outputs.top_id }}): MVP scaffold per docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md'
 
       - name: Ping Telegram
