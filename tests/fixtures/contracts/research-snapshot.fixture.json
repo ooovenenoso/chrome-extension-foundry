@@ -1,64 +1,54 @@
 {
+  "slot": "2026-06-28-13",
   "week": "2026-W26",
   "fetched_at": "2026-06-28T13:00:00Z",
   "partial": false,
   "sources": {
-    "cws_productivity": {
+    "ai_generated": {
       "status": "ok",
-      "fetched_count": 1,
+      "fetched_count": 3,
       "entries": [
         {
-          "source_id": "cws-fixture-1",
-          "title": "Todoist for Chrome",
-          "url": "https://chromewebstore.google.com/detail/todoist/todoist",
-          "timestamp": "2026-06-28T13:00:00Z",
-          "metric": { "install_count": 800000 }
-        }
-      ]
-    },
-    "cws_devtools": {
-      "status": "ok",
-      "fetched_count": 1,
-      "entries": [
+          "source_id": "ai-fixture-1",
+          "title": "Lead enrichment sidebar for LinkedIn Recruiter",
+          "url": "https://example.invalid/ai-idea/lead-enrichment-linkedin-recruiter",
+          "timestamp": "2026-06-28T13:00:01Z",
+          "metric": { "llm_demand": 8 },
+          "category": "b2b_sales::recruiting",
+          "notes": "Sidebar overlays enriched contact data on LinkedIn Recruiter profiles.",
+          "monetization": "per_seat",
+          "pain": "Recruiters context-switch between LinkedIn and 3 enrichment tools."
+        },
         {
-          "source_id": "cws-devtools-1",
-          "title": "React Developer Tools",
-          "url": "https://chromewebstore.google.com/detail/react-developer-tools",
-          "timestamp": "2026-06-28T13:00:00Z",
-          "metric": { "install_count": 4000000 }
-        }
-      ]
-    },
-    "hn_show_hn": {
-      "status": "ok",
-      "fetched_count": 1,
-      "entries": [
+          "source_id": "ai-fixture-2",
+          "title": "Local-first browser notepad with markdown sync",
+          "url": "https://example.invalid/ai-idea/local-first-notepad",
+          "timestamp": "2026-06-28T13:00:02Z",
+          "metric": { "llm_demand": 5 },
+          "category": "consumer_productivity::notes",
+          "notes": "Stores notes in IndexedDB; optional GitHub gist sync.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Note apps force signups or lose your data when subscriptions lapse."
+        },
         {
-          "source_id": "hn-1",
-          "title": "Show HN: A Chrome extension that summarizes your Gmail",
-          "url": "https://news.ycombinator.com/item?id=1",
-          "timestamp": "2026-06-25T10:00:00Z",
-          "metric": { "points": 350, "num_comments": 80 }
+          "source_id": "ai-fixture-3",
+          "title": "GitHub PR review checklist enforcer",
+          "url": "https://example.invalid/ai-idea/pr-review-checklist",
+          "timestamp": "2026-06-28T13:00:03Z",
+          "metric": { "llm_demand": 7 },
+          "category": "b2b_devtool::code-review",
+          "notes": "Adds a per-repo checklist overlay to the GitHub PR review page.",
+          "monetization": "freemium_saas",
+          "pain": "Teams forget review steps; checklists live in Notion nobody opens."
         }
-      ]
-    },
-    "reddit_chrome_extensions": {
-      "status": "ok",
-      "fetched_count": 1,
-      "entries": [
-        {
-          "source_id": "reddit-1",
-          "title": "I made a Chrome extension that auto-fills my job applications — 5k users in 3 weeks",
-          "url": "https://reddit.com/r/chrome_extensions/comments/1",
-          "timestamp": "2026-06-20T10:00:00Z",
-          "metric": { "score": 240, "num_comments": 60 }
-        }
-      ]
-    },
-    "reddit_sideproject": {
-      "status": "ok",
-      "fetched_count": 0,
-      "entries": []
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T13:00:01Z",
+        "dedup_against": 327,
+        "rejected_as_duplicate": 1
+      }
     }
-  }
+  },
+  "meta": { "ai_generated": true, "model": "MiniMax-M2.7-highspeed", "schema_version": "1.1.0" }
 }

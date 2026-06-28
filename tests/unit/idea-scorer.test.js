@@ -8,16 +8,18 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 const FIXTURE = 'tests/fixtures/contracts/research-snapshot.fixture.json';
+const FIXTURE_SLOT = '2026-06-28-13';
 
 test('idea-scorer: produces valid idea-pool from fixture', () => {
   const outDir = mkdtempSync(join(tmpdir(), 'scorer-'));
   try {
     execFileSync('node', ['agents/scripts/idea-scorer.js', '--in', FIXTURE, '--out', outDir], { encoding: 'utf8' });
 
-    const outFile = join(outDir, '2026-W26.json');
+    const outFile = join(outDir, `${FIXTURE_SLOT}.json`);
     assert.ok(existsSync(outFile), 'output file exists');
 
     const out = JSON.parse(readFileSync(outFile, 'utf8'));
+    assert.equal(out.slot, FIXTURE_SLOT);
     assert.equal(out.week, '2026-W26');
     assert.equal(out.rubric_version, '1.0.0');
     assert.ok(Array.isArray(out.candidates));
@@ -32,10 +34,12 @@ test('idea-scorer: produces valid idea-pool from fixture', () => {
       assert.ok(typeof c.score_total === 'number');
       assert.ok(c.score_total >= 0 && c.score_total <= 10);
       assert.ok(c.monetization_hint?.model);
+      // ai_generated is now the only valid source.
+      assert.equal(c.source_refs[0].source, 'ai_generated');
     }
 
     const top = out.candidates[0];
-    assert.ok(top.score_total >= 5.0, `top candidate score ${top.score_total} should be ≥ 5.0`);
+    assert.ok(top.score_total >= 5.0, `top candidate score ${top.score_total} should be >= 5.0`);
   } finally {
     rmSync(outDir, { recursive: true, force: true });
   }
@@ -48,8 +52,8 @@ test('idea-scorer: deterministic — same input produces same output', () => {
     execFileSync('node', ['agents/scripts/idea-scorer.js', '--in', FIXTURE, '--out', outA], { encoding: 'utf8' });
     execFileSync('node', ['agents/scripts/idea-scorer.js', '--in', FIXTURE, '--out', outB], { encoding: 'utf8' });
 
-    const a = JSON.parse(readFileSync(join(outA, '2026-W26.json'), 'utf8'));
-    const b = JSON.parse(readFileSync(join(outB, '2026-W26.json'), 'utf8'));
+    const a = JSON.parse(readFileSync(join(outA, `${FIXTURE_SLOT}.json`), 'utf8'));
+    const b = JSON.parse(readFileSync(join(outB, `${FIXTURE_SLOT}.json`), 'utf8'));
 
     assert.equal(a.candidates.length, b.candidates.length);
     for (let i = 0; i < a.candidates.length; i++) {

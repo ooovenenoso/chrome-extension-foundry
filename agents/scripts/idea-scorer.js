@@ -2,7 +2,9 @@
 // idea-scorer.js — deterministic scorer. No LLM in the loop.
 //
 // Usage:
-//   node idea-scorer.js --in docs/research/2026-W26.json --out docs/ideas/
+//   node idea-scorer.js --in docs/research/2026-06-28-13.json --out docs/ideas/
+//
+// Output file: <out>/<slot>.json  (IdeaPool, schema-validated)
 
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
@@ -21,13 +23,15 @@ const inPath = args.in;
 const outDir = args.out || 'docs/ideas';
 
 const research = JSON.parse(await readFile(inPath, 'utf8'));
-const week = research.week;
+const slot = research.slot || (research.week ? research.week : null);
+const week = research.week || slotToIsoWeek(slot);
 const lookback = rubric.deduplication.lookback_weeks;
-const priorPools = await loadPriorPools(outDir, week, lookback);
+const priorPools = await loadPriorPools(outDir, slot || week, lookback * 7); // lookback expressed in slots (~weeks*7)
 
 const candidates = scoreAll(research, priorPools, rubric);
 
 const out = {
+  slot,
   week,
   scored_at: new Date().toISOString(),
   rubric_version: rubric.version,
@@ -42,11 +46,14 @@ if (!validate(out)) {
 }
 
 await mkdir(outDir, { recursive: true });
-const outFile = join(outDir, `${week}.json`);
+const outFile = join(outDir, `${slot || week}.json`);
 await writeFile(outFile, JSON.stringify(out, null, 2));
 
 const top = candidates[0];
-console.log(`score · ${week} · ${candidates.length}/${countInputEntries(research)} candidates · top: ${top?.name || '(none)'} (${top?.score_total?.toFixed(2) || 'n/a'})`);
+console.log(
+  `score · ${slot || week} · ${candidates.length}/${countInputEntries(research)} candidates · ` +
+    `top: ${top?.name || '(none)'} (${top?.score_total?.toFixed(2) || 'n/a'})`
+);
 exit(0);
 
 // ─── scoring ────────────────────────────────────────────────────────────────
@@ -84,8 +91,8 @@ function scoreOne(entry, sourceKey, rubric, priorPools) {
   return {
     id,
     name: entry.title || id,
-    pitch: (entry.title || '').slice(0, 200),
-    pain: (entry.title || '').slice(0, 280),
+    pitch: (entry.notes || entry.title || '').slice(0, 200),
+    pain: (entry.pain || entry.title || '').slice(0, 280),
     source_refs: [{ source: sourceKey, source_id: entry.source_id, url: entry.url }],
     scores: { demand, wtp, buildability, defensibility },
     score_total: round2(total),
@@ -95,7 +102,16 @@ function scoreOne(entry, sourceKey, rubric, priorPools) {
 }
 
 function scoreDemand(entry, sourceKey, demandAxis) {
-  // Map source → which demand signal to use.
+  // ai_generated entries carry `metric.llm_demand` 1-10; map to closest bucket.
+  if (sourceKey === 'ai_generated') {
+    const v = Number(entry.metric?.llm_demand || 0);
+    if (v >= 9) return 9;
+    if (v >= 7) return 7;
+    if (v >= 5) return 5;
+    if (v >= 3) return 3;
+    return 1;
+  }
+  // Legacy source-key mapping kept for back-compat with older snapshots.
   const sourceToSignal = {
     cws_productivity: 'cws_installs',
     cws_devtools: 'cws_installs',
@@ -106,10 +122,9 @@ function scoreDemand(entry, sourceKey, demandAxis) {
   };
   const signalName = sourceToSignal[sourceKey];
   if (!signalName) return 1;
-  const signal = demandAxis.signals.find(s => s.source === signalName);
+  const signal = demandAxis.signals.find((s) => s.source === signalName);
   if (!signal) return 1;
 
-  // Pick the metric from the entry's `metric` map.
   const metricKey = {
     cws_installs: 'install_count',
     cws_rating: 'rating_count',
@@ -126,6 +141,20 @@ function scoreDemand(entry, sourceKey, demandAxis) {
 }
 
 function inferAudience(entry) {
+  // LLM-emitted entries: category is `<audience>::<vertical>`. Trust the prefix.
+  const cat = String(entry.category || '');
+  const audiencePrefix = cat.split('::')[0];
+  const knownAudiences = [
+    'b2b_devtool',
+    'b2b_sales',
+    'developer_internal',
+    'consumer_ai_wrapper',
+    'consumer_privacy',
+    'consumer_productivity',
+  ];
+  if (knownAudiences.includes(audiencePrefix)) return audiencePrefix;
+
+  // Fallback: infer from title (legacy path).
   const t = (entry.title || '').toLowerCase();
   if (/\b(scrap|extract|linkedin|lead|prospect|outreach|enrich)\b/.test(t)) return 'b2b_sales';
   if (/\b(ci|cd|k8s|deploy|github|git|linter|devtool|debugger|inspector)\b/.test(t)) return 'b2b_devtool';
@@ -137,7 +166,7 @@ function inferAudience(entry) {
 }
 
 function lookupTier(tiers, audience) {
-  const t = tiers.find(x => x.audience === audience);
+  const t = tiers.find((x) => x.audience === audience);
   return t?.score ?? 3;
 }
 
@@ -153,19 +182,19 @@ function scoreBuildability(entry, axis) {
 
 function scoreDefensibility(entry, axis) {
   const t = (entry.title || '').toLowerCase();
-  if (/(ai|gpt|claude|gemini)/.test(t)) return axis.factors.find(f => f.moat === 'hard_clone').score;
-  if (/(aggregator|search|directory)/.test(t)) return axis.factors.find(f => f.moat === 'trivial_clone').score;
-  if (/(dashboard|workflow|automation)/.test(t)) return axis.factors.find(f => f.moat === 'moderate_clone').score;
-  return axis.factors.find(f => f.moat === 'none').score;
+  if (/(ai|gpt|claude|gemini)/.test(t)) return axis.factors.find((f) => f.moat === 'hard_clone').score;
+  if (/(aggregator|search|directory)/.test(t)) return axis.factors.find((f) => f.moat === 'trivial_clone').score;
+  if (/(dashboard|workflow|automation)/.test(t)) return axis.factors.find((f) => f.moat === 'moderate_clone').score;
+  return axis.factors.find((f) => f.moat === 'none').score;
 }
 
 function computeDedup(id, entry, priorPools, threshold) {
-  const myTokens = tokenize(entry.title || '');
+  const myTokens = tokenize((entry.title || '') + ' ' + (entry.notes || ''));
   let nearest = '';
   let bestJac = 0;
   for (const pool of priorPools) {
     for (const c of pool.candidates || []) {
-      const theirTokens = tokenize(c.name);
+      const theirTokens = tokenize((c.name || '') + ' ' + (c.pain || ''));
       const j = jaccard(myTokens, theirTokens);
       if (j > bestJac) {
         bestJac = j;
@@ -180,10 +209,10 @@ function computeDedup(id, entry, priorPools, threshold) {
   };
 }
 
-// ─── helpers ────────────────────────────────────────────────────────────────
+// ─── helpers ───────────────────────────────────────────────────────────────
 
 function tokenize(s) {
-  return new Set((s || '').toLowerCase().split(/\W+/).filter(w => w.length >= 3));
+  return new Set((s || '').toLowerCase().split(/\W+/).filter((w) => w.length >= 3));
 }
 
 function jaccard(a, b) {
@@ -194,36 +223,30 @@ function jaccard(a, b) {
   return union === 0 ? 0 : inter / union;
 }
 
-function clamp(n, lo, hi) { return Math.max(lo, Math.min(hi, n)); }
-function round2(n) { return Math.round(n * 100) / 100; }
+function clamp(n, lo, hi) {
+  return Math.max(lo, Math.min(hi, n));
+}
+
+function round2(n) {
+  return Math.round(n * 100) / 100;
+}
 
 function slugify(s) {
-  return (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 40);
+  return (s || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+    .slice(0, 40);
 }
 
-function parseArgs(arr) {
-  const out = {};
-  for (let i = 0; i < arr.length; i++) {
-    const a = arr[i];
-    if (a.startsWith('--')) {
-      const k = a.slice(2);
-      const v = arr[i + 1]?.startsWith('--') ? true : arr[++i];
-      out[k] = v;
-    }
-  }
-  return out;
-}
-
-async function loadPriorPools(outDir, currentWeek, lookbackWeeks) {
-  // Read all prior week files in outDir; exclude currentWeek.
-  // Cap to lookbackWeeks most recent by filename order (YYYY-Www sorts lexically).
+async function loadPriorPools(outDir, currentId, lookbackSlots) {
   let files = [];
   try {
-    files = (await readdir(outDir)).filter(f => f.endsWith('.json'));
+    files = (await readdir(outDir)).filter((f) => f.endsWith('.json'));
   } catch {
     return [];
   }
-  files = files.filter(f => !f.startsWith(currentWeek)).sort().slice(-lookbackWeeks);
+  files = files.filter((f) => !f.startsWith(currentId)).sort().slice(-lookbackSlots);
   const pools = [];
   for (const f of files) {
     try {
@@ -235,10 +258,38 @@ async function loadPriorPools(outDir, currentWeek, lookbackWeeks) {
   return pools;
 }
 
+function slotToIsoWeek(slot) {
+  const m = String(slot || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return 'unknown-week';
+  const d = new Date(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])));
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return d.getUTCFullYear() + '-W' + String(weekNo).padStart(2, '0');
+}
+
 function countInputEntries(research) {
   let n = 0;
   for (const s of Object.values(research.sources || {})) {
     n += s.entries?.length || 0;
   }
   return n;
+}
+
+function parseArgs(arr) {
+  const out = {};
+  for (let i = 0; i < arr.length; i++) {
+    const a = arr[i];
+    if (a.startsWith('--')) {
+      const k = a.slice(2);
+      const next = arr[i + 1];
+      if (next === undefined || next.startsWith('--')) {
+        out[k] = true;
+      } else {
+        out[k] = next;
+        i++;
+      }
+    }
+  }
+  return out;
 }

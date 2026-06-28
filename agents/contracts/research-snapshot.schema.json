@@ -2,12 +2,17 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "ResearchSnapshot",
   "type": "object",
-  "required": ["week", "fetched_at", "sources"],
+  "required": ["fetched_at", "sources"],
   "properties": {
+    "slot": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(-\\d{2})?$",
+      "description": "Run identifier YYYY-MM-DD-HH (or YYYY-MM-DD). Replaces week as primary key."
+    },
     "week": {
       "type": "string",
       "pattern": "^\\d{4}-W\\d{2}$",
-      "description": "ISO week (YYYY-Www)"
+      "description": "ISO week (YYYY-Www) derived from slot for backwards-compat."
     },
     "fetched_at": {
       "type": "string",
@@ -16,30 +21,22 @@
     "partial": {
       "type": "boolean",
       "default": false,
-      "description": "True if ≥1 source was unreachable. Pipeline still runs."
+      "description": "True if the source was unreachable. Pipeline still runs."
     },
     "sources": {
       "type": "object",
-      "required": ["cws_productivity", "cws_devtools", "hn_show_hn", "reddit_chrome_extensions", "reddit_sideproject"],
+      "required": ["ai_generated"],
       "properties": {
-        "cws_productivity": {
-          "$ref": "#/$defs/Source"
-        },
-        "cws_devtools": {
-          "$ref": "#/$defs/Source"
-        },
-        "hn_show_hn": {
-          "$ref": "#/$defs/Source"
-        },
-        "reddit_chrome_extensions": {
-          "$ref": "#/$defs/Source"
-        },
-        "reddit_sideproject": {
-          "$ref": "#/$defs/Source"
-        },
-        "reddit_internet_is_beautiful": {
-          "$ref": "#/$defs/Source"
-        }
+        "ai_generated": { "$ref": "#/$defs/Source" }
+      },
+      "additionalProperties": false
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "ai_generated": { "type": "boolean" },
+        "model": { "type": "string" },
+        "schema_version": { "type": "string" }
       }
     }
   },
@@ -65,11 +62,22 @@
                 "additionalProperties": { "type": ["number", "string"] }
               },
               "category": { "type": "string" },
-              "notes": { "type": "string" }
+              "notes": { "type": "string" },
+              "pain": { "type": "string" },
+              "monetization": { "type": "string" }
             }
           }
         },
-        "error": { "type": "string" }
+        "error": { "type": "string" },
+        "meta": {
+          "type": "object",
+          "properties": {
+            "model": { "type": "string" },
+            "generated_at": { "type": "string", "format": "date-time" },
+            "dedup_against": { "type": "integer", "minimum": 0 },
+            "rejected_as_duplicate": { "type": "integer", "minimum": 0 }
+          }
+        }
       }
     }
   }

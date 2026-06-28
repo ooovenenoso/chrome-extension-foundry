@@ -1,11 +1,21 @@
-name: weekly-digest
+name: daily-idea-digest
 
 on:
   schedule:
-    # Monday 09:00 America/Puerto_Rico (= AST, UTC-4)
-    # Cron is UTC → 13:00 UTC = 09:00 AST
-    - cron: '0 13 * * 1'
-  workflow_dispatch: {}
+    # 2x daily Mon-Fri.
+    # 13:00 UTC = 09:00 America/Puerto_Rico (AST, UTC-4)
+    # 01:00 UTC = 21:00 AST previous day
+    - cron: '0 1,13 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Override slot YYYY-MM-DD-HH (UTC). Default = now.'
+        required: false
+        type: string
+      count:
+        description: 'Ideas per run (1-50). Default 10.'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -15,6 +25,10 @@ jobs:
   research-score-ping:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+      MINIMAX_MODEL: ${{ vars.MINIMAX_MODEL || 'MiniMax-M2.7-highspeed' }}
+      MINIMAX_BASE_URL: ${{ vars.MINIMAX_BASE_URL || 'https://api.minimax.io/v1' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -26,25 +40,34 @@ jobs:
       - name: Install deps
         run: npm ci --no-audit --no-fund
 
-      - name: Compute ISO week (PR timezone)
-        id: week
+      - name: Compute slot (UTC)
+        id: slot
         run: |
-          WEEK=$(date -u +%G-W%V)
-          echo "week=$WEEK" >> "$GITHUB_OUTPUT"
-          echo "📅 Week: $WEEK"
+          if [ -n "${{ inputs.slot }}" ]; then
+            SLOT="${{ inputs.slot }}"
+          else
+            SLOT=$(date -u +%Y-%m-%d-%H)
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "Slot: $SLOT"
 
-      - name: research-collector
+      - name: research-collector (AI + dedup)
         id: research
+        env:
+          MINIMAX_API_KEY: ${{ env.MINIMAX_API_KEY }}
         run: |
+          COUNT="${{ inputs.count || 10 }}"
           node agents/scripts/research-collector.js \
-            --week "${{ steps.week.outputs.week }}" \
-            --out docs/research/
+            --slot "${{ steps.slot.outputs.slot }}" \
+            --out docs/research/ \
+            --model "${MINIMAX_MODEL}" \
+            --count "${COUNT}"
 
       - name: idea-scorer
         id: score
         run: |
           node agents/scripts/idea-scorer.js \
-            --in "docs/research/${{ steps.week.outputs.week }}.json" \
+            --in "docs/research/${{ steps.slot.outputs.slot }}.json" \
             --out docs/ideas/
 
       - name: validate-contracts
@@ -53,8 +76,8 @@ jobs:
       - name: Check if any candidate crossed digest threshold
         id: ping
         run: |
-          WEEK="${{ steps.week.outputs.week }}"
-          POOL="docs/ideas/${WEEK}.json"
+          SLOT="${{ steps.slot.outputs.slot }}"
+          POOL="docs/ideas/${SLOT}.json"
           if [ ! -f "$POOL" ]; then
             echo "no idea pool produced — silent"
             echo "ping=false" >> "$GITHUB_OUTPUT"
@@ -79,7 +102,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "no changes"
           else
-            git commit -m "chore(digest): weekly research + scoring for ${{ steps.week.outputs.week }}"
+            git commit -m "chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}"
             git push
           fi
 
@@ -90,6 +113,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: |
-            🤖 weekly-digest · ${{ steps.week.outputs.week }}
+            daily-idea-digest · ${{ steps.slot.outputs.slot }}
             Top idea: ${{ steps.ping.outputs.top_name }} (score ${{ steps.ping.outputs.top_score }})
-            Files: docs/research/${{ steps.week.outputs.week }}.json, docs/ideas/${{ steps.week.outputs.week }}.json
+            Files: docs/research/${{ steps.slot.outputs.slot }}.json, docs/ideas/${{ steps.slot.outputs.slot }}.json
