@@ -1,0 +1,8 @@
+{
+  "id": "gmail-summary-ai",
+  "name": "Gmail Summary AI",
+  "pitch": "One-click TL;DR of long email threads in your Gmail inbox.",
+  "pain": "Long email threads waste 10-15 minutes per day of reading; users want a quick summary.",
+  "scores": { "demand": 6, "wtp": 5, "buildability": 7, "defensibility": 7 },
+  "score_total": 6.05
+}

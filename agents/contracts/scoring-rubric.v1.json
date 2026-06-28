@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "weights": {
+    "demand": 0.30,
+    "wtp": 0.35,
+    "buildability": 0.20,
+    "defensibility": 0.15
+  },
+  "thresholds": {
+    "min_score_for_idea_pool": 5.0,
+    "min_score_for_spec": 7.0,
+    "min_score_for_digest_ping": 7.0
+  },
+  "axes": {
+    "demand": {
+      "description": "Real, measurable user pain / interest signals.",
+      "signals": [
+        {
+          "source": "cws_installs",
+          "metric": "install_count",
+          "scoring": {
+            "buckets": [
+              { "min": 1000000, "score": 10 },
+              { "min": 100000, "score": 8 },
+              { "min": 10000, "score": 6 },
+              { "min": 1000, "score": 4 },
+              { "min": 100, "score": 2 },
+              { "min": 0, "score": 1 }
+            ]
+          }
+        },
+        {
+          "source": "cws_rating",
+          "metric": "rating_count",
+          "scoring": {
+            "buckets": [
+              { "min": 5000, "score": 10 },
+              { "min": 1000, "score": 8 },
+              { "min": 200, "score": 6 },
+              { "min": 50, "score": 4 },
+              { "min": 10, "score": 2 },
+              { "min": 0, "score": 1 }
+            ]
+          }
+        },
+        {
+          "source": "hn_points",
+          "metric": "points",
+          "scoring": {
+            "buckets": [
+              { "min": 500, "score": 10 },
+              { "min": 200, "score": 8 },
+              { "min": 100, "score": 6 },
+              { "min": 50, "score": 4 },
+              { "min": 10, "score": 2 },
+              { "min": 0, "score": 1 }
+            ]
+          }
+        },
+        {
+          "source": "reddit_score",
+          "metric": "score",
+          "scoring": {
+            "buckets": [
+              { "min": 500, "score": 10 },
+              { "min": 200, "score": 8 },
+              { "min": 100, "score": 6 },
+              { "min": 50, "score": 4 },
+              { "min": 10, "score": 2 },
+              { "min": 0, "score": 1 }
+            ]
+          }
+        }
+      ]
+    },
+    "wtp": {
+      "description": "Willingness-to-pay signal — is there a clear buyer with a credit card?",
+      "tiers": [
+        { "audience": "b2b_devtool", "score": 9 },
+        { "audience": "b2b_sales", "score": 8 },
+        { "audience": "developer_internal", "score": 7 },
+        { "audience": "consumer_ai_wrapper", "score": 5 },
+        { "audience": "consumer_privacy", "score": 4 },
+        { "audience": "consumer_productivity", "score": 3 }
+      ]
+    },
+    "buildability": {
+      "description": "Can one engineer ship MVP in ≤6 weeks?",
+      "factors": [
+        { "name": "no_backend_needed", "delta": 2 },
+        { "name": "no_external_api_needed", "delta": 2 },
+        { "name": "single_surface_popup_only", "delta": 1 },
+        { "name": "stripe_tip_jar_sufficient", "delta": 1 },
+        { "name": "needs_paid_api_per_user", "delta": -3 },
+        { "name": "needs_complex_auth", "delta": -3 },
+        { "name": "needs_real_time_sync", "delta": -2 },
+        { "name": "needs_native_app_companion", "delta": -4 }
+      ],
+      "base_score": 5
+    },
+    "defensibility": {
+      "description": "How hard is it to clone? Moats: data, network, brand, complexity.",
+      "factors": [
+        { "moat": "none", "score": 2 },
+        { "moat": "trivial_clone", "score": 4 },
+        { "moat": "moderate_clone", "score": 6 },
+        { "moat": "hard_clone", "score": 9 }
+      ]
+    }
+  },
+  "monetization_models": {
+    "b2b_devtool": { "model": "Freemium → SaaS bridge (paid tier via external Stripe)", "tier": "freemium_saas", "monthly_price_usd": 15 },
+    "b2b_sales": { "model": "Per-seat subscription", "tier": "per_seat", "monthly_price_usd": 20 },
+    "developer_internal": { "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link", "tier": "tip_jar", "monthly_price_usd": null },
+    "consumer_ai_wrapper": { "model": "Freemium with monthly quota", "tier": "quota_based", "monthly_price_usd": 8 },
+    "consumer_privacy": { "model": "Donation + paid support tier", "tier": "donation", "monthly_price_usd": null },
+    "consumer_productivity": { "model": "Stripe tip jar (Payment Links $3/$5/$10)", "tier": "tip_jar", "monthly_price_usd": null }
+  },
+  "deduplication": {
+    "lookback_weeks": 8,
+    "jaccard_threshold": 0.3
+  }
+}

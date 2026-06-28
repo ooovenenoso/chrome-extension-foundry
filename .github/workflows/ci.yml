@@ -1,0 +1,70 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Validate contracts
+        run: npm run validate
+
+      - name: Unit + integration
+        run: npm test
+
+      - name: Build agent bundles (smoke)
+        run: |
+          node --check agents/scripts/research-collector.js
+          node --check agents/scripts/idea-scorer.js
+          node --check agents/scripts/spec-writer.js
+          node --check agents/scripts/pr-drafter.js
+
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Install Playwright
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: |
+          npm install --no-save playwright@1.49.0
+          npx playwright install chromium
+
+      - name: Run e2e
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: |
+          if compgen -G "tests/e2e/*.test.js" > /dev/null; then
+            npm run test:e2e
+          else
+            echo "no e2e tests yet — skip (will activate on first extension MVP)"
+            exit 0
+          fi

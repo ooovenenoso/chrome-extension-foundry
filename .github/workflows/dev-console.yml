@@ -1,0 +1,56 @@
+name: dev-console
+
+on:
+  workflow_dispatch:
+    inputs:
+      extension_id:
+        description: 'Extension ID (subdir under src/)'
+        required: true
+        type: string
+      store_listing_md:
+        description: 'Path to STORE_LISTING.md (markdown with all fields)'
+        required: true
+        type: string
+      cws_pack_dir:
+        description: 'Path to CWS asset pack dir (from asset-pack workflow)'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  fill-dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Install Playwright
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: |
+          npm install --no-save playwright@1.49.0
+          npx playwright install chromium
+
+      - name: Fill CWS DevDashboard via remote browser CDP
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+          CDP_URL: ${{ secrets.CWS_CDP_URL }}
+        run: |
+          node scripts/cws_dashboard_fill.js \
+            --extension "${{ inputs.extension_id }}" \
+            --listing "${{ inputs.store_listing_md }}" \
+            --pack "${{ inputs.cws_pack_dir }}" \
+            --cdp "$CDP_URL"
+
+      - name: Note about human-only submit
+        run: |
+          echo "🛑 Automation stopped before submit. Open the DevDashboard in the remote browser and click the submit button manually."

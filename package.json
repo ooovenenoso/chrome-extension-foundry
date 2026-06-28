@@ -1,0 +1,28 @@
+{
+  "name": "chrome-extension-idea-factory",
+  "version": "0.1.0",
+  "description": "An autonomous factory that finds, scores, specs, and ships monetizable Chrome extensions.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "research": "node agents/scripts/research-collector.js",
+    "score": "node agents/scripts/idea-scorer.js",
+    "spec": "node agents/scripts/spec-writer.js",
+    "pr-draft": "node agents/scripts/pr-drafter.js",
+    "test": "node --test tests/unit/*.test.js",
+    "test:e2e": "node --test tests/e2e/*.test.js",
+    "lint": "node scripts/lint-contracts.js",
+    "validate": "node scripts/validate-contracts.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "playwright": "^1.49.0",
+    "ajv": "^8.17.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

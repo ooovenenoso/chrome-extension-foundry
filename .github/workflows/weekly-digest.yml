@@ -1,0 +1,95 @@
+name: weekly-digest
+
+on:
+  schedule:
+    # Monday 09:00 America/Puerto_Rico (= AST, UTC-4)
+    # Cron is UTC → 13:00 UTC = 09:00 AST
+    - cron: '0 13 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  research-score-ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Compute ISO week (PR timezone)
+        id: week
+        run: |
+          WEEK=$(date -u +%G-W%V)
+          echo "week=$WEEK" >> "$GITHUB_OUTPUT"
+          echo "📅 Week: $WEEK"
+
+      - name: research-collector
+        id: research
+        run: |
+          node agents/scripts/research-collector.js \
+            --week "${{ steps.week.outputs.week }}" \
+            --out docs/research/
+
+      - name: idea-scorer
+        id: score
+        run: |
+          node agents/scripts/idea-scorer.js \
+            --in "docs/research/${{ steps.week.outputs.week }}.json" \
+            --out docs/ideas/
+
+      - name: validate-contracts
+        run: npm run validate
+
+      - name: Check if any candidate crossed digest threshold
+        id: ping
+        run: |
+          WEEK="${{ steps.week.outputs.week }}"
+          POOL="docs/ideas/${WEEK}.json"
+          if [ ! -f "$POOL" ]; then
+            echo "no idea pool produced — silent"
+            echo "ping=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          TOP=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.score_total || 0);")
+          THRESHOLD=$(node -e "console.log(require('./agents/contracts/scoring-rubric.v1.json').thresholds.min_score_for_digest_ping);")
+          echo "top=$TOP threshold=$THRESHOLD"
+          if (( $(echo "$TOP >= $THRESHOLD" | bc -l) )); then
+            echo "ping=true" >> "$GITHUB_OUTPUT"
+            echo "top_name=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.name || '');")" >> "$GITHUB_OUTPUT"
+            echo "top_score=$TOP" >> "$GITHUB_OUTPUT"
+          else
+            echo "ping=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit snapshot if changed
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add docs/research/ docs/ideas/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore(digest): weekly research + scoring for ${{ steps.week.outputs.week }}"
+            git push
+          fi
+
+      - name: Ping Telegram on threshold hit
+        if: steps.ping.outputs.ping == 'true'
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🤖 weekly-digest · ${{ steps.week.outputs.week }}
+            Top idea: ${{ steps.ping.outputs.top_name }} (score ${{ steps.ping.outputs.top_score }})
+            Files: docs/research/${{ steps.week.outputs.week }}.json, docs/ideas/${{ steps.week.outputs.week }}.json

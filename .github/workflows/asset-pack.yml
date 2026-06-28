@@ -1,0 +1,49 @@
+name: asset-pack
+
+on:
+  workflow_dispatch:
+    inputs:
+      extension_id:
+        description: 'Extension ID (subdir under src/)'
+        required: true
+        type: string
+      source_dir:
+        description: 'Source dir with raw assets (Codex outputs + original screenshots)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Pillow
+        run: pip install --quiet Pillow
+
+      - name: Run asset pack
+        run: |
+          python scripts/cws_asset_pack.py \
+            --source "${{ inputs.source_dir }}" \
+            --out "assets/${{ inputs.extension_id }}/cws-final/" \
+            --name "${{ inputs.extension_id }}"
+
+      - name: Build contact sheet
+        run: |
+          python scripts/cws_contact_sheet.py \
+            --in "assets/${{ inputs.extension_id }}/cws-final/" \
+            --out "assets/${{ inputs.extension_id }}/cws-final/_contact-sheet.png"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cws-pack-${{ inputs.extension_id }}
+          path: assets/${{ inputs.extension_id }}/cws-final/

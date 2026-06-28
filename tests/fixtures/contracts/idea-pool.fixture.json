@@ -1,0 +1,43 @@
+{
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T13:05:00Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "gmail-summary-ai",
+      "name": "Gmail Summary AI",
+      "pitch": "One-click TL;DR of long email threads in your Gmail inbox.",
+      "pain": "Long email threads waste 10-15 minutes per day of reading; users want a quick summary.",
+      "source_refs": [
+        { "source": "hn_show_hn", "source_id": "hn-1", "url": "https://news.ycombinator.com/item?id=1" }
+      ],
+      "scores": { "demand": 6, "wtp": 5, "buildability": 7, "defensibility": 7 },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "audience": "consumer_ai_wrapper",
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": { "is_duplicate": false, "nearest_match_id": "", "jaccard_with_nearest": 0 }
+    },
+    {
+      "id": "linkedin-auto-apply",
+      "name": "LinkedIn Auto-Fill",
+      "pitch": "Auto-fills LinkedIn Easy Apply forms with your profile data.",
+      "pain": "Job applications are tedious; users waste hours on repetitive form-filling.",
+      "source_refs": [
+        { "source": "reddit_chrome_extensions", "source_id": "reddit-1", "url": "https://reddit.com/r/chrome_extensions/comments/1" }
+      ],
+      "scores": { "demand": 6, "wtp": 8, "buildability": 6, "defensibility": 4 },
+      "score_total": 6.4,
+      "monetization_hint": {
+        "audience": "b2b_sales",
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": { "is_duplicate": false, "nearest_match_id": "", "jaccard_with_nearest": 0 }
+    }
+  ]
+}

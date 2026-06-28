@@ -1,0 +1,187 @@
+{
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T01:21:35.565Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "show-hn-oak-git-alternative-designed-for",
+      "name": "Show HN: Oak – Git alternative designed for agents",
+      "pitch": "Show HN: Oak – Git alternative designed for agents",
+      "pain": "Show HN: Oak – Git alternative designed for agents",
+      "source_refs": [
+        {
+          "source": "hn_show_hn",
+          "source_id": "48631726",
+          "url": "https://oak.space/oak/oak"
+        }
+      ],
+      "scores": {
+        "demand": 8,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.85,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "",
+        "jaccard_with_nearest": 0
+      }
+    },
+    {
+      "id": "show-hn-openknowledge-open-source-ai-fir",
+      "name": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+      "pitch": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+      "pain": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+      "source_refs": [
+        {
+          "source": "hn_show_hn",
+          "source_id": "48675435",
+          "url": "https://github.com/inkeep/open-knowledge"
+        }
+      ],
+      "scores": {
+        "demand": 8,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "",
+        "jaccard_with_nearest": 0
+      }
+    },
+    {
+      "id": "show-hn-smart-model-routing-directly-in-",
+      "name": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "pitch": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "pain": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "source_refs": [
+        {
+          "source": "hn_show_hn",
+          "source_id": "48688700",
+          "url": "https://github.com/workweave/router"
+        }
+      ],
+      "scores": {
+        "demand": 8,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "",
+        "jaccard_with_nearest": 0
+      }
+    },
+    {
+      "id": "show-hn-recall-local-project-memory-for-",
+      "name": "Show HN: Recall – Local project memory for Claude Code",
+      "pitch": "Show HN: Recall – Local project memory for Claude Code",
+      "pain": "Show HN: Recall – Local project memory for Claude Code",
+      "source_refs": [
+        {
+          "source": "hn_show_hn",
+          "source_id": "48622590",
+          "url": "https://github.com/raiyanyahya/recall"
+        }
+      ],
+      "scores": {
+        "demand": 6,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.9,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "",
+        "jaccard_with_nearest": 0
+      }
+    },
+    {
+      "id": "show-hn-i-made-google-trends-for-hacker-",
+      "name": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+      "pitch": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+      "pain": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+      "source_refs": [
+        {
+          "source": "hn_show_hn",
+          "source_id": "48673671",
+          "url": "https://hackernewstrends.com"
+        }
+      ],
+      "scores": {
+        "demand": 10,
+        "wtp": 3,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10)",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "",
+        "jaccard_with_nearest": 0
+      }
+    },
+    {
+      "id": "show-hn-peerd-ai-agent-harness-that-runs",
+      "name": "Show HN: peerd – AI agent harness that runs entirely in your browser",
+      "pitch": "Show HN: peerd – AI agent harness that runs entirely in your browser",
+      "pain": "Show HN: peerd – AI agent harness that runs entirely in your browser",
+      "source_refs": [
+        {
+          "source": "hn_show_hn",
+          "source_id": "48646165",
+          "url": "https://github.com/NotASithLord/peerd"
+        }
+      ],
+      "scores": {
+        "demand": 4,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.3,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "",
+        "jaccard_with_nearest": 0
+      }
+    }
+  ]
+}

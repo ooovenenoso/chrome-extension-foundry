@@ -1,0 +1,373 @@
+{
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T01:21:07.176Z",
+  "partial": true,
+  "sources": {
+    "cws_productivity": {
+      "status": "error",
+      "fetched_count": 0,
+      "entries": [],
+      "error": "CWS HTTP 404"
+    },
+    "cws_devtools": {
+      "status": "error",
+      "fetched_count": 0,
+      "entries": [],
+      "error": "CWS HTTP 404"
+    },
+    "hn_show_hn": {
+      "status": "ok",
+      "fetched_count": 30,
+      "entries": [
+        {
+          "source_id": "48673671",
+          "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+          "url": "https://hackernewstrends.com",
+          "timestamp": "2026-06-25T14:08:55.000Z",
+          "metric": {
+            "points": 798,
+            "num_comments": 153
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48645437",
+          "title": "Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX",
+          "url": "https://tikz.dev/editor/",
+          "timestamp": "2026-06-23T14:24:21.000Z",
+          "metric": {
+            "points": 449,
+            "num_comments": 74
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48616304",
+          "title": "Show HN: Chess-Inspired Roguelike",
+          "url": "https://princechazz.com",
+          "timestamp": "2026-06-21T06:50:31.000Z",
+          "metric": {
+            "points": 426,
+            "num_comments": 148
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48675435",
+          "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+          "url": "https://github.com/inkeep/open-knowledge",
+          "timestamp": "2026-06-25T16:04:46.000Z",
+          "metric": {
+            "points": 372,
+            "num_comments": 170
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48660267",
+          "title": "Show HN: Nub – A Bun-like all-in-one toolkit for Node.js",
+          "url": "https://github.com/nubjs/nub",
+          "timestamp": "2026-06-24T14:14:18.000Z",
+          "metric": {
+            "points": 274,
+            "num_comments": 80
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48629213",
+          "title": "Show HN: Got sick of ads, so I made my own logic puzzle site",
+          "url": "https://puzzlelair.com/",
+          "timestamp": "2026-06-22T12:23:46.000Z",
+          "metric": {
+            "points": 250,
+            "num_comments": 166
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48618488",
+          "title": "Show HN: Teach your kids perfect pitch",
+          "url": "https://github.com/paytonjjones/bsharp",
+          "timestamp": "2026-06-21T12:49:48.000Z",
+          "metric": {
+            "points": 216,
+            "num_comments": 146
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48631726",
+          "title": "Show HN: Oak – Git alternative designed for agents",
+          "url": "https://oak.space/oak/oak",
+          "timestamp": "2026-06-22T15:37:48.000Z",
+          "metric": {
+            "points": 215,
+            "num_comments": 189
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48688700",
+          "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+          "url": "https://github.com/workweave/router",
+          "timestamp": "2026-06-26T16:40:11.000Z",
+          "metric": {
+            "points": 201,
+            "num_comments": 109
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48630318",
+          "title": "Show HN: Monolisa v3 – a typeface for developers and creatives",
+          "url": "https://www.monolisa.dev/",
+          "timestamp": "2026-06-22T14:05:23.000Z",
+          "metric": {
+            "points": 189,
+            "num_comments": 92
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48667807",
+          "title": "Show HN: Bible as RAG Database",
+          "url": "https://www.crosscanon.com/",
+          "timestamp": "2026-06-25T01:42:55.000Z",
+          "metric": {
+            "points": 159,
+            "num_comments": 91
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48622590",
+          "title": "Show HN: Recall – Local project memory for Claude Code",
+          "url": "https://github.com/raiyanyahya/recall",
+          "timestamp": "2026-06-21T21:05:37.000Z",
+          "metric": {
+            "points": 136,
+            "num_comments": 86
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48644463",
+          "title": "Show HN: Overfitted a 900KB Transformer to Compress a 100MB CSV into 7MB",
+          "url": "https://news.ycombinator.com/item?id=48644463",
+          "timestamp": "2026-06-23T13:11:27.000Z",
+          "metric": {
+            "points": 108,
+            "num_comments": 65
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48693912",
+          "title": "Show HN: Hacker News on a train station-style flip board",
+          "url": "https://popflame.quickish.space/hn-flipboard/",
+          "timestamp": "2026-06-27T00:43:39.000Z",
+          "metric": {
+            "points": 99,
+            "num_comments": 20
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48656986",
+          "title": "Show HN: WebBase-III – dBASE III rebuilt in the browser with its own interpreter",
+          "url": "https://github.com/DDecoene/WebBaseIII",
+          "timestamp": "2026-06-24T08:46:16.000Z",
+          "metric": {
+            "points": 94,
+            "num_comments": 27
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48671886",
+          "title": "Show HN: Turn native language audio into flashcards and shadowing practice",
+          "url": "https://lingochunk.com/try",
+          "timestamp": "2026-06-25T11:29:13.000Z",
+          "metric": {
+            "points": 91,
+            "num_comments": 37
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48642030",
+          "title": "Show HN: Neural Particle Automata",
+          "url": "https://selforg-npa.github.io/",
+          "timestamp": "2026-06-23T08:31:48.000Z",
+          "metric": {
+            "points": 88,
+            "num_comments": 19
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48662988",
+          "title": "Show HN: DBOSify – Drop-in Temporal replacement built on Postgres",
+          "url": "https://github.com/dbos-inc/dbosify-py",
+          "timestamp": "2026-06-24T17:20:48.000Z",
+          "metric": {
+            "points": 84,
+            "num_comments": 18
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48701512",
+          "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
+          "url": "https://github.com/kageroumado/adrafinil",
+          "timestamp": "2026-06-27T20:34:53.000Z",
+          "metric": {
+            "points": 81,
+            "num_comments": 48
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48659483",
+          "title": "Show HN: LookAway, a Mac break reminder that knows when not to interrupt",
+          "url": "https://lookaway.com",
+          "timestamp": "2026-06-24T13:29:18.000Z",
+          "metric": {
+            "points": 75,
+            "num_comments": 25
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48646165",
+          "title": "Show HN: peerd – AI agent harness that runs entirely in your browser",
+          "url": "https://github.com/NotASithLord/peerd",
+          "timestamp": "2026-06-23T15:05:00.000Z",
+          "metric": {
+            "points": 74,
+            "num_comments": 23
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48621645",
+          "title": "Show HN: CleverCrow: give tokens to your favorite projects",
+          "url": "https://clevercrow.io",
+          "timestamp": "2026-06-21T19:06:07.000Z",
+          "metric": {
+            "points": 66,
+            "num_comments": 82
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48642686",
+          "title": "Show HN: Shumai – open-source Frame.io alternative for creative work",
+          "url": "https://github.com/shumaiOne/shumai",
+          "timestamp": "2026-06-23T10:02:54.000Z",
+          "metric": {
+            "points": 63,
+            "num_comments": 6
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48620848",
+          "title": "Show HN: Pure Effect – Reproduce production bugs on your laptop without a DB",
+          "url": "https://pure-effect.org",
+          "timestamp": "2026-06-21T17:36:23.000Z",
+          "metric": {
+            "points": 58,
+            "num_comments": 14
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48645390",
+          "title": "Show HN: Bun-sqlgen – Type-safe raw SQL for Bun, no ORM",
+          "url": "https://github.com/ilbertt/bun-sqlgen",
+          "timestamp": "2026-06-23T14:20:24.000Z",
+          "metric": {
+            "points": 55,
+            "num_comments": 42
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48646209",
+          "title": "Show HN: Treedocs: Documentation that automatically checks for staleness",
+          "url": "https://dandylyons.github.io/treedocs/",
+          "timestamp": "2026-06-23T15:07:30.000Z",
+          "metric": {
+            "points": 53,
+            "num_comments": 19
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48629416",
+          "title": "Show HN: I rebuilt the only parts of my IDE I use, in Rust, over a weekend",
+          "url": "https://github.com/kyle-ssg/kyde",
+          "timestamp": "2026-06-22T12:44:17.000Z",
+          "metric": {
+            "points": 50,
+            "num_comments": 87
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48640278",
+          "title": "Show HN: A pure ARM64 Assembly web server, now on Linux with CGI for no reason",
+          "url": "https://github.com/imtomt/ymawky/tree/linux",
+          "timestamp": "2026-06-23T04:28:14.000Z",
+          "metric": {
+            "points": 50,
+            "num_comments": 25
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48631681",
+          "title": "Show HN: FastUbu – An Ultrafast Video Archive",
+          "url": "https://fastubu.com/",
+          "timestamp": "2026-06-22T15:34:34.000Z",
+          "metric": {
+            "points": 47,
+            "num_comments": 6
+          },
+          "category": "show_hn"
+        },
+        {
+          "source_id": "48660975",
+          "title": "Show HN: Wealtii – A multi-sig digital asset index fund built by a solo founder",
+          "url": "https://wealtii.com",
+          "timestamp": "2026-06-24T14:57:44.000Z",
+          "metric": {
+            "points": 47,
+            "num_comments": 1
+          },
+          "category": "show_hn"
+        }
+      ]
+    },
+    "reddit_chrome_extensions": {
+      "status": "error",
+      "fetched_count": 0,
+      "entries": [],
+      "error": "Reddit chrome_extensions HTTP 403"
+    },
+    "reddit_sideproject": {
+      "status": "error",
+      "fetched_count": 0,
+      "entries": [],
+      "error": "Reddit sideproject HTTP 403"
+    },
+    "reddit_internet_is_beautiful": {
+      "status": "error",
+      "fetched_count": 0,
+      "entries": [],
+      "error": "Reddit InternetIsBeautiful HTTP 403"
+    }
+  }
+}

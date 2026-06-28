@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ResearchSnapshot",
+  "type": "object",
+  "required": ["week", "fetched_at", "sources"],
+  "properties": {
+    "week": {
+      "type": "string",
+      "pattern": "^\\d{4}-W\\d{2}$",
+      "description": "ISO week (YYYY-Www)"
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "partial": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if ≥1 source was unreachable. Pipeline still runs."
+    },
+    "sources": {
+      "type": "object",
+      "required": ["cws_productivity", "cws_devtools", "hn_show_hn", "reddit_chrome_extensions", "reddit_sideproject"],
+      "properties": {
+        "cws_productivity": {
+          "$ref": "#/$defs/Source"
+        },
+        "cws_devtools": {
+          "$ref": "#/$defs/Source"
+        },
+        "hn_show_hn": {
+          "$ref": "#/$defs/Source"
+        },
+        "reddit_chrome_extensions": {
+          "$ref": "#/$defs/Source"
+        },
+        "reddit_sideproject": {
+          "$ref": "#/$defs/Source"
+        },
+        "reddit_internet_is_beautiful": {
+          "$ref": "#/$defs/Source"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "Source": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["ok", "partial", "error"] },
+        "fetched_count": { "type": "integer", "minimum": 0 },
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["source_id", "title", "url", "timestamp"],
+            "properties": {
+              "source_id": { "type": "string" },
+              "title": { "type": "string" },
+              "url": { "type": "string", "format": "uri" },
+              "timestamp": { "type": "string", "format": "date-time" },
+              "metric": {
+                "type": "object",
+                "additionalProperties": { "type": ["number", "string"] }
+              },
+              "category": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          }
+        },
+        "error": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+name: release
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+permissions:
+  contents: write
+
+jobs:
+  package-extension:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        extension-id: []
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package ${{ matrix.extension-id }}
+        run: |
+          EXT_ID="${{ matrix.extension-id }}"
+          SRC_DIR="src/${EXT_ID}"
+          if [ ! -d "$SRC_DIR" ]; then
+            echo "::error::src/${EXT_ID} does not exist"; exit 1
+          fi
+          OUT="${EXT_ID}-${GITHUB_REF_NAME}.zip"
+          # Exclude dev screenshots, .git, node_modules, dev folders
+          (cd "$SRC_DIR" && zip -r "../../$OUT" . \
+            -x '*.map' 'screenshots/dev/*' '.DS_Store')
+          echo "asset=$OUT" >> "$GITHUB_OUTPUT"
+        id: zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: ${{ steps.zip.outputs.asset }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

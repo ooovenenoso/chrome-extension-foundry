@@ -1,0 +1,64 @@
+{
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T13:00:00Z",
+  "partial": false,
+  "sources": {
+    "cws_productivity": {
+      "status": "ok",
+      "fetched_count": 1,
+      "entries": [
+        {
+          "source_id": "cws-fixture-1",
+          "title": "Todoist for Chrome",
+          "url": "https://chromewebstore.google.com/detail/todoist/todoist",
+          "timestamp": "2026-06-28T13:00:00Z",
+          "metric": { "install_count": 800000 }
+        }
+      ]
+    },
+    "cws_devtools": {
+      "status": "ok",
+      "fetched_count": 1,
+      "entries": [
+        {
+          "source_id": "cws-devtools-1",
+          "title": "React Developer Tools",
+          "url": "https://chromewebstore.google.com/detail/react-developer-tools",
+          "timestamp": "2026-06-28T13:00:00Z",
+          "metric": { "install_count": 4000000 }
+        }
+      ]
+    },
+    "hn_show_hn": {
+      "status": "ok",
+      "fetched_count": 1,
+      "entries": [
+        {
+          "source_id": "hn-1",
+          "title": "Show HN: A Chrome extension that summarizes your Gmail",
+          "url": "https://news.ycombinator.com/item?id=1",
+          "timestamp": "2026-06-25T10:00:00Z",
+          "metric": { "points": 350, "num_comments": 80 }
+        }
+      ]
+    },
+    "reddit_chrome_extensions": {
+      "status": "ok",
+      "fetched_count": 1,
+      "entries": [
+        {
+          "source_id": "reddit-1",
+          "title": "I made a Chrome extension that auto-fills my job applications — 5k users in 3 weeks",
+          "url": "https://reddit.com/r/chrome_extensions/comments/1",
+          "timestamp": "2026-06-20T10:00:00Z",
+          "metric": { "score": 240, "num_comments": 60 }
+        }
+      ]
+    },
+    "reddit_sideproject": {
+      "status": "ok",
+      "fetched_count": 0,
+      "entries": []
+    }
+  }
+}
