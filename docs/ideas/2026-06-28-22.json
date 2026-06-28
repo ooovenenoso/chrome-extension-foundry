@@ -1,0 +1,158 @@
+{
+  "slot": "2026-06-28-22",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T15:04:50.908Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "api-request-mirroring-proxy",
+      "name": "API Request Mirroring Proxy",
+      "pitch": "Intercepts fetch/XHR, duplicates requests to a user-configured staging endpoint with optional header rewrites. Built as a service worker proxy layer. Similar to tools like Runscope but browser-native ",
+      "pain": "No easy way to mirror production API traffic to staging for realistic debugging.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-request-mirroring-proxy-pn6znp",
+          "url": "https://example.invalid/ai-idea/api-request-mirroring-proxy"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "linkedin-company-employee-counter",
+      "name": "LinkedIn Company Employee Counter",
+      "pitch": "Scrapes employee count from LinkedIn company pages and auto-populates a CRM field or shows a tooltip. Targets salespeople using LinkedIn Sales Navigator. Headcount is a key signal with no clean browse",
+      "pain": "Sales teams manually check LinkedIn for headcount data to qualify accounts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-company-employee-counter-vs4jn5",
+          "url": "https://example.invalid/ai-idea/linkedin-company-employee-counter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-signal-tracker",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "csp-header-validator",
+      "name": "CSP Header Validator",
+      "pitch": "Parses Content-Security-Policy headers on any page, highlights violations, and suggests directive fixes. Built via declarativeNetRequest + content script analysis. DevTools already show violations but",
+      "pain": "CSP misconfigs silently break functionality and are hard to diagnose manually.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-csp-header-validator-m03bn8",
+          "url": "https://example.invalid/ai-idea/csp-header-validator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "regex-live-validator",
+      "name": "RegEx Live Validator",
+      "pitch": "Runs user-provided regex against all visible page text, highlights matches, and shows capture groups inline. Lightweight—no external dependencies. Existing tools like regex101 require copy-pasting; th",
+      "pain": "Regex patterns are tedious to test against real page content without a separate sandbox.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-regex-live-validator-zlcxts",
+          "url": "https://example.invalid/ai-idea/regex-live-validator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "json-ld-structured-data-inspector",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "ai-training-data-detector",
+      "name": "AI Training Data Detector",
+      "pitch": "Maintains a community-curated database of sites known to use user content for model training. Shows a subtle badge on affected pages. Privacy consciousness is rising and no tool surfaces this informat",
+      "pain": "Users have no visibility into which sites train AI models on their submitted content.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-training-data-detector-owpo2v",
+          "url": "https://example.invalid/ai-idea/ai-training-data-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}

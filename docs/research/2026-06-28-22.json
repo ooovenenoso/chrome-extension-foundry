@@ -1,0 +1,220 @@
+{
+  "slot": "2026-06-28-22",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T15:04:50.695Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-gmail-attachment-cloud-saver-2iyb51",
+          "title": "Gmail Attachment Cloud Saver",
+          "url": "https://example.invalid/ai-idea/gmail-attachment-cloud-saver",
+          "timestamp": "2026-06-28T15:04:50.685Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes attachment metadata from Gmail threads and uploads files to Google Drive or Dropbox in one click. Built with Gmail API + background fetch. This fills the gap between email attachment workflow and cloud storage that no free tool addresses cleanly.",
+          "monetization": "freemium_saas",
+          "pain": "Users lose email attachments when Gmail cleans them out or accounts get deleted."
+        },
+        {
+          "source_id": "ai-csp-header-validator-m03bn8",
+          "title": "CSP Header Validator",
+          "url": "https://example.invalid/ai-idea/csp-header-validator",
+          "timestamp": "2026-06-28T15:04:50.685Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses Content-Security-Policy headers on any page, highlights violations, and suggests directive fixes. Built via declarativeNetRequest + content script analysis. DevTools already show violations but lack policy editing—this fills that gap.",
+          "monetization": "freemium_saas",
+          "pain": "CSP misconfigs silently break functionality and are hard to diagnose manually."
+        },
+        {
+          "source_id": "ai-third-party-script-license-reporter-u0nypj",
+          "title": "Third-Party Script License Reporter",
+          "url": "https://example.invalid/ai-idea/third-party-script-license-reporter",
+          "timestamp": "2026-06-28T15:04:50.685Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scans script tags, fetches package manifests from CDN-hosted libraries, and flags license conflicts. Uses a lightweight rules engine for common licenses. License compliance scanning exists in build pipelines but not in-browser during development.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Unknown third-party scripts may introduce GPL or copyleft licenses that create legal risk."
+        },
+        {
+          "source_id": "ai-api-request-mirroring-proxy-pn6znp",
+          "title": "API Request Mirroring Proxy",
+          "url": "https://example.invalid/ai-idea/api-request-mirroring-proxy",
+          "timestamp": "2026-06-28T15:04:50.685Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercepts fetch/XHR, duplicates requests to a user-configured staging endpoint with optional header rewrites. Built as a service worker proxy layer. Similar to tools like Runscope but browser-native and zero-config for internal debugging.",
+          "monetization": "quota_based",
+          "pain": "No easy way to mirror production API traffic to staging for realistic debugging."
+        },
+        {
+          "source_id": "ai-notion-page-exporter-fo703x",
+          "title": "Notion Page Exporter",
+          "url": "https://example.invalid/ai-idea/notion-page-exporter",
+          "timestamp": "2026-06-28T15:04:50.685Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Adds export buttons to Notion pages for PDF, Markdown, or HTML with proper styling preservation. Uses Notion's internal API or page scraping. Notion's built-in export is clunky; this is a one-click overlay.",
+          "monetization": "freemium_saas",
+          "pain": "Notion pages are siloed and hard to export in clean formats for external sharing."
+        },
+        {
+          "source_id": "ai-regex-live-validator-zlcxts",
+          "title": "RegEx Live Validator",
+          "url": "https://example.invalid/ai-idea/regex-live-validator",
+          "timestamp": "2026-06-28T15:04:50.685Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Runs user-provided regex against all visible page text, highlights matches, and shows capture groups inline. Lightweight—no external dependencies. Existing tools like regex101 require copy-pasting; this runs in context.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Regex patterns are tedious to test against real page content without a separate sandbox."
+        },
+        {
+          "source_id": "ai-saas-keyboard-shortcut-overlay-72b5nn",
+          "title": "SaaS Keyboard Shortcut Overlay",
+          "url": "https://example.invalid/ai-idea/saas-keyboard-shortcut-overlay",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Detects active SaaS tool via URL patterns and displays a floating overlay of available shortcuts. Community-contributed shortcut database updated via manifest. Works for GitHub, Gmail, Jira, Linear, Figma, and more.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Power users forget shortcuts and waste time navigating menus in tools they use daily."
+        },
+        {
+          "source_id": "ai-google-meet-transcript-saver-5ld3x6",
+          "title": "Google Meet Transcript Saver",
+          "url": "https://example.invalid/ai-idea/google-meet-transcript-saver",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Captures Meet's live caption stream using accessibility APIs and saves timestamps alongside text. No recording—just captions with timestamps. Meets real privacy constraints while solving a genuine pain point.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Meeting transcripts in Google Meet disappear after sessions end with no easy way to save them."
+        },
+        {
+          "source_id": "ai-ai-training-data-detector-owpo2v",
+          "title": "AI Training Data Detector",
+          "url": "https://example.invalid/ai-idea/ai-training-data-detector",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Maintains a community-curated database of sites known to use user content for model training. Shows a subtle badge on affected pages. Privacy consciousness is rising and no tool surfaces this information at point of browsing.",
+          "monetization": "donation",
+          "pain": "Users have no visibility into which sites train AI models on their submitted content."
+        },
+        {
+          "source_id": "ai-cron-job-health-monitor-xx8dla",
+          "title": "Cron Job Health Monitor",
+          "url": "https://example.invalid/ai-idea/cron-job-health-monitor",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses public status pages and cron service dashboards to detect missed or delayed executions, showing a badge in the toolbar. Uses lightweight polling. No native browser integration for Cron monitoring exists.",
+          "monetization": "freemium_saas",
+          "pain": "External Cron services like cron-job.org have no browser-level alerting beyond email."
+        },
+        {
+          "source_id": "ai-cookie-consent-weaver-pal30p",
+          "title": "Cookie Consent Weaver",
+          "url": "https://example.invalid/ai-idea/cookie-consent-weaver",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Builds a graph of cookie domains encountered and shows how tracking IDs correlate across visits. Visual representation of cross-site tracking chains. Educational privacy tool filling a gap left by consent managers.",
+          "monetization": "donation",
+          "pain": "Users cannot easily visualize how cookies link their browsing history across unrelated sites."
+        },
+        {
+          "source_id": "ai-clipboard-secret-guard-e9whm7",
+          "title": "Clipboard Secret Guard",
+          "url": "https://example.invalid/ai-idea/clipboard-secret-guard",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Monitors clipboard content for patterns resembling secrets (API keys, tokens, passwords) and warns before paste completes. Uses regex heuristics for common formats. Simple, immediate security win for developers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Accidentally pasting API keys or passwords into chat or browser triggers security breaches."
+        },
+        {
+          "source_id": "ai-linkedin-company-employee-counter-vs4jn5",
+          "title": "LinkedIn Company Employee Counter",
+          "url": "https://example.invalid/ai-idea/linkedin-company-employee-counter",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes employee count from LinkedIn company pages and auto-populates a CRM field or shows a tooltip. Targets salespeople using LinkedIn Sales Navigator. Headcount is a key signal with no clean browser-native extraction tool.",
+          "monetization": "per_seat",
+          "pain": "Sales teams manually check LinkedIn for headcount data to qualify accounts."
+        },
+        {
+          "source_id": "ai-dom-mutation-event-replay-znrsmd",
+          "title": "DOM Mutation Event Replay",
+          "url": "https://example.invalid/ai-idea/dom-mutation-event-replay",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Instruments DOM MutationObserver to capture user interactions and serializes them as a replayable JSON trace. No external service, no recording uploads. Lightweight alternative to full session replay tools for quick debugging.",
+          "monetization": "freemium_saas",
+          "pain": "Reproducing UI bugs requires recording sessions through heavy tools like FullStory."
+        },
+        {
+          "source_id": "ai-session-share-for-async-code-review-xq5dy0",
+          "title": "Session Share for Async Code Review",
+          "url": "https://example.invalid/ai-idea/session-share-for-async-code-review",
+          "timestamp": "2026-06-28T15:04:50.686Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Serializes current tab state (DOM, localStorage, console logs) into a shareable link or QR code. Recipient opens link in a sandboxed tab. Useful for reviewing layout bugs or state-dependent issues without scheduling a call.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sharing a browser state for async code review requires screenshots or screen share recordings."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T15:04:50.695Z",
+        "dedup_against": 114,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
