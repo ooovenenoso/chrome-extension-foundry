@@ -5,7 +5,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "research": "node agents/scripts/research-collector.js",
+    "research": "node --env-file=.env agents/scripts/research-collector.js",
+    "research:dry": "node --env-file=.env agents/scripts/research-collector.js --count 5 --lookback 30",
     "score": "node agents/scripts/idea-scorer.js",
     "spec": "node agents/scripts/spec-writer.js",
     "pr-draft": "node agents/scripts/pr-drafter.js",

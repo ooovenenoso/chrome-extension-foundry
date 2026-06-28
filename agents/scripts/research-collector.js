@@ -125,7 +125,15 @@ async function generateIdeas({ priorTitles, count, model, apiKey, baseUrl }) {
   try {
     parsed = JSON.parse(content);
   } catch (e) {
-    throw new Error(`MiniMax JSON parse failed: ${e.message}; head=${content.slice(0, 200)}`);
+    // Some MiniMax models emit a `<!-- raw HTML omitted -->...<!-- raw HTML omitted -->` thinking
+    // block before the JSON payload. Try to extract the JSON region as a fallback.
+    // extractJson returns an already-parsed object (or null).
+    const extracted = extractJson(content);
+    if (extracted && typeof extracted === 'object') {
+      parsed = extracted;
+    } else {
+      throw new Error(`MiniMax JSON parse failed: ${e.message}; head=${content.slice(0, 200)}`);
+    }
   }
   if (!Array.isArray(parsed.ideas)) {
     throw new Error(
@@ -248,6 +256,61 @@ async function callMiniMax({ system, user, model, apiKey, baseUrl }) {
     throw new Error(`MiniMax HTTP ${res.status}: ${text.slice(0, 300)}`);
   }
   return res.json();
+}
+
+// extractJson(content): recover a JSON object/array embedded in a string
+// that may contain prose, markdown fences, or `<!-- raw HTML omitted -->...<!-- raw HTML omitted -->` thinking blocks.
+// Tries, in order: (1) full-string parse, (2) first balanced {...} or [...] region.
+// Returns null if no JSON region is found.
+function extractJson(content) {
+  if (typeof content !== 'string' || content.length === 0) return null;
+  // Strip markdown code fences if present.
+  const fenced = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+  if (fenced) {
+    try {
+      return JSON.parse(fenced[1]);
+    } catch {
+      /* fall through */
+    }
+  }
+  // Find the first balanced top-level JSON object or array.
+  for (const opener of ['{', '[']) {
+    const closer = opener === '{' ? '}' : ']';
+    const start = content.indexOf(opener);
+    if (start === -1) continue;
+    let depth = 0;
+    let inString = false;
+    let escape = false;
+    for (let i = start; i < content.length; i++) {
+      const ch = content[i];
+      if (escape) {
+        escape = false;
+        continue;
+      }
+      if (ch === '\\') {
+        escape = true;
+        continue;
+      }
+      if (ch === '"') {
+        inString = !inString;
+        continue;
+      }
+      if (inString) continue;
+      if (ch === opener) depth++;
+      else if (ch === closer) {
+        depth--;
+        if (depth === 0) {
+          const slice = content.slice(start, i + 1);
+          try {
+            return JSON.parse(slice);
+          } catch {
+            return null;
+          }
+        }
+      }
+    }
+  }
+  return null;
 }
 
 function normalizeIdea(raw) {

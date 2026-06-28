@@ -11,6 +11,14 @@ build/
 *.crx
 *.pem
 
+# Secrets (NEVER commit)
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem.enc
+
 # Vercel
 .vercel/
 
