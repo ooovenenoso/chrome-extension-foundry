@@ -1,0 +1,220 @@
+{
+  "slot": "2026-06-28-24",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T16:03:16.886Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-tech-stack-fingerprint-pro-0l4h2k",
+          "title": "Tech Stack Fingerprint Pro",
+          "url": "https://example.invalid/ai-idea/tech-stack-fingerprint-pro",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Analyzes HTTP headers, script tags, CDN fingerprints, and meta tags to identify frameworks, CDNs, analytics, and hosting. One engineer can build the detection rules engine in 2-3 weeks. Wappalyzer exists but lacks a lightweight sidebar overlay and freemium model for solo devs.",
+          "monetization": "freemium_saas",
+          "pain": "Wasting time reverse-engineering what stack a prospect's site uses before outreach or debugging."
+        },
+        {
+          "source_id": "ai-feature-flag-health-reporter-1cb1iq",
+          "title": "Feature Flag Health Reporter",
+          "url": "https://example.invalid/ai-idea/feature-flag-health-reporter",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Connects to LaunchDarkly/Flagsmith/etc API, surfaces flags not toggled in 30+ days, flags with contradictory rules, and generates a weekly digest. One API integration + dashboard in ~3 weeks. Competitors like Harness have enterprise tooling but nothing lightweight.",
+          "monetization": "per_seat",
+          "pain": "Feature flags pile up silently until nobody knows which ones are stale, active, or causing conflicts."
+        },
+        {
+          "source_id": "ai-webhook-signature-debugger-961iw4",
+          "title": "Webhook Signature Debugger",
+          "url": "https://example.invalid/ai-idea/webhook-signature-debugger",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts webhook requests, runs real-time HMAC verification against stored secrets, shows pass/fail with hex diffs. Ships as DevTools panel + local secret store. Built in 1-2 weeks. NGROK has tunnel inspect but no signature verification layer.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Webhook signature validation failures waste hours debugging payloads and shared secrets."
+        },
+        {
+          "source_id": "ai-page-resource-waterfall-analyzer-ps461w",
+          "title": "Page Resource Waterfall Analyzer",
+          "url": "https://example.invalid/ai-idea/page-resource-waterfall-analyzer",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses Performance API entries, renders a cleaner waterfall, highlights resources >1s and flags render-blocking scripts. Exports as PNG/PDF for sprint reports. Built in 2 weeks. Fullstory and Datadog offer this in paid APM but not a standalone free DevTools panel.",
+          "monetization": "freemium_saas",
+          "pain": "Identifying slow resources in DevTools waterfall charts is tedious and not shareable with non-technical stakeholders."
+        },
+        {
+          "source_id": "ai-stripe-event-schema-validator-ebj630",
+          "title": "Stripe Event Schema Validator",
+          "url": "https://example.invalid/ai-idea/stripe-event-schema-validator",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Validates incoming Stripe webhook payloads against the latest API schema version, flags unknown fields and type mismatches. Uses Stripe's public OpenAPI spec. One engineer, 2 weeks. Postman has some validation but not browser-native.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging Stripe webhook failures means manually comparing payloads against docs with no real-time validation."
+        },
+        {
+          "source_id": "ai-ai-token-usage-by-tab-tzv8a1",
+          "title": "AI Token Usage by Tab",
+          "url": "https://example.invalid/ai-idea/ai-token-usage-by-tab",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Proxies LLM API calls via background script, tracks tokens per domain/tab in real-time, shows running cost totals. OpenAI/Anthropic billing APIs enable this. Built in 2 weeks. Cursor has token counters but not cross-platform tab tracking.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Running ChatGPT, Claude, and Gemini simultaneously makes it impossible to track cumulative spend."
+        },
+        {
+          "source_id": "ai-csv-column-profile-generator-cylctf",
+          "title": "CSV Column Profile Generator",
+          "url": "https://example.invalid/ai-idea/csv-column-profile-generator",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Intercepts downloads, parses CSV in a Web Worker, shows data types, null percentages, min/max, and value distributions before saving. Works on any site. Built in 1-2 weeks. No browser extension does this as a universal download interceptor.",
+          "monetization": "freemium_saas",
+          "pain": "Downloading CSVs with no schema documentation means wasted time figuring out what columns actually contain."
+        },
+        {
+          "source_id": "ai-support-sentiment-trend-monitor-yczats",
+          "title": "Support Sentiment Trend Monitor",
+          "url": "https://example.invalid/ai-idea/support-sentiment-trend-monitor",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Integrates with Zendesk/Intercom API, runs lightweight sentiment scoring on ticket text over time, surfaces weekly digest of declining CSAT and rising negative keywords. Built in 3 weeks. Gainsight exists but overkill for 10-50 seat SMBs.",
+          "monetization": "per_seat",
+          "pain": "Support teams see tickets individually but miss macro trends indicating product friction or churn risk."
+        },
+        {
+          "source_id": "ai-meet-engagement-pulse-icsrcb",
+          "title": "Meet Engagement Pulse",
+          "url": "https://example.invalid/ai-idea/meet-engagement-pulse",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes Google Meet transcript for question frequency, response latency, and sentiment per participant. Generates engagement score per attendee. Uses Meet API + basic NLP. Built in 3 weeks. Gong has this but at enterprise pricing.",
+          "monetization": "per_seat",
+          "pain": "Sales reps can't prove prospects were engaged during demos unless they manually review recordings."
+        },
+        {
+          "source_id": "ai-notion-backlink-graph-viewer-fvj30y",
+          "title": "Notion Backlink Graph Viewer",
+          "url": "https://example.invalid/ai-idea/notion-backlink-graph-viewer",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::productivity",
+          "notes": "Uses Notion API to index all page links, renders a force-directed graph showing connections. Highlights orphan pages. Built in 2 weeks. Notion itself shows backlinks but not a visual graph view.",
+          "monetization": "freemium_saas",
+          "pain": "Notion wikis grow into invisible webs where you can't tell what links to what without clicking every page."
+        },
+        {
+          "source_id": "ai-sponsored-content-radar-u6pmi8",
+          "title": "Sponsored Content Radar",
+          "url": "https://example.invalid/ai-idea/sponsored-content-radar",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Detects ad indicators in Twitter/X, LinkedIn, Reddit DOM (promoted tags, sponsor labels, paid partnerships). Toggles a visual badge on flagged posts. Built in 1 week. Browser-native content detection is lightweight.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Social feeds mix organic and sponsored posts invisibly, making it hard to know what you're actually reading."
+        },
+        {
+          "source_id": "ai-github-codeowner-coverage-checker-gtwvue",
+          "title": "GitHub Codeowner Coverage Checker",
+          "url": "https://example.invalid/ai-idea/github-codeowner-coverage-checker",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scans repo for paths not covered by CODEOWNERS, flags glob patterns that match no files, surfaces reviewers with too many assignments. Runs on GitHub repo pages. Built in 2 weeks. No tool does this as a lightweight browser panel.",
+          "monetization": "stripe_tip_jar",
+          "pain": "CODEOWNERS files silently decay until PRs get stuck because nobody is actually responsible."
+        },
+        {
+          "source_id": "ai-browser-session-cost-attribution-4m0ed4",
+          "title": "Browser Session Cost Attribution",
+          "url": "https://example.invalid/ai-idea/browser-session-cost-attribution",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Tracks active tab time per domain, maps against known SaaS pricing, generates weekly spend attribution report. Uses idle detection API. Built in 2 weeks. Toggl has time tracking but no cost mapping to tool pricing.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Engineering leads can't justify SaaS tool spend without per-developer usage breakdowns."
+        },
+        {
+          "source_id": "ai-proxy-config-proxy-switcher-l075wq",
+          "title": "Proxy Config Proxy Switcher",
+          "url": "https://example.invalid/ai-idea/proxy-config-proxy-switcher",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "One-click switch between saved proxy profiles, auto-rotate user agents per profile, logs requests through active proxy. Built in 2 weeks. Proxyman exists but desktop-only with no one-click browser switching.",
+          "monetization": "per_seat",
+          "pain": "Switching between multiple proxy configurations for testing requires digging into OS settings every time."
+        },
+        {
+          "source_id": "ai-job-posting-tech-signal-extractor-n6k6wx",
+          "title": "Job Posting Tech Signal Extractor",
+          "url": "https://example.invalid/ai-idea/job-posting-tech-signal-extractor",
+          "timestamp": "2026-06-28T16:03:16.880Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn/Indeed job descriptions, extracts tech keywords (AWS, React, Postgres), builds a quick tech profile for the target company. Built in 2 weeks. LinkedIn Sales Navigator has some signals but not tech stack extraction.",
+          "monetization": "freemium_saas",
+          "pain": "Scoping enterprise sales deals by manually reading job postings to guess tech stack is slow and inconsistent."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T16:03:16.885Z",
+        "dedup_against": 129,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

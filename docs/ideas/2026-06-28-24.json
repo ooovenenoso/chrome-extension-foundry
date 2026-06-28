@@ -1,0 +1,368 @@
+{
+  "slot": "2026-06-28-24",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T16:03:17.047Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "tech-stack-fingerprint-pro",
+      "name": "Tech Stack Fingerprint Pro",
+      "pitch": "Analyzes HTTP headers, script tags, CDN fingerprints, and meta tags to identify frameworks, CDNs, analytics, and hosting. One engineer can build the detection rules engine in 2-3 weeks. Wappalyzer exi",
+      "pain": "Wasting time reverse-engineering what stack a prospect's site uses before outreach or debugging.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-tech-stack-fingerprint-pro-0l4h2k",
+          "url": "https://example.invalid/ai-idea/tech-stack-fingerprint-pro"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-conversation-token-counter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "proxy-config-proxy-switcher",
+      "name": "Proxy Config Proxy Switcher",
+      "pitch": "One-click switch between saved proxy profiles, auto-rotate user agents per profile, logs requests through active proxy. Built in 2 weeks. Proxyman exists but desktop-only with no one-click browser swi",
+      "pain": "Switching between multiple proxy configurations for testing requires digging into OS settings every time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-proxy-config-proxy-switcher-l075wq",
+          "url": "https://example.invalid/ai-idea/proxy-config-proxy-switcher"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "websocket-frame-debugger",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "webhook-signature-debugger",
+      "name": "Webhook Signature Debugger",
+      "pitch": "Intercepts webhook requests, runs real-time HMAC verification against stored secrets, shows pass/fail with hex diffs. Ships as DevTools panel + local secret store. Built in 1-2 weeks. NGROK has tunnel",
+      "pain": "Webhook signature validation failures waste hours debugging payloads and shared secrets.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-signature-debugger-961iw4",
+          "url": "https://example.invalid/ai-idea/webhook-signature-debugger"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-token-inspector",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "page-resource-waterfall-analyzer",
+      "name": "Page Resource Waterfall Analyzer",
+      "pitch": "Parses Performance API entries, renders a cleaner waterfall, highlights resources >1s and flags render-blocking scripts. Exports as PNG/PDF for sprint reports. Built in 2 weeks. Fullstory and Datadog ",
+      "pain": "Identifying slow resources in DevTools waterfall charts is tedious and not shareable with non-technical stakeholders.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-page-resource-waterfall-analyzer-ps461w",
+          "url": "https://example.invalid/ai-idea/page-resource-waterfall-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "stripe-event-schema-validator",
+      "name": "Stripe Event Schema Validator",
+      "pitch": "Validates incoming Stripe webhook payloads against the latest API schema version, flags unknown fields and type mismatches. Uses Stripe's public OpenAPI spec. One engineer, 2 weeks. Postman has some v",
+      "pain": "Debugging Stripe webhook failures means manually comparing payloads against docs with no real-time validation.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-event-schema-validator-ebj630",
+          "url": "https://example.invalid/ai-idea/stripe-event-schema-validator"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-event-playground",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "ai-token-usage-by-tab",
+      "name": "AI Token Usage by Tab",
+      "pitch": "Proxies LLM API calls via background script, tracks tokens per domain/tab in real-time, shows running cost totals. OpenAI/Anthropic billing APIs enable this. Built in 2 weeks. Cursor has token counter",
+      "pain": "Running ChatGPT, Claude, and Gemini simultaneously makes it impossible to track cumulative spend.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-token-usage-by-tab-tzv8a1",
+          "url": "https://example.invalid/ai-idea/ai-token-usage-by-tab"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "support-sentiment-trend-monitor",
+      "name": "Support Sentiment Trend Monitor",
+      "pitch": "Integrates with Zendesk/Intercom API, runs lightweight sentiment scoring on ticket text over time, surfaces weekly digest of declining CSAT and rising negative keywords. Built in 3 weeks. Gainsight ex",
+      "pain": "Support teams see tickets individually but miss macro trends indicating product friction or churn risk.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-support-sentiment-trend-monitor-yczats",
+          "url": "https://example.invalid/ai-idea/support-sentiment-trend-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "job-posting-tech-signal-extractor",
+      "name": "Job Posting Tech Signal Extractor",
+      "pitch": "Scrapes LinkedIn/Indeed job descriptions, extracts tech keywords (AWS, React, Postgres), builds a quick tech profile for the target company. Built in 2 weeks. LinkedIn Sales Navigator has some signals",
+      "pain": "Scoping enterprise sales deals by manually reading job postings to guess tech stack is slow and inconsistent.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-job-posting-tech-signal-extractor-n6k6wx",
+          "url": "https://example.invalid/ai-idea/job-posting-tech-signal-extractor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-company-employee-counter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "feature-flag-health-reporter",
+      "name": "Feature Flag Health Reporter",
+      "pitch": "Connects to LaunchDarkly/Flagsmith/etc API, surfaces flags not toggled in 30+ days, flags with contradictory rules, and generates a weekly digest. One API integration + dashboard in ~3 weeks. Competit",
+      "pain": "Feature flags pile up silently until nobody knows which ones are stale, active, or causing conflicts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-feature-flag-health-reporter-1cb1iq",
+          "url": "https://example.invalid/ai-idea/feature-flag-health-reporter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "notion-backlink-graph-viewer",
+      "name": "Notion Backlink Graph Viewer",
+      "pitch": "Uses Notion API to index all page links, renders a force-directed graph showing connections. Highlights orphan pages. Built in 2 weeks. Notion itself shows backlinks but not a visual graph view.",
+      "pain": "Notion wikis grow into invisible webs where you can't tell what links to what without clicking every page.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-notion-backlink-graph-viewer-fvj30y",
+          "url": "https://example.invalid/ai-idea/notion-backlink-graph-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "github-codeowner-coverage-checker",
+      "name": "GitHub Codeowner Coverage Checker",
+      "pitch": "Scans repo for paths not covered by CODEOWNERS, flags glob patterns that match no files, surfaces reviewers with too many assignments. Runs on GitHub repo pages. Built in 2 weeks. No tool does this as",
+      "pain": "CODEOWNERS files silently decay until PRs get stuck because nobody is actually responsible.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-codeowner-coverage-checker-gtwvue",
+          "url": "https://example.invalid/ai-idea/github-codeowner-coverage-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-peerd-ai-agent-harness-that-runs",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "meet-engagement-pulse",
+      "name": "Meet Engagement Pulse",
+      "pitch": "Analyzes Google Meet transcript for question frequency, response latency, and sentiment per participant. Generates engagement score per attendee. Uses Meet API + basic NLP. Built in 3 weeks. Gong has ",
+      "pain": "Sales reps can't prove prospects were engaged during demos unless they manually review recordings.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meet-engagement-pulse-icsrcb",
+          "url": "https://example.invalid/ai-idea/meet-engagement-pulse"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.09
+      }
+    }
+  ]
+}
