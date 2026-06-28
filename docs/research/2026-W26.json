@@ -1,6 +1,6 @@
 {
   "week": "2026-W26",
-  "fetched_at": "2026-06-28T01:21:07.176Z",
+  "fetched_at": "2026-06-28T01:48:53.433Z",
   "partial": true,
   "sources": {
     "cws_productivity": {
@@ -25,8 +25,8 @@
           "url": "https://hackernewstrends.com",
           "timestamp": "2026-06-25T14:08:55.000Z",
           "metric": {
-            "points": 798,
-            "num_comments": 153
+            "points": 799,
+            "num_comments": 154
           },
           "category": "show_hn"
         },
@@ -69,7 +69,7 @@
           "url": "https://github.com/nubjs/nub",
           "timestamp": "2026-06-24T14:14:18.000Z",
           "metric": {
-            "points": 274,
+            "points": 275,
             "num_comments": 80
           },
           "category": "show_hn"
@@ -136,7 +136,7 @@
           "timestamp": "2026-06-25T01:42:55.000Z",
           "metric": {
             "points": 159,
-            "num_comments": 91
+            "num_comments": 92
           },
           "category": "show_hn"
         },
@@ -157,7 +157,7 @@
           "url": "https://news.ycombinator.com/item?id=48644463",
           "timestamp": "2026-06-23T13:11:27.000Z",
           "metric": {
-            "points": 108,
+            "points": 109,
             "num_comments": 65
           },
           "category": "show_hn"
@@ -196,6 +196,17 @@
           "category": "show_hn"
         },
         {
+          "source_id": "48701512",
+          "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
+          "url": "https://github.com/kageroumado/adrafinil",
+          "timestamp": "2026-06-27T20:34:53.000Z",
+          "metric": {
+            "points": 90,
+            "num_comments": 53
+          },
+          "category": "show_hn"
+        },
+        {
           "source_id": "48642030",
           "title": "Show HN: Neural Particle Automata",
           "url": "https://selforg-npa.github.io/",
@@ -213,18 +224,7 @@
           "timestamp": "2026-06-24T17:20:48.000Z",
           "metric": {
             "points": 84,
-            "num_comments": 18
-          },
-          "category": "show_hn"
-        },
-        {
-          "source_id": "48701512",
-          "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
-          "url": "https://github.com/kageroumado/adrafinil",
-          "timestamp": "2026-06-27T20:34:53.000Z",
-          "metric": {
-            "points": 81,
-            "num_comments": 48
+            "num_comments": 19
           },
           "category": "show_hn"
         },
