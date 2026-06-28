@@ -1,0 +1,155 @@
+{
+  "slot": "2026-06-28-15",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T14:15:13.512Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-api-breaking-change-detector-xc63wp",
+          "title": "API Breaking Change Detector",
+          "url": "https://example.invalid/ai-idea/api-breaking-change-detector",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Buildable by parsing OpenAPI/Swagger docs or JSON schemas and diffing endpoint signatures. Extension highlights breaking changes in-context while viewing the API reference. Competitors like Stoplight charge for schema analysis; this is free-inline for docs pages.",
+          "monetization": "freemium_saas",
+          "pain": "Developers waste hours manually scanning API changelogs to catch breaking changes before updating integrations."
+        },
+        {
+          "source_id": "ai-outreach-snippet-vault-5uxigk",
+          "title": "Outreach Snippet Vault",
+          "url": "https://example.invalid/ai-idea/outreach-snippet-vault",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Stores categorized text snippets with variable tokens that expand via keyboard shortcut or context menu. Works on LinkedIn, Gmail, and any web form. Lightweight build targeting the personalization gap between full sales automation tools and manual typing.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps re-type the same personalization lines for cold emails and LinkedIn messages dozens of times per week."
+        },
+        {
+          "source_id": "ai-pr-changelog-auto-author-oq6vau",
+          "title": "PR Changelog Auto-Author",
+          "url": "https://example.invalid/ai-idea/pr-changelog-auto-author",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scrapes the GitHub PR diff and generates a structured changelog: added, changed, fixed, removed. Uses local LLM calls to summarize. Ships as a GitHub PR comment. One-engineer build using a lightweight summarization model.",
+          "monetization": "per_seat",
+          "pain": "Engineering managers skip PR reviews because parsing diffs takes too long, and developers dread writing description prose."
+        },
+        {
+          "source_id": "ai-cloud-spend-context-overlay-73nm1f",
+          "title": "Cloud Spend Context Overlay",
+          "url": "https://example.invalid/ai-idea/cloud-spend-context-overlay",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Embeds real-time cost estimates on the AWS/GCP console by reading resource creation events and matching against pricing APIs. Shows running cost of visible resources in a floating panel. Niche but sticky for cost-conscious teams.",
+          "monetization": "per_seat",
+          "pain": "DevOps engineers context-switch between AWS console tabs and cost dashboards to understand if the feature they just deployed is burning budget."
+        },
+        {
+          "source_id": "ai-websocket-frame-debugger-mou0mx",
+          "title": "WebSocket Frame Debugger",
+          "url": "https://example.invalid/ai-idea/websocket-frame-debugger",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts WebSocket frames in DevTools and renders them as readable JSON with timing, direction, and payload size columns. Exportable as HAR-like logs. One-engineer build leveraging Chrome's webSocket debugging API.",
+          "monetization": "freemium_saas",
+          "pain": "Debugging WebSocket connections requires brittle manual logging or heavy desktop apps with no browser integration."
+        },
+        {
+          "source_id": "ai-local-prompt-memory-bank-r58fwy",
+          "title": "Local Prompt Memory Bank",
+          "url": "https://example.invalid/ai-idea/local-prompt-memory-bank",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Stores prompt templates with versioning, tags, and one-click copy to clipboard. Includes a search overlay accessible via hotkey. Syncs across browser sessions via localStorage or optional cloud backup. Simpler than full prompt marketplace tools.",
+          "monetization": "stripe_tip_jar",
+          "pain": "AI power users retype or search chat history for prompts they have used before, losing their best outputs."
+        },
+        {
+          "source_id": "ai-long-read-progress-tracker-21mcas",
+          "title": "Long-Read Progress Tracker",
+          "url": "https://example.invalid/ai-idea/long-read-progress-tracker",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Tracks scroll percentage per URL and restores position on revisit. Shows reading progress bar on tab hover. Uses localStorage for privacy-first persistence. One-engineer build filling the gap between browser history and read-later apps.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Readers lose track of how far they got in long articles and PDFs, restarting from the top when they return."
+        },
+        {
+          "source_id": "ai-curl-request-cloner-474whf",
+          "title": "cURL Request Cloner",
+          "url": "https://example.invalid/ai-idea/curl-request-cloner",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Adds a one-click copy button on each Network tab request that generates a complete cURL with headers, cookies, and body. Optional flag to export as fetch() or Python requests code. Builds on Chrome's Network panel with minimal overhead.",
+          "monetization": "freemium_saas",
+          "pain": "Developers manually translate browser network requests into cURL commands to reproduce bugs in terminal or share with teammates."
+        },
+        {
+          "source_id": "ai-npm-dependency-cve-radar-j6ev48",
+          "title": "NPM Dependency CVE Radar",
+          "url": "https://example.invalid/ai-idea/npm-dependency-cve-radar",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scans package.json files or fetches package metadata to cross-reference against the OSV database for known vulnerabilities. Shows severity badge inline next to package names. Lightweight by querying only on-demand rather than crawling entire lockfiles.",
+          "monetization": "per_seat",
+          "pain": "Frontend developers ship code with outdated npm packages but have no inline warning when browsing vulnerable dependencies on npm or GitHub."
+        },
+        {
+          "source_id": "ai-design-token-inspector-bt7k3g",
+          "title": "Design Token Inspector",
+          "url": "https://example.invalid/ai-idea/design-token-inspector",
+          "timestamp": "2026-06-28T14:15:13.510Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Hover over any element to see its computed color, typography, spacing, and shadow values as design tokens. Matches against a user-uploaded token JSON file. One-click copy as CSS variables or Figma-friendly format. Targets design-dev handoff friction.",
+          "monetization": "per_seat",
+          "pain": "Frontend devs spend time in DevTools manually extracting hex codes and spacing values from live UI instead of matching to design specs."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T14:15:13.512Z",
+        "dedup_against": 40,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

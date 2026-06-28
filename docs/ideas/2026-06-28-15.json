@@ -1,0 +1,248 @@
+{
+  "slot": "2026-06-28-15",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T14:15:13.713Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "outreach-snippet-vault",
+      "name": "Outreach Snippet Vault",
+      "pitch": "Stores categorized text snippets with variable tokens that expand via keyboard shortcut or context menu. Works on LinkedIn, Gmail, and any web form. Lightweight build targeting the personalization gap",
+      "pain": "Sales reps re-type the same personalization lines for cold emails and LinkedIn messages dozens of times per week.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-outreach-snippet-vault-5uxigk",
+          "url": "https://example.invalid/ai-idea/outreach-snippet-vault"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-signal-tracker",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "cloud-spend-context-overlay",
+      "name": "Cloud Spend Context Overlay",
+      "pitch": "Embeds real-time cost estimates on the AWS/GCP console by reading resource creation events and matching against pricing APIs. Shows running cost of visible resources in a floating panel. Niche but sti",
+      "pain": "DevOps engineers context-switch between AWS console tabs and cost dashboards to understand if the feature they just deployed is burning budget.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cloud-spend-context-overlay-73nm1f",
+          "url": "https://example.invalid/ai-idea/cloud-spend-context-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "design-token-inspector",
+      "name": "Design Token Inspector",
+      "pitch": "Hover over any element to see its computed color, typography, spacing, and shadow values as design tokens. Matches against a user-uploaded token JSON file. One-click copy as CSS variables or Figma-fri",
+      "pain": "Frontend devs spend time in DevTools manually extracting hex codes and spacing values from live UI instead of matching to design specs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-design-token-inspector-bt7k3g",
+          "url": "https://example.invalid/ai-idea/design-token-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "api-breaking-change-detector",
+      "name": "API Breaking Change Detector",
+      "pitch": "Buildable by parsing OpenAPI/Swagger docs or JSON schemas and diffing endpoint signatures. Extension highlights breaking changes in-context while viewing the API reference. Competitors like Stoplight ",
+      "pain": "Developers waste hours manually scanning API changelogs to catch breaking changes before updating integrations.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-breaking-change-detector-xc63wp",
+          "url": "https://example.invalid/ai-idea/api-breaking-change-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "pr-changelog-auto-author",
+      "name": "PR Changelog Auto-Author",
+      "pitch": "Scrapes the GitHub PR diff and generates a structured changelog: added, changed, fixed, removed. Uses local LLM calls to summarize. Ships as a GitHub PR comment. One-engineer build using a lightweight",
+      "pain": "Engineering managers skip PR reviews because parsing diffs takes too long, and developers dread writing description prose.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-changelog-auto-author-oq6vau",
+          "url": "https://example.invalid/ai-idea/pr-changelog-auto-author"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "websocket-frame-debugger",
+      "name": "WebSocket Frame Debugger",
+      "pitch": "Intercepts WebSocket frames in DevTools and renders them as readable JSON with timing, direction, and payload size columns. Exportable as HAR-like logs. One-engineer build leveraging Chrome's webSocke",
+      "pain": "Debugging WebSocket connections requires brittle manual logging or heavy desktop apps with no browser integration.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-websocket-frame-debugger-mou0mx",
+          "url": "https://example.invalid/ai-idea/websocket-frame-debugger"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "curl-request-cloner",
+      "name": "cURL Request Cloner",
+      "pitch": "Adds a one-click copy button on each Network tab request that generates a complete cURL with headers, cookies, and body. Optional flag to export as fetch() or Python requests code. Builds on Chrome's ",
+      "pain": "Developers manually translate browser network requests into cURL commands to reproduce bugs in terminal or share with teammates.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-curl-request-cloner-474whf",
+          "url": "https://example.invalid/ai-idea/curl-request-cloner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "npm-dependency-cve-radar",
+      "name": "NPM Dependency CVE Radar",
+      "pitch": "Scans package.json files or fetches package metadata to cross-reference against the OSV database for known vulnerabilities. Shows severity badge inline next to package names. Lightweight by querying o",
+      "pain": "Frontend developers ship code with outdated npm packages but have no inline warning when browsing vulnerable dependencies on npm or GitHub.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-npm-dependency-cve-radar-j6ev48",
+          "url": "https://example.invalid/ai-idea/npm-dependency-cve-radar"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-oak-git-alternative-designed-for",
+        "jaccard_with_nearest": 0.03
+      }
+    }
+  ]
+}
