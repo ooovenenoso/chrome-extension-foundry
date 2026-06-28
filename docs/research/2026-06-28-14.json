@@ -1,149 +1,18 @@
 {
   "slot": "2026-06-28-14",
   "week": "2026-W26",
-  "fetched_at": "2026-06-28T14:02:57.698Z",
-  "partial": false,
+  "fetched_at": "2026-06-28T14:11:13.760Z",
+  "partial": true,
   "sources": {
     "ai_generated": {
-      "status": "ok",
-      "fetched_count": 10,
-      "entries": [
-        {
-          "source_id": "ai-cors-autofix-dnyjm6",
-          "title": "CORS Autofix",
-          "url": "https://example.invalid/ai-idea/cors-autofix",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 7
-          },
-          "category": "b2b_devtool::devtools",
-          "notes": "Intercepts CORS failures in network panel, identifies the missing Access-Control-* header, and either auto-injects a browser-level proxy rule or generates the exact server config snippet. One engineer can build the header-matching logic and config generator in under a week. CORS is still the #1 network pain point for junior devs and API integrators.",
-          "monetization": "per_seat",
-          "pain": "CORS errors waste hours of debugging time and require tedious header hunting across docs."
-        },
-        {
-          "source_id": "ai-outreach-copilot-ho59dj",
-          "title": "Outreach Copilot",
-          "url": "https://example.invalid/ai-idea/outreach-copilot",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "b2b_sales::sales",
-          "notes": "Scrapes the current LinkedIn profile or company page in the background and drafts a personalized opening line, relevant talking point, and CTA in under 5 seconds. Buildable with a simple LLM wrapper and page scraping. The bridge from free browser tool to paid SaaS CRM plugin is natural. Cold outreach burnout is real and getting worse.",
-          "monetization": "freemium_saas",
-          "pain": "Sales reps spend 20 minutes researching each prospect before writing one cold email."
-        },
-        {
-          "source_id": "ai-fingerprint-revealer-jfuyit",
-          "title": "Fingerprint Revealer",
-          "url": "https://example.invalid/ai-idea/fingerprint-revealer",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 5
-          },
-          "category": "consumer_privacy::privacy",
-          "notes": "Runs a lightweight fingerprint probe (canvas, WebGL, audio, fonts, timezone) and shows a visual fingerprint heatmap with uniqueness score. Can be built with vanilla JS in a weekend. People are increasingly privacy-curious post-GDPR but have no tools to quantify their exposure. Tip jar works because the insight is surprising enough to trigger small payments.",
-          "monetization": "stripe_tip_jar",
-          "pain": "Users have no idea how uniquely identifiable they are across the web."
-        },
-        {
-          "source_id": "ai-json-path-explorer-b05pmd",
-          "title": "JSON Path Explorer",
-          "url": "https://example.invalid/ai-idea/json-path-explorer",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 7
-          },
-          "category": "b2b_devtool::devtools",
-          "notes": "Injects a side panel that lists all JSON keys in a tree view and lets you click to filter, search, and export paths. Reads from the last network response automatically. The free tier handles basic tree view; paid tier adds path history and team sharing. Devtools audience is underserved for non-network-panel tasks.",
-          "monetization": "freemium_saas",
-          "pain": "Debugging nested JSON API responses requires guessing field names with no visual feedback."
-        },
-        {
-          "source_id": "ai-font-audit-tool-sdp723",
-          "title": "Font Audit Tool",
-          "url": "https://example.invalid/ai-idea/font-audit-tool",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "consumer_productivity::productivity",
-          "notes": "Scans the DOM for font-size, word count, and paragraph density to calculate a real reading time that penalizes heavy formatting. Also scores readability (Flesch-Kincaid variant). Built with a simple DOM parser. Tip jar is natural for blog readers who want to share the tool. Lightweight and non-intrusive.",
-          "monetization": "stripe_tip_jar",
-          "pain": "People waste time on bloated articles that could be skimmed in 2 minutes."
-        },
-        {
-          "source_id": "ai-tech-stack-sniffer-fgc0si",
-          "title": "Tech Stack Sniffer",
-          "url": "https://example.invalid/ai-idea/tech-stack-sniffer",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "b2b_sales::sales",
-          "notes": "One-click button that reveals CMS, analytics, CDN, frameworks, and hosting from script tags and meta headers. Builds a panel overlay with a confidence score per detection. Quota-based freemium (10 free scans/day, paid for power users). Directly replaces a workflow of 3-4 separate tools with one click.",
-          "monetization": "quota_based",
-          "pain": "Sales development reps manually check WhatCMS and builtwith to research prospect tech stacks."
-        },
-        {
-          "source_id": "ai-redirect-chain-visualizer-69jadn",
-          "title": "Redirect Chain Visualizer",
-          "url": "https://example.invalid/ai-idea/redirect-chain-visualizer",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "b2b_devtool::devtools",
-          "notes": "Fetches the full redirect chain on click and renders it as a vertical timeline with status codes, headers, and timing per hop. Flags 301/302 loops and suspicious redirect patterns. Chrome DevTools doesn't expose this cleanly; competing tools like HTTPStatus.io require leaving the browser. Per-seat B2B pricing for agency and QA teams.",
-          "monetization": "per_seat",
-          "pain": "Debugging redirect chains means clicking through each hop and manually noting status codes."
-        },
-        {
-          "source_id": "ai-privacy-request-generator-2q4vb7",
-          "title": "Privacy Request Generator",
-          "url": "https://example.invalid/ai-idea/privacy-request-generator",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 5
-          },
-          "category": "consumer_privacy::privacy",
-          "notes": "Select a website, pick which rights (access, deletion, opt-out), and generates a properly formatted email with legal citations auto-filled. Uses a simple template engine with jurisdiction-aware language. The privacy-conscious audience already wants to act but hits friction. Tip jar for users who find it valuable repeatedly.",
-          "monetization": "stripe_tip_jar",
-          "pain": "Exercising GDPR/CCPA rights requires navigating legal jargon and filling out different forms per company."
-        },
-        {
-          "source_id": "ai-form-field-spy-5ws91t",
-          "title": "Form Field Spy",
-          "url": "https://example.invalid/ai-idea/form-field-spy",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 5
-          },
-          "category": "developer_internal::devtools",
-          "notes": "Auto-scans all forms on a page and outputs a structured table: field name, type, required flag, pattern, min/max, and observed error messages. Exportable as JSON or Markdown. Developers and QA teams share these manually in spreadsheets today. Freemium tier handles single-page scans; paid adds bulk site crawling.",
-          "monetization": "freemium_saas",
-          "pain": "QA testers and developers manually document every form field, its validation rules, and error states."
-        },
-        {
-          "source_id": "ai-company-signal-aggregator-7md1us",
-          "title": "Company Signal Aggregator",
-          "url": "https://example.invalid/ai-idea/company-signal-aggregator",
-          "timestamp": "2026-06-28T14:02:57.695Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "b2b_sales::sales",
-          "notes": "Fetches funding news, employee growth, recent job postings, and technology signals from the current company domain and displays a compact card overlay. Uses Clearbit-like enrichment APIs behind the scenes. Quota-based with a generous free tier (5 looks/day). Consolidates a 4-tab workflow into one click inside the browser.",
-          "monetization": "quota_based",
-          "pain": "Sales reps toggle between Crunchbase, LinkedIn, and news tabs to build prospect context."
-        }
-      ],
+      "status": "error",
+      "fetched_count": 0,
+      "entries": [],
+      "error": "MiniMax JSON parse failed: Unexpected token '<', \"<think>\nTh\"... is not valid JSON; head=<think>\nThe user wants me to generate exactly 10 NEW Chrome extension ideas. I need to follow strict rules:\n\n1. Return JSON only (response_format enforces this)\n2. JSON shape: {\"ideas\": [<idea>, ...]}",
       "meta": {
         "model": "MiniMax-M2.7-highspeed",
-        "generated_at": "2026-06-28T14:02:57.697Z",
-        "dedup_against": 40,
-        "rejected_as_duplicate": 0
+        "generated_at": "2026-06-28T14:11:13.759Z",
+        "dedup_against": 40
       }
     }
   },
