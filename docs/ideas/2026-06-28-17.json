@@ -1,0 +1,158 @@
+{
+  "slot": "2026-06-28-17",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T14:23:01.542Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "http-header-forensics",
+      "name": "HTTP Header Forensics",
+      "pitch": "Adds a sidebar panel to Chrome DevTools showing formatted security headers, cache policies, and cookie flags with plain-English explanations. Flags misconfigurations with severity badges. Built as a D",
+      "pain": "Debugging CORS, CSP, or cache issues requires manually reading raw headers scattered across devtools.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-http-header-forensics-c8cy6w",
+          "url": "https://example.invalid/ai-idea/http-header-forensics"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "accessibility-aura-scan",
+      "name": "Accessibility Aura Scan",
+      "pitch": "Runs a lightweight axe-core scan on page load, showing a floating overlay of issues grouped by severity. Click-to-jump to affected elements. Integrates with Jira/Linear via webhook for ticket creation",
+      "pain": "Teams ship inaccessible UIs because WCAG audits happen too late in the sprint.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-accessibility-aura-scan-v7wq49",
+          "url": "https://example.invalid/ai-idea/accessibility-aura-scan"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "npm-dependency-cve-radar",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "api-deprecation-pulse",
+      "name": "API Deprecation Pulse",
+      "pitch": "Scans developer.chrome.com, platformStatus, and major SDK changelogs weekly, storing deprecation alerts. Shows alerts as a dashboard badge when visiting affected documentation. Includes one-click Slac",
+      "pain": "Teams miss deprecated API notices buried in changelogs until production incidents occur.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-deprecation-pulse-idzhqh",
+          "url": "https://example.invalid/ai-idea/api-deprecation-pulse"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-changelog-auto-author",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "localstorage-json-editor",
+      "name": "LocalStorage JSON Editor",
+      "pitch": "Provides a structured tree editor for localStorage keys that contain JSON, with syntax highlighting, validation, and undo. Supports nested object editing and key search. Built as a DevTools panel exte",
+      "pain": "Editing JSON in localStorage via DevTools raw text is error-prone and time-consuming.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-localstorage-json-editor-nu9x8k",
+          "url": "https://example.invalid/ai-idea/localstorage-json-editor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "font-lineage-tracker",
+      "name": "Font Lineage Tracker",
+      "pitch": "Identifies web fonts using font-face declarations and Google Fonts API lookups, then displays font names, weights, and fallback stacks in a popup. Adds one-click copy to CSS. Useful for designers and ",
+      "pain": "Design and branding agencies spend hours identifying fonts on competitor or inspiration sites.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-font-lineage-tracker-pzbjiz",
+          "url": "https://example.invalid/ai-idea/font-lineage-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-i-made-google-trends-for-hacker-",
+        "jaccard_with_nearest": 0.05
+      }
+    }
+  ]
+}

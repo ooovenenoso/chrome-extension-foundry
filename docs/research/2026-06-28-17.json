@@ -1,0 +1,155 @@
+{
+  "slot": "2026-06-28-17",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T14:23:01.343Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-conventional-commit-buddy-n6yttm",
+          "title": "Conventional Commit Buddy",
+          "url": "https://example.invalid/ai-idea/conventional-commit-buddy",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses staged git diff locally, suggests conventional commit format with type/scope/summary. Uses pattern matching on file changes to infer intent. Simple to build with Chrome's file access APIs and a small heuristics engine. No backend needed for MVP.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers waste time crafting proper commit messages when they could be shipping code faster."
+        },
+        {
+          "source_id": "ai-http-header-forensics-c8cy6w",
+          "title": "HTTP Header Forensics",
+          "url": "https://example.invalid/ai-idea/http-header-forensics",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Adds a sidebar panel to Chrome DevTools showing formatted security headers, cache policies, and cookie flags with plain-English explanations. Flags misconfigurations with severity badges. Built as a DevTools extension with no backend for basic features.",
+          "monetization": "freemium_saas",
+          "pain": "Debugging CORS, CSP, or cache issues requires manually reading raw headers scattered across devtools."
+        },
+        {
+          "source_id": "ai-webhook-delivery-replay-tdjmo5",
+          "title": "Webhook Delivery Replay",
+          "url": "https://example.invalid/ai-idea/webhook-delivery-replay",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Captures outgoing webhook requests and lets you replay, modify payloads, and re-send directly from the extension popup. Useful for testing integrations without leaving the browser. Targets developers debugging Stripe, Slack, or custom webhook integrations.",
+          "monetization": "per_seat",
+          "pain": "QA testing webhooks requires external tools or CLI scripts that break flow."
+        },
+        {
+          "source_id": "ai-accessibility-aura-scan-v7wq49",
+          "title": "Accessibility Aura Scan",
+          "url": "https://example.invalid/ai-idea/accessibility-aura-scan",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Runs a lightweight axe-core scan on page load, showing a floating overlay of issues grouped by severity. Click-to-jump to affected elements. Integrates with Jira/Linear via webhook for ticket creation. Simple frontend-only scanner with optional cloud reporting for teams.",
+          "monetization": "per_seat",
+          "pain": "Teams ship inaccessible UIs because WCAG audits happen too late in the sprint."
+        },
+        {
+          "source_id": "ai-font-lineage-tracker-pzbjiz",
+          "title": "Font Lineage Tracker",
+          "url": "https://example.invalid/ai-idea/font-lineage-tracker",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Identifies web fonts using font-face declarations and Google Fonts API lookups, then displays font names, weights, and fallback stacks in a popup. Adds one-click copy to CSS. Useful for designers and agencies doing competitive audits.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Design and branding agencies spend hours identifying fonts on competitor or inspiration sites."
+        },
+        {
+          "source_id": "ai-feature-flag-shadow-reader-btgqcq",
+          "title": "Feature Flag Shadow Reader",
+          "url": "https://example.invalid/ai-idea/feature-flag-shadow-reader",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scans page for known feature flag SDK patterns (LaunchDarkly, Statsig, Flagsmith) and displays active flags in extension popup. Shows flag evaluation context and last sync time. Helps devs debug flag-related bugs without leaving the browser.",
+          "monetization": "per_seat",
+          "pain": "Engineers lack visibility into which feature flags are active on a given environment without checking the flag service dashboard."
+        },
+        {
+          "source_id": "ai-cookie-policy-radar-mqymcy",
+          "title": "Cookie Policy Radar",
+          "url": "https://example.invalid/ai-idea/cookie-policy-radar",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Scrapes the site's cookie banner, privacy policy, and known third-party requests to build a simple data-sharing scorecard. Highlights ad networks, analytics trackers, and cross-site sharing. Uses a local database of known tracker signatures to avoid heavy API calls.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users cannot quickly tell if a site shares data with ad networks without reading dense privacy policies."
+        },
+        {
+          "source_id": "ai-localstorage-json-editor-nu9x8k",
+          "title": "LocalStorage JSON Editor",
+          "url": "https://example.invalid/ai-idea/localstorage-json-editor",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Provides a structured tree editor for localStorage keys that contain JSON, with syntax highlighting, validation, and undo. Supports nested object editing and key search. Built as a DevTools panel extension with a free tier and JSON schema validation in the paid tier.",
+          "monetization": "freemium_saas",
+          "pain": "Editing JSON in localStorage via DevTools raw text is error-prone and time-consuming."
+        },
+        {
+          "source_id": "ai-github-pr-reviewer-finder-daoed4",
+          "title": "GitHub PR Reviewer Finder",
+          "url": "https://example.invalid/ai-idea/github-pr-reviewer-finder",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "On GitHub PR pages, shows each reviewer's recent commit activity, file ownership patterns, and expertise tags derived from their repos. Suggests the best reviewer based on code ownership heuristics. Uses GitHub's public API with token storage in extension local storage.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Authors often assign PR reviews to the wrong teammate, delaying merges."
+        },
+        {
+          "source_id": "ai-api-deprecation-pulse-idzhqh",
+          "title": "API Deprecation Pulse",
+          "url": "https://example.invalid/ai-idea/api-deprecation-pulse",
+          "timestamp": "2026-06-28T14:23:01.340Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scans developer.chrome.com, platformStatus, and major SDK changelogs weekly, storing deprecation alerts. Shows alerts as a dashboard badge when visiting affected documentation. Includes one-click Slack/Teams notifications for teams. Targets engineering managers and API consumers.",
+          "monetization": "per_seat",
+          "pain": "Teams miss deprecated API notices buried in changelogs until production incidents occur."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T14:23:01.343Z",
+        "dedup_against": 60,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
