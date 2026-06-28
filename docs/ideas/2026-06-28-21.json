@@ -1,0 +1,278 @@
+{
+  "slot": "2026-06-28-21",
+  "week": "2026-W26",
+  "scored_at": "2026-06-28T14:35:12.125Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "lambda-cold-start-inspector",
+      "name": "Lambda Cold Start Inspector",
+      "pitch": "When viewing AWS Lambda in the browser console, the extension automatically parses recent cold start logs and overlays a histogram showing latency distribution per function. Uses the AWS Console's exi",
+      "pain": "Serverless developers manually correlate CloudWatch logs to understand cold start patterns, which is tedious and doesn't scale across functions.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lambda-cold-start-inspector-1scgim",
+          "url": "https://example.invalid/ai-idea/lambda-cold-start-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "console-log-pattern-analyzer",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "webhook-event-playground",
+      "name": "Webhook Event Playground",
+      "pitch": "Intercepts and displays webhook payloads in a devtools panel, then lets developers modify and replay them directly to their local endpoint. Shows response status, timing, and body. Can save payloads a",
+      "pain": "Developers debugging webhook handlers have to trigger events from production systems or use postman-style tools, which is slow and risky.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-event-playground-ruiecw",
+          "url": "https://example.invalid/ai-idea/webhook-event-playground"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-conversation-token-counter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "stack-overflow-vote-momentum",
+      "name": "Stack Overflow Vote Momentum",
+      "pitch": "The extension fetches the timeline API for any SO question to show a trend arrow—rising, falling, or stable vote counts on answers. Allows developers to filter to answers that are currently gaining tr",
+      "pain": "Developers waste time reading outdated Stack Overflow answers that were once popular but are now known to be wrong or outdated.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stack-overflow-vote-momentum-gup0ux",
+          "url": "https://example.invalid/ai-idea/stack-overflow-vote-momentum"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-conversation-token-counter",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "pr-thread-unfloader",
+      "name": "PR Thread Unfloader",
+      "pitch": "Automatically clicks all 'load more' buttons on PR pages and expands collapsed threads using MutationObserver. Also adds a 'collapse resolved' button and a scroll-to-unread feature. Pure frontend exte",
+      "pain": "GitHub PRs with many review threads require repeatedly clicking 'load more comments', slowing down code review significantly.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-thread-unfloader-olhozz",
+          "url": "https://example.invalid/ai-idea/pr-thread-unfloader"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-thread-unsubscriber",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "deal-room-pulse",
+      "name": "Deal Room Pulse",
+      "pitch": "Uses link tracking pixels injected into shared URLs. When a prospect opens a link, the extension pings a simple backend that sends a Slack/email alert. Buildable with a lightweight Go/Node backend and",
+      "pain": "Sales reps have no idea when prospects are actually viewing shared proposals or contracts, missing the prime moment to follow up.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-deal-room-pulse-7h0wdh",
+          "url": "https://example.invalid/ai-idea/deal-room-pulse"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tracking-pixel-detector",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "gong-summary-forwarder",
+      "name": "Gong Summary Forwarder",
+      "pitch": "When a user visits Gong's call detail page, the extension detects the summary text and shows a floating action button to send it to a configured destination (Notion page, Linear issue, Slack channel).",
+      "pain": "Sales reps manually copy Gong call summaries into Notion, Linear, or CRM fields, creating busywork that causes notes to get skipped.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-summary-forwarder-vyjfz6",
+          "url": "https://example.invalid/ai-idea/gong-summary-forwarder"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "dom-mutation-reporter",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "css-origin-cascade-tracer",
+      "name": "CSS Origin Cascade Tracer",
+      "pitch": "Extends DevTools by adding a sourcemap-aware panel that shows the full cascade with file names and line numbers for any selected element. Works by parsing CSS sourcemaps and correlating them with matc",
+      "pain": "Debugging unexpected CSS behavior requires manually tracing through DevTools computed styles, which doesn't show which file or line is responsible.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-origin-cascade-tracer-vji145",
+          "url": "https://example.invalid/ai-idea/css-origin-cascade-tracer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "schema-property-suggester",
+      "name": "Schema Property Suggester",
+      "pitch": "Scrapes the visible page content and runs it through a local heuristics engine (or lightweight API) to suggest missing structured data properties based on Schema.org vocabularies. Shows diff between c",
+      "pain": "SEO developers and content creators don't know which Schema.org properties they're missing for their specific page type.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-schema-property-suggester-j3d4wb",
+          "url": "https://example.invalid/ai-idea/schema-property-suggester"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "json-ld-structured-data-inspector",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "heap-snapshot-diff-viewer",
+      "name": "Heap Snapshot Diff Viewer",
+      "pitch": "The extension adds a button to DevTools to export heap snapshots as JSON, then provides a diff view highlighting objects that grew or appeared between snapshots. Includes filtering by object type and ",
+      "pain": "Finding memory leaks requires taking two heap snapshots in DevTools and manually comparing retained sizes, which is error-prone and hard to share.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-heap-snapshot-diff-viewer-e5u9pj",
+          "url": "https://example.invalid/ai-idea/heap-snapshot-diff-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-prompt-diff-viewer",
+        "jaccard_with_nearest": 0.1
+      }
+    }
+  ]
+}

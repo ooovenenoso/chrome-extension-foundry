@@ -1,0 +1,155 @@
+{
+  "slot": "2026-06-28-21",
+  "week": "2026-W26",
+  "fetched_at": "2026-06-28T14:35:11.915Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-deal-room-pulse-7h0wdh",
+          "title": "Deal Room Pulse",
+          "url": "https://example.invalid/ai-idea/deal-room-pulse",
+          "timestamp": "2026-06-28T14:35:11.910Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses link tracking pixels injected into shared URLs. When a prospect opens a link, the extension pings a simple backend that sends a Slack/email alert. Buildable with a lightweight Go/Node backend and basic link wrapping. Gong and DocuSign have enterprise versions; this targets SMBs wanting simple PDF/link tracking for under $20/mo.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps have no idea when prospects are actually viewing shared proposals or contracts, missing the prime moment to follow up."
+        },
+        {
+          "source_id": "ai-stack-overflow-vote-momentum-gup0ux",
+          "title": "Stack Overflow Vote Momentum",
+          "url": "https://example.invalid/ai-idea/stack-overflow-vote-momentum",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "developer_internal::devtools",
+          "notes": "The extension fetches the timeline API for any SO question to show a trend arrow—rising, falling, or stable vote counts on answers. Allows developers to filter to answers that are currently gaining traction rather than just having historical high scores. Stack Overflow's API is public and free for this use case.",
+          "monetization": "freemium_saas",
+          "pain": "Developers waste time reading outdated Stack Overflow answers that were once popular but are now known to be wrong or outdated."
+        },
+        {
+          "source_id": "ai-lambda-cold-start-inspector-1scgim",
+          "title": "Lambda Cold Start Inspector",
+          "url": "https://example.invalid/ai-idea/lambda-cold-start-inspector",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "When viewing AWS Lambda in the browser console, the extension automatically parses recent cold start logs and overlays a histogram showing latency distribution per function. Uses the AWS Console's existing API calls to extract log data without separate IAM credentials. Targets the gap between CloudWatch's raw data and developer intuition.",
+          "monetization": "per_seat",
+          "pain": "Serverless developers manually correlate CloudWatch logs to understand cold start patterns, which is tedious and doesn't scale across functions."
+        },
+        {
+          "source_id": "ai-css-origin-cascade-tracer-vji145",
+          "title": "CSS Origin Cascade Tracer",
+          "url": "https://example.invalid/ai-idea/css-origin-cascade-tracer",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Extends DevTools by adding a sourcemap-aware panel that shows the full cascade with file names and line numbers for any selected element. Works by parsing CSS sourcemaps and correlating them with matched rules. No existing tool does this directly in the browser with inline sourcemap resolution.",
+          "monetization": "freemium_saas",
+          "pain": "Debugging unexpected CSS behavior requires manually tracing through DevTools computed styles, which doesn't show which file or line is responsible."
+        },
+        {
+          "source_id": "ai-pr-thread-unfloader-olhozz",
+          "title": "PR Thread Unfloader",
+          "url": "https://example.invalid/ai-idea/pr-thread-unfloader",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Automatically clicks all 'load more' buttons on PR pages and expands collapsed threads using MutationObserver. Also adds a 'collapse resolved' button and a scroll-to-unread feature. Pure frontend extension, no backend needed. Saves 15-20 minutes per large PR review session.",
+          "monetization": "stripe_tip_jar",
+          "pain": "GitHub PRs with many review threads require repeatedly clicking 'load more comments', slowing down code review significantly."
+        },
+        {
+          "source_id": "ai-schema-property-suggester-j3d4wb",
+          "title": "Schema Property Suggester",
+          "url": "https://example.invalid/ai-idea/schema-property-suggester",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scrapes the visible page content and runs it through a local heuristics engine (or lightweight API) to suggest missing structured data properties based on Schema.org vocabularies. Shows diff between current JSON-LD and suggested additions. Fills the gap between Google's Rich Results Test (which only validates) and manual schema research.",
+          "monetization": "freemium_saas",
+          "pain": "SEO developers and content creators don't know which Schema.org properties they're missing for their specific page type."
+        },
+        {
+          "source_id": "ai-heap-snapshot-diff-viewer-e5u9pj",
+          "title": "Heap Snapshot Diff Viewer",
+          "url": "https://example.invalid/ai-idea/heap-snapshot-diff-viewer",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "The extension adds a button to DevTools to export heap snapshots as JSON, then provides a diff view highlighting objects that grew or appeared between snapshots. Includes filtering by object type and retainment path. Helps teams track memory issues over time without requiring heap analysis expertise.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Finding memory leaks requires taking two heap snapshots in DevTools and manually comparing retained sizes, which is error-prone and hard to share."
+        },
+        {
+          "source_id": "ai-gong-summary-forwarder-vyjfz6",
+          "title": "Gong Summary Forwarder",
+          "url": "https://example.invalid/ai-idea/gong-summary-forwarder",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "When a user visits Gong's call detail page, the extension detects the summary text and shows a floating action button to send it to a configured destination (Notion page, Linear issue, Slack channel). Simple DOM scraping with user-configurable routing. No Gong API needed, works on existing UI.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps manually copy Gong call summaries into Notion, Linear, or CRM fields, creating busywork that causes notes to get skipped."
+        },
+        {
+          "source_id": "ai-browser-fingerprint-radar-wtcr3s",
+          "title": "Browser Fingerprint Radar",
+          "url": "https://example.invalid/ai-idea/browser-fingerprint-radar",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Runs a lightweight fingerprinting script (canvas, WebGL, fonts, timing) and shows a 'uniqueness score' with a breakdown of which factors contribute most. Suggests specific toggles or extensions to reduce fingerprintability. Educational tool that could also link to privacy-focused browser recommendations.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have no visibility into how unique and trackable their browser configuration is across the web."
+        },
+        {
+          "source_id": "ai-webhook-event-playground-ruiecw",
+          "title": "Webhook Event Playground",
+          "url": "https://example.invalid/ai-idea/webhook-event-playground",
+          "timestamp": "2026-06-28T14:35:11.911Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercepts and displays webhook payloads in a devtools panel, then lets developers modify and replay them directly to their local endpoint. Shows response status, timing, and body. Can save payloads as test fixtures. Bridges the gap between Postman (for APIs) and webhook-specific debugging needs.",
+          "monetization": "per_seat",
+          "pain": "Developers debugging webhook handlers have to trigger events from production systems or use postman-style tools, which is slow and risky."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-28T14:35:11.915Z",
+        "dedup_against": 104,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
