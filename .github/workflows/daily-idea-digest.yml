@@ -56,7 +56,10 @@ jobs:
       - name: research-collector (AI + dedup)
         id: research
         run: |
-          COUNT="${{ inputs.count || 10 }}"
+          # Default to 15 ideas per run so at least a few survive dedup and the
+          # top has a good chance of crossing the 7.0 spec threshold. Adjust
+          # via inputs.count in workflow_dispatch if you want more or fewer.
+          COUNT="${{ inputs.count || 15 }}"
           node agents/scripts/research-collector.js \
             --slot "${{ steps.slot.outputs.slot }}" \
             --out docs/research/ \
