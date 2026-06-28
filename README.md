@@ -1,6 +1,8 @@
-# Chrome Extension Idea Factory
+# Chrome Extension Foundry
 
 > An autonomous system that finds, scores, specs, and ships monetizable Chrome extensions — end to end, twice every weekday.
+
+![Foundry header — Chrome extension icon being forged](assets/header.png)
 
 A monorepo of **research data**, **scored idea pools**, **drafted specs**, **GitHub Actions workflows**, and **agent contracts** that turn AI-generated market signal into a working MV3 extension with a Stripe tip jar, packaged for the Chrome Web Store.
 
@@ -145,7 +147,7 @@ Optional GitHub Variables: `MINIMAX_MODEL`, `MINIMAX_BASE_URL` (override default
 | `.github/workflows/` | daily-idea-digest (main), release, asset-pack, dev-console, ci |
 | `src/` | Extension code (one subdir per `docs/specs/<id>`) |
 | `tests/` | Unit + integration per extension |
-| `assets/` | Icons, screenshots, promo tiles (manual workflow output) |
+| `assets/` | Header image (`assets/header.png`) + icons, screenshots, promo tiles (manual workflow output) |
 | `scripts/` | Local CLI tools (validate-contracts, asset-pack, dev-console) |
 
 ---
@@ -216,7 +218,7 @@ npm test                   # 9 unit tests
 Or trigger a workflow run from GitHub:
 
 ```bash
-gh workflow run daily-idea-digest.yml --repo ooovenenoso/chrome-extension-idea-factory
+gh workflow run daily-idea-digest.yml --repo ooovenenoso/chrome-extension-foundry
 
 # Override slot or count
 gh workflow run daily-idea-digest.yml \
@@ -231,7 +233,7 @@ gh workflow run daily-idea-digest.yml \
 
 | Component | Status |
 |---|---|
-| Repo | ✅ live on github.com/ooovenenoso/chrome-extension-idea-factory |
+| Repo | ✅ live on github.com/ooovenenoso/chrome-extension-foundry |
 | Workflow cron | ✅ active — runs 2×/day Mon–Fri (01:00, 13:00 UTC) |
 | Research loop | ✅ AI-powered via MiniMax-M2.7-highspeed |
 | Scoring rubric | ✅ v1.0.0 (4 axes, weights, dedup) |

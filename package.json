@@ -1,5 +1,5 @@
 {
-  "name": "chrome-extension-idea-factory",
+  "name": "chrome-extension-foundry",
   "version": "0.1.0",
   "description": "An autonomous factory that finds, scores, specs, and ships monetizable Chrome extensions.",
   "private": true,
