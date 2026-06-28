@@ -1,7 +1,7 @@
 {
   "slot": "2026-06-28-13",
   "week": "2026-W26",
-  "fetched_at": "2026-06-28T13:34:05.352Z",
+  "fetched_at": "2026-06-28T13:37:15.256Z",
   "partial": false,
   "sources": {
     "ai_generated": {
@@ -9,139 +9,139 @@
       "fetched_count": 10,
       "entries": [
         {
-          "source_id": "ai-job-board-radar-unified-job-posting-aggr-fdgpol",
-          "title": "Job Board Radar – Unified Job Posting Aggregator",
-          "url": "https://example.invalid/ai-idea/job-board-radar-unified-job-posting-aggr",
-          "timestamp": "2026-06-28T13:34:05.349Z",
+          "source_id": "ai-api-replay-inspector-v22yns",
+          "title": "API Replay Inspector",
+          "url": "https://example.invalid/ai-idea/api-replay-inspector",
+          "timestamp": "2026-06-28T13:37:15.253Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Uses service worker interception to capture network requests and replay them with modifications. One engineer can build the interception layer in a week. Browser DevTools only show raw requests—nothing lets you mutate and replay at scale.",
+          "monetization": "quota_based",
+          "pain": "Debugging API issues requires manually recreating requests, which is tedious and error-prone."
+        },
+        {
+          "source_id": "ai-linkedin-signal-tracker-0bvy5w",
+          "title": "LinkedIn Signal Tracker",
+          "url": "https://example.invalid/ai-idea/linkedin-signal-tracker",
+          "timestamp": "2026-06-28T13:37:15.253Z",
           "metric": {
             "llm_demand": 6
           },
           "category": "b2b_sales::sales",
-          "notes": "Scrapes and deduplicates job postings from 6+ major boards into one feed with one-click apply tracking. One engineer can build the scraper + UI in under 4 weeks. Demand is rising as job markets shift and postings fragment across more platforms. No clean extension solution for this specific workflow exists.",
-          "monetization": "freemium_saas",
-          "pain": "Checking LinkedIn, Indeed, Greenhouse, and Lever separately wastes hours each week on duplicate listings."
-        },
-        {
-          "source_id": "ai-pr-comment-inbox-unified-pull-request-no-m5ehae",
-          "title": "PR Comment Inbox – Unified Pull Request Notifications",
-          "url": "https://example.invalid/ai-idea/pr-comment-inbox-unified-pull-request-no",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 7
-          },
-          "category": "developer_internal::devtools",
-          "notes": "Aggregates all PR review comments into a single browser inbox with keyboard navigation and quick-reply. A single background script can poll all three APIs simultaneously. Developer productivity tools are hot right now, especially for solo engineers managing OSS or multiple clients. This fills a clear workflow gap.",
+          "notes": "Extracts LinkedIn profile data and enriches with recent activity signals. Browser extension handles scraping while a lightweight backend does enrichment. Solo SDRs need this more than enterprise sales tools.",
           "monetization": "stripe_tip_jar",
-          "pain": "Context-switching between GitHub, GitLab, and Bitbucket to check PR comments burns hours of deep work time."
+          "pain": "Sales teams waste hours researching prospects before outreach, often missing key context."
         },
         {
-          "source_id": "ai-api-response-shapes-visual-inline-api-ex-leg72j",
-          "title": "API Response Shapes – Visual Inline API Examples",
-          "url": "https://example.invalid/ai-idea/api-response-shapes-visual-inline-api-ex",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "developer_internal::devtools",
-          "notes": "When browsing any API reference page, this extension overlays real JSON response examples inline next to each endpoint. Uses a sidepanel to render structured data as collapsible trees. Fast to build given the rendering logic is straightforward. Developer tooling is growing as AI coding assistants proliferate and devs need better doc experiences.",
-          "monetization": "per_seat",
-          "pain": "Reading API docs requires mentally visualizing response structures instead of seeing real data."
-        },
-        {
-          "source_id": "ai-cookie-decoder-plain-language-consent-an-8iu5cv",
-          "title": "Cookie Decoder – Plain-Language Consent Analyzer",
-          "url": "https://example.invalid/ai-idea/cookie-decoder-plain-language-consent-an",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "consumer_privacy::privacy",
-          "notes": "Parses the consent management platform (OneTrust, Cookiebot, etc.) behind any banner and surfaces exactly what data each category collects, who it's shared with, and what it enables. Built with DOM parsing and pattern matching. Privacy awareness is at an all-time high with GDPR enforcement and data broker scandals. No extension does this in plain language.",
-          "monetization": "stripe_tip_jar",
-          "pain": "Cookie banners are intentionally confusing so users just click Accept without understanding data implications."
-        },
-        {
-          "source_id": "ai-meeting-cost-counter-real-time-salary-ba-pzzol4",
-          "title": "Meeting Cost Counter – Real-Time Salary-Based Meeting Cost",
-          "url": "https://example.invalid/ai-idea/meeting-cost-counter-real-time-salary-ba",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 7
-          },
-          "category": "b2b_devtool::productivity",
-          "notes": "Input attendee salary bands once, then every Google Meet or Zoom tab shows a live dollar counter. Uses tab title matching and a simple hourly rate calculation. Two-week build with clear viral demo potential. Async work culture is driving demand for meeting justification tools.",
-          "monetization": "per_seat",
-          "pain": "Teams schedule endless meetings without realizing the cumulative salary cost burning through the budget."
-        },
-        {
-          "source_id": "ai-cold-mail-variable-engine-personalized-e-sbktt2",
-          "title": "Cold Mail Variable Engine – Personalized Email at Scale",
-          "url": "https://example.invalid/ai-idea/cold-mail-variable-engine-personalized-e",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 7
-          },
-          "category": "b2b_sales::sales",
-          "notes": "Browser-side template engine with merge variables for name, company, role, and recent news. Auto-fills into Gmail compose. AI rewrite suggestions available on paid tier. Build time under 3 weeks since it's mostly string interpolation plus a small LLM API call. Cold email tools exist but nothing this tightly integrated as a browser extension.",
-          "monetization": "freemium_saas",
-          "pain": "Salespeople waste 20 minutes per email manually personalizing cold outreach instead of closing deals."
-        },
-        {
-          "source_id": "ai-changelog-from-commits-auto-generate-rel-0hbp7p",
-          "title": "Changelog From Commits – Auto-Generate Release Notes",
-          "url": "https://example.invalid/ai-idea/changelog-from-commits-auto-generate-rel",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 6
-          },
-          "category": "developer_internal::devtools",
-          "notes": "GitHub/Bitbucket API scraper that groups commits by type (feat, fix, breaking) and formats them into a release notes draft. One-click copy to markdown. Built in under 10 days using commit message convention parsing. Documentation tooling is underinvested and changelog generation is a known pain point with no clean browser solution.",
-          "monetization": "stripe_tip_jar",
-          "pain": "Writing changelogs is tedious boilerwork that developers procrastinate until release day."
-        },
-        {
-          "source_id": "ai-xpath-debugger-visual-xpath-testing-in-a-d4gqqf",
-          "title": "XPath Debugger – Visual XPath Testing in Any Page",
-          "url": "https://example.invalid/ai-idea/xpath-debugger-visual-xpath-testing-in-a",
-          "timestamp": "2026-06-28T13:34:05.349Z",
-          "metric": {
-            "llm_demand": 5
-          },
-          "category": "developer_internal::devtools",
-          "notes": "Floating panel that lets you type an XPath and see all matching elements highlighted in real-time on the page. Useful for web scraping, QA, and automation tool authoring. Buildable in 2 weeks using the evaluate XPath API and CSS overlay injection. XPath tooling is fragmented and mostly limited to DevTools snippets or standalone apps.",
-          "monetization": "per_seat",
-          "pain": "Writing and testing XPath selectors requires trial-and-error with browser DevTools or external tools."
-        },
-        {
-          "source_id": "ai-unsubscribe-laser-one-click-bulk-email-u-4kk6fw",
-          "title": "Unsubscribe Laser – One-Click Bulk Email Unsubscriber",
-          "url": "https://example.invalid/ai-idea/unsubscribe-laser-one-click-bulk-email-u",
-          "timestamp": "2026-06-28T13:34:05.349Z",
+          "source_id": "ai-tab-terrain-4f27ge",
+          "title": "Tab Terrain",
+          "url": "https://example.invalid/ai-idea/tab-terrain",
+          "timestamp": "2026-06-28T13:37:15.254Z",
           "metric": {
             "llm_demand": 7
           },
           "category": "consumer_productivity::productivity",
-          "notes": "Detects unsubscribe links across all open Gmail tabs and surfaces them in a single dashboard with one-click execution. Handles common email clients and list-unsubscribe headers. Three-week build with email client API integration. Inbox overwhelm is a top productivity complaint and this solves it directly.",
+          "notes": "Groups tabs spatially by project and lets you navigate via keyboard. Built with tab group APIs plus a spatial canvas renderer. Offline-first, no backend needed for core feature.",
           "monetization": "stripe_tip_jar",
-          "pain": "Cleaning up inbox subscriptions means clicking through dozens of unsubscribe pages one at a time."
+          "pain": "Browser tabs accumulate faster than they can be organized, creating visual clutter and lost context."
         },
         {
-          "source_id": "ai-sales-lead-enricher-one-click-company-co-6krw5y",
-          "title": "Sales Lead Enricher – One-Click Company Context on Any Page",
-          "url": "https://example.invalid/ai-idea/sales-lead-enricher-one-click-company-co",
-          "timestamp": "2026-06-28T13:34:05.349Z",
+          "source_id": "ai-ai-spend-meter-7em45e",
+          "title": "AI Spend Meter",
+          "url": "https://example.invalid/ai-idea/ai-spend-meter",
+          "timestamp": "2026-06-28T13:37:15.254Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts AI API calls and aggregates costs by domain with a live dashboard. Uses web request blocking to count tokens. Gap exists between provider dashboards and team-level tracking.",
+          "monetization": "per_seat",
+          "pain": "Teams overspend on AI APIs because there's no per-site visibility into usage and cost."
+        },
+        {
+          "source_id": "ai-canvas-noise-injector-zqcfnk",
+          "title": "Canvas Noise Injector",
+          "url": "https://example.invalid/ai-idea/canvas-noise-injector",
+          "timestamp": "2026-06-28T13:37:15.254Z",
           "metric": {
             "llm_demand": 7
           },
-          "category": "b2b_sales::sales",
-          "notes": "Button on any page showing a company name or LinkedIn profile that enriches it with funding, headcount, recent news, and tech stack from public sources. Free tier gives 5 enriches/day; paid unlimited. One engineer can build this in 4 weeks using clearbit-like logic with free data sources. Prospecting tooling for solo SDRs is underserved.",
+          "category": "consumer_privacy::privacy",
+          "notes": "Injects randomized noise into canvas API calls while preserving normal rendering. More surgical than blocking all canvas access. Users increasingly aware of fingerprinting but lack lightweight tools.",
           "monetization": "freemium_saas",
-          "pain": "Sales reps manually Google prospects before calls and lose 10 minutes of prep per meeting."
+          "pain": "Websites fingerprint users via canvas signatures without consent, tracking across the web."
+        },
+        {
+          "source_id": "ai-env-drift-watcher-qeilaa",
+          "title": "Env Drift Watcher",
+          "url": "https://example.invalid/ai-idea/env-drift-watcher",
+          "timestamp": "2026-06-28T13:37:15.254Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "CLI companion polls env vars while extension shows diff alerts in browser toolbar. Small integration surface, high value for solo devs. No existing tool bridges local envs to live debugging.",
+          "monetization": "per_seat",
+          "pain": "Production bugs often stem from unnoticed differences between local and deployed environment variables."
+        },
+        {
+          "source_id": "ai-graphql-scope-lens-1835wk",
+          "title": "GraphQL Scope Lens",
+          "url": "https://example.invalid/ai-idea/graphql-scope-lens",
+          "timestamp": "2026-06-28T13:37:15.254Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Pulls schema via introspection and renders query as interactive dependency graph. Uses D3 for visualization. Backend and frontend devs both struggle with GraphQL complexity daily.",
+          "monetization": "per_seat",
+          "pain": "Understanding nested GraphQL resolvers requires mental tracing through documentation and queries."
+        },
+        {
+          "source_id": "ai-meeting-context-prep-0nrpos",
+          "title": "Meeting Context Prep",
+          "url": "https://example.invalid/ai-idea/meeting-context-prep",
+          "timestamp": "2026-06-28T13:37:15.254Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Before calls, surfaces relevant CRM history and email threads in a side panel. Integrates with Google Calendar. Smaller play than full CRM but solves the immediate pain point.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales calls lack context from past emails and CRM notes, leading to disconnected conversations."
+        },
+        {
+          "source_id": "ai-email-tone-dna-7xeeth",
+          "title": "Email Tone DNA",
+          "url": "https://example.invalid/ai-idea/email-tone-dna",
+          "timestamp": "2026-06-28T13:37:15.254Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes reply patterns from email threads to suggest tonality adjustments. Novel angle on personalization beyond just inserting name/company. Tip jar model works well for solo sellers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Cold emails feel generic when not tailored to a prospect's communication style and reply patterns."
+        },
+        {
+          "source_id": "ai-page-highlight-sync-ngoof5",
+          "title": "Page Highlight Sync",
+          "url": "https://example.invalid/ai-idea/page-highlight-sync",
+          "timestamp": "2026-06-28T13:37:15.254Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "One-click capture to Readwise, Notion, or Obsidian with smart tagging. Uses readability extraction API for clean text. Bridges browser reading to personal knowledge systems.",
+          "monetization": "freemium_saas",
+          "pain": "Highlights from web articles don't sync to reading apps without manual export and reformatting."
         }
       ],
       "meta": {
         "model": "MiniMax-M2.7-highspeed",
-        "generated_at": "2026-06-28T13:34:05.351Z",
+        "generated_at": "2026-06-28T13:37:15.256Z",
         "dedup_against": 30,
         "rejected_as_duplicate": 0
       }

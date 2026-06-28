@@ -1,118 +1,28 @@
 {
   "slot": "2026-06-28-13",
   "week": "2026-W26",
-  "scored_at": "2026-06-28T13:34:05.530Z",
+  "scored_at": "2026-06-28T13:37:15.465Z",
   "rubric_version": "1.0.0",
   "candidates": [
     {
-      "id": "cold-mail-variable-engine-personalized-e",
-      "name": "Cold Mail Variable Engine – Personalized Email at Scale",
-      "pitch": "Browser-side template engine with merge variables for name, company, role, and recent news. Auto-fills into Gmail compose. AI rewrite suggestions available on paid tier. Build time under 3 weeks since",
-      "pain": "Salespeople waste 20 minutes per email manually personalizing cold outreach instead of closing deals.",
+      "id": "email-tone-dna",
+      "name": "Email Tone DNA",
+      "pitch": "Analyzes reply patterns from email threads to suggest tonality adjustments. Novel angle on personalization beyond just inserting name/company. Tip jar model works well for solo sellers.",
+      "pain": "Cold emails feel generic when not tailored to a prospect's communication style and reply patterns.",
       "source_refs": [
         {
           "source": "ai_generated",
-          "source_id": "ai-cold-mail-variable-engine-personalized-e-sbktt2",
-          "url": "https://example.invalid/ai-idea/cold-mail-variable-engine-personalized-e"
-        }
-      ],
-      "scores": {
-        "demand": 7,
-        "wtp": 8,
-        "buildability": 5,
-        "defensibility": 9
-      },
-      "score_total": 7.25,
-      "monetization_hint": {
-        "model": "Per-seat subscription",
-        "tier": "per_seat",
-        "monthly_price_usd": 20
-      },
-      "dedup_state": {
-        "is_duplicate": false,
-        "nearest_match_id": "show-hn-i-made-google-trends-for-hacker-",
-        "jaccard_with_nearest": 0.03
-      }
-    },
-    {
-      "id": "meeting-cost-counter-real-time-salary-ba",
-      "name": "Meeting Cost Counter – Real-Time Salary-Based Meeting Cost",
-      "pitch": "Input attendee salary bands once, then every Google Meet or Zoom tab shows a live dollar counter. Uses tab title matching and a simple hourly rate calculation. Two-week build with clear viral demo pot",
-      "pain": "Teams schedule endless meetings without realizing the cumulative salary cost burning through the budget.",
-      "source_refs": [
-        {
-          "source": "ai_generated",
-          "source_id": "ai-meeting-cost-counter-real-time-salary-ba-pzzol4",
-          "url": "https://example.invalid/ai-idea/meeting-cost-counter-real-time-salary-ba"
-        }
-      ],
-      "scores": {
-        "demand": 7,
-        "wtp": 9,
-        "buildability": 5,
-        "defensibility": 2
-      },
-      "score_total": 6.55,
-      "monetization_hint": {
-        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
-        "tier": "freemium_saas",
-        "monthly_price_usd": 15
-      },
-      "dedup_state": {
-        "is_duplicate": false,
-        "nearest_match_id": "show-hn-i-made-google-trends-for-hacker-",
-        "jaccard_with_nearest": 0.04
-      }
-    },
-    {
-      "id": "sales-lead-enricher-one-click-company-co",
-      "name": "Sales Lead Enricher – One-Click Company Context on Any Page",
-      "pitch": "Button on any page showing a company name or LinkedIn profile that enriches it with funding, headcount, recent news, and tech stack from public sources. Free tier gives 5 enriches/day; paid unlimited.",
-      "pain": "Sales reps manually Google prospects before calls and lose 10 minutes of prep per meeting.",
-      "source_refs": [
-        {
-          "source": "ai_generated",
-          "source_id": "ai-sales-lead-enricher-one-click-company-co-6krw5y",
-          "url": "https://example.invalid/ai-idea/sales-lead-enricher-one-click-company-co"
-        }
-      ],
-      "scores": {
-        "demand": 7,
-        "wtp": 8,
-        "buildability": 5,
-        "defensibility": 2
-      },
-      "score_total": 6.2,
-      "monetization_hint": {
-        "model": "Per-seat subscription",
-        "tier": "per_seat",
-        "monthly_price_usd": 20
-      },
-      "dedup_state": {
-        "is_duplicate": false,
-        "nearest_match_id": "show-hn-i-made-google-trends-for-hacker-",
-        "jaccard_with_nearest": 0.04
-      }
-    },
-    {
-      "id": "job-board-radar-unified-job-posting-aggr",
-      "name": "Job Board Radar – Unified Job Posting Aggregator",
-      "pitch": "Scrapes and deduplicates job postings from 6+ major boards into one feed with one-click apply tracking. One engineer can build the scraper + UI in under 4 weeks. Demand is rising as job markets shift ",
-      "pain": "Checking LinkedIn, Indeed, Greenhouse, and Lever separately wastes hours each week on duplicate listings.",
-      "source_refs": [
-        {
-          "source": "ai_generated",
-          "source_id": "ai-job-board-radar-unified-job-posting-aggr-fdgpol",
-          "url": "https://example.invalid/ai-idea/job-board-radar-unified-job-posting-aggr"
+          "source_id": "ai-email-tone-dna-7xeeth",
+          "url": "https://example.invalid/ai-idea/email-tone-dna"
         }
       ],
       "scores": {
         "demand": 5,
         "wtp": 8,
         "buildability": 5,
-        "defensibility": 4
+        "defensibility": 9
       },
-      "score_total": 5.9,
+      "score_total": 6.65,
       "monetization_hint": {
         "model": "Per-seat subscription",
         "tier": "per_seat",
@@ -121,28 +31,28 @@
       "dedup_state": {
         "is_duplicate": false,
         "nearest_match_id": "show-hn-oak-git-alternative-designed-for",
-        "jaccard_with_nearest": 0.02
+        "jaccard_with_nearest": 0.03
       }
     },
     {
-      "id": "pr-comment-inbox-unified-pull-request-no",
-      "name": "PR Comment Inbox – Unified Pull Request Notifications",
-      "pitch": "Aggregates all PR review comments into a single browser inbox with keyboard navigation and quick-reply. A single background script can poll all three APIs simultaneously. Developer productivity tools ",
-      "pain": "Context-switching between GitHub, GitLab, and Bitbucket to check PR comments burns hours of deep work time.",
+      "id": "ai-spend-meter",
+      "name": "AI Spend Meter",
+      "pitch": "Intercepts AI API calls and aggregates costs by domain with a live dashboard. Uses web request blocking to count tokens. Gap exists between provider dashboards and team-level tracking.",
+      "pain": "Teams overspend on AI APIs because there's no per-site visibility into usage and cost.",
       "source_refs": [
         {
           "source": "ai_generated",
-          "source_id": "ai-pr-comment-inbox-unified-pull-request-no-m5ehae",
-          "url": "https://example.invalid/ai-idea/pr-comment-inbox-unified-pull-request-no"
+          "source_id": "ai-ai-spend-meter-7em45e",
+          "url": "https://example.invalid/ai-idea/ai-spend-meter"
         }
       ],
       "scores": {
-        "demand": 7,
+        "demand": 5,
         "wtp": 7,
         "buildability": 5,
-        "defensibility": 2
+        "defensibility": 9
       },
-      "score_total": 5.85,
+      "score_total": 6.3,
       "monetization_hint": {
         "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
         "tier": "tip_jar",
@@ -150,20 +60,80 @@
       },
       "dedup_state": {
         "is_duplicate": false,
-        "nearest_match_id": "show-hn-i-made-google-trends-for-hacker-",
-        "jaccard_with_nearest": 0.04
+        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
+        "jaccard_with_nearest": 0.03
       }
     },
     {
-      "id": "unsubscribe-laser-one-click-bulk-email-u",
-      "name": "Unsubscribe Laser – One-Click Bulk Email Unsubscriber",
-      "pitch": "Detects unsubscribe links across all open Gmail tabs and surfaces them in a single dashboard with one-click execution. Handles common email clients and list-unsubscribe headers. Three-week build with ",
-      "pain": "Cleaning up inbox subscriptions means clicking through dozens of unsubscribe pages one at a time.",
+      "id": "linkedin-signal-tracker",
+      "name": "LinkedIn Signal Tracker",
+      "pitch": "Extracts LinkedIn profile data and enriches with recent activity signals. Browser extension handles scraping while a lightweight backend does enrichment. Solo SDRs need this more than enterprise sales",
+      "pain": "Sales teams waste hours researching prospects before outreach, often missing key context.",
       "source_refs": [
         {
           "source": "ai_generated",
-          "source_id": "ai-unsubscribe-laser-one-click-bulk-email-u-4kk6fw",
-          "url": "https://example.invalid/ai-idea/unsubscribe-laser-one-click-bulk-email-u"
+          "source_id": "ai-linkedin-signal-tracker-0bvy5w",
+          "url": "https://example.invalid/ai-idea/linkedin-signal-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
+        "jaccard_with_nearest": 0.03
+      }
+    },
+    {
+      "id": "meeting-context-prep",
+      "name": "Meeting Context Prep",
+      "pitch": "Before calls, surfaces relevant CRM history and email threads in a side panel. Integrates with Google Calendar. Smaller play than full CRM but solves the immediate pain point.",
+      "pain": "Sales calls lack context from past emails and CRM notes, leading to disconnected conversations.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-context-prep-0nrpos",
+          "url": "https://example.invalid/ai-idea/meeting-context-prep"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
+        "jaccard_with_nearest": 0.03
+      }
+    },
+    {
+      "id": "tab-terrain",
+      "name": "Tab Terrain",
+      "pitch": "Groups tabs spatially by project and lets you navigate via keyboard. Built with tab group APIs plus a spatial canvas renderer. Offline-first, no backend needed for core feature.",
+      "pain": "Browser tabs accumulate faster than they can be organized, creating visual clutter and lost context.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-tab-terrain-4f27ge",
+          "url": "https://example.invalid/ai-idea/tab-terrain"
         }
       ],
       "scores": {
@@ -180,20 +150,20 @@
       },
       "dedup_state": {
         "is_duplicate": false,
-        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
-        "jaccard_with_nearest": 0.04
+        "nearest_match_id": "show-hn-recall-local-project-memory-for-",
+        "jaccard_with_nearest": 0.06
       }
     },
     {
-      "id": "api-response-shapes-visual-inline-api-ex",
-      "name": "API Response Shapes – Visual Inline API Examples",
-      "pitch": "When browsing any API reference page, this extension overlays real JSON response examples inline next to each endpoint. Uses a sidepanel to render structured data as collapsible trees. Fast to build g",
-      "pain": "Reading API docs requires mentally visualizing response structures instead of seeing real data.",
+      "id": "api-replay-inspector",
+      "name": "API Replay Inspector",
+      "pitch": "Uses service worker interception to capture network requests and replay them with modifications. One engineer can build the interception layer in a week. Browser DevTools only show raw requests—nothin",
+      "pain": "Debugging API issues requires manually recreating requests, which is tedious and error-prone.",
       "source_refs": [
         {
           "source": "ai_generated",
-          "source_id": "ai-api-response-shapes-visual-inline-api-ex-leg72j",
-          "url": "https://example.invalid/ai-idea/api-response-shapes-visual-inline-api-ex"
+          "source_id": "ai-api-replay-inspector-v22yns",
+          "url": "https://example.invalid/ai-idea/api-replay-inspector"
         }
       ],
       "scores": {
@@ -211,49 +181,19 @@
       "dedup_state": {
         "is_duplicate": false,
         "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
-        "jaccard_with_nearest": 0.02
+        "jaccard_with_nearest": 0.05
       }
     },
     {
-      "id": "cookie-decoder-plain-language-consent-an",
-      "name": "Cookie Decoder – Plain-Language Consent Analyzer",
-      "pitch": "Parses the consent management platform (OneTrust, Cookiebot, etc.) behind any banner and surfaces exactly what data each category collects, who it's shared with, and what it enables. Built with DOM pa",
-      "pain": "Cookie banners are intentionally confusing so users just click Accept without understanding data implications.",
+      "id": "env-drift-watcher",
+      "name": "Env Drift Watcher",
+      "pitch": "CLI companion polls env vars while extension shows diff alerts in browser toolbar. Small integration surface, high value for solo devs. No existing tool bridges local envs to live debugging.",
+      "pain": "Production bugs often stem from unnoticed differences between local and deployed environment variables.",
       "source_refs": [
         {
           "source": "ai_generated",
-          "source_id": "ai-cookie-decoder-plain-language-consent-an-8iu5cv",
-          "url": "https://example.invalid/ai-idea/cookie-decoder-plain-language-consent-an"
-        }
-      ],
-      "scores": {
-        "demand": 5,
-        "wtp": 4,
-        "buildability": 5,
-        "defensibility": 9
-      },
-      "score_total": 5.25,
-      "monetization_hint": {
-        "model": "Donation + paid support tier",
-        "tier": "donation",
-        "monthly_price_usd": null
-      },
-      "dedup_state": {
-        "is_duplicate": false,
-        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
-        "jaccard_with_nearest": 0.02
-      }
-    },
-    {
-      "id": "changelog-from-commits-auto-generate-rel",
-      "name": "Changelog From Commits – Auto-Generate Release Notes",
-      "pitch": "GitHub/Bitbucket API scraper that groups commits by type (feat, fix, breaking) and formats them into a release notes draft. One-click copy to markdown. Built in under 10 days using commit message conv",
-      "pain": "Writing changelogs is tedious boilerwork that developers procrastinate until release day.",
-      "source_refs": [
-        {
-          "source": "ai_generated",
-          "source_id": "ai-changelog-from-commits-auto-generate-rel-0hbp7p",
-          "url": "https://example.invalid/ai-idea/changelog-from-commits-auto-generate-rel"
+          "source_id": "ai-env-drift-watcher-qeilaa",
+          "url": "https://example.invalid/ai-idea/env-drift-watcher"
         }
       ],
       "scores": {
@@ -270,20 +210,20 @@
       },
       "dedup_state": {
         "is_duplicate": false,
-        "nearest_match_id": "show-hn-peerd-ai-agent-harness-that-runs",
-        "jaccard_with_nearest": 0.04
+        "nearest_match_id": "show-hn-recall-local-project-memory-for-",
+        "jaccard_with_nearest": 0.06
       }
     },
     {
-      "id": "xpath-debugger-visual-xpath-testing-in-a",
-      "name": "XPath Debugger – Visual XPath Testing in Any Page",
-      "pitch": "Floating panel that lets you type an XPath and see all matching elements highlighted in real-time on the page. Useful for web scraping, QA, and automation tool authoring. Buildable in 2 weeks using th",
-      "pain": "Writing and testing XPath selectors requires trial-and-error with browser DevTools or external tools.",
+      "id": "graphql-scope-lens",
+      "name": "GraphQL Scope Lens",
+      "pitch": "Pulls schema via introspection and renders query as interactive dependency graph. Uses D3 for visualization. Backend and frontend devs both struggle with GraphQL complexity daily.",
+      "pain": "Understanding nested GraphQL resolvers requires mental tracing through documentation and queries.",
       "source_refs": [
         {
           "source": "ai_generated",
-          "source_id": "ai-xpath-debugger-visual-xpath-testing-in-a-d4gqqf",
-          "url": "https://example.invalid/ai-idea/xpath-debugger-visual-xpath-testing-in-a"
+          "source_id": "ai-graphql-scope-lens-1835wk",
+          "url": "https://example.invalid/ai-idea/graphql-scope-lens"
         }
       ],
       "scores": {
@@ -301,7 +241,7 @@
       "dedup_state": {
         "is_duplicate": false,
         "nearest_match_id": "show-hn-oak-git-alternative-designed-for",
-        "jaccard_with_nearest": 0.02
+        "jaccard_with_nearest": 0.03
       }
     }
   ]
