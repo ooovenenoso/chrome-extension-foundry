@@ -2,20 +2,22 @@ name: daily-idea-digest
 
 on:
   schedule:
-    # 2x daily Mon-Fri.
-    # 13:00 UTC = 09:00 America/Puerto_Rico (AST, UTC-4)
-    # 01:00 UTC = 21:00 AST previous day
     - cron: '0 1,13 * * 1-5'
   workflow_dispatch:
     inputs:
       slot:
-        description: 'Override slot YYYY-MM-DD-HH (UTC). Default = now.'
+        description: 'Override slot YYYY-MM-DD-HH (UTC).'
         required: false
         type: string
       count:
-        description: 'Ideas per run (1-50). Default 10.'
+        description: 'Ideas per run (1-50).'
         required: false
         type: string
+      skip_pr:
+        description: 'Skip pr-drafter.'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,15 +33,12 @@ jobs:
       MINIMAX_BASE_URL: ${{ vars.MINIMAX_BASE_URL || 'https://api.minimax.io/v1' }}
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-
       - name: Install deps
         run: npm ci --no-audit --no-fund
-
       - name: Compute slot (UTC)
         id: slot
         run: |
@@ -49,12 +48,8 @@ jobs:
             SLOT=$(date -u +%Y-%m-%d-%H)
           fi
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
-          echo "Slot: $SLOT"
-
-      - name: research-collector (AI + dedup)
+      - name: research-collector
         id: research
-        env:
-          MINIMAX_API_KEY: ${{ env.MINIMAX_API_KEY }}
         run: |
           COUNT="${{ inputs.count || 10 }}"
           node agents/scripts/research-collector.js \
@@ -62,57 +57,76 @@ jobs:
             --out docs/research/ \
             --model "${MINIMAX_MODEL}" \
             --count "${COUNT}"
-
       - name: idea-scorer
-        id: score
         run: |
           node agents/scripts/idea-scorer.js \
             --in "docs/research/${{ steps.slot.outputs.slot }}.json" \
             --out docs/ideas/
-
       - name: validate-contracts
         run: npm run validate
-
-      - name: Check if any candidate crossed digest threshold
-        id: ping
+      - name: Check threshold
+        id: check
         run: |
           SLOT="${{ steps.slot.outputs.slot }}"
           POOL="docs/ideas/${SLOT}.json"
           if [ ! -f "$POOL" ]; then
-            echo "no idea pool produced — silent"
-            echo "ping=false" >> "$GITHUB_OUTPUT"
+            echo "spec_threshold=false" >> "$GITHUB_OUTPUT"
+            echo "top_name=" >> "$GITHUB_OUTPUT"
+            echo "top_score=0" >> "$GITHUB_OUTPUT"
+            echo "top_id=" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          TOP=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.score_total || 0);")
-          THRESHOLD=$(node -e "console.log(require('./agents/contracts/scoring-rubric.v1.json').thresholds.min_score_for_digest_ping);")
-          echo "top=$TOP threshold=$THRESHOLD"
-          if (( $(echo "$TOP >= $THRESHOLD" | bc -l) )); then
-            echo "ping=true" >> "$GITHUB_OUTPUT"
-            echo "top_name=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.name || '');")" >> "$GITHUB_OUTPUT"
-            echo "top_score=$TOP" >> "$GITHUB_OUTPUT"
+          TOP_SCORE=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.score_total || 0);")
+          TOP_NAME=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.name || '');")
+          TOP_ID=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.id || '');")
+          THRESHOLD=$(node -e "console.log(require('./agents/contracts/scoring-rubric.v1.json').thresholds.min_score_for_spec);")
+          if (( $(echo "$TOP_SCORE >= $THRESHOLD" | bc -l) )); then
+            echo "spec_threshold=true" >> "$GITHUB_OUTPUT"
+            echo "top_name=$TOP_NAME" >> "$GITHUB_OUTPUT"
+            echo "top_score=$TOP_SCORE" >> "$GITHUB_OUTPUT"
+            echo "top_id=$TOP_ID" >> "$GITHUB_OUTPUT"
           else
-            echo "ping=false" >> "$GITHUB_OUTPUT"
+            echo "spec_threshold=false" >> "$GITHUB_OUTPUT"
+            echo "top_name=$TOP_NAME" >> "$GITHUB_OUTPUT"
+            echo "top_score=$TOP_SCORE" >> "$GITHUB_OUTPUT"
+            echo "top_id=$TOP_ID" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Commit snapshot if changed
+      - name: spec-writer
+        if: steps.check.outputs.spec_threshold == 'true'
+        run: |
+          SLOT="${{ steps.slot.outputs.slot }}"
+          node agents/scripts/spec-writer.js \
+            --idea "docs/ideas/${SLOT}.json" \
+            --top 1 \
+            --out docs/specs/ \
+            --template docs/specs/_template/GOAL.md
+      - name: Commit research + spec
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add docs/research/ docs/ideas/
-          if git diff --cached --quiet; then
-            echo "no changes"
-          else
-            git commit -m "chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}"
+          git add docs/research/ docs/ideas/ docs/specs/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}${{ steps.check.outputs.spec_threshold == 'true' && ' (+ spec)' || '' }}"
             git push
           fi
-
-      - name: Ping Telegram on threshold hit
-        if: steps.ping.outputs.ping == 'true'
+      - name: pr-drafter
+        if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TOP_ID="${{ steps.check.outputs.top_id }}"
+          SPEC="docs/specs/${TOP_ID}/GOAL.md"
+          if [ ! -f "$SPEC" ]; then
+            echo "::error::spec $SPEC missing"; exit 1
+          fi
+          node agents/scripts/pr-drafter.js --spec "$SPEC"
+      - name: Ping Telegram
+        if: steps.check.outputs.spec_threshold == 'true'
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: |
             daily-idea-digest · ${{ steps.slot.outputs.slot }}
-            Top idea: ${{ steps.ping.outputs.top_name }} (score ${{ steps.ping.outputs.top_score }})
-            Files: docs/research/${{ steps.slot.outputs.slot }}.json, docs/ideas/${{ steps.slot.outputs.slot }}.json
+            Top: ${{ steps.check.outputs.top_name }} (score ${{ steps.check.outputs.top_score }})
+            Spec drafted + PR opened.
