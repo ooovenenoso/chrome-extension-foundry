@@ -1,0 +1,368 @@
+{
+  "slot": "2026-06-29-01",
+  "week": "2026-W27",
+  "scored_at": "2026-06-29T01:52:22.455Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "postgres-explain-visualizer",
+      "name": "Postgres Explain Visualizer",
+      "pitch": "Renders PostgreSQL query plans as interactive tree diagrams directly in the browser. Parses standard EXPLAIN format. Database devs desperately need better tooling.",
+      "pain": "Developers struggle to parse raw PostgreSQL EXPLAIN ANALYZE output when optimizing slow queries.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-postgres-explain-visualizer-vc92pw",
+          "url": "https://example.invalid/ai-idea/postgres-explain-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7.6,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "ci-failure-category-tagger",
+      "name": "CI Failure Category Tagger",
+      "pitch": "Classifies CI failure logs by error type and suggests owners based on git blame. Integrates with GitHub Actions API. Speeds up incident response significantly.",
+      "pain": "Developers waste hours triaging CI failures because logs lack categorization and prioritization.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ci-failure-category-tagger-dmbxbs",
+          "url": "https://example.invalid/ai-idea/ci-failure-category-tagger"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "gcp-bill-spike-sentinel",
+      "name": "GCP Bill Spike Sentinel",
+      "pitch": "Statistical anomaly detection on GCP billing exports with browser notifications. Uses GCP Billing API. High demand as companies scale cloud spend.",
+      "pain": "Engineers get blindsided by unexpected GCP bills when anomalies go undetected until month-end.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-bill-spike-sentinel-zgp8o3",
+          "url": "https://example.invalid/ai-idea/gcp-bill-spike-sentinel"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.55,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "websocket-frame-debugger",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "notion-change-audit-trail",
+      "name": "Notion Change Audit Trail",
+      "pitch": "Polls Notion API for page revision history and surfaces changes in a floating panel. Simple integration. Teams using Notion as docs infrastructure need this badly.",
+      "pain": "Teams lose track of who changed what in Notion, making compliance audits and conflict resolution painful.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-notion-change-audit-trail-zcqcyd",
+          "url": "https://example.invalid/ai-idea/notion-change-audit-trail"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.3,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-breaking-change-detector",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "typescript-dead-type-overlay",
+      "name": "TypeScript Dead Type Overlay",
+      "pitch": "Leverages TypeScript compiler API to scan loaded pages and overlay unused types in devtools. Quick build with mature tooling. Fills the gap between linting (pre-commit) and runtime debugging.",
+      "pain": "Developers ship unused TypeScript types that bloat bundles and cause confusing runtime errors.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-typescript-dead-type-overlay-nxbs20",
+          "url": "https://example.invalid/ai-idea/typescript-dead-type-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "pypi-safety-score-overlay",
+      "name": "PyPI Safety Score Overlay",
+      "pitch": "Overlays PyPI metadata, last publish date, and known vulnerabilities when visiting package pages. Leverages PyPI JSON API. Supply chain security is top-of-mind.",
+      "pain": "Developers risk supply chain attacks by installing PyPI packages without checking maintenance health.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pypi-safety-score-overlay-4lf5bk",
+          "url": "https://example.invalid/ai-idea/pypi-safety-score-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "webhook-delivery-heatmap",
+      "name": "Webhook Delivery Heatmap",
+      "pitch": "Visualizes webhook success/failure rates as a calendar heatmap from captured network traffic. No backend needed. Built entirely in-browser.",
+      "pain": "Devs cannot see webhook delivery patterns over time without custom logging infrastructure.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-delivery-heatmap-9sd1ww",
+          "url": "https://example.invalid/ai-idea/webhook-delivery-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-peerd-ai-agent-harness-that-runs",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "css-layer-winner-inspector",
+      "name": "CSS Layer Winner Inspector",
+      "pitch": "Visualizes which cascade layers are winning for any element with a breakdown panel. Built on existing DevTools protocol. Chrome 99+ support makes this timely.",
+      "pain": "Debugging CSS cascade layer conflicts requires manually tracing specificity across dozens of files.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-layer-winner-inspector-br9oea",
+          "url": "https://example.invalid/ai-idea/css-layer-winner-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "css-origin-cascade-tracer",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "competitor-site-visit-alert",
+      "name": "Competitor Site Visit Alert",
+      "pitch": "First-party tracking pixel injected via browser extension detects visits to competitor domains. No GDPR friction since it's opt-in. Unique angle vs saturated third-party intent tools.",
+      "pain": "Sales reps miss the best time to reach prospects who are actively evaluating competitors.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-competitor-site-visit-alert-aqrq20",
+          "url": "https://example.invalid/ai-idea/competitor-site-visit-alert"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tracking-pixel-detector",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "saas-pricing-tier-monitor",
+      "name": "SaaS Pricing Tier Monitor",
+      "pitch": "Scheduled scraping of competitor pricing pages with diff alerts. Browser extension gives easy opt-in data collection. Direct competitor intelligence gap.",
+      "pain": "Sales teams waste time manually checking competitor pricing pages that change without notice.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-saas-pricing-tier-monitor-lk6fk7",
+          "url": "https://example.invalid/ai-idea/saas-pricing-tier-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "websocket-frame-debugger",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "job-listing-tech-fingerprint",
+      "name": "Job Listing Tech Fingerprint",
+      "pitch": "Extracts and normalizes tech mentions from job posting pages using NLP. Scrapes job boards for enrichment data. Saves hours of manual research.",
+      "pain": "AEs spend hours reading job postings to infer prospect tech stacks for personalized outreach.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-job-listing-tech-fingerprint-v1uthb",
+          "url": "https://example.invalid/ai-idea/job-listing-tech-fingerprint"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-tech-signal-extractor",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "sales-deck-slide-momentum-score",
+      "name": "Sales Deck Slide Momentum Score",
+      "pitch": "Tracks time spent on each slide in browser-based decks and benchmarks against top-performing reps. Screen time API enables this. Competitive intelligence for sales.",
+      "pain": "Sales reps do not know which slides resonate versus which ones lose buyer attention in demos.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-deck-slide-momentum-score-rhzi2u",
+          "url": "https://example.invalid/ai-idea/sales-deck-slide-momentum-score"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-deck-version-auditor",
+        "jaccard_with_nearest": 0.12
+      }
+    }
+  ]
+}

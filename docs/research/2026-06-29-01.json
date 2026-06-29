@@ -1,0 +1,220 @@
+{
+  "slot": "2026-06-29-01",
+  "week": "2026-W27",
+  "fetched_at": "2026-06-29T01:52:22.292Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-typescript-dead-type-overlay-nxbs20",
+          "title": "TypeScript Dead Type Overlay",
+          "url": "https://example.invalid/ai-idea/typescript-dead-type-overlay",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Leverages TypeScript compiler API to scan loaded pages and overlay unused types in devtools. Quick build with mature tooling. Fills the gap between linting (pre-commit) and runtime debugging.",
+          "monetization": "freemium_saas",
+          "pain": "Developers ship unused TypeScript types that bloat bundles and cause confusing runtime errors."
+        },
+        {
+          "source_id": "ai-competitor-site-visit-alert-aqrq20",
+          "title": "Competitor Site Visit Alert",
+          "url": "https://example.invalid/ai-idea/competitor-site-visit-alert",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "First-party tracking pixel injected via browser extension detects visits to competitor domains. No GDPR friction since it's opt-in. Unique angle vs saturated third-party intent tools.",
+          "monetization": "per_seat",
+          "pain": "Sales reps miss the best time to reach prospects who are actively evaluating competitors."
+        },
+        {
+          "source_id": "ai-slack-unread-audio-digest-ds6il2",
+          "title": "Slack Unread Audio Digest",
+          "url": "https://example.invalid/ai-idea/slack-unread-audio-digest",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses Web Speech API to convert unread Slack messages to audio on-demand. Trivial build with mature TTS APIs. Solves a real hands-free consumption gap.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Knowledge workers skip important Slack messages because they cannot read while driving or exercising."
+        },
+        {
+          "source_id": "ai-notion-change-audit-trail-zcqcyd",
+          "title": "Notion Change Audit Trail",
+          "url": "https://example.invalid/ai-idea/notion-change-audit-trail",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::developer-internal",
+          "notes": "Polls Notion API for page revision history and surfaces changes in a floating panel. Simple integration. Teams using Notion as docs infrastructure need this badly.",
+          "monetization": "per_seat",
+          "pain": "Teams lose track of who changed what in Notion, making compliance audits and conflict resolution painful."
+        },
+        {
+          "source_id": "ai-gcp-bill-spike-sentinel-zgp8o3",
+          "title": "GCP Bill Spike Sentinel",
+          "url": "https://example.invalid/ai-idea/gcp-bill-spike-sentinel",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Statistical anomaly detection on GCP billing exports with browser notifications. Uses GCP Billing API. High demand as companies scale cloud spend.",
+          "monetization": "quota_based",
+          "pain": "Engineers get blindsided by unexpected GCP bills when anomalies go undetected until month-end."
+        },
+        {
+          "source_id": "ai-meeting-action-pre-loader-a1yz5k",
+          "title": "Meeting Action Pre-Loader",
+          "url": "https://example.invalid/ai-idea/meeting-action-pre-loader",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts action items from Google Calendar invites and surfaces them prominently before meetings. Calendar API makes this trivial. Strong daily utility.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Attendees miss action items from calendar invites because they only skim the description before meetings."
+        },
+        {
+          "source_id": "ai-pypi-safety-score-overlay-4lf5bk",
+          "title": "PyPI Safety Score Overlay",
+          "url": "https://example.invalid/ai-idea/pypi-safety-score-overlay",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Overlays PyPI metadata, last publish date, and known vulnerabilities when visiting package pages. Leverages PyPI JSON API. Supply chain security is top-of-mind.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers risk supply chain attacks by installing PyPI packages without checking maintenance health."
+        },
+        {
+          "source_id": "ai-saas-pricing-tier-monitor-lk6fk7",
+          "title": "SaaS Pricing Tier Monitor",
+          "url": "https://example.invalid/ai-idea/saas-pricing-tier-monitor",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scheduled scraping of competitor pricing pages with diff alerts. Browser extension gives easy opt-in data collection. Direct competitor intelligence gap.",
+          "monetization": "per_seat",
+          "pain": "Sales teams waste time manually checking competitor pricing pages that change without notice."
+        },
+        {
+          "source_id": "ai-job-listing-tech-fingerprint-v1uthb",
+          "title": "Job Listing Tech Fingerprint",
+          "url": "https://example.invalid/ai-idea/job-listing-tech-fingerprint",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Extracts and normalizes tech mentions from job posting pages using NLP. Scrapes job boards for enrichment data. Saves hours of manual research.",
+          "monetization": "per_seat",
+          "pain": "AEs spend hours reading job postings to infer prospect tech stacks for personalized outreach."
+        },
+        {
+          "source_id": "ai-postgres-explain-visualizer-vc92pw",
+          "title": "Postgres Explain Visualizer",
+          "url": "https://example.invalid/ai-idea/postgres-explain-visualizer",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Renders PostgreSQL query plans as interactive tree diagrams directly in the browser. Parses standard EXPLAIN format. Database devs desperately need better tooling.",
+          "monetization": "freemium_saas",
+          "pain": "Developers struggle to parse raw PostgreSQL EXPLAIN ANALYZE output when optimizing slow queries."
+        },
+        {
+          "source_id": "ai-webhook-delivery-heatmap-9sd1ww",
+          "title": "Webhook Delivery Heatmap",
+          "url": "https://example.invalid/ai-idea/webhook-delivery-heatmap",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Visualizes webhook success/failure rates as a calendar heatmap from captured network traffic. No backend needed. Built entirely in-browser.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Devs cannot see webhook delivery patterns over time without custom logging infrastructure."
+        },
+        {
+          "source_id": "ai-ci-failure-category-tagger-dmbxbs",
+          "title": "CI Failure Category Tagger",
+          "url": "https://example.invalid/ai-idea/ci-failure-category-tagger",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Classifies CI failure logs by error type and suggests owners based on git blame. Integrates with GitHub Actions API. Speeds up incident response significantly.",
+          "monetization": "per_seat",
+          "pain": "Developers waste hours triaging CI failures because logs lack categorization and prioritization."
+        },
+        {
+          "source_id": "ai-css-layer-winner-inspector-br9oea",
+          "title": "CSS Layer Winner Inspector",
+          "url": "https://example.invalid/ai-idea/css-layer-winner-inspector",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Visualizes which cascade layers are winning for any element with a breakdown panel. Built on existing DevTools protocol. Chrome 99+ support makes this timely.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging CSS cascade layer conflicts requires manually tracing specificity across dozens of files."
+        },
+        {
+          "source_id": "ai-sales-deck-slide-momentum-score-rhzi2u",
+          "title": "Sales Deck Slide Momentum Score",
+          "url": "https://example.invalid/ai-idea/sales-deck-slide-momentum-score",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks time spent on each slide in browser-based decks and benchmarks against top-performing reps. Screen time API enables this. Competitive intelligence for sales.",
+          "monetization": "per_seat",
+          "pain": "Sales reps do not know which slides resonate versus which ones lose buyer attention in demos."
+        },
+        {
+          "source_id": "ai-tab-resource-drain-monitor-m2d3r5",
+          "title": "Tab Resource Drain Monitor",
+          "url": "https://example.invalid/ai-idea/tab-resource-drain-monitor",
+          "timestamp": "2026-06-29T01:52:22.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Per-tab CPU and memory usage displayed in a sidebar with one-click tab suspension. Browser Task Manager API enables this. Simple daily utility tool.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have dozens of tabs open consuming memory but no easy way to see which ones are wasteful."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-29T01:52:22.292Z",
+        "dedup_against": 144,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
