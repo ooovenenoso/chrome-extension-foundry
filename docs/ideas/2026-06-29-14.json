@@ -1,0 +1,398 @@
+{
+  "slot": "2026-06-29-14",
+  "week": "2026-W27",
+  "scored_at": "2026-06-29T14:29:23.215Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "ai-conversation-turn-counter",
+      "name": "AI Conversation Turn Counter",
+      "pitch": "Intercepts API calls to ChatGPT/Claude/Cursor and tracks turn count per session against known plan limits. Displays a subtle badge. Quota-based unlocking for multi-account tracking. Clever wrapper tha",
+      "pain": "AI chatbot users lose track of how many turns they've used in tiered pricing plans and get surprised by limits.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-conversation-turn-counter-n4t5zt",
+          "url": "https://example.invalid/ai-idea/ai-conversation-turn-counter"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-smart-model-routing-directly-in-",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "cold-outreach-personalization-generator",
+      "name": "Cold Outreach Personalization Generator",
+      "pitch": "Right-click any LinkedIn profile or company page and generates 3 personalized icebreakers using local LLM calls. No data leaves the browser. Tip jar model; works offline after initial load. Targets SD",
+      "pain": "Sales reps send generic outreach that gets ignored because personalizing each message is too time-consuming.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-outreach-personalization-generator-d6l5pt",
+          "url": "https://example.invalid/ai-idea/cold-outreach-personalization-generator"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "public-bug-bounty-scope-visualizer",
+      "name": "Public Bug Bounty Scope Visualizer",
+      "pitch": "Scrapes HackerOne/Bugcrowd program pages and renders a visual scope map with asset types, subdomains, and expiry flags. Chrome extension context menu triggers parse. Bridges to a web dashboard for sav",
+      "pain": "Security researchers manually parse bug bounty program scopes instead of quickly knowing what's in-scope.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-public-bug-bounty-scope-visualizer-dgkuys",
+          "url": "https://example.invalid/ai-idea/public-bug-bounty-scope-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "salesforce-field-level-audit-overlay",
+      "name": "Salesforce Field-Level Audit Overlay",
+      "pitch": "Injects a sidebar on Salesforce record pages showing change history for the focused field. Uses Salesforce REST API with user OAuth. Freemium unlocks 30-day history; per-seat for full audit trail. Tar",
+      "pain": "Sales ops teams lose visibility into who changed critical CRM fields and when, causing data integrity issues.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-salesforce-field-level-audit-overlay-e7vldb",
+          "url": "https://example.invalid/ai-idea/salesforce-field-level-audit-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "notion-change-audit-trail",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "gong-call-clip-extractor",
+      "name": "Gong Call Clip Extractor",
+      "pitch": "Adds a panel to Gong web player that lets you set in/out points and generates a shareable short clip link. Uses Gong API with user token. Per-seat for reps who share clips externally. Solves a real da",
+      "pain": "Sales managers spend too long scrubbing through Gong recordings to find the 30-second clip they want to share.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-clip-extractor-7jn9k9",
+          "url": "https://example.invalid/ai-idea/gong-call-clip-extractor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gcp-service-account-scope-checker",
+      "name": "GCP Service Account Scope Checker",
+      "pitch": "Parses IAM JSON on any GCP console page and visually maps granted scopes against required APIs. Ships as a devtools panel with a free tier for 5 checks/day, per-seat for teams. Niche but painful enoug",
+      "pain": "Engineers misconfigure GCP service account scopes and waste hours on permission errors in production.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-service-account-scope-checker-1pijei",
+          "url": "https://example.invalid/ai-idea/gcp-service-account-scope-checker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "webpage-accessibility-diff-checker",
+      "name": "WebPage Accessibility Diff Checker",
+      "pitch": "Captures axe-core results on current page, compares against a saved baseline, and flags new/resolved violations. Uploads diffs to a shared team dashboard. Per-seat SaaS for teams; free for solo devs. ",
+      "pain": "Accessibility regressions slip through code reviews when there's no automated comparison between page versions.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webpage-accessibility-diff-checker-128wd7",
+          "url": "https://example.invalid/ai-idea/webpage-accessibility-diff-checker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "openapi-endpoint-coverage-mapper",
+      "name": "OpenAPI Endpoint Coverage Mapper",
+      "pitch": "Parses OpenAPI spec from any URL or local file, cross-references with network traffic observed while browsing the app, and highlights untested endpoints in red. Generates a coverage report. Built for ",
+      "pain": "Backend teams don't know which documented API endpoints are actually implemented and tested vs just specged.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-openapi-endpoint-coverage-mapper-hzajjk",
+          "url": "https://example.invalid/ai-idea/openapi-endpoint-coverage-mapper"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-request-mirroring-proxy",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "stripe-test-mode-request-inspector",
+      "name": "Stripe Test Mode Request Inspector",
+      "pitch": "Filters the DevTools network panel to show only Stripe API requests, decorates responses with human-readable event types, and logs to a dedicated panel. Auto-detects sk_test_ keys. Pairs with a lightw",
+      "pain": "Developers waste time filtering through Chrome network tab to find Stripe test mode API calls.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-test-mode-request-inspector-xpwzk5",
+          "url": "https://example.invalid/ai-idea/stripe-test-mode-request-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "browser-dom-snapshot-diff-viewer",
+      "name": "Browser DOM Snapshot Diff Viewer",
+      "pitch": "Captures full DOM snapshots at two points and renders a side-by-side tree diff with added/removed/modified nodes highlighted. Export to HTML report. Built on top of diff-match-patch. Freemium for 5 di",
+      "pain": "Frontend developers manually compare DOM states across page versions when debugging rendering bugs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-dom-snapshot-diff-viewer-6kazwl",
+          "url": "https://example.invalid/ai-idea/browser-dom-snapshot-diff-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "heap-snapshot-diff-viewer",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "webfont-license-checker",
+      "name": "WebFont License Checker",
+      "pitch": "Detects font-face declarations and cross-references against open-source license databases (Google Fonts, Font Squirrel). Flags commercial/OFL fonts in use with appropriate attribution reminders. Simpl",
+      "pain": "Developers use web fonts without checking licenses and risk legal issues for commercial projects.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webfont-license-checker-9x3sh1",
+          "url": "https://example.invalid/ai-idea/webfont-license-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "font-lineage-tracker",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "localstorage-size-tracker",
+      "name": "LocalStorage Size Tracker",
+      "pitch": "Shows a persistent badge with total localStorage usage across all origins. Drill-down shows per-domain breakdown with oldest keys flagged. Useful during development. Freemium model with alerts on quot",
+      "pain": "Web developers hit localStorage quota limits without realizing which sites are consuming the most space.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-localstorage-size-tracker-nqwhen",
+          "url": "https://example.invalid/ai-idea/localstorage-size-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "quota-usage-pulse",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "browser-network-retry-analyzer",
+      "name": "Browser Network Retry Analyzer",
+      "pitch": "Instruments XMLHttpRequest and fetch to track retry counts per endpoint, showing success after N retries, ultimate failures, and latency impact. Aggregates into a retry heatmap panel. Freemium with pe",
+      "pain": "Debugging flaky network requests means manually counting retries in the Chrome network tab, which is error-prone.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-network-retry-analyzer-grx3ah",
+          "url": "https://example.invalid/ai-idea/browser-network-retry-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "curl-request-cloner",
+        "jaccard_with_nearest": 0.09
+      }
+    }
+  ]
+}

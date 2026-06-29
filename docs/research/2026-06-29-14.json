@@ -1,0 +1,220 @@
+{
+  "slot": "2026-06-29-14",
+  "week": "2026-W27",
+  "fetched_at": "2026-06-29T14:29:23.058Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-gcp-service-account-scope-checker-1pijei",
+          "title": "GCP Service Account Scope Checker",
+          "url": "https://example.invalid/ai-idea/gcp-service-account-scope-checker",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses IAM JSON on any GCP console page and visually maps granted scopes against required APIs. Ships as a devtools panel with a free tier for 5 checks/day, per-seat for teams. Niche but painful enough that GCP shops will pay.",
+          "monetization": "per_seat",
+          "pain": "Engineers misconfigure GCP service account scopes and waste hours on permission errors in production."
+        },
+        {
+          "source_id": "ai-salesforce-field-level-audit-overlay-e7vldb",
+          "title": "Salesforce Field-Level Audit Overlay",
+          "url": "https://example.invalid/ai-idea/salesforce-field-level-audit-overlay",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Injects a sidebar on Salesforce record pages showing change history for the focused field. Uses Salesforce REST API with user OAuth. Freemium unlocks 30-day history; per-seat for full audit trail. Targeting mid-market ops teams.",
+          "monetization": "per_seat",
+          "pain": "Sales ops teams lose visibility into who changed critical CRM fields and when, causing data integrity issues."
+        },
+        {
+          "source_id": "ai-public-bug-bounty-scope-visualizer-dgkuys",
+          "title": "Public Bug Bounty Scope Visualizer",
+          "url": "https://example.invalid/ai-idea/public-bug-bounty-scope-visualizer",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scrapes HackerOne/Bugcrowd program pages and renders a visual scope map with asset types, subdomains, and expiry flags. Chrome extension context menu triggers parse. Bridges to a web dashboard for saved programs. Built in a weekend with Playwright.",
+          "monetization": "freemium_saas",
+          "pain": "Security researchers manually parse bug bounty program scopes instead of quickly knowing what's in-scope."
+        },
+        {
+          "source_id": "ai-conference-session-conflict-detector-15gb8d",
+          "title": "Conference Session Conflict Detector",
+          "url": "https://example.invalid/ai-idea/conference-session-conflict-detector",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Parses conference schedule pages (Luma/Eventbrite) and flags time conflicts when you bookmark sessions. Local storage tracks your selections. Simple, single-purpose, no backend needed. Donate if it saves your conference.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Conference attendees miss sessions they wanted because tracking overlaps across multiple tracks is mental overhead."
+        },
+        {
+          "source_id": "ai-stripe-test-mode-request-inspector-xpwzk5",
+          "title": "Stripe Test Mode Request Inspector",
+          "url": "https://example.invalid/ai-idea/stripe-test-mode-request-inspector",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Filters the DevTools network panel to show only Stripe API requests, decorates responses with human-readable event types, and logs to a dedicated panel. Auto-detects sk_test_ keys. Pairs with a lightweight web replay feature for debugging.",
+          "monetization": "freemium_saas",
+          "pain": "Developers waste time filtering through Chrome network tab to find Stripe test mode API calls."
+        },
+        {
+          "source_id": "ai-ai-conversation-turn-counter-n4t5zt",
+          "title": "AI Conversation Turn Counter",
+          "url": "https://example.invalid/ai-idea/ai-conversation-turn-counter",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Intercepts API calls to ChatGPT/Claude/Cursor and tracks turn count per session against known plan limits. Displays a subtle badge. Quota-based unlocking for multi-account tracking. Clever wrapper that adds value without touching model outputs.",
+          "monetization": "quota_based",
+          "pain": "AI chatbot users lose track of how many turns they've used in tiered pricing plans and get surprised by limits."
+        },
+        {
+          "source_id": "ai-webpage-accessibility-diff-checker-128wd7",
+          "title": "WebPage Accessibility Diff Checker",
+          "url": "https://example.invalid/ai-idea/webpage-accessibility-diff-checker",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Captures axe-core results on current page, compares against a saved baseline, and flags new/resolved violations. Uploads diffs to a shared team dashboard. Per-seat SaaS for teams; free for solo devs. Targets accessibility-focused orgs.",
+          "monetization": "per_seat",
+          "pain": "Accessibility regressions slip through code reviews when there's no automated comparison between page versions."
+        },
+        {
+          "source_id": "ai-cold-outreach-personalization-generator-d6l5pt",
+          "title": "Cold Outreach Personalization Generator",
+          "url": "https://example.invalid/ai-idea/cold-outreach-personalization-generator",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Right-click any LinkedIn profile or company page and generates 3 personalized icebreakers using local LLM calls. No data leaves the browser. Tip jar model; works offline after initial load. Targets SDRs who value speed over depth.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps send generic outreach that gets ignored because personalizing each message is too time-consuming."
+        },
+        {
+          "source_id": "ai-browser-dom-snapshot-diff-viewer-6kazwl",
+          "title": "Browser DOM Snapshot Diff Viewer",
+          "url": "https://example.invalid/ai-idea/browser-dom-snapshot-diff-viewer",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Captures full DOM snapshots at two points and renders a side-by-side tree diff with added/removed/modified nodes highlighted. Export to HTML report. Built on top of diff-match-patch. Freemium for 5 diffs/day; unlocks unlimited with account.",
+          "monetization": "freemium_saas",
+          "pain": "Frontend developers manually compare DOM states across page versions when debugging rendering bugs."
+        },
+        {
+          "source_id": "ai-podcast-episode-topic-finder-09b1hr",
+          "title": "Podcast Episode Topic Finder",
+          "url": "https://example.invalid/ai-idea/podcast-episode-topic-finder",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes podcast RSS feeds and overlies chapter markers with AI-generated topic summaries. Supports Apple Podcasts/Spotify web players. Single-purpose tool with tip jar. Niche but engaged audience of knowledge workers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Podcast listeners skip episodes because there's no way to preview topics without listening to the whole show."
+        },
+        {
+          "source_id": "ai-webfont-license-checker-9x3sh1",
+          "title": "WebFont License Checker",
+          "url": "https://example.invalid/ai-idea/webfont-license-checker",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Detects font-face declarations and cross-references against open-source license databases (Google Fonts, Font Squirrel). Flags commercial/OFL fonts in use with appropriate attribution reminders. Simple, runs locally, no backend required for core scan.",
+          "monetization": "freemium_saas",
+          "pain": "Developers use web fonts without checking licenses and risk legal issues for commercial projects."
+        },
+        {
+          "source_id": "ai-gong-call-clip-extractor-7jn9k9",
+          "title": "Gong Call Clip Extractor",
+          "url": "https://example.invalid/ai-idea/gong-call-clip-extractor",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Adds a panel to Gong web player that lets you set in/out points and generates a shareable short clip link. Uses Gong API with user token. Per-seat for reps who share clips externally. Solves a real daily friction point.",
+          "monetization": "per_seat",
+          "pain": "Sales managers spend too long scrubbing through Gong recordings to find the 30-second clip they want to share."
+        },
+        {
+          "source_id": "ai-localstorage-size-tracker-nqwhen",
+          "title": "LocalStorage Size Tracker",
+          "url": "https://example.invalid/ai-idea/localstorage-size-tracker",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Shows a persistent badge with total localStorage usage across all origins. Drill-down shows per-domain breakdown with oldest keys flagged. Useful during development. Freemium model with alerts on quota thresholds.",
+          "monetization": "freemium_saas",
+          "pain": "Web developers hit localStorage quota limits without realizing which sites are consuming the most space."
+        },
+        {
+          "source_id": "ai-openapi-endpoint-coverage-mapper-hzajjk",
+          "title": "OpenAPI Endpoint Coverage Mapper",
+          "url": "https://example.invalid/ai-idea/openapi-endpoint-coverage-mapper",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses OpenAPI spec from any URL or local file, cross-references with network traffic observed while browsing the app, and highlights untested endpoints in red. Generates a coverage report. Built for API-first teams.",
+          "monetization": "per_seat",
+          "pain": "Backend teams don't know which documented API endpoints are actually implemented and tested vs just specged."
+        },
+        {
+          "source_id": "ai-browser-network-retry-analyzer-grx3ah",
+          "title": "Browser Network Retry Analyzer",
+          "url": "https://example.invalid/ai-idea/browser-network-retry-analyzer",
+          "timestamp": "2026-06-29T14:29:23.052Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Instruments XMLHttpRequest and fetch to track retry counts per endpoint, showing success after N retries, ultimate failures, and latency impact. Aggregates into a retry heatmap panel. Freemium with per-session history; team dashboard behind per-seat paywall.",
+          "monetization": "freemium_saas",
+          "pain": "Debugging flaky network requests means manually counting retries in the Chrome network tab, which is error-prone."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-29T14:29:23.058Z",
+        "dedup_against": 159,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
