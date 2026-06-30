@@ -1,0 +1,248 @@
+{
+  "slot": "2026-06-30-13",
+  "week": "2026-W27",
+  "scored_at": "2026-06-30T13:44:53.544Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "gcp-idle-resource-sentinel",
+      "name": "GCP Idle Resource Sentinel",
+      "pitch": "Scrapes GCP console pages to detect running resources with no activity logs. Triggers a browser notification when an instance is idle past a threshold. Small storage layer for history. One weekend to ",
+      "pain": "Solo founders forget about idle cloud VMs and pay for weeks after they stopped using them.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-idle-resource-sentinel-3y1ik3",
+          "url": "https://example.invalid/ai-idea/gcp-idle-resource-sentinel"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-bill-spike-sentinel",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "github-issue-velocity-dashboard",
+      "name": "GitHub Issue Velocity Dashboard",
+      "pitch": "Scrapes the GitHub issues page for open/close timestamps and renders a velocity chart in the repo sidebar. Shows weekly close rate, average time-to-close, and trend line. Stores history in local stora",
+      "pain": "Engineering managers cannot tell if their team is improving or slowing down without manually counting closed issues each sprint.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-issue-velocity-dashboard-nwldwv",
+          "url": "https://example.invalid/ai-idea/github-issue-velocity-dashboard"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 6
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-star-history-visualizer",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "lead-company-tech-fingerprint-scanner",
+      "name": "Lead Company Tech Fingerprint Scanner",
+      "pitch": "Scrapes the target company's homepage for JS bundle signatures and HTTP headers that reveal tech stack. Shows a side panel with detected tools, pricing tier estimate, and contact info. Works on Linked",
+      "pain": "Sales reps spend 20 minutes per lead manually researching what tools a company uses before their first call.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-company-tech-fingerprint-scanner-ljlh8f",
+          "url": "https://example.invalid/ai-idea/lead-company-tech-fingerprint-scanner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "sales-outreach-personalization-generator",
+      "name": "Sales Outreach Personalization Generator",
+      "pitch": "Scrapes the LinkedIn profile and company page of the recipient and suggests 2-3 personalization hooks for the email template. Works as a side panel inside Gmail compose. No AI API needed for v1, just ",
+      "pain": "Cold outreach gets ignored because reps send generic templates that do not reference anything specific about the prospect.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-outreach-personalization-generator-xhgkvw",
+          "url": "https://example.invalid/ai-idea/sales-outreach-personalization-generator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "pr-review-token-budget-tracker",
+      "name": "PR Review Token Budget Tracker",
+      "pitch": "Injects a sidebar on GitHub PR pages showing cumulative token cost from review comments and AI tools used. Uses local storage to track per-repo totals. Built-in rate limiter to avoid API polling overh",
+      "pain": "Developers have no idea how much LLM budget a code review consumes until the invoice shocks them.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-review-token-budget-tracker-j6zmqq",
+          "url": "https://example.invalid/ai-idea/pr-review-token-budget-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-conversation-token-counter",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "ci-pipeline-cost-estimator",
+      "name": "CI Pipeline Cost Estimator",
+      "pitch": "Reads GitHub Actions and GitLab CI YAML files in-repo to estimate per-step compute costs using public pricing tables. Displays inline badges on the CI page showing estimated cost per run and cumulativ",
+      "pain": "Engineers have no idea how expensive a CI run is until the cloud bill arrives and they cannot trace it back.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ci-pipeline-cost-estimator-zng7c3",
+          "url": "https://example.invalid/ai-idea/ci-pipeline-cost-estimator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "npm-package-popularity-overlay",
+      "name": "NPM Package Popularity Overlay",
+      "pitch": "Overlays npm package pages with a chart showing download trends, maintenance activity, and license risk. Fetches data from the public npm API. Helps developers make dependency decisions before committ",
+      "pain": "Developers pick obscure npm packages without realizing they have 10 weekly downloads and zero maintainers.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-npm-package-popularity-overlay-3d7yps",
+          "url": "https://example.invalid/ai-idea/npm-package-popularity-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pypi-safety-score-overlay",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "linkedin-connection-recency-ranker",
+      "name": "LinkedIn Connection Recency Ranker",
+      "pitch": "Overlays a freshness score badge on LinkedIn connection pages using last interaction timestamps. Sorts the connection list by recency on demand. One API call per profile load, cached aggressively to s",
+      "pain": "Salespeople lose track of warm leads because they cannot see which connections they have not touched in months.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-connection-recency-ranker-aspywc",
+          "url": "https://example.invalid/ai-idea/linkedin-connection-recency-ranker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "quota-usage-pulse",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}

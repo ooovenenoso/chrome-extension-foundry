@@ -1,0 +1,220 @@
+{
+  "slot": "2026-06-30-13",
+  "week": "2026-W27",
+  "fetched_at": "2026-06-30T13:44:53.376Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-gcp-idle-resource-sentinel-3y1ik3",
+          "title": "GCP Idle Resource Sentinel",
+          "url": "https://example.invalid/ai-idea/gcp-idle-resource-sentinel",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scrapes GCP console pages to detect running resources with no activity logs. Triggers a browser notification when an instance is idle past a threshold. Small storage layer for history. One weekend to prototype, a week to polish.",
+          "monetization": "per_seat",
+          "pain": "Solo founders forget about idle cloud VMs and pay for weeks after they stopped using them."
+        },
+        {
+          "source_id": "ai-pr-review-token-budget-tracker-j6zmqq",
+          "title": "PR Review Token Budget Tracker",
+          "url": "https://example.invalid/ai-idea/pr-review-token-budget-tracker",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::developer-internal",
+          "notes": "Injects a sidebar on GitHub PR pages showing cumulative token cost from review comments and AI tools used. Uses local storage to track per-repo totals. Built-in rate limiter to avoid API polling overhead.",
+          "monetization": "freemium_saas",
+          "pain": "Developers have no idea how much LLM budget a code review consumes until the invoice shocks them."
+        },
+        {
+          "source_id": "ai-email-delay-optimizer-paxck2",
+          "title": "Email Delay Optimizer",
+          "url": "https://example.invalid/ai-idea/email-delay-optimizer",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Adds a send-time widget inside Gmail compose that suggests optimal hours based on recipient domain activity patterns. Calculates suggested delay automatically. No backend required for v1, just pattern matching on send history.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals send emails at the wrong time and miss the window when recipients are most likely to open."
+        },
+        {
+          "source_id": "ai-linkedin-connection-recency-ranker-aspywc",
+          "title": "LinkedIn Connection Recency Ranker",
+          "url": "https://example.invalid/ai-idea/linkedin-connection-recency-ranker",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Overlays a freshness score badge on LinkedIn connection pages using last interaction timestamps. Sorts the connection list by recency on demand. One API call per profile load, cached aggressively to stay within rate limits.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Salespeople lose track of warm leads because they cannot see which connections they have not touched in months."
+        },
+        {
+          "source_id": "ai-browser-tab-productivity-score-ac8317",
+          "title": "Browser Tab Productivity Score",
+          "url": "https://example.invalid/ai-idea/browser-tab-productivity-score",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Classifies tabs by domain patterns (social, news, work) and shows a live score in the extension badge. Weekly summary in a popup with breakdown by category. Runs entirely in the browser with no server dependency.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Workers waste hours on distracting tabs but have no real-time feedback on how unproductive their browsing has become."
+        },
+        {
+          "source_id": "ai-lead-company-tech-fingerprint-scanner-ljlh8f",
+          "title": "Lead Company Tech Fingerprint Scanner",
+          "url": "https://example.invalid/ai-idea/lead-company-tech-fingerprint-scanner",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes the target company's homepage for JS bundle signatures and HTTP headers that reveal tech stack. Shows a side panel with detected tools, pricing tier estimate, and contact info. Works on LinkedIn, landing pages, and Crunchbase.",
+          "monetization": "per_seat",
+          "pain": "Sales reps spend 20 minutes per lead manually researching what tools a company uses before their first call."
+        },
+        {
+          "source_id": "ai-api-response-cache-efficiency-monitor-0jei4k",
+          "title": "API Response Cache Efficiency Monitor",
+          "url": "https://example.invalid/ai-idea/api-response-cache-efficiency-monitor",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "devtool::devtools",
+          "notes": "Injects a panel in the Network tab that visualizes cache-hit ratios per endpoint over the session. Highlights endpoints with low hit rates and suggests TTL adjustments. No external service needed, just tab-local analysis.",
+          "monetization": "per_seat",
+          "pain": "Backend engineers discover cache is broken only after production performance collapses and users complain."
+        },
+        {
+          "source_id": "ai-ci-pipeline-cost-estimator-zng7c3",
+          "title": "CI Pipeline Cost Estimator",
+          "url": "https://example.invalid/ai-idea/ci-pipeline-cost-estimator",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::developer-internal",
+          "notes": "Reads GitHub Actions and GitLab CI YAML files in-repo to estimate per-step compute costs using public pricing tables. Displays inline badges on the CI page showing estimated cost per run and cumulative monthly spend.",
+          "monetization": "freemium_saas",
+          "pain": "Engineers have no idea how expensive a CI run is until the cloud bill arrives and they cannot trace it back."
+        },
+        {
+          "source_id": "ai-websocket-health-panel-gf5bt0",
+          "title": "WebSocket Health Panel",
+          "url": "https://example.invalid/ai-idea/websocket-health-panel",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "devtool::devtools",
+          "notes": "Adds a floating panel on any page with active WebSocket connections, showing connection ID, latency per frame, and reconnect events. Exports session data as HAR-like JSON for replay. One evening to build the frame listener.",
+          "monetization": "per_seat",
+          "pain": "Frontend devs lose hours chasing intermittent WS disconnects that never show up in HTTP network logs."
+        },
+        {
+          "source_id": "ai-npm-package-popularity-overlay-3d7yps",
+          "title": "NPM Package Popularity Overlay",
+          "url": "https://example.invalid/ai-idea/npm-package-popularity-overlay",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::developer-internal",
+          "notes": "Overlays npm package pages with a chart showing download trends, maintenance activity, and license risk. Fetches data from the public npm API. Helps developers make dependency decisions before committing to a new package.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers pick obscure npm packages without realizing they have 10 weekly downloads and zero maintainers."
+        },
+        {
+          "source_id": "ai-github-issue-velocity-dashboard-nwldwv",
+          "title": "GitHub Issue Velocity Dashboard",
+          "url": "https://example.invalid/ai-idea/github-issue-velocity-dashboard",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::developer-internal",
+          "notes": "Scrapes the GitHub issues page for open/close timestamps and renders a velocity chart in the repo sidebar. Shows weekly close rate, average time-to-close, and trend line. Stores history in local storage for comparison.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Engineering managers cannot tell if their team is improving or slowing down without manually counting closed issues each sprint."
+        },
+        {
+          "source_id": "ai-schema-migration-breaking-change-detecto-2zpfyz",
+          "title": "Schema Migration Breaking Change Detector",
+          "url": "https://example.invalid/ai-idea/schema-migration-breaking-change-detecto",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "devtool::devtools",
+          "notes": "Compares two OpenAPI or JSON Schema files and highlights breaking changes: removed fields, type changes, required-field additions. Runs in the browser, no server needed. Can be triggered via drag-and-drop on any schema page.",
+          "monetization": "per_seat",
+          "pain": "API consumers break when they do not know what fields were removed or renamed between schema versions."
+        },
+        {
+          "source_id": "ai-email-thread-repetition-detector-v6vc7h",
+          "title": "Email Thread Repetition Detector",
+          "url": "https://example.invalid/ai-idea/email-thread-repetition-detector",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Detects near-duplicate messages within a Gmail thread and collapses the redundant copies into a single line with a count badge. Helps clean up thread views without deleting any content. Simple text-similarity algorithm runs client-side.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Email threads become unreadable when the same reply gets sent multiple times by different recipients."
+        },
+        {
+          "source_id": "ai-sales-outreach-personalization-generator-xhgkvw",
+          "title": "Sales Outreach Personalization Generator",
+          "url": "https://example.invalid/ai-idea/sales-outreach-personalization-generator",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes the LinkedIn profile and company page of the recipient and suggests 2-3 personalization hooks for the email template. Works as a side panel inside Gmail compose. No AI API needed for v1, just template variable extraction from public pages.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Cold outreach gets ignored because reps send generic templates that do not reference anything specific about the prospect."
+        },
+        {
+          "source_id": "ai-webpage-performance-budget-guard-501vll",
+          "title": "WebPage Performance Budget Guard",
+          "url": "https://example.invalid/ai-idea/webpage-performance-budget-guard",
+          "timestamp": "2026-06-30T13:44:53.368Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "devtool::devtools",
+          "notes": "Defines a performance budget (JS size, image weight, total page size) per domain in a config file. On every page load, checks thresholds and shows a warning badge if budget is exceeded. Can block deployments via CI hook integration.",
+          "monetization": "freemium_saas",
+          "pain": "Pages ship slow because no one is watching bundle size and asset weight until users report lag in production."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-30T13:44:53.376Z",
+        "dedup_against": 189,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
