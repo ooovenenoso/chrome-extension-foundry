@@ -1,0 +1,220 @@
+{
+  "slot": "2026-06-30-01",
+  "week": "2026-W27",
+  "fetched_at": "2026-06-30T01:48:38.469Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-git-branch-age-inspector-p9lp9a",
+          "title": "Git Branch Age Inspector",
+          "url": "https://example.invalid/ai-idea/git-branch-age-inspector",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses git metadata from the active repo to surface branches older than a configurable threshold. Simple DOM parsing of GitHub/GitLab UI plus local git commands. Uniqueness lies in the time-decay angle most tools ignore.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers lose track of stale branches and waste time rebasing or reviewing outdated code."
+        },
+        {
+          "source_id": "ai-pipeline-velocity-tracker-s4hwij",
+          "title": "Pipeline Velocity Tracker",
+          "url": "https://example.invalid/ai-idea/pipeline-velocity-tracker",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes Salesforce/HubSpot deal stage timestamps and renders a velocity chart in a sidebar. Freemium tier shows last 30 days; pro unlocks quarterly trends. Differentiator: movement speed, not just stage.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps manually calculate deal movement speed and miss early signals of stalled opportunities."
+        },
+        {
+          "source_id": "ai-email-thread-sentiment-drift-48y0g3",
+          "title": "Email Thread Sentiment Drift",
+          "url": "https://example.invalid/ai-idea/email-thread-sentiment-drift",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Runs lightweight sentiment analysis on each Gmail message in a thread and plots a drift line. Uses a free-tier LLM API. Gap: no tool shows emotional trajectory over time within threads.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Salespeople miss emotional tone shifts in long email threads and respond too late to salvage deals."
+        },
+        {
+          "source_id": "ai-webhook-retry-budget-tracker-3odium",
+          "title": "Webhook Retry Budget Tracker",
+          "url": "https://example.invalid/ai-idea/webhook-retry-budget-tracker",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts outgoing webhook headers and maintains a live counter badge. Configurable per-endpoint budgets. Lightweight storage in extension localStorage. Differentiator: budget-aware, not just retry-aware.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers exceed webhook retry budgets unexpectedly and lose events without knowing until customers complain."
+        },
+        {
+          "source_id": "ai-calendar-buffer-suggestion-engine-kkqkh3",
+          "title": "Calendar Buffer Suggestion Engine",
+          "url": "https://example.invalid/ai-idea/calendar-buffer-suggestion-engine",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes Google Calendar gaps and suggests micro-breaks or focus blocks using a simple rule engine. Uses free/busy API. Unique angle: buffer sizing based on meeting type, not fixed duration.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals schedule back-to-back meetings and lose focus time they did not realize they needed."
+        },
+        {
+          "source_id": "ai-css-specificity-war-visualizer-0gywih",
+          "title": "CSS Specificity War Visualizer",
+          "url": "https://example.invalid/ai-idea/css-specificity-war-visualizer",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "devtools::devtools",
+          "notes": "Highlights conflicting CSS rules in DevTools Elements panel with live specificity scores. Uses parsed CSSOM. Niche angle: war visualization showing which rule dominates.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Frontend developers debug specificity conflicts by manually calculating scores and still misjudge winners."
+        },
+        {
+          "source_id": "ai-third-party-script-load-cost-overlay-1myvbe",
+          "title": "Third-Party Script Load Cost Overlay",
+          "url": "https://example.invalid/ai-idea/third-party-script-load-cost-overlay",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Aggregates Network panel timing data for third-party origins and renders a per-domain cost breakdown. Tip jar model because power users care. Gap: no consumer-facing load cost visualization exists.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users do not know which third-party scripts drain their bandwidth and battery the most during browsing."
+        },
+        {
+          "source_id": "ai-competitor-job-posting-trend-scanner-9b6z0q",
+          "title": "Competitor Job Posting Trend Scanner",
+          "url": "https://example.invalid/ai-idea/competitor-job-posting-trend-scanner",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn job postings for competitor company names and shows posting velocity over time. Freemium limits to 3 companies. Unique angle: hiring velocity as a sales signal.",
+          "monetization": "freemium_saas",
+          "pain": "Revenue teams do not know when competitors are scaling or cutting teams, missing early market signals."
+        },
+        {
+          "source_id": "ai-github-star-history-visualizer-s7dfwf",
+          "title": "GitHub Star History Visualizer",
+          "url": "https://example.invalid/ai-idea/github-star-history-visualizer",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Fetches star event timeline from GitHub API and renders a momentum chart. Uses public API with minimal auth. Niche: momentum over raw count, differentiating fast-rising vs legacy repos.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers evaluate open-source projects without seeing momentum and misjudge repo health by raw star counts."
+        },
+        {
+          "source_id": "ai-browser-extension-permission-risk-score-qzrx43",
+          "title": "Browser Extension Permission Risk Score",
+          "url": "https://example.invalid/ai-idea/browser-extension-permission-risk-score",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Parses installed extension manifests and scores risk based on permission scope (tabs, cookies, scripting). Shows a risk dashboard. Gap: no consumer tool surfaces extension permission cost.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users install many Chrome extensions without understanding what data each one can access on every page."
+        },
+        {
+          "source_id": "ai-meeting-transcript-action-item-splitter-oj1oy0",
+          "title": "Meeting Transcript Action Item Splitter",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-action-item-splitter",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses LLM to parse Google Meet transcripts and extract owner-assigned tasks with due dates. Freemium allows 5 extractions/month. Differentiator: action item extraction, not full summarization.",
+          "monetization": "freemium_saas",
+          "pain": "Account executives lose action items in long meeting transcripts and miss follow-up commitments that close deals."
+        },
+        {
+          "source_id": "ai-local-llm-response-cache-sizfjk",
+          "title": "Local LLM Response Cache",
+          "url": "https://example.invalid/ai-idea/local-llm-response-cache",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Hashes prompts and caches responses locally. Shows cache hit rate in popup. Works with any LLM API endpoint via declarativeNetRequest rules. Unique angle: prompt-level deduplication without server-side storage.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users re-prompt AI assistants with near-identical queries and waste API quota on repeated responses."
+        },
+        {
+          "source_id": "ai-code-review-comment-recurrence-detector-kna1nx",
+          "title": "Code Review Comment Recurrence Detector",
+          "url": "https://example.invalid/ai-idea/code-review-comment-recurrence-detector",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Analyzes GitHub PR comment history and clusters repeated phrases. Surfaces reusable snippets. Lightweight semantic similarity using embeddings API. Gap: comment recurrence is a known pain, no tool surfaces it.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Senior developers repeat the same review feedback across PRs without a reusable snippet system."
+        },
+        {
+          "source_id": "ai-gcp-resource-tag-compliance-checker-53lev2",
+          "title": "GCP Resource Tag Compliance Checker",
+          "url": "https://example.invalid/ai-idea/gcp-resource-tag-compliance-checker",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Queries GCP Resource Manager API from the browser and flags untagged or mis-tagged resources per project. Per-seat B2B model targeting cloud finance teams. Differentiator: browser-native tag compliance, not CLI-only.",
+          "monetization": "per_seat",
+          "pain": "DevOps teams accrue untagged GCP resources and face surprise billing during end-of-month reviews."
+        },
+        {
+          "source_id": "ai-readability-score-by-section-vaossl",
+          "title": "Readability Score By Section",
+          "url": "https://example.invalid/ai-idea/readability-score-by-section",
+          "timestamp": "2026-06-30T01:48:38.464Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Highlights article sections by Flesch-Kincaid grade level and color-codes difficulty. Helps readers decide where to skim. Tip jar model. Unique angle: per-section scoring, not whole-page averages.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Readers struggle with long-form articles where sections vary wildly in complexity and effort to parse."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-06-30T01:48:38.469Z",
+        "dedup_against": 174,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

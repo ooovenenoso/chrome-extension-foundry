@@ -1,0 +1,218 @@
+{
+  "slot": "2026-06-30-01",
+  "week": "2026-W27",
+  "scored_at": "2026-06-30T01:48:38.601Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-thread-sentiment-drift",
+      "name": "Email Thread Sentiment Drift",
+      "pitch": "Runs lightweight sentiment analysis on each Gmail message in a thread and plots a drift line. Uses a free-tier LLM API. Gap: no tool shows emotional trajectory over time within threads.",
+      "pain": "Salespeople miss emotional tone shifts in long email threads and respond too late to salvage deals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-thread-sentiment-drift-48y0g3",
+          "url": "https://example.invalid/ai-idea/email-thread-sentiment-drift"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-thread-unsubscriber",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "pipeline-velocity-tracker",
+      "name": "Pipeline Velocity Tracker",
+      "pitch": "Scrapes Salesforce/HubSpot deal stage timestamps and renders a velocity chart in a sidebar. Freemium tier shows last 30 days; pro unlocks quarterly trends. Differentiator: movement speed, not just sta",
+      "pain": "Sales reps manually calculate deal movement speed and miss early signals of stalled opportunities.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pipeline-velocity-tracker-s4hwij",
+          "url": "https://example.invalid/ai-idea/pipeline-velocity-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "font-lineage-tracker",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "competitor-job-posting-trend-scanner",
+      "name": "Competitor Job Posting Trend Scanner",
+      "pitch": "Scrapes LinkedIn job postings for competitor company names and shows posting velocity over time. Freemium limits to 3 companies. Unique angle: hiring velocity as a sales signal.",
+      "pain": "Revenue teams do not know when competitors are scaling or cutting teams, missing early market signals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-competitor-job-posting-trend-scanner-9b6z0q",
+          "url": "https://example.invalid/ai-idea/competitor-job-posting-trend-scanner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-tech-signal-extractor",
+        "jaccard_with_nearest": 0.17
+      }
+    },
+    {
+      "id": "meeting-transcript-action-item-splitter",
+      "name": "Meeting Transcript Action Item Splitter",
+      "pitch": "Uses LLM to parse Google Meet transcripts and extract owner-assigned tasks with due dates. Freemium allows 5 extractions/month. Differentiator: action item extraction, not full summarization.",
+      "pain": "Account executives lose action items in long meeting transcripts and miss follow-up commitments that close deals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-transcript-action-item-splitter-oj1oy0",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-action-item-splitter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "page-resource-waterfall-analyzer",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "gcp-resource-tag-compliance-checker",
+      "name": "GCP Resource Tag Compliance Checker",
+      "pitch": "Queries GCP Resource Manager API from the browser and flags untagged or mis-tagged resources per project. Per-seat B2B model targeting cloud finance teams. Differentiator: browser-native tag complianc",
+      "pain": "DevOps teams accrue untagged GCP resources and face surprise billing during end-of-month reviews.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-resource-tag-compliance-checker-53lev2",
+          "url": "https://example.invalid/ai-idea/gcp-resource-tag-compliance-checker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "page-resource-waterfall-analyzer",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "git-branch-age-inspector",
+      "name": "Git Branch Age Inspector",
+      "pitch": "Parses git metadata from the active repo to surface branches older than a configurable threshold. Simple DOM parsing of GitHub/GitLab UI plus local git commands. Uniqueness lies in the time-decay angl",
+      "pain": "Developers lose track of stale branches and waste time rebasing or reviewing outdated code.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-git-branch-age-inspector-p9lp9a",
+          "url": "https://example.invalid/ai-idea/git-branch-age-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-token-inspector",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "github-star-history-visualizer",
+      "name": "GitHub Star History Visualizer",
+      "pitch": "Fetches star event timeline from GitHub API and renders a momentum chart. Uses public API with minimal auth. Niche: momentum over raw count, differentiating fast-rising vs legacy repos.",
+      "pain": "Developers evaluate open-source projects without seeing momentum and misjudge repo health by raw star counts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-star-history-visualizer-s7dfwf",
+          "url": "https://example.invalid/ai-idea/github-star-history-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-event-playground",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}
