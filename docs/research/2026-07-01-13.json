@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-01-13",
+  "week": "2026-W27",
+  "fetched_at": "2026-07-01T13:51:36.295Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-video-timestamp-bookmark-library-oouukv",
+          "title": "Video Timestamp Bookmark Library",
+          "url": "https://example.invalid/ai-idea/video-timestamp-bookmark-library",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts chapters/timestamps from YouTube/Vimeo videos and builds a searchable library. Now is prime because video-first learning is dominant and creators add more chapters. No clean timestamp organizer exists that works cross-platform.",
+          "monetization": "freemium_saas",
+          "pain": "Manually noting video timestamps wastes time and bookmarks become unorganized"
+        },
+        {
+          "source_id": "ai-css-contrast-auditor-8kyl8g",
+          "title": "CSS Contrast Auditor",
+          "url": "https://example.invalid/ai-idea/css-contrast-auditor",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Overlays contrast ratio warnings directly on page elements with one-click fixes. Built as browser extension because CSS is already rendering there. Growing accessibility lawsuit risk makes this timely.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Checking WCAG contrast ratios requires switching to external tools or devtools"
+        },
+        {
+          "source_id": "ai-webhook-provider-fingerprinter-9g6yu1",
+          "title": "Webhook Provider Fingerprinter",
+          "url": "https://example.invalid/ai-idea/webhook-provider-fingerprinter",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Pattern-matches webhook payloads against known provider signatures (Stripe, SendGrid, Twilio, etc). Extensions see raw requests so fingerprinting is trivial. Webhook debugging is a universal pain.",
+          "monetization": "freemium_saas",
+          "pain": "Identifying which SaaS tool sent a webhook requires manual header inspection"
+        },
+        {
+          "source_id": "ai-public-api-rate-limit-lookup-5zv87e",
+          "title": "Public API Rate Limit Lookup",
+          "url": "https://example.invalid/ai-idea/public-api-rate-limit-lookup",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Overlays rate limit info on any API documentation page by scraping common patterns. When developers hit rate limits during integration, they lose hours. Docs are often inconsistent.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Finding rate limits for public APIs requires digging through docs"
+        },
+        {
+          "source_id": "ai-email-thread-participation-graph-2oxxss",
+          "title": "Email Thread Participation Graph",
+          "url": "https://example.invalid/ai-idea/email-thread-participation-graph",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Visualizes reply chains as a graph showing who participated most and who got dropped. Sales teams juggle many threads and lose context. Gmail extension makes this native to workflow.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Long email threads become confusing about who owes what action"
+        },
+        {
+          "source_id": "ai-linkedin-mutual-icebreaker-finder-qqlnyv",
+          "title": "LinkedIn Mutual Icebreaker Finder",
+          "url": "https://example.invalid/ai-idea/linkedin-mutual-icebreaker-finder",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn profiles for shared groups, schools, employers, and highlights warm intros. SDRs need personalization at scale. Competitors require manual browsing.",
+          "monetization": "per_seat",
+          "pain": "Finding relevant mutual connections for outreach is manual and time-consuming"
+        },
+        {
+          "source_id": "ai-pr-description-change-tracker-v4idki",
+          "title": "PR Description Change Tracker",
+          "url": "https://example.invalid/ai-idea/pr-description-change-tracker",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Monitors GitHub PR description edits and shows a diff over time. Code review context gets lost when descriptions change. Built with GitHub API and content scripts.",
+          "monetization": "stripe_tip_jar",
+          "pain": "PR descriptions evolve but there's no history view of what changed"
+        },
+        {
+          "source_id": "ai-page-interaction-replay-recorder-j56c66",
+          "title": "Page Interaction Replay Recorder",
+          "url": "https://example.invalid/ai-idea/page-interaction-replay-recorder",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Records user interactions (clicks, scrolls, inputs) as a shareable JSON sequence. QA and support teams can replay bugs exactly. Lightweight alternative to full session recording tools.",
+          "monetization": "freemium_saas",
+          "pain": "Recording bug reproduction steps requires screen recording or manual notes"
+        },
+        {
+          "source_id": "ai-jsonpath-live-query-tester-ifmt7w",
+          "title": "JSONPath Live Query Tester",
+          "url": "https://example.invalid/ai-idea/jsonpath-live-query-tester",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Injects a query box on any page containing JSON, letting developers test paths in real-time. Works on API responses, localStorage, or any JSON in DOM. Faster than switching contexts.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Testing JSONPath queries requires copying JSON or using external playgrounds"
+        },
+        {
+          "source_id": "ai-conference-speaker-context-brief-tz945c",
+          "title": "Conference Speaker Context Brief",
+          "url": "https://example.invalid/ai-idea/conference-speaker-context-brief",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Generates one-click briefs from speaker LinkedIn profiles and company pages before events. Sales teams lose deals by not knowing context. Events generate high-intent leads.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Preparing for conference meetings requires hours of manual research"
+        },
+        {
+          "source_id": "ai-browser-tab-energy-drain-meter-sfh1yn",
+          "title": "Browser Tab Energy Drain Meter",
+          "url": "https://example.invalid/ai-idea/browser-tab-energy-drain-meter",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Estimates per-tab resource usage (CPU, memory, network) and flags heavy consumers. Laptop users want battery life; this surfaces the culprit. Works via performance observer API.",
+          "monetization": "freemium_saas",
+          "pain": "No visibility into which tabs drain battery or resources"
+        },
+        {
+          "source_id": "ai-seo-meta-tag-comparator-jq82vb",
+          "title": "SEO Meta Tag Comparator",
+          "url": "https://example.invalid/ai-idea/seo-meta-tag-comparator",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::marketing",
+          "notes": "Lets users compare meta titles, descriptions, and OG tags between any two URLs side-by-side. Marketers and SEOs need quick audits. Built-in competitor analysis fills a real gap.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Comparing meta tags against competitors requires manual scraping"
+        },
+        {
+          "source_id": "ai-calendar-event-tone-analyzer-jfv4rs",
+          "title": "Calendar Event Tone Analyzer",
+          "url": "https://example.invalid/ai-idea/calendar-event-tone-analyzer",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::productivity",
+          "notes": "Analyzes the language in calendar event descriptions to flag vague meetings, missing agendas, or aggressive tone. Professionals waste hours in low-value meetings. Simple NLP on title + description.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Meeting invites lack clarity on urgency or desired outcomes"
+        },
+        {
+          "source_id": "ai-localstorage-mutation-logger-civi4q",
+          "title": "LocalStorage Mutation Logger",
+          "url": "https://example.invalid/ai-idea/localstorage-mutation-logger",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Records every localStorage and sessionStorage write with timestamp, value diff, and call stack origin. Frontend devs debugging state bugs lose time finding mutations. Extension sees all storage events.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Tracking localStorage changes requires manual breakpoints or logging"
+        },
+        {
+          "source_id": "ai-css-custom-property-dependency-map-q7w0lb",
+          "title": "CSS Custom Property Dependency Map",
+          "url": "https://example.invalid/ai-idea/css-custom-property-dependency-map",
+          "timestamp": "2026-07-01T13:51:36.286Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Visualizes all CSS custom properties on a page and which elements use them, with a dependency graph. Design systems use hundreds of variables; understanding cascades is painful. Built with computed styles API.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Understanding CSS variable usage requires grep or manual inspection"
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-01T13:51:36.295Z",
+        "dedup_against": 219,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

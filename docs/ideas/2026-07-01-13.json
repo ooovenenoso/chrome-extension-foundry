@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-01-13",
+  "week": "2026-W27",
+  "scored_at": "2026-07-01T13:51:36.459Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-thread-participation-graph",
+      "name": "Email Thread Participation Graph",
+      "pitch": "Visualizes reply chains as a graph showing who participated most and who got dropped. Sales teams juggle many threads and lose context. Gmail extension makes this native to workflow.",
+      "pain": "Long email threads become confusing about who owes what action",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-thread-participation-graph-2oxxss",
+          "url": "https://example.invalid/ai-idea/email-thread-participation-graph"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "linkedin-mutual-icebreaker-finder",
+      "name": "LinkedIn Mutual Icebreaker Finder",
+      "pitch": "Scrapes LinkedIn profiles for shared groups, schools, employers, and highlights warm intros. SDRs need personalization at scale. Competitors require manual browsing.",
+      "pain": "Finding relevant mutual connections for outreach is manual and time-consuming",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-mutual-icebreaker-finder-qqlnyv",
+          "url": "https://example.invalid/ai-idea/linkedin-mutual-icebreaker-finder"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "conference-speaker-context-brief",
+      "name": "Conference Speaker Context Brief",
+      "pitch": "Generates one-click briefs from speaker LinkedIn profiles and company pages before events. Sales teams lose deals by not knowing context. Events generate high-intent leads.",
+      "pain": "Preparing for conference meetings requires hours of manual research",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-conference-speaker-context-brief-tz945c",
+          "url": "https://example.invalid/ai-idea/conference-speaker-context-brief"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-signal-tracker",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "calendar-event-tone-analyzer",
+      "name": "Calendar Event Tone Analyzer",
+      "pitch": "Analyzes the language in calendar event descriptions to flag vague meetings, missing agendas, or aggressive tone. Professionals waste hours in low-value meetings. Simple NLP on title + description.",
+      "pain": "Meeting invites lack clarity on urgency or desired outcomes",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-calendar-event-tone-analyzer-jfv4rs",
+          "url": "https://example.invalid/ai-idea/calendar-event-tone-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-signal-tracker",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "css-contrast-auditor",
+      "name": "CSS Contrast Auditor",
+      "pitch": "Overlays contrast ratio warnings directly on page elements with one-click fixes. Built as browser extension because CSS is already rendering there. Growing accessibility lawsuit risk makes this timely",
+      "pain": "Checking WCAG contrast ratios requires switching to external tools or devtools",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-contrast-auditor-8kyl8g",
+          "url": "https://example.invalid/ai-idea/css-contrast-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webpage-accessibility-diff-checker",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "webhook-provider-fingerprinter",
+      "name": "Webhook Provider Fingerprinter",
+      "pitch": "Pattern-matches webhook payloads against known provider signatures (Stripe, SendGrid, Twilio, etc). Extensions see raw requests so fingerprinting is trivial. Webhook debugging is a universal pain.",
+      "pain": "Identifying which SaaS tool sent a webhook requires manual header inspection",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-provider-fingerprinter-9g6yu1",
+          "url": "https://example.invalid/ai-idea/webhook-provider-fingerprinter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "page-interaction-replay-recorder",
+      "name": "Page Interaction Replay Recorder",
+      "pitch": "Records user interactions (clicks, scrolls, inputs) as a shareable JSON sequence. QA and support teams can replay bugs exactly. Lightweight alternative to full session recording tools.",
+      "pain": "Recording bug reproduction steps requires screen recording or manual notes",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-page-interaction-replay-recorder-j56c66",
+          "url": "https://example.invalid/ai-idea/page-interaction-replay-recorder"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "page-resource-waterfall-analyzer",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "seo-meta-tag-comparator",
+      "name": "SEO Meta Tag Comparator",
+      "pitch": "Lets users compare meta titles, descriptions, and OG tags between any two URLs side-by-side. Marketers and SEOs need quick audits. Built-in competitor analysis fills a real gap.",
+      "pain": "Comparing meta tags against competitors requires manual scraping",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-seo-meta-tag-comparator-jq82vb",
+          "url": "https://example.invalid/ai-idea/seo-meta-tag-comparator"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sitemap-health-monitor",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}
