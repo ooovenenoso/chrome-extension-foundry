@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-01-01",
+  "week": "2026-W27",
+  "fetched_at": "2026-07-01T01:52:42.434Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-grpc-method-impact-analyzer-dk46u9",
+          "title": "gRPC Method Impact Analyzer",
+          "url": "https://example.invalid/ai-idea/grpc-method-impact-analyzer",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Can be built by intercepting gRPC-web traffic in the browser and visualizing method call graphs. Leverages protobuf parsing libraries already in JS. Most teams lack visibility into gRPC inter-service dependencies without expensive APM tools.",
+          "monetization": "per_seat",
+          "pain": "Engineers waste hours manually tracing which gRPC methods broke downstream services after schema changes."
+        },
+        {
+          "source_id": "ai-deal-stage-momentum-forecaster-b5x2nc",
+          "title": "Deal Stage Momentum Forecaster",
+          "url": "https://example.invalid/ai-idea/deal-stage-momentum-forecaster",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Runs client-side on Salesforce/HubSpot dashboards to compute velocity metrics from historical stage transitions. Simple analytics that existing CRMs don't surface. Freemium tier unlocks historical trends.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps have no visibility into which deals are accelerating or stalling until it's too late to intervene."
+        },
+        {
+          "source_id": "ai-ai-citation-truth-verifier-vpam0v",
+          "title": "AI Citation Truth Verifier",
+          "url": "https://example.invalid/ai-idea/ai-citation-truth-verifier",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Extracts URLs from AI responses and validates them against fetched content using semantic similarity. Simple to demo and valuable enough for users to tip. Directly addresses the growing trust problem in AI outputs.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users blindly trust AI-generated citations that often reference non-existent sources or misrepresent content."
+        },
+        {
+          "source_id": "ai-cross-device-tab-handoff-3f69zm",
+          "title": "Cross-Device Tab Handoff",
+          "url": "https://example.invalid/ai-idea/cross-device-tab-handoff",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses WebRTC data channels or a lightweight relay server to push tab URLs between devices. Browser-native tab sync exists but feels clunky. Freemium allows 50 handoffs/month, then $3/mo.",
+          "monetization": "freemium_saas",
+          "pain": "Workers lose context switching between desktop and mobile, manually re-fixing tabs they had open elsewhere."
+        },
+        {
+          "source_id": "ai-crm-field-dust-detector-o0qgh1",
+          "title": "CRM Field Dust Detector",
+          "url": "https://example.invalid/ai-idea/crm-field-dust-detector",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes field fill rates against closed-won outcomes to surface low-signal fields. Builds a data quality score per org. Per-seat pricing targets ops teams managing Salesforce hygiene.",
+          "monetization": "per_seat",
+          "pain": "Sales teams populate hundreds of CRM fields but never know which ones actually drive forecasting accuracy."
+        },
+        {
+          "source_id": "ai-opentelemetry-trace-linker-e0yav8",
+          "title": "OpenTelemetry Trace Linker",
+          "url": "https://example.invalid/ai-idea/opentelemetry-trace-linker",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Injects trace context into browser network requests and surfaces linked backend spans via a popup overlay. Leverages existing W3C Trace Context spec. Targets developers debugging production latency issues.",
+          "monetization": "per_seat",
+          "pain": "Debugging distributed systems requires manually correlating trace IDs across browser requests and backend spans."
+        },
+        {
+          "source_id": "ai-outbound-sequence-collision-alert-7dkp72",
+          "title": "Outbound Sequence Collision Alert",
+          "url": "https://example.invalid/ai-idea/outbound-sequence-collision-alert",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Cross-references LinkedIn activity and email send logs to flag when teammates target the same contact within a window. Hooks into Salesloft/Outreach APIs. High-value pain for scaling sales teams.",
+          "monetization": "per_seat",
+          "pain": "Multiple SDRs unknowingly contact the same prospect, embarrassing the company and killing reply rates."
+        },
+        {
+          "source_id": "ai-prompt-template-version-diff-6l29ez",
+          "title": "Prompt Template Version Diff",
+          "url": "https://example.invalid/ai-idea/prompt-template-version-diff",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Stores prompt templates in versioned collections and renders side-by-side output comparisons. Can hook into CI to gate deployments on quality metrics. Targets internal AI engineering teams.",
+          "monetization": "per_seat",
+          "pain": "Teams iterating on AI prompts lack tooling to compare outputs across versions, leading to regressions."
+        },
+        {
+          "source_id": "ai-embedded-sdk-cost-breakdown-wj1w5q",
+          "title": "Embedded SDK Cost Breakdown",
+          "url": "https://example.invalid/ai-idea/embedded-sdk-cost-breakdown",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercepts SDK initialization calls and estimates usage costs based on public pricing tiers. Provides a real-time cost overlay per page. Tip jar model works for individual devs debugging surprise bills.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Engineering teams unknowingly stack multiple paid SDKs (maps, analytics, payments) with opaque per-call costs."
+        },
+        {
+          "source_id": "ai-lead-social-footprint-aggregator-uvm83h",
+          "title": "Lead Social Footprint Aggregator",
+          "url": "https://example.invalid/ai-idea/lead-social-footprint-aggregator",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Pulls LinkedIn, GitHub, Twitter, and news mentions into a single sidebar card. Uses free tiers of public APIs. Freemium shows 3 lookups/day, paid unlimited. Targets B2B outbound teams.",
+          "monetization": "freemium_saas",
+          "pain": "Reps spend 20 minutes researching a prospect's credibility before first call, manually checking multiple sites."
+        },
+        {
+          "source_id": "ai-rate-limit-budget-tracker-81zswb",
+          "title": "Rate Limit Budget Tracker",
+          "url": "https://example.invalid/ai-idea/rate-limit-budget-tracker",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Monitors X-RateLimit headers across all network requests and maintains a running budget meter. Alerts when approaching limits. Simple utility with clear value, tip jar fits usage pattern.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers burn through API rate limits during testing without realizing until production incidents occur."
+        },
+        {
+          "source_id": "ai-meeting-transcript-entity-carver-4loebs",
+          "title": "Meeting Transcript Entity Carver",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-entity-carver",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes Google Meet transcripts and extracts named entities (people, firms, deal terms) into structured cards for one-click CRM logging. Targets sales and customer success teams using Meet.",
+          "monetization": "per_seat",
+          "pain": "Post-meeting notes get lost or never synced to CRM, leaving teammates without context on discussed companies or contacts."
+        },
+        {
+          "source_id": "ai-fingerprint-entropy-meter-hoaws3",
+          "title": "Fingerprint Entropy Meter",
+          "url": "https://example.invalid/ai-idea/fingerprint-entropy-meter",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Computes entropy from canvas, WebGL, fonts, and timing signals to produce a uniqueness score. Shows which factors contribute most to fingerprinting. Educational and actionable for privacy-conscious users.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have no way to gauge how trackable their browser is without running separate audit sites."
+        },
+        {
+          "source_id": "ai-code-review-emotional-arc-u1n4z3",
+          "title": "Code Review Emotional Arc",
+          "url": "https://example.invalid/ai-idea/code-review-emotional-arc",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Analyzes sentiment across PR comment threads using lightweight NLP and renders an emotional arc chart. Helps managers intervene early. Targets engineering leaders at larger orgs.",
+          "monetization": "per_seat",
+          "pain": "Engineering managers lack visibility into tone patterns in code reviews, missing hostile dynamics before team damage occurs."
+        },
+        {
+          "source_id": "ai-webhook-payload-schema-validator-k713r2",
+          "title": "Webhook Payload Schema Validator",
+          "url": "https://example.invalid/ai-idea/webhook-payload-schema-validator",
+          "timestamp": "2026-07-01T01:52:42.427Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Defines expected JSON schemas per endpoint and validates incoming payloads in real-time, surfacing diffs and type mismatches. Stores schema definitions in extension local storage. Targets backend devs integrating third-party webhooks.",
+          "monetization": "per_seat",
+          "pain": "Devs debugging webhook integrations waste hours because incoming payloads don't match expected schemas and fail silently."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-01T01:52:42.434Z",
+        "dedup_against": 204,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

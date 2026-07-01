@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-01-01",
+  "week": "2026-W27",
+  "scored_at": "2026-07-01T01:52:42.596Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "lead-social-footprint-aggregator",
+      "name": "Lead Social Footprint Aggregator",
+      "pitch": "Pulls LinkedIn, GitHub, Twitter, and news mentions into a single sidebar card. Uses free tiers of public APIs. Freemium shows 3 lookups/day, paid unlimited. Targets B2B outbound teams.",
+      "pain": "Reps spend 20 minutes researching a prospect's credibility before first call, manually checking multiple sites.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-social-footprint-aggregator-uvm83h",
+          "url": "https://example.invalid/ai-idea/lead-social-footprint-aggregator"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 4
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "ai-citation-truth-verifier",
+      "name": "AI Citation Truth Verifier",
+      "pitch": "Extracts URLs from AI responses and validates them against fetched content using semantic similarity. Simple to demo and valuable enough for users to tip. Directly addresses the growing trust problem ",
+      "pain": "Users blindly trust AI-generated citations that often reference non-existent sources or misrepresent content.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-citation-truth-verifier-vpam0v",
+          "url": "https://example.invalid/ai-idea/ai-citation-truth-verifier"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-sentinel",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "embedded-sdk-cost-breakdown",
+      "name": "Embedded SDK Cost Breakdown",
+      "pitch": "Intercepts SDK initialization calls and estimates usage costs based on public pricing tiers. Provides a real-time cost overlay per page. Tip jar model works for individual devs debugging surprise bill",
+      "pain": "Engineering teams unknowingly stack multiple paid SDKs (maps, analytics, payments) with opaque per-call costs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-embedded-sdk-cost-breakdown-wj1w5q",
+          "url": "https://example.invalid/ai-idea/embedded-sdk-cost-breakdown"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "webhook-payload-schema-validator",
+      "name": "Webhook Payload Schema Validator",
+      "pitch": "Defines expected JSON schemas per endpoint and validates incoming payloads in real-time, surfacing diffs and type mismatches. Stores schema definitions in extension local storage. Targets backend devs",
+      "pain": "Devs debugging webhook integrations waste hours because incoming payloads don't match expected schemas and fail silently.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-payload-schema-validator-k713r2",
+          "url": "https://example.invalid/ai-idea/webhook-payload-schema-validator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "deal-stage-momentum-forecaster",
+      "name": "Deal Stage Momentum Forecaster",
+      "pitch": "Runs client-side on Salesforce/HubSpot dashboards to compute velocity metrics from historical stage transitions. Simple analytics that existing CRMs don't surface. Freemium tier unlocks historical tre",
+      "pain": "Sales reps have no visibility into which deals are accelerating or stalling until it's too late to intervene.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-deal-stage-momentum-forecaster-b5x2nc",
+          "url": "https://example.invalid/ai-idea/deal-stage-momentum-forecaster"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-peerd-ai-agent-harness-that-runs",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "crm-field-dust-detector",
+      "name": "CRM Field Dust Detector",
+      "pitch": "Analyzes field fill rates against closed-won outcomes to surface low-signal fields. Builds a data quality score per org. Per-seat pricing targets ops teams managing Salesforce hygiene.",
+      "pain": "Sales teams populate hundreds of CRM fields but never know which ones actually drive forecasting accuracy.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-crm-field-dust-detector-o0qgh1",
+          "url": "https://example.invalid/ai-idea/crm-field-dust-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "outbound-sequence-collision-alert",
+      "name": "Outbound Sequence Collision Alert",
+      "pitch": "Cross-references LinkedIn activity and email send logs to flag when teammates target the same contact within a window. Hooks into Salesloft/Outreach APIs. High-value pain for scaling sales teams.",
+      "pain": "Multiple SDRs unknowingly contact the same prospect, embarrassing the company and killing reply rates.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-outbound-sequence-collision-alert-7dkp72",
+          "url": "https://example.invalid/ai-idea/outbound-sequence-collision-alert"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "meeting-transcript-entity-carver",
+      "name": "Meeting Transcript Entity Carver",
+      "pitch": "Scrapes Google Meet transcripts and extracts named entities (people, firms, deal terms) into structured cards for one-click CRM logging. Targets sales and customer success teams using Meet.",
+      "pain": "Post-meeting notes get lost or never synced to CRM, leaving teammates without context on discussed companies or contacts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-transcript-entity-carver-4loebs",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-entity-carver"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "grpc-method-impact-analyzer",
+      "name": "gRPC Method Impact Analyzer",
+      "pitch": "Can be built by intercepting gRPC-web traffic in the browser and visualizing method call graphs. Leverages protobuf parsing libraries already in JS. Most teams lack visibility into gRPC inter-service ",
+      "pain": "Engineers waste hours manually tracing which gRPC methods broke downstream services after schema changes.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-grpc-method-impact-analyzer-dk46u9",
+          "url": "https://example.invalid/ai-idea/grpc-method-impact-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "prompt-template-version-diff",
+      "name": "Prompt Template Version Diff",
+      "pitch": "Stores prompt templates in versioned collections and renders side-by-side output comparisons. Can hook into CI to gate deployments on quality metrics. Targets internal AI engineering teams.",
+      "pain": "Teams iterating on AI prompts lack tooling to compare outputs across versions, leading to regressions.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-prompt-template-version-diff-6l29ez",
+          "url": "https://example.invalid/ai-idea/prompt-template-version-diff"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-prompt-diff-viewer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "rate-limit-budget-tracker",
+      "name": "Rate Limit Budget Tracker",
+      "pitch": "Monitors X-RateLimit headers across all network requests and maintains a running budget meter. Alerts when approaching limits. Simple utility with clear value, tip jar fits usage pattern.",
+      "pain": "Developers burn through API rate limits during testing without realizing until production incidents occur.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-rate-limit-budget-tracker-81zswb",
+          "url": "https://example.invalid/ai-idea/rate-limit-budget-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "quota-usage-pulse",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
