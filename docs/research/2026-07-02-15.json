@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-02-15",
+  "week": "2026-W27",
+  "fetched_at": "2026-07-02T15:22:56.107Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-llm-output-version-lens-05ctrg",
+          "title": "LLM Output Version Lens",
+          "url": "https://example.invalid/ai-idea/llm-output-version-lens",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Captures and versions every LLM response with diff view for comparison. Built in under 2 weeks using local storage and a diff library. Fills gap left by ChatGPT/Claude not persisting version history. Targets internal devs who iterate heavily on AI prompts.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers lose track of AI output versions and waste time regenerating lost results"
+        },
+        {
+          "source_id": "ai-international-shipping-cost-overlay-uz3psw",
+          "title": "International Shipping Cost Overlay",
+          "url": "https://example.invalid/ai-idea/international-shipping-cost-overlay",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Detects e-commerce checkout pages and overlays estimated shipping for common international routes. Buildable with shipping API integrations in 3 weeks. No major competitor does this at checkout-time. Freemium model with route limit, premium for unlimited.",
+          "monetization": "freemium_saas",
+          "pain": "Online shoppers waste time visiting multiple sites to compare international shipping costs"
+        },
+        {
+          "source_id": "ai-meeting-hours-accumulator-3yhctk",
+          "title": "Meeting Hours Accumulator",
+          "url": "https://example.invalid/ai-idea/meeting-hours-accumulator",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Reads Google Calendar API and displays running daily/weekly meeting hours in browser toolbar. Simple build under 1 week using Google Calendar API. Addresses unmet need for calendar-level meeting load awareness. Tip jar monetization for premium insights.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals lose track of total meeting time and suffer from chronic over-scheduling"
+        },
+        {
+          "source_id": "ai-job-posting-benefits-comparator-tydgpf",
+          "title": "Job Posting Benefits Comparator",
+          "url": "https://example.invalid/ai-idea/job-posting-benefits-comparator",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes job postings and extracts/structures health insurance, PTO, 401k match, and remote policy. Uses NLP to normalize benefits into comparable scores. Built in 3-4 weeks with scraping and basic ML. No direct competitor offers browser-side comparison.",
+          "monetization": "freemium_saas",
+          "pain": "Job seekers spend hours manually comparing benefits packages across different job postings"
+        },
+        {
+          "source_id": "ai-github-issue-triager-bot-o9m3v6",
+          "title": "GitHub Issue Triager Bot",
+          "url": "https://example.invalid/ai-idea/github-issue-triager-bot",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Uses LLM to read new issues, ask clarifying questions, tag with labels, and route to appropriate contributors. Integrates via GitHub Actions webhooks. Built in 4 weeks with LangChain and GitHub API. Per-seat pricing for maintainers managing large repos.",
+          "monetization": "per_seat",
+          "pain": "Open source maintainers spend hours triaging issues instead of coding"
+        },
+        {
+          "source_id": "ai-npm-package-health-radar-eqll7f",
+          "title": "npm Package Health Radar",
+          "url": "https://example.invalid/ai-idea/npm-package-health-radar",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Overlays npm package health metrics: last publish date, open issues ratio, maintainer activity, and security advisories directly on npmjs.com. Built in 2 weeks using npm registry APIs. Fills gap between manual npm visits and full dependency scanning tools.",
+          "monetization": "freemium_saas",
+          "pain": "Dev teams miss critical signals that npm packages are abandoned or vulnerable"
+        },
+        {
+          "source_id": "ai-slack-message-tone-rewriter-ug7uzu",
+          "title": "Slack Message Tone Rewriter",
+          "url": "https://example.invalid/ai-idea/slack-message-tone-rewriter",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Intercepts Slack message compose box and offers tone-shifted alternatives using LLM before sending. Built in 2 weeks using Slack's web app injection. Growing awareness of workplace communication standards makes this timely. Tip jar for unlimited rewrites.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Workers send tone-deaf Slack messages that damage relationships and careers"
+        },
+        {
+          "source_id": "ai-public-job-posting-salary-extractor-gucgo3",
+          "title": "Public Job Posting Salary Extractor",
+          "url": "https://example.invalid/ai-idea/public-job-posting-salary-extractor",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn, Indeed, and company career pages to extract and normalize salary ranges. Uses structured extraction with fallback to LLM parsing. Built in 3 weeks with Playwright and extraction logic. Targets recruiting teams with per-seat pricing.",
+          "monetization": "per_seat",
+          "pain": "Recruiters waste hours manually extracting and normalizing salary data from job postings"
+        },
+        {
+          "source_id": "ai-gong-call-commitment-tracker-r2b3gl",
+          "title": "Gong Call Commitment Tracker",
+          "url": "https://example.invalid/ai-idea/gong-call-commitment-tracker",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Integrates with Gong API to extract stated commitments and create follow-up tasks automatically. Built in 3 weeks with Gong's transcription API. Direct value prop for sales teams using Gong. Freemium with call limit, per-seat for power users.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps forget promises made during calls, damaging trust and losing deals"
+        },
+        {
+          "source_id": "ai-browser-tab-sleep-scheduler-yocpsy",
+          "title": "Browser Tab Sleep Scheduler",
+          "url": "https://example.invalid/ai-idea/browser-tab-sleep-scheduler",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Schedules tabs to hibernate during set hours (e.g., overnight) and wake on demand. Built in 2 weeks using Chrome's tab update API. Addresses real battery/performance pain with clear ROI. Freemium for basic scheduling, premium for smart wake triggers.",
+          "monetization": "freemium_saas",
+          "pain": "Unused tabs drain battery and slow down the browser throughout the workday"
+        },
+        {
+          "source_id": "ai-ci-pipeline-carbon-tracker-g22ctt",
+          "title": "CI Pipeline Carbon Tracker",
+          "url": "https://example.invalid/ai-idea/ci-pipeline-carbon-tracker",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Integrates with GitHub Actions, GitLab CI, and CircleCI to estimate CO2 emissions based on build time and runner type. Built in 3 weeks with CI APIs and carbon intensity estimation. Growing ESG focus in tech makes this timely. Tip jar for detailed reports.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers have no visibility into the environmental cost of their CI/CD pipelines"
+        },
+        {
+          "source_id": "ai-conference-attendee-linkedin-filter-wcsj35",
+          "title": "Conference Attendee LinkedIn Filter",
+          "url": "https://example.invalid/ai-idea/conference-attendee-linkedin-filter",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uploads attendee list, cross-references LinkedIn profiles, and filters by company, role seniority, and mutual connections. Built in 4 weeks with LinkedIn API and matching logic. Quota-based model for conference passes. Solves real networking pain.",
+          "monetization": "quota_based",
+          "pain": "Conference attendees drown in connection requests and miss finding relevant professionals"
+        },
+        {
+          "source_id": "ai-api-response-cache-auditor-vwxxj9",
+          "title": "API Response Cache Auditor",
+          "url": "https://example.invalid/ai-idea/api-response-cache-auditor",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Overlays cache headers and CDN cache status on network requests, highlighting TTL mismatches and cache bypasses. Built in 2 weeks as a devtools panel extension. Directly useful for API developers debugging caching. Per-seat pricing for team accounts.",
+          "monetization": "per_seat",
+          "pain": "Backend developers can't see if their API responses are being cached correctly by CDNs"
+        },
+        {
+          "source_id": "ai-read-later-tag-organizer-lhrcjq",
+          "title": "Read Later Tag Organizer",
+          "url": "https://example.invalid/ai-idea/read-later-tag-organizer",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Auto-tags and categorizes Pocket/Instapaper articles using LLM topic modeling, surfacing forgotten relevant content. Built in 3 weeks with Pocket API integration. Addresses the read-later guilt problem. Tip jar for advanced organization features.",
+          "monetization": "stripe_tip_jar",
+          "pain": "People accumulate hundreds of read-later articles they never actually read or organize"
+        },
+        {
+          "source_id": "ai-email-thread-priority-scorer-mx2st4",
+          "title": "Email Thread Priority Scorer",
+          "url": "https://example.invalid/ai-idea/email-thread-priority-scorer",
+          "timestamp": "2026-07-02T15:22:56.099Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scans Gmail inbox using LLM to score email priority based on sender importance, urgency signals, and deal context. Built in 2 weeks with Gmail API. Directly addresses inbox overload for sales teams. Per-seat pricing with trial period.",
+          "monetization": "per_seat",
+          "pain": "Sales reps waste time on low-value emails while high-value prospect replies slip through"
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-02T15:22:56.107Z",
+        "dedup_against": 234,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "slot": "2026-07-02-15",
+  "week": "2026-W27",
+  "scored_at": "2026-07-02T15:22:56.276Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-thread-priority-scorer",
+      "name": "Email Thread Priority Scorer",
+      "pitch": "Scans Gmail inbox using LLM to score email priority based on sender importance, urgency signals, and deal context. Built in 2 weeks with Gmail API. Directly addresses inbox overload for sales teams. P",
+      "pain": "Sales reps waste time on low-value emails while high-value prospect replies slip through",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-thread-priority-scorer-mx2st4",
+          "url": "https://example.invalid/ai-idea/email-thread-priority-scorer"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7.25,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-thread-unsubscriber",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "npm-package-health-radar",
+      "name": "npm Package Health Radar",
+      "pitch": "Overlays npm package health metrics: last publish date, open issues ratio, maintainer activity, and security advisories directly on npmjs.com. Built in 2 weeks using npm registry APIs. Fills gap betwe",
+      "pain": "Dev teams miss critical signals that npm packages are abandoned or vulnerable",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-npm-package-health-radar-eqll7f",
+          "url": "https://example.invalid/ai-idea/npm-package-health-radar"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "npm-package-popularity-overlay",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "api-response-cache-auditor",
+      "name": "API Response Cache Auditor",
+      "pitch": "Overlays cache headers and CDN cache status on network requests, highlighting TTL mismatches and cache bypasses. Built in 2 weeks as a devtools panel extension. Directly useful for API developers debu",
+      "pain": "Backend developers can't see if their API responses are being cached correctly by CDNs",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-response-cache-auditor-vwxxj9",
+          "url": "https://example.invalid/ai-idea/api-response-cache-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "public-job-posting-salary-extractor",
+      "name": "Public Job Posting Salary Extractor",
+      "pitch": "Scrapes LinkedIn, Indeed, and company career pages to extract and normalize salary ranges. Uses structured extraction with fallback to LLM parsing. Built in 3 weeks with Playwright and extraction logi",
+      "pain": "Recruiters waste hours manually extracting and normalizing salary data from job postings",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-public-job-posting-salary-extractor-gucgo3",
+          "url": "https://example.invalid/ai-idea/public-job-posting-salary-extractor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-tech-signal-extractor",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "gong-call-commitment-tracker",
+      "name": "Gong Call Commitment Tracker",
+      "pitch": "Integrates with Gong API to extract stated commitments and create follow-up tasks automatically. Built in 3 weeks with Gong's transcription API. Direct value prop for sales teams using Gong. Freemium ",
+      "pain": "Sales reps forget promises made during calls, damaging trust and losing deals",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-commitment-tracker-r2b3gl",
+          "url": "https://example.invalid/ai-idea/gong-call-commitment-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-sentinel",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "llm-output-version-lens",
+      "name": "LLM Output Version Lens",
+      "pitch": "Captures and versions every LLM response with diff view for comparison. Built in under 2 weeks using local storage and a diff library. Fills gap left by ChatGPT/Claude not persisting version history. ",
+      "pain": "Developers lose track of AI output versions and waste time regenerating lost results",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-llm-output-version-lens-05ctrg",
+          "url": "https://example.invalid/ai-idea/llm-output-version-lens"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-prompt-diff-viewer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "slack-message-tone-rewriter",
+      "name": "Slack Message Tone Rewriter",
+      "pitch": "Intercepts Slack message compose box and offers tone-shifted alternatives using LLM before sending. Built in 2 weeks using Slack's web app injection. Growing awareness of workplace communication stand",
+      "pain": "Workers send tone-deaf Slack messages that damage relationships and careers",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-slack-message-tone-rewriter-ug7uzu",
+          "url": "https://example.invalid/ai-idea/slack-message-tone-rewriter"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.15,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-sentinel",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
