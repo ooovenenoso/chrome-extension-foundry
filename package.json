@@ -10,8 +10,9 @@
     "score": "node agents/scripts/idea-scorer.js",
     "spec": "node agents/scripts/spec-writer.js",
     "pr-draft": "node agents/scripts/pr-drafter.js",
-    "test": "node --test tests/unit/*.test.js",
+    "test": "node --test tests/unit/*.test.js tests/integration/*.test.js",
     "test:e2e": "node --test tests/e2e/*.test.js",
+    "package:extension": "python3 scripts/package-extension.py email-thread-priority-scorer",
     "lint": "node scripts/lint-contracts.js",
     "validate": "node scripts/validate-contracts.js"
   },
