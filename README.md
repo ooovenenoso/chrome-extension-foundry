@@ -29,9 +29,10 @@ Every run executes this pipeline:
 | 5a | spec-writer | `agents/scripts/spec-writer.js` | **Only if threshold hit.** Fills `docs/specs/_template/GOAL.md` (11 sections) with the top idea. Writes BACKLOG.md. Hard rejects: pitch <50 chars, pain <80 chars, score <7, dedup jaccard ≥0.5, missing monetization. | `docs/specs/<id>/GOAL.md` + `BACKLOG.md` |
 | 5b | or reject | spec-writer | If quality check fails: writes `docs/specs/_rejected/<slot>-<id>.md` and exits 1. No PR, no Telegram. | rejected file |
 | 6 | commit auto | bash | `git add docs/* && git pull --rebase origin main && git commit && git push`. Rebase avoids conflicts between concurrent runs. | commit `chore(digest): daily AI ideas + scoring for <slot>` on `main` |
-| 7 | pr-drafter | `agents/scripts/pr-drafter.js` | **Only if threshold hit.** Generates MV3 scaffold (10 files: manifest, popup, contentScript, lib, tests, STRIPE_LINKS placeholder, PRIVACY.md) and stages them in git. | 10 staged files |
-| 8 | open PR | `peter-evans/create-pull-request@v6` | Commits the staged scaffold on branch `feat/mvp-<id>-scaffold`, opens a PR against `main`. | PR #N opened |
-| 9 | Telegram ping | `appleboy/telegram-action@master` | Sends a message to chat `Home` (id `7996285776`) with the top idea, score, and PR number. | Telegram notification |
+| 7 | pr-drafter | `agents/scripts/pr-drafter.js` | **Only if threshold hit.** Generates a real loadable MV3 MVP under `src/<extension-id>/`: popup action, content-script capture, local scoring lib, service worker, icons, extension-local `STRIPE_LINKS.md`, `PRIVACY.md`, and tests. | staged extension source + tests |
+| 8 | verify + package | npm + zip | Runs `npm test`, `npm run package:extension -- <id>`, and `unzip -t dist/<id>-v0.1.0.zip`. If verification fails, no PR is opened. | verified local zip |
+| 9 | open PR | `peter-evans/create-pull-request@v6` | Commits the staged real MV3 extension on branch `feat/mvp-<id>-real-mv3`, opens a PR against `main`. | PR #N opened |
+| 10 | Telegram ping | `appleboy/telegram-action@master` | Sends a message to chat `Home` (id `7996285776`) with the top idea, score, and PR number. | Telegram notification |
 
 ---
 
@@ -60,16 +61,24 @@ score ≥ 7.0 AND pitch ≥ 50 AND pain ≥ 80 AND monetization present
 docs/specs/<extension-id>/GOAL.md       ← 11-section spec
 docs/specs/<extension-id>/BACKLOG.md    ← MVP issues
 commit on main                          ← "chore(digest): ... (+ spec)"
-PR #N opened on branch feat/mvp-<id>-scaffold
+pr-drafter generates real MV3 MVP
    ↓ contains:
-   ├─ src/<extension-id>/manifest.json   ← MV3
-   ├─ src/<extension-id>/popup.{html,css,js}
-   ├─ src/<extension-id>/contentScript.js
-   ├─ src/<extension-id>/lib/hello.js
+   ├─ src/<extension-id>/manifest.json        ← MV3, no <TODO> matches
+   ├─ src/<extension-id>/popup.{html,css,js}  ← score current page + demo fallback
+   ├─ src/<extension-id>/contentScript.js     ← CAPTURE_PAGE_CONTEXT handler
+   ├─ src/<extension-id>/service-worker.js
+   ├─ src/<extension-id>/lib/priorityScorer.js
+   ├─ src/<extension-id>/assets/icons/*.png
    ├─ src/<extension-id>/PRIVACY.md
-   ├─ tests/unit/hello.test.js
-   ├─ tests/integration/manifest.test.js
-   └─ STRIPE_LINKS.md (placeholder)
+   ├─ src/<extension-id>/STRIPE_LINKS.md      ← placeholder, extension-local
+   ├─ tests/unit/<extension-id>-priority.test.js
+   └─ tests/integration/<extension-id>-manifest.test.js
+   ↓
+npm test
+npm run package:extension -- <extension-id>
+unzip -t dist/<extension-id>-v0.1.0.zip
+   ↓
+PR #N opened on branch feat/mvp-<id>-real-mv3
 Telegram ping to chat Home
    END
 ```
@@ -78,14 +87,14 @@ Telegram ping to chat Home
 
 ## From PR to Chrome Web Store (manual)
 
-The workflow stops at PR. Everything after is human work — by design, to keep one engineer in the loop on what actually ships.
+The workflow now stops at a **verified real MV3 PR**: source exists under `src/<id>/`, tests pass, and `dist/<id>-v0.1.0.zip` has been built and integrity-checked. Everything after merge is human work — by design, to keep one engineer in the loop on what actually ships.
 
 ```
 1. Open PR #N
 2. Read docs/specs/<id>/GOAL.md end-to-end
-3. Implement §3 features in src/<id>/
-4. Replace STRIPE_LINKS.md placeholders with real Stripe Payment Links
-5. Run `npm test` locally; CI re-runs on push
+3. Review generated §3 MVP behavior in `src/<id>/` and refine if needed
+4. Replace `src/<id>/STRIPE_LINKS.md` placeholders with real Stripe Payment Links
+5. Run `npm test` and `npm run package:extension -- <id>` locally; CI re-runs on push
 6. Squash-merge to main
 7. Manual: run `asset-pack.yml` from GitHub Actions UI
    → generates icons + screenshots in assets/<id>/cws-final/
@@ -196,7 +205,7 @@ Every spec carries a **monetization section** derived from the idea's WTP (willi
 | `research-collector` | MiniMax API → `docs/research/<slot>.json` | Writes to `src/`, `docs/specs/`, direct commits |
 | `idea-scorer` | `docs/research/` → `docs/ideas/` | External API calls, web fetches |
 | `spec-writer` | `docs/ideas/<top>.json` → `docs/specs/<id>/GOAL.md` + `BACKLOG.md` | Anything outside `docs/specs/` |
-| `pr-drafter` | `docs/specs/<id>/` → MV3 scaffold files staged in git | Direct commits to `main`, force-pushes, `gh pr create` (uses peter-evans instead) |
+| `pr-drafter` | `docs/specs/<id>/` → real MV3 MVP files + tests staged in git | Direct commits to `main`, force-pushes, `gh pr create` (uses peter-evans instead) |
 
 ---
 
@@ -212,7 +221,8 @@ npm run score              # idea-scorer (uses latest research/)
 
 # Validate everything
 npm run validate           # AJV checks every JSON schema
-npm test                   # 9 unit tests
+npm test                   # unit + integration tests
+npm run package:extension -- email-thread-priority-scorer
 ```
 
 Or trigger a workflow run from GitHub:
@@ -239,14 +249,15 @@ gh workflow run daily-idea-digest.yml \
 | Scoring rubric | ✅ v1.0.0 (4 axes, weights, dedup) |
 | Spec template | ✅ v1 (11 sections, see `docs/specs/_template/`) |
 | Spec-writer | ✅ running — drafts GOAL.md + BACKLOG.md on threshold hits |
-| PR-drafter | ✅ running — stages MV3 scaffold |
-| Auto-PR | ✅ running — peter-evans/create-pull-request opens the PR |
+| PR-drafter | ✅ upgraded — stages real MV3 MVP extensions + tests |
+| Auto-PR | ✅ running — verifies tests + zip before peter-evans/create-pull-request opens the PR |
 | Telegram ping | ✅ active — sends to chat `Home` on threshold hits |
 | CI workflow | ✅ ready |
 | Release workflow | ✅ ready (triggered by tag push) |
 | Asset-pack workflow | ✅ ready (manual dispatch) |
 | Dev-console workflow | ✅ ready (manual dispatch) |
-| First extension published | ⏳ pending — depends on first PR being merged + tagged |
+| First real MV3 extension | ✅ `email-thread-priority-scorer` merged in `src/` and packageable |
+| Chrome Web Store publication | ⏳ pending — manual dashboard submission still required |
 
 ---
 
