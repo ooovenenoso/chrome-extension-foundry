@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email Thread Priority Scorer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <div class="mark">!</div>
+        <div>
+          <h1>Email Priority</h1>
+          <p>Score the visible Gmail thread locally.</p>
+        </div>
+      </header>
+
+      <section id="result" class="card muted">
+        Open a Gmail thread, then score it. No email content leaves your browser.
+      </section>
+
+      <div class="actions">
+        <button id="scoreCurrentThread" type="button">Score current Gmail thread</button>
+        <button id="runDemo" class="secondary" type="button">Run demo sample</button>
+      </div>
+
+      <footer>
+        <span>Tip jar:</span>
+        <a id="tip3" target="_blank" rel="noopener">$3</a>
+        <a id="tip5" target="_blank" rel="noopener">$5</a>
+        <a id="tip10" target="_blank" rel="noopener">$10</a>
+      </footer>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
