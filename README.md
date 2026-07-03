@@ -153,7 +153,7 @@ Optional GitHub Variables: `MINIMAX_MODEL`, `MINIMAX_BASE_URL` (override default
 | `agents/scripts/` | research-collector, idea-scorer, spec-writer, pr-drafter |
 | `agents/contracts/` | AJV schemas + scoring rubric |
 | `agents/prompts/` | Agent role docs (one .md per agent) |
-| `.github/workflows/` | daily-idea-digest (main), release, asset-pack, dev-console, ci |
+| `.github/workflows/` | daily-idea-digest (main), ci, ci-auto-fix, release, asset-pack, dev-console |
 | `src/` | Extension code (one subdir per `docs/specs/<id>`) |
 | `tests/` | Unit + integration per extension |
 | `assets/` | Header image (`assets/header.png`) + icons, screenshots, promo tiles (manual workflow output) |
@@ -206,6 +206,7 @@ Every spec carries a **monetization section** derived from the idea's WTP (willi
 | `idea-scorer` | `docs/research/` → `docs/ideas/` | External API calls, web fetches |
 | `spec-writer` | `docs/ideas/<top>.json` → `docs/specs/<id>/GOAL.md` + `BACKLOG.md` | Anything outside `docs/specs/` |
 | `pr-drafter` | `docs/specs/<id>/` → real MV3 MVP files + tests staged in git | Direct commits to `main`, force-pushes, `gh pr create` (uses peter-evans instead) |
+| `ci-auto-fix` | Failed `ci` workflow runs on same-repo PRs → logs → safe patch → verification → push back to PR branch + comment | Fork pushes, merges, force-pushes, secrets/settings edits, self-modifying `.github/workflows/ci-auto-fix.yml` |
 
 ---
 
