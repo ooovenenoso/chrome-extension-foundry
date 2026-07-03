@@ -1,0 +1,218 @@
+{
+  "slot": "2026-07-03-04",
+  "week": "2026-W27",
+  "scored_at": "2026-07-03T04:48:05.242Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-response-likelihood-forecaster",
+      "name": "Email Response Likelihood Forecaster",
+      "pitch": "Analyzes email thread characteristics (length, subject, time sent) to score reply probability. Works with Gmail API. Freemium model with daily limit.",
+      "pain": "Sales reps waste time following up on emails that were never going to get replies in the first place.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-response-likelihood-forecaster-ldav41",
+          "url": "https://example.invalid/ai-idea/email-response-likelihood-forecaster"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-thread-unsubscriber",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "json-schema-alignment-status-badge",
+      "name": "JSON Schema Alignment Status Badge",
+      "pitch": "Parses page network responses for JSON and validates against loaded schemas. Shows green/red badge in extension icon. Supports JSON Schema draft-07.",
+      "pain": "Developers can't quickly tell if API responses on a page match their expected JSON schema.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-json-schema-alignment-status-badge-d28bgi",
+          "url": "https://example.invalid/ai-idea/json-schema-alignment-status-badge"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "salesforce-task-deadline-countdown",
+      "name": "Salesforce Task Deadline Countdown",
+      "pitch": "Injects countdown timers on Salesforce task pages. Uses Salesforce Canvas or Chrome extension storage sync. Simple UI overlay makes it trivial to build.",
+      "pain": "Sales reps miss task deadlines because they can't quickly see time remaining without opening Salesforce.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-salesforce-task-deadline-countdown-cfqcbf",
+          "url": "https://example.invalid/ai-idea/salesforce-task-deadline-countdown"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "linkedin-connection-engagement-tracker",
+      "name": "LinkedIn Connection Engagement Tracker",
+      "pitch": "Tracks profile visits, reactions, and comments on connection content. Stores locally with optional sync. Built with LinkedIn's public data.",
+      "pain": "Sales reps don't know which LinkedIn connections are most active, making outreach prioritization guesswork.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-connection-engagement-tracker-9l2i8q",
+          "url": "https://example.invalid/ai-idea/linkedin-connection-engagement-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-headline-optimizer",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "gong-call-topic-drift-analyzer",
+      "name": "Gong Call Topic Drift Analyzer",
+      "pitch": "Ingests Gong transcripts via API, runs basic NLP to detect topic changes. Visualizes as a timeline. Gong API access required.",
+      "pain": "Sales managers can't quickly see if calls stayed on topic or drifted into off-agenda discussions.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-topic-drift-analyzer-eqmz9u",
+          "url": "https://example.invalid/ai-idea/gong-call-topic-drift-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-breaking-change-detector",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "pr-description-readability-calculator",
+      "name": "PR Description Readability Calculator",
+      "pitch": "Leverages Flesch-Kincaid readability scoring on PR descriptions. Integrates with GitHub PR UI. Could offer templates as premium tier.",
+      "pain": "Pull request descriptions are often poorly written, making code reviews slower and less effective.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-description-readability-calculator-s1q0e3",
+          "url": "https://example.invalid/ai-idea/pr-description-readability-calculator"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-thread-unfloader",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "css-custom-property-adoption-map",
+      "name": "CSS Custom Property Adoption Map",
+      "pitch": "Scrapes all CSS custom properties from stylesheets and checks usage across page DOM. Visualizes adoption rate. Useful for design system audits.",
+      "pain": "Design systems define CSS variables that developers rarely use, creating dead weight in the codebase.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-custom-property-adoption-map-yvfjbo",
+          "url": "https://example.invalid/ai-idea/css-custom-property-adoption-map"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.13
+      }
+    }
+  ]
+}

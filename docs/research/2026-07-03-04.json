@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-03-04",
+  "week": "2026-W27",
+  "fetched_at": "2026-07-03T04:48:05.078Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-favicon-privacy-leak-inspector-uel3oz",
+          "title": "Favicon Privacy Leak Inspector",
+          "url": "https://example.invalid/ai-idea/favicon-privacy-leak-inspector",
+          "timestamp": "2026-07-03T04:48:05.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Uses browser's built-in webRequest API to intercept favicon network calls. Compares favicon sources against known privacy-respecting providers. Easy to build with declarativeNetRequest rules.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users don't know their browsing history is exposed when favicon services leak DNS queries to third parties."
+        },
+        {
+          "source_id": "ai-pr-description-readability-calculator-s1q0e3",
+          "title": "PR Description Readability Calculator",
+          "url": "https://example.invalid/ai-idea/pr-description-readability-calculator",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Leverages Flesch-Kincaid readability scoring on PR descriptions. Integrates with GitHub PR UI. Could offer templates as premium tier.",
+          "monetization": "freemium_saas",
+          "pain": "Pull request descriptions are often poorly written, making code reviews slower and less effective."
+        },
+        {
+          "source_id": "ai-salesforce-task-deadline-countdown-cfqcbf",
+          "title": "Salesforce Task Deadline Countdown",
+          "url": "https://example.invalid/ai-idea/salesforce-task-deadline-countdown",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Injects countdown timers on Salesforce task pages. Uses Salesforce Canvas or Chrome extension storage sync. Simple UI overlay makes it trivial to build.",
+          "monetization": "per_seat",
+          "pain": "Sales reps miss task deadlines because they can't quickly see time remaining without opening Salesforce."
+        },
+        {
+          "source_id": "ai-webpage-wcag-contrast-batch-auditor-hguuzu",
+          "title": "WebPage WCAG Contrast Batch Auditor",
+          "url": "https://example.invalid/ai-idea/webpage-wcag-contrast-batch-auditor",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_accessibility::productivity",
+          "notes": "Scans all text/background color pairs on a page against WCAG 2.1 guidelines. Highlights failing elements. Could be enhanced with AI suggestions.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Designers and developers manually check contrast ratios for each element instead of all at once."
+        },
+        {
+          "source_id": "ai-ci-pipeline-run-annotation-tool-pmqtil",
+          "title": "CI Pipeline Run Annotation Tool",
+          "url": "https://example.invalid/ai-idea/ci-pipeline-run-annotation-tool",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Adds annotation UI to common CI systems via their APIs. Stores notes in extension sync storage or connects to Notion. Buildable in under 3 weeks.",
+          "monetization": "freemium_saas",
+          "pain": "Engineers lose context about why a build failed because notes aren't attached to pipeline runs."
+        },
+        {
+          "source_id": "ai-notion-page-block-composition-analyzer-kwgxzc",
+          "title": "Notion Page Block Composition Analyzer",
+          "url": "https://example.invalid/ai-idea/notion-page-block-composition-analyzer",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Parses Notion page DOM to count block types. Shows pie chart of content composition. Uses MutationObserver for live updates.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users don't realize their Notion pages are bloated with too many embeds or databases that slow them down."
+        },
+        {
+          "source_id": "ai-browser-download-activity-timeline-wysv4z",
+          "title": "Browser Download Activity Timeline",
+          "url": "https://example.invalid/ai-idea/browser-download-activity-timeline",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses chrome.downloads API to build a searchable timeline of downloads. Adds tags and notes. Privacy-focused with local-only storage.",
+          "monetization": "stripe_tip_jar",
+          "pain": "No way to see download patterns over time without manually checking Downloads folder repeatedly."
+        },
+        {
+          "source_id": "ai-meeting-series-pattern-detector-hwj0xd",
+          "title": "Meeting Series Pattern Detector",
+          "url": "https://example.invalid/ai-idea/meeting-series-pattern-detector",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes Google Calendar events via API to detect recurring patterns. Groups related meetings visually. Simple calendar sync needed.",
+          "monetization": "freemium_saas",
+          "pain": "Professionals can't easily see which meetings repeat and what their cadence is without calendar hopping."
+        },
+        {
+          "source_id": "ai-email-response-likelihood-forecaster-ldav41",
+          "title": "Email Response Likelihood Forecaster",
+          "url": "https://example.invalid/ai-idea/email-response-likelihood-forecaster",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes email thread characteristics (length, subject, time sent) to score reply probability. Works with Gmail API. Freemium model with daily limit.",
+          "monetization": "per_seat",
+          "pain": "Sales reps waste time following up on emails that were never going to get replies in the first place."
+        },
+        {
+          "source_id": "ai-css-custom-property-adoption-map-yvfjbo",
+          "title": "CSS Custom Property Adoption Map",
+          "url": "https://example.invalid/ai-idea/css-custom-property-adoption-map",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scrapes all CSS custom properties from stylesheets and checks usage across page DOM. Visualizes adoption rate. Useful for design system audits.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Design systems define CSS variables that developers rarely use, creating dead weight in the codebase."
+        },
+        {
+          "source_id": "ai-tab-memory-consumption-leaderboard-4qamdj",
+          "title": "Tab Memory Consumption Leaderboard",
+          "url": "https://example.invalid/ai-idea/tab-memory-consumption-leaderboard",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses performance.measureUserAgentSpecificMemory() API to rank tabs. Shows RAM usage per tab with one-click close for heavy ones.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have no visibility into which tabs consume the most memory without developer tools."
+        },
+        {
+          "source_id": "ai-json-schema-alignment-status-badge-d28bgi",
+          "title": "JSON Schema Alignment Status Badge",
+          "url": "https://example.invalid/ai-idea/json-schema-alignment-status-badge",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses page network responses for JSON and validates against loaded schemas. Shows green/red badge in extension icon. Supports JSON Schema draft-07.",
+          "monetization": "freemium_saas",
+          "pain": "Developers can't quickly tell if API responses on a page match their expected JSON schema."
+        },
+        {
+          "source_id": "ai-linkedin-connection-engagement-tracker-9l2i8q",
+          "title": "LinkedIn Connection Engagement Tracker",
+          "url": "https://example.invalid/ai-idea/linkedin-connection-engagement-tracker",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks profile visits, reactions, and comments on connection content. Stores locally with optional sync. Built with LinkedIn's public data.",
+          "monetization": "per_seat",
+          "pain": "Sales reps don't know which LinkedIn connections are most active, making outreach prioritization guesswork."
+        },
+        {
+          "source_id": "ai-gcp-compute-type-launch-history-71k92m",
+          "title": "GCP Compute Type Launch History",
+          "url": "https://example.invalid/ai-idea/gcp-compute-type-launch-history",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Queries GCP Logging API for compute instances. Shows history with filters. Can also set budget alerts per machine type.",
+          "monetization": "freemium_saas",
+          "pain": "DevOps engineers keep forgetting which machine types they've used before, leading to inconsistent infra spend."
+        },
+        {
+          "source_id": "ai-gong-call-topic-drift-analyzer-eqmz9u",
+          "title": "Gong Call Topic Drift Analyzer",
+          "url": "https://example.invalid/ai-idea/gong-call-topic-drift-analyzer",
+          "timestamp": "2026-07-03T04:48:05.070Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Ingests Gong transcripts via API, runs basic NLP to detect topic changes. Visualizes as a timeline. Gong API access required.",
+          "monetization": "per_seat",
+          "pain": "Sales managers can't quickly see if calls stayed on topic or drifted into off-agenda discussions."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-03T04:48:05.077Z",
+        "dedup_against": 249,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
