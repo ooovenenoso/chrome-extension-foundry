@@ -127,7 +127,7 @@ jobs:
             git push
           fi
 
-      - name: pr-drafter (scaffold files to working tree)
+      - name: pr-drafter (real MV3 files to working tree)
         if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
         run: |
           TOP_ID="${{ steps.check.outputs.top_id }}"
@@ -137,18 +137,26 @@ jobs:
           fi
           node agents/scripts/pr-drafter.js --spec "$SPEC"
 
-      - name: Open PR with scaffold
+      - name: Verify generated extension
+        if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
+        run: |
+          TOP_ID="${{ steps.check.outputs.top_id }}"
+          npm test
+          npm run package:extension -- "$TOP_ID"
+          unzip -t "dist/${TOP_ID}-v0.1.0.zip"
+
+      - name: Open PR with real MV3 extension
         if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: feat/mvp-${{ steps.check.outputs.top_id }}-scaffold
+          branch: feat/mvp-${{ steps.check.outputs.top_id }}-real-mv3
           base: main
-          title: 'feat(${{ steps.check.outputs.top_id }}): MVP scaffold'
+          title: 'feat(${{ steps.check.outputs.top_id }}): real MV3 MVP extension'
           body: |
             ## What
 
-            Auto-generated MVP scaffold for the top-scoring idea from `${{ steps.slot.outputs.slot }}`.
+            Auto-generated real MV3 MVP extension for the top-scoring idea from `${{ steps.slot.outputs.slot }}`.
 
             **Top idea:** ${{ steps.check.outputs.top_name }}
             **Score:** ${{ steps.check.outputs.top_score }}
@@ -159,12 +167,20 @@ jobs:
             - Backlog: `docs/specs/${{ steps.check.outputs.top_id }}/BACKLOG.md`
             - Idea pool: `docs/ideas/${{ steps.slot.outputs.slot }}.json`
 
+            ## Generated artifact
+
+            - Extension source: `src/${{ steps.check.outputs.top_id }}/`
+            - Package command: `npm run package:extension -- ${{ steps.check.outputs.top_id }}`
+            - Expected local zip: `dist/${{ steps.check.outputs.top_id }}-v0.1.0.zip`
+
             ## Test plan
 
-            - [ ] `npm test` exits 0
+            - [x] `npm test` exits 0
+            - [x] `npm run package:extension -- ${{ steps.check.outputs.top_id }}` exits 0
+            - [x] `unzip -t dist/${{ steps.check.outputs.top_id }}-v0.1.0.zip` exits 0
             - [ ] CI green on this branch
             - [ ] Spec sections §1-§10 reviewed
-          commit-message: 'feat(${{ steps.check.outputs.top_id }}): MVP scaffold per docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md'
+          commit-message: 'feat(${{ steps.check.outputs.top_id }}): real MV3 MVP extension per docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md'
 
       - name: Ping Telegram
         if: steps.check.outputs.spec_threshold == 'true'
