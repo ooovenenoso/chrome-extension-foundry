@@ -1,0 +1,207 @@
+{
+  "slot": "2026-07-03-15",
+  "week": "2026-W27",
+  "fetched_at": "2026-07-03T15:16:30.991Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 14,
+      "entries": [
+        {
+          "source_id": "ai-browser-notification-fatigue-monitor-715dyo",
+          "title": "Browser Notification Fatigue Monitor",
+          "url": "https://example.invalid/ai-idea/browser-notification-fatigue-monitor",
+          "timestamp": "2026-07-03T15:16:30.982Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Builds a daily notification count dashboard by intercepting the Notification API and categorizing by site. Now that Chrome is restricting notification permission UX, users are more aware but still lack quantitative feedback on their notification burden. No tool exists that gives session-level notification density awareness.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Browser notifications pile up invisibly, creating silent distraction without any aggregate awareness of overload"
+        },
+        {
+          "source_id": "ai-linkedin-post-engagement-predictor-v498at",
+          "title": "LinkedIn Post Engagement Predictor",
+          "url": "https://example.invalid/ai-idea/linkedin-post-engagement-predictor",
+          "timestamp": "2026-07-03T15:16:30.982Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes post content, hashtags, timing patterns, and historical engagement signals to predict expected reach before publishing. Sales reps and founders invest significant time in LinkedIn content with no feedback mechanism until after posting. Similar to email subject line testers but for social.",
+          "monetization": "per_seat",
+          "pain": "LinkedIn posts either flop or soar with no pre-post feedback loop to optimize before publishing"
+        },
+        {
+          "source_id": "ai-webhook-request-diff-viewer-zqfbf1",
+          "title": "Webhook Request Diff Viewer",
+          "url": "https://example.invalid/ai-idea/webhook-request-diff-viewer",
+          "timestamp": "2026-07-03T15:16:30.982Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts and stores webhook requests, then provides side-by-side diff visualization when comparing staging vs production payloads. Webhook debugging is notoriously painful; most tools focus on delivery, not payload comparison. Can be built with a simple proxy that captures requests locally.",
+          "monetization": "freemium_saas",
+          "pain": "Comparing webhook payloads between environments requires manual copy-paste diffing"
+        },
+        {
+          "source_id": "ai-s3-bucket-security-posture-checker-pvllv8",
+          "title": "S3 Bucket Security Posture Checker",
+          "url": "https://example.invalid/ai-idea/s3-bucket-security-posture-checker",
+          "timestamp": "2026-07-03T15:16:30.982Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Queries AWS S3 API from the browser to scan for publicly accessible buckets in the current account, highlighting ACL and policy misconfigurations. Cloud security posture management tools exist but none as a lightweight browser extension for quick checks. Addresses the common and embarrassing bucket exposure problem.",
+          "monetization": "per_seat",
+          "pain": "Accidentally public S3 buckets silently expose data with no browser-side visibility"
+        },
+        {
+          "source_id": "ai-email-attachment-commitment-tracker-uwp9zp",
+          "title": "Email Attachment Commitment Tracker",
+          "url": "https://example.invalid/ai-idea/email-attachment-commitment-tracker",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scans sent emails for attachment references like 'attaching' or 'see attached' that lack actual attachments, flagging them for follow-up. Small but real pain point for busy sales reps managing high email volume. Simple NLP parsing with low false positive rate is achievable.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Promising attachments in emails and forgetting to send them damages trust and professionalism"
+        },
+        {
+          "source_id": "ai-email-warmup-velocity-tracker-fcm33h",
+          "title": "Email Warmup Velocity Tracker",
+          "url": "https://example.invalid/ai-idea/email-warmup-velocity-tracker",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks deliverability metrics, bounce rates, and engagement signals over time to visualize email domain warmup progress. Sales teams spinning up new domains have no clear indicator of when they can safely send cold email. Can integrate with common email warmup services via their APIs.",
+          "monetization": "per_seat",
+          "pain": "Email sender reputation improves invisibly with no feedback loop on warmup progress"
+        },
+        {
+          "source_id": "ai-meeting-fatigue-pattern-analyzer-7s31gu",
+          "title": "Meeting Fatigue Pattern Analyzer",
+          "url": "https://example.invalid/ai-idea/meeting-fatigue-pattern-analyzer",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes Google Calendar to compute a daily meeting fatigue score based on meeting hours, breaks, and buffer time. Warns when upcoming weeks have dangerous meeting density. Knowledge workers are increasingly aware of meeting overload but lack tools to quantify it.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Back-to-back meeting days cause burnout without any aggregate visibility on meeting load"
+        },
+        {
+          "source_id": "ai-design-system-token-consistency-checker-vwzx2e",
+          "title": "Design System Token Consistency Checker",
+          "url": "https://example.invalid/ai-idea/design-system-token-consistency-checker",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scrapes design tokens from running applications and compares them against a declared design system source like Figma or a central config file. Frontend teams struggle with token drift when teams work in parallel. Visual diff of token values across pages is a novel and useful angle.",
+          "monetization": "freemium_saas",
+          "pain": "Design tokens drift out of sync across codebases without any automated consistency checking"
+        },
+        {
+          "source_id": "ai-competitor-pricing-page-change-monitor-t8js5u",
+          "title": "Competitor Pricing Page Change Monitor",
+          "url": "https://example.invalid/ai-idea/competitor-pricing-page-change-monitor",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Periodically scrapes configured competitor pricing pages and alerts on detected changes. Sales teams need competitive intelligence but checking manually is tedious. Page scraping is straightforward and alerting can be done via browser notification or Slack webhook.",
+          "monetization": "per_seat",
+          "pain": "Competitor pricing changes are discovered reactively when prospects mention them"
+        },
+        {
+          "source_id": "ai-hacker-news-comment-karma-tracker-8yvdd5",
+          "title": "Hacker News Comment Karma Tracker",
+          "url": "https://example.invalid/ai-idea/hacker-news-comment-karma-tracker",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Tracks karma changes on recent HN comments by periodically re-scraping comment pages and logging score deltas. Founders and developers care about their HN reputation but have no way to track it without manual checking. Lightweight polling with local storage of comment IDs.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Hacker News comment karma changes are invisible until you check manually"
+        },
+        {
+          "source_id": "ai-notion-backlink-health-reporter-9is9ed",
+          "title": "Notion Backlink Health Reporter",
+          "url": "https://example.invalid/ai-idea/notion-backlink-health-reporter",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scrapes Notion pages to build a backlink graph and periodically checks for 404s, redirects, or renamed pages. Engineering teams using Notion for documentation suffer broken links that go unnoticed. Simple link validation with periodic checks is well within scope.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Notion page backlinks break silently when pages are renamed, creating invisible dependency rot"
+        },
+        {
+          "source_id": "ai-api-budget-depletion-notifier-ceh8gi",
+          "title": "API Budget Depletion Notifier",
+          "url": "https://example.invalid/ai-idea/api-budget-depletion-notifier",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Monitors API usage by intercepting requests and tracking consumption against documented limits, alerting before quota exhaustion. Developers using multiple paid APIs lack visibility into usage trending. Simple request counting with threshold alerts is achievable.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Third-party API rate limits get hit unexpectedly, breaking integrations with no warning"
+        },
+        {
+          "source_id": "ai-github-pr-review-distribution-dashboard-upbe82",
+          "title": "GitHub PR Review Distribution Dashboard",
+          "url": "https://example.invalid/ai-idea/github-pr-review-distribution-dashboard",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Aggregates GitHub PR data to visualize review distribution across team members over time, highlighting imbalance. Engineering managers want to improve team health but lack data on review distribution. GitHub's public API makes this straightforward to build.",
+          "monetization": "freemium_saas",
+          "pain": "Code review load gets unevenly distributed across teams, burning out a few reviewers"
+        },
+        {
+          "source_id": "ai-browser-tab-session-restore-points-ocr5m3",
+          "title": "Browser Tab Session Restore Points",
+          "url": "https://example.invalid/ai-idea/browser-tab-session-restore-points",
+          "timestamp": "2026-07-03T15:16:30.983Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Allows users to save named restore points of current tab groups that can be restored after crashes or accidental closes. Chrome's existing session restore is all-or-nothing; this adds named checkpoints for specific projects. Solves a real pain point with simple state management.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Browser crashes lose all tab context with no way to restore a meaningful work session"
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-03T15:16:30.991Z",
+        "dedup_against": 264,
+        "rejected_as_duplicate": 1
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

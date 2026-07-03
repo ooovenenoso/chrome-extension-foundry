@@ -1,0 +1,308 @@
+{
+  "slot": "2026-07-03-15",
+  "week": "2026-W27",
+  "scored_at": "2026-07-03T15:16:31.163Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-attachment-commitment-tracker",
+      "name": "Email Attachment Commitment Tracker",
+      "pitch": "Scans sent emails for attachment references like 'attaching' or 'see attached' that lack actual attachments, flagging them for follow-up. Small but real pain point for busy sales reps managing high em",
+      "pain": "Promising attachments in emails and forgetting to send them damages trust and professionalism",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-attachment-commitment-tracker-uwp9zp",
+          "url": "https://example.invalid/ai-idea/email-attachment-commitment-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-thread-priority-scorer",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "email-warmup-velocity-tracker",
+      "name": "Email Warmup Velocity Tracker",
+      "pitch": "Tracks deliverability metrics, bounce rates, and engagement signals over time to visualize email domain warmup progress. Sales teams spinning up new domains have no clear indicator of when they can sa",
+      "pain": "Email sender reputation improves invisibly with no feedback loop on warmup progress",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-warmup-velocity-tracker-fcm33h",
+          "url": "https://example.invalid/ai-idea/email-warmup-velocity-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cold-email-template-tester",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "s3-bucket-security-posture-checker",
+      "name": "S3 Bucket Security Posture Checker",
+      "pitch": "Queries AWS S3 API from the browser to scan for publicly accessible buckets in the current account, highlighting ACL and policy misconfigurations. Cloud security posture management tools exist but non",
+      "pain": "Accidentally public S3 buckets silently expose data with no browser-side visibility",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-s3-bucket-security-posture-checker-pvllv8",
+          "url": "https://example.invalid/ai-idea/s3-bucket-security-posture-checker"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.55,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "linkedin-post-engagement-predictor",
+      "name": "LinkedIn Post Engagement Predictor",
+      "pitch": "Analyzes post content, hashtags, timing patterns, and historical engagement signals to predict expected reach before publishing. Sales reps and founders invest significant time in LinkedIn content wit",
+      "pain": "LinkedIn posts either flop or soar with no pre-post feedback loop to optimize before publishing",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-post-engagement-predictor-v498at",
+          "url": "https://example.invalid/ai-idea/linkedin-post-engagement-predictor"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "github-pr-review-distribution-dashboard",
+      "name": "GitHub PR Review Distribution Dashboard",
+      "pitch": "Aggregates GitHub PR data to visualize review distribution across team members over time, highlighting imbalance. Engineering managers want to improve team health but lack data on review distribution.",
+      "pain": "Code review load gets unevenly distributed across teams, burning out a few reviewers",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-pr-review-distribution-dashboard-upbe82",
+          "url": "https://example.invalid/ai-idea/github-pr-review-distribution-dashboard"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 6
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-issue-velocity-dashboard",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "competitor-pricing-page-change-monitor",
+      "name": "Competitor Pricing Page Change Monitor",
+      "pitch": "Periodically scrapes configured competitor pricing pages and alerts on detected changes. Sales teams need competitive intelligence but checking manually is tedious. Page scraping is straightforward an",
+      "pain": "Competitor pricing changes are discovered reactively when prospects mention them",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-competitor-pricing-page-change-monitor-t8js5u",
+          "url": "https://example.invalid/ai-idea/competitor-pricing-page-change-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "saas-pricing-tier-monitor",
+        "jaccard_with_nearest": 0.23
+      }
+    },
+    {
+      "id": "webhook-request-diff-viewer",
+      "name": "Webhook Request Diff Viewer",
+      "pitch": "Intercepts and stores webhook requests, then provides side-by-side diff visualization when comparing staging vs production payloads. Webhook debugging is notoriously painful; most tools focus on deliv",
+      "pain": "Comparing webhook payloads between environments requires manual copy-paste diffing",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-request-diff-viewer-zqfbf1",
+          "url": "https://example.invalid/ai-idea/webhook-request-diff-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-request-mirroring-proxy",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "design-system-token-consistency-checker",
+      "name": "Design System Token Consistency Checker",
+      "pitch": "Scrapes design tokens from running applications and compares them against a declared design system source like Figma or a central config file. Frontend teams struggle with token drift when teams work ",
+      "pain": "Design tokens drift out of sync across codebases without any automated consistency checking",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-design-system-token-consistency-checker-vwzx2e",
+          "url": "https://example.invalid/ai-idea/design-system-token-consistency-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-token-inspector",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "notion-backlink-health-reporter",
+      "name": "Notion Backlink Health Reporter",
+      "pitch": "Scrapes Notion pages to build a backlink graph and periodically checks for 404s, redirects, or renamed pages. Engineering teams using Notion for documentation suffer broken links that go unnoticed. Si",
+      "pain": "Notion page backlinks break silently when pages are renamed, creating invisible dependency rot",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-notion-backlink-health-reporter-9is9ed",
+          "url": "https://example.invalid/ai-idea/notion-backlink-health-reporter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "notion-backlink-graph-viewer",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "api-budget-depletion-notifier",
+      "name": "API Budget Depletion Notifier",
+      "pitch": "Monitors API usage by intercepting requests and tracking consumption against documented limits, alerting before quota exhaustion. Developers using multiple paid APIs lack visibility into usage trendin",
+      "pain": "Third-party API rate limits get hit unexpectedly, breaking integrations with no warning",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-budget-depletion-notifier-ceh8gi",
+          "url": "https://example.invalid/ai-idea/api-budget-depletion-notifier"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "quota-usage-pulse",
+        "jaccard_with_nearest": 0.18
+      }
+    }
+  ]
+}
