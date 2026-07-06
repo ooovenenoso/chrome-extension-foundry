@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-06-16",
+  "week": "2026-W28",
+  "scored_at": "2026-07-06T16:27:19.562Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "github-pr-review-response-time-tracker",
+      "name": "GitHub PR Review Response Time Tracker",
+      "pitch": "Parses GitHub PR page DOM to extract first-review timestamps, stores in localStorage, and shows a badge overlay with avg time-to-review per repo. One engineer can ship this in 3 days. Chrome extension",
+      "pain": "Engineering leads lack visibility into which PRs are stuck waiting for review, causing ship velocity surprises.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-pr-review-response-time-tracker-kofro8",
+          "url": "https://example.invalid/ai-idea/github-pr-review-response-time-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.55,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "npm-dependency-cve-radar",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "linkedin-post-optimal-send-time-recommen",
+      "name": "LinkedIn Post Optimal Send Time Recommender",
+      "pitch": "Parses own post history from LinkedIn profile DOM, cross-references engagement timestamps, builds a simple time-of-day engagement model. No external API needed. Directly helps creators optimize reach.",
+      "pain": "LinkedIn creators post at random times and miss peak engagement windows specific to their audience.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-post-optimal-send-time-recommen-jckhb2",
+          "url": "https://example.invalid/ai-idea/linkedin-post-optimal-send-time-recommen"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-post-engagement-predictor",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "pr-code-comment-density-heatmap",
+      "name": "PR Code Comment Density Heatmap",
+      "pitch": "Parses GitHub PR diff and comment data from DOM, calculates comment density per file, renders a heatmap overlay. Teams use this to guide refactoring decisions. GitHub's PR UI is well-structured for sc",
+      "pain": "Teams can't see which files accumulate the most review comments, missing signals about code complexity or documentation gaps.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-code-comment-density-heatmap-n1ni5u",
+          "url": "https://example.invalid/ai-idea/pr-code-comment-density-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "gong-call-silence-segment-detector",
+      "name": "Gong Call Silence Segment Detector",
+      "pitch": "Uses Gong's transcript API and Web Speech API to identify silence segments >3s and calculates silence ratio per call segment. Builds a timeline overlay on Gong's UI. This is buildable in 2 weeks since",
+      "pain": "Sales reps waste time manually reviewing call recordings to find awkward silence moments that hurt deals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-silence-segment-detector-nw4ona",
+          "url": "https://example.invalid/ai-idea/gong-call-silence-segment-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-commitment-tracker",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "stripe-customer-lifetime-value-forecaste",
+      "name": "Stripe Customer Lifetime Value Forecaster",
+      "pitch": "Queries Stripe API for customer payment history, fits a simple retention curve model, projects LTV. Displays inline on Stripe dashboard. Bridges a real gap since Stripe doesn't provide forward-looking",
+      "pain": "Founders and finance leads can't quickly estimate future customer value from Stripe's dashboard, making retention decisions guesswork.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-customer-lifetime-value-forecaste-quhtst",
+          "url": "https://example.invalid/ai-idea/stripe-customer-lifetime-value-forecaste"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "llm-prompt-version-history-vault",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "sales-prospect-funding-event-alert",
+      "name": "Sales Prospect Funding Event Alert",
+      "pitch": "Scrapes Crunchbase and news APIs for portfolio companies, matches against a user-maintained prospect list, fires browser notifications on funding events. Pre-built news APIs reduce complexity signific",
+      "pain": "Sales reps miss prime outreach moments when prospects announce funding rounds, losing competitive advantage.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-prospect-funding-event-alert-whkwda",
+          "url": "https://example.invalid/ai-idea/sales-prospect-funding-event-alert"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outbound-sequence-collision-alert",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "gong-call-question-pattern-analyzer",
+      "name": "Gong Call Question Pattern Analyzer",
+      "pitch": "NLP-classifies questions from Gong transcripts (discovery, objection, commitment, rapport), counts by type, compares to winning call benchmarks. Gong's transcript format is structured enough for patte",
+      "pain": "Sales managers can't see what types of questions reps ask during calls, missing coaching opportunities for discovery or objection handling.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-question-pattern-analyzer-o1d5h2",
+          "url": "https://example.invalid/ai-idea/gong-call-question-pattern-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-commitment-tracker",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gmail-attachment-size-budget-keeper",
+      "name": "Gmail Attachment Size Budget Keeper",
+      "pitch": "Monitors compose dialog attachment sizes, compares against recipient provider limits (Gmail 25MB, Outlook 20MB), warns proactively. Uses known provider limits and file size calculations.",
+      "pain": "Users hit attachment size limits when sending emails and have to re-compress or resend, wasting time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-attachment-size-budget-keeper-p69y4g",
+          "url": "https://example.invalid/ai-idea/gmail-attachment-size-budget-keeper"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 3,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.5,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10)",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cold-email-template-tester",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "notion-database-cross-reference-graph",
+      "name": "Notion Database Cross-Reference Graph",
+      "pitch": "Parses Notion page DOM to extract database relations and renders a force-directed graph showing connections. No API needed since Notion web app exposes DOM. Builds on top of existing link detection lo",
+      "pain": "Notion power users lose track of which databases reference each other across large workspaces, creating broken links.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-notion-database-cross-reference-graph-bummkq",
+          "url": "https://example.invalid/ai-idea/notion-database-cross-reference-graph"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "notion-backlink-graph-viewer",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}
