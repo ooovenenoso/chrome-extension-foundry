@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-06-05",
+  "week": "2026-W28",
+  "scored_at": "2026-07-06T05:19:30.249Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-warmup-domain-health-monitor",
+      "name": "Email Warmup Domain Health Monitor",
+      "pitch": "Analyzes email header data from a connected inbox to surface open rates, bounce rates, and spam score indicators for the user's sending domain, overlaying health metrics in Gmail. Free basic dashboard",
+      "pain": "Sales teams sending cold email from their own domain have no visibility into whether their emails are landing in spam, damaging sender reputation silently.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-warmup-domain-health-monitor-o50iin",
+          "url": "https://example.invalid/ai-idea/email-warmup-domain-health-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cold-email-template-tester",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "design-handoff-color-comparator",
+      "name": "Design Handoff Color Comparator",
+      "pitch": "Lets users sample a color from any page element and compare it against a Figma screenshot pasted into the extension, showing delta-E difference and RGB/HEX mismatch percentage. Free basic comparison, ",
+      "pain": "Frontend developers manually compare colors between Figma screenshots and live implementation, spending time on tedious visual checks instead of coding.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-design-handoff-color-comparator-9bv8r8",
+          "url": "https://example.invalid/ai-idea/design-handoff-color-comparator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-token-inspector",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "playwright-script-recorder",
+      "name": "Playwright Script Recorder",
+      "pitch": "Records user interactions on any page and generates runnable Playwright scripts, exporting to clipboard with one click. Free recording and basic export, paid adds advanced selectors, assertions, and C",
+      "pain": "QA engineers manually write Playwright tests for UI flows they already test manually, duplicating effort that could be automated instantly.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-playwright-script-recorder-7us4rc",
+          "url": "https://example.invalid/ai-idea/playwright-script-recorder"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "webhook-retry-lab",
+      "name": "Webhook Retry Lab",
+      "pitch": "Takes a webhook URL and payload, replays it with configurable retry count and backoff strategies, and shows response timing, status codes, and retry sequence in a visual timeline. Free basic replay wi",
+      "pain": "Developers manually craft scripts or use Postman to test webhook retry logic, lacking a visual tool to simulate backoff and failure scenarios.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-retry-lab-zi07tf",
+          "url": "https://example.invalid/ai-idea/webhook-retry-lab"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "a-b-variant-session-overlay",
+      "name": "A/B Variant Session Overlay",
+      "pitch": "Reads URL params and localStorage to determine variant assignment, overlays a small badge showing current variant and allows quick comparison of conversion metrics across variants. Free for basic vari",
+      "pain": "Marketers waste time manually checking URL params and cookies to know which A/B variant a user is seeing during testing.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-a-b-variant-session-overlay-c9oouu",
+          "url": "https://example.invalid/ai-idea/a-b-variant-session-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.04
+      }
+    },
+    {
+      "id": "sitemap-depth-analyzer",
+      "name": "Sitemap Depth Analyzer",
+      "pitch": "Crawls visible links from the current page and calculates depth, internal linking gaps, and orphan page risks, overlaying a depth badge on each internal link. Free basic depth stats, paid for full cra",
+      "pain": "SEO specialists and content teams lack visibility into how deep their pages are in the site hierarchy, affecting crawl budget and link equity distribution.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sitemap-depth-analyzer-t1sxcu",
+          "url": "https://example.invalid/ai-idea/sitemap-depth-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "external-link-auditor",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "sentry-error-aggregator",
+      "name": "Sentry Error Aggregator",
+      "pitch": "Collects all Sentry error IDs and fingerprints from console logs and network responses on the current page, deduplicating and displaying a mini dashboard with stack trace snippets and grouping. Free b",
+      "pain": "Developers debugging production bugs see scattered error IDs in console and network tabs with no way to group and prioritize them in one view.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sentry-error-aggregator-a5kvg8",
+          "url": "https://example.invalid/ai-idea/sentry-error-aggregator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 4
+      },
+      "score_total": 5.55,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "console-log-pattern-analyzer",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "pagerduty-incident-context-linker",
+      "name": "PagerDuty Incident Context Linker",
+      "pitch": "Scrapes PagerDuty incident links and numbers from any page context, fetching incident metadata via the PD public API to overlay severity, affected services, and runbook links inline. Free basic extrac",
+      "pain": "On-call engineers context-switch to Slack, Jira, or email to find incident links and runbooks when an alert fires, losing precious incident response time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pagerduty-incident-context-linker-bohfno",
+          "url": "https://example.invalid/ai-idea/pagerduty-incident-context-linker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-context-prep",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "jsdoc-coverage-source-overlay",
+      "name": "JSDoc Coverage Source Overlay",
+      "pitch": "When viewing source in DevTools Sources panel, scans visible functions for JSDoc/TSDoc and overlays a small icon indicating coverage status, with hover to see what is missing. Free basic highlighting,",
+      "pain": "Developers reviewing unfamiliar codebases lose time checking whether functions on screen are documented without context switching to an IDE.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-jsdoc-coverage-source-overlay-ekih6s",
+          "url": "https://example.invalid/ai-idea/jsdoc-coverage-source-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "websocket-frame-debugger",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "cloud-run-health-status-panel",
+      "name": "Cloud Run Health Status Panel",
+      "pitch": "Displays a compact panel showing revision status, instance count, and recent deployment events for Cloud Run services via the GCP REST API, without leaving the current tab. Free 1 service, paid for mu",
+      "pain": "GCP engineers managing Cloud Run services switch tabs to the GCP console to check deployment health, breaking flow during active deployments.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cloud-run-health-status-panel-wq07bz",
+          "url": "https://example.invalid/ai-idea/cloud-run-health-status-panel"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "llm-prompt-version-history-vault",
+      "name": "LLM Prompt Version History Vault",
+      "pitch": "Captures prompts and model outputs in real-time from any AI chat interface, storing them locally with full-text search and diff view. Free tier: 100 entries, basic search. Paid: unlimited storage, tag",
+      "pain": "Users iterating on prompts lose track of earlier versions and cannot compare outputs across model configurations, wasting expensive API calls on already-tested prompts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-llm-prompt-version-history-vault-lnquct",
+          "url": "https://example.invalid/ai-idea/llm-prompt-version-history-vault"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.15,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-prompt-diff-viewer",
+        "jaccard_with_nearest": 0.1
+      }
+    }
+  ]
+}

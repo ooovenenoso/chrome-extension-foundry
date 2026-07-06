@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-06-05",
+  "week": "2026-W28",
+  "fetched_at": "2026-07-06T05:19:30.077Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-a-b-variant-session-overlay-c9oouu",
+          "title": "A/B Variant Session Overlay",
+          "url": "https://example.invalid/ai-idea/a-b-variant-session-overlay",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Reads URL params and localStorage to determine variant assignment, overlays a small badge showing current variant and allows quick comparison of conversion metrics across variants. Free for basic variant detection, paid adds statistical significance analysis. Simple DOM/URL parsing; this exists inside full analytics suites but not as a lightweight standalone overlay. Demand estimate: 6/10",
+          "monetization": "freemium_saas",
+          "pain": "Marketers waste time manually checking URL params and cookies to know which A/B variant a user is seeing during testing."
+        },
+        {
+          "source_id": "ai-job-description-skills-extractor-3q4nfj",
+          "title": "Job Description Skills Extractor",
+          "url": "https://example.invalid/ai-idea/job-description-skills-extractor",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts hard skills, soft skills, and years of experience from any job posting on LinkedIn, Greenhouse, or Lever, overlaying highlighted tags directly on the page. Free shows top 5 keywords, paid unlocks full extraction, cover letter suggestions, and save-to-notion. Uses regex keyword matching and simple NLP tokenization. Gap: most existing tools are standalone web apps, not in-page overlays. Demand estimate: 7/10",
+          "monetization": "freemium_saas",
+          "pain": "Job seekers manually scan postings for required skills, missing context that could strengthen their applications."
+        },
+        {
+          "source_id": "ai-pagerduty-incident-context-linker-bohfno",
+          "title": "PagerDuty Incident Context Linker",
+          "url": "https://example.invalid/ai-idea/pagerduty-incident-context-linker",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scrapes PagerDuty incident links and numbers from any page context, fetching incident metadata via the PD public API to overlay severity, affected services, and runbook links inline. Free basic extraction, paid adds historical incident correlation and on-call schedule display. Feasible via simple DOM scraping and PD API calls; no existing browser-side tool does this correlation. Demand estimate: 5/10",
+          "monetization": "freemium_saas",
+          "pain": "On-call engineers context-switch to Slack, Jira, or email to find incident links and runbooks when an alert fires, losing precious incident response time."
+        },
+        {
+          "source_id": "ai-design-handoff-color-comparator-9bv8r8",
+          "title": "Design Handoff Color Comparator",
+          "url": "https://example.invalid/ai-idea/design-handoff-color-comparator",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Lets users sample a color from any page element and compare it against a Figma screenshot pasted into the extension, showing delta-E difference and RGB/HEX mismatch percentage. Free basic comparison, paid adds batch mode and pass/fail thresholds. Uses browser color picker APIs and basic color math; a unique workflow not covered by existing tools. Demand estimate: 5/10",
+          "monetization": "freemium_saas",
+          "pain": "Frontend developers manually compare colors between Figma screenshots and live implementation, spending time on tedious visual checks instead of coding."
+        },
+        {
+          "source_id": "ai-jsdoc-coverage-source-overlay-ekih6s",
+          "title": "JSDoc Coverage Source Overlay",
+          "url": "https://example.invalid/ai-idea/jsdoc-coverage-source-overlay",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "When viewing source in DevTools Sources panel, scans visible functions for JSDoc/TSDoc and overlays a small icon indicating coverage status, with hover to see what is missing. Free basic highlighting, paid adds auto-generation suggestions and CI integration hooks. Leverages DevTools debugger APIs and regex JSDoc detection. Most documentation tools validate in CI, not live in the browser. Demand estimate: 5/10",
+          "monetization": "freemium_saas",
+          "pain": "Developers reviewing unfamiliar codebases lose time checking whether functions on screen are documented without context switching to an IDE."
+        },
+        {
+          "source_id": "ai-gdpr-clause-compliance-detector-g4k1vu",
+          "title": "GDPR Clause Compliance Detector",
+          "url": "https://example.invalid/ai-idea/gdpr-clause-compliance-detector",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Scans page text for common GDPR data processing clauses, legal basis mentions, and consent language, overlaying color-coded compliance badges on detected sections. Free basic detection, paid adds regulatory mapping to specific articles and PDF export. Uses NLP-based clause detection with regex fallback; existing tools focus on cookie banners, not policy body text. Demand estimate: 4/10",
+          "monetization": "freemium_saas",
+          "pain": "Privacy officers manually scan privacy policies for standard GDPR clauses, often missing critical language buried in dense legal text."
+        },
+        {
+          "source_id": "ai-sentry-error-aggregator-a5kvg8",
+          "title": "Sentry Error Aggregator",
+          "url": "https://example.invalid/ai-idea/sentry-error-aggregator",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Collects all Sentry error IDs and fingerprints from console logs and network responses on the current page, deduplicating and displaying a mini dashboard with stack trace snippets and grouping. Free basic aggregation, paid adds full error context and Slack alerting. Uses console interceptor and network response parsing; most existing tools track individual errors rather than aggregate across a session. Demand estimate: 6/10",
+          "monetization": "freemium_saas",
+          "pain": "Developers debugging production bugs see scattered error IDs in console and network tabs with no way to group and prioritize them in one view."
+        },
+        {
+          "source_id": "ai-playwright-script-recorder-7us4rc",
+          "title": "Playwright Script Recorder",
+          "url": "https://example.invalid/ai-idea/playwright-script-recorder",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Records user interactions on any page and generates runnable Playwright scripts, exporting to clipboard with one click. Free recording and basic export, paid adds advanced selectors, assertions, and CI-ready export formats. Leverages Playwright's automation API and generates real, runnable code. Gap: existing recorders produce proprietary formats or require external tooling. Demand estimate: 6/10",
+          "monetization": "freemium_saas",
+          "pain": "QA engineers manually write Playwright tests for UI flows they already test manually, duplicating effort that could be automated instantly."
+        },
+        {
+          "source_id": "ai-llm-prompt-version-history-vault-lnquct",
+          "title": "LLM Prompt Version History Vault",
+          "url": "https://example.invalid/ai-idea/llm-prompt-version-history-vault",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Captures prompts and model outputs in real-time from any AI chat interface, storing them locally with full-text search and diff view. Free tier: 100 entries, basic search. Paid: unlimited storage, tagging, and cloud sync. Uses localStorage and a lightweight diff algorithm; most prompt management tools are separate web apps, not in-browser. Demand estimate: 7/10",
+          "monetization": "freemium_saas",
+          "pain": "Users iterating on prompts lose track of earlier versions and cannot compare outputs across model configurations, wasting expensive API calls on already-tested prompts."
+        },
+        {
+          "source_id": "ai-page-toc-sidebar-navigator-h38s32",
+          "title": "Page TOC Sidebar Navigator",
+          "url": "https://example.invalid/ai-idea/page-toc-sidebar-navigator",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 8
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts all H1-H3 tags from any page and renders a floating sidebar TOC with active section highlighting and one-click navigation. Free for single-page use, paid adds export to Markdown/Notion and multi-page session tracking. Simple DOM header parsing and IntersectionObserver for active tracking; no existing lightweight browser overlay does this. Demand estimate: 8/10",
+          "monetization": "freemium_saas",
+          "pain": "Readers navigating long articles lose track of their position in the structure, making it hard to jump between sections or understand the document outline."
+        },
+        {
+          "source_id": "ai-cloud-run-health-status-panel-wq07bz",
+          "title": "Cloud Run Health Status Panel",
+          "url": "https://example.invalid/ai-idea/cloud-run-health-status-panel",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Displays a compact panel showing revision status, instance count, and recent deployment events for Cloud Run services via the GCP REST API, without leaving the current tab. Free 1 service, paid for multi-service dashboards and anomaly alerting. Straightforward GCP API polling with minimal overhead. No existing browser overlay targets this specific workflow. Demand estimate: 5/10",
+          "monetization": "freemium_saas",
+          "pain": "GCP engineers managing Cloud Run services switch tabs to the GCP console to check deployment health, breaking flow during active deployments."
+        },
+        {
+          "source_id": "ai-meeting-timezone-comparison-overlay-0kzv7g",
+          "title": "Meeting Timezone Comparison Overlay",
+          "url": "https://example.invalid/ai-idea/meeting-timezone-comparison-overlay",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Hovering over calendar event times shows the equivalent time in all relevant team member timezones simultaneously, preventing scheduling mistakes. Free 2 timezones, paid adds conflict detection and calendar invite generation. Uses Intl.DateTimeFormat and page timezone detection. Existing tools are standalone apps rather than in-calendar overlays. Demand estimate: 7/10",
+          "monetization": "freemium_saas",
+          "pain": "Remote workers scheduling across timezones manually convert times, leading to confusion about which timezone applies to a given meeting."
+        },
+        {
+          "source_id": "ai-email-warmup-domain-health-monitor-o50iin",
+          "title": "Email Warmup Domain Health Monitor",
+          "url": "https://example.invalid/ai-idea/email-warmup-domain-health-monitor",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes email header data from a connected inbox to surface open rates, bounce rates, and spam score indicators for the user's sending domain, overlaying health metrics in Gmail. Free basic dashboard, paid adds daily reports and reputation alerts. Uses Gmail API for header analysis and simple reputation scoring. No existing browser tool monitors domain reputation in-context. Demand estimate: 6/10",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales teams sending cold email from their own domain have no visibility into whether their emails are landing in spam, damaging sender reputation silently."
+        },
+        {
+          "source_id": "ai-sitemap-depth-analyzer-t1sxcu",
+          "title": "Sitemap Depth Analyzer",
+          "url": "https://example.invalid/ai-idea/sitemap-depth-analyzer",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Crawls visible links from the current page and calculates depth, internal linking gaps, and orphan page risks, overlaying a depth badge on each internal link. Free basic depth stats, paid for full crawl visualization and CSV export. DOM parsing and simple breadth-first crawl simulation. Competitor tools are standalone crawlers, not browser overlays. Demand estimate: 5/10",
+          "monetization": "freemium_saas",
+          "pain": "SEO specialists and content teams lack visibility into how deep their pages are in the site hierarchy, affecting crawl budget and link equity distribution."
+        },
+        {
+          "source_id": "ai-webhook-retry-lab-zi07tf",
+          "title": "Webhook Retry Lab",
+          "url": "https://example.invalid/ai-idea/webhook-retry-lab",
+          "timestamp": "2026-07-06T05:19:30.069Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Takes a webhook URL and payload, replays it with configurable retry count and backoff strategies, and shows response timing, status codes, and retry sequence in a visual timeline. Free basic replay with 3 retries, paid adds custom headers, variable interpolation, and response diffing. fetch API and setTimeout backoff simulation make this straightforward. No existing browser tool does visual webhook retry debugging. Demand estimate: 5/10",
+          "monetization": "freemium_saas",
+          "pain": "Developers manually craft scripts or use Postman to test webhook retry logic, lacking a visual tool to simulate backoff and failure scenarios."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-06T05:19:30.077Z",
+        "dedup_against": 278,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
