@@ -1,0 +1,308 @@
+{
+  "slot": "2026-07-07-15",
+  "week": "2026-W28",
+  "scored_at": "2026-07-07T15:47:14.855Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "customer-email-attachment-pattern-analyz",
+      "name": "Customer Email Attachment Pattern Analyzer",
+      "pitch": "Detects patterns in email attachments—shared docs, CC'd reviewers, versioned files—that signal buying committee involvement. Cold Email Reply Analyzer tracks opens; this tracks collaboration signals h",
+      "pain": "AEs cannot tell if a prospect is involving internal stakeholders just by looking at reply threads",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-customer-email-attachment-pattern-analyz-84ikql",
+          "url": "https://example.invalid/ai-idea/customer-email-attachment-pattern-analyz"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tone-dna",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "api-schema-mutation-analyzer",
+      "name": "API Schema Mutation Analyzer",
+      "pitch": "Connects to your OpenAPI spec and git history to predict breaking changes and affected consumer endpoints before deployment. Contrast with API Breaking Change Detector which is post-deploy; this is pr",
+      "pain": "Backend teams do not know which API consumers will break when they deploy schema changes",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-schema-mutation-analyzer-tmnk9n",
+          "url": "https://example.invalid/ai-idea/api-schema-mutation-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-breaking-change-detector",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "product-feature-gap-analyzer",
+      "name": "Product Feature Gap Analyzer",
+      "pitch": "Scrapes competitor pricing pages and feature lists to auto-generate gap analysis charts for sales calls. B2B sales tooling is exploding but gap analysis is still manual. This plugs into the sales enab",
+      "pain": "Sales reps waste hours manually comparing product features instead of focusing on closing deals",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-product-feature-gap-analyzer-pz76ju",
+          "url": "https://example.invalid/ai-idea/product-feature-gap-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sitemap-depth-analyzer",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "deal-stakeholder-map-builder",
+      "name": "Deal Stakeholder Map Builder",
+      "pitch": "Scrapes LinkedIn for mutual connections and maps org chart signals to identify all stakeholders around a deal. Current tools only show the primary contact; this surfaces the hidden org around the deal",
+      "pain": "AEs lose deals because they did not know about a silent vetoer buried in the prospect org",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-deal-stakeholder-map-builder-nowutz",
+          "url": "https://example.invalid/ai-idea/deal-stakeholder-map-builder"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-mutual-icebreaker-finder",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "social-proof-alert-notifier",
+      "name": "Social Proof Alert Notifier",
+      "pitch": "Monitors LinkedIn activity of prospects and alerts when they comment, share, or engage with relevant posts. Gong Summary Forwarder captures calls; this captures social engagement signals for outreach ",
+      "pain": "AEs miss prime outreach moments when prospects engage with relevant content on LinkedIn",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-social-proof-alert-notifier-74j4n9",
+          "url": "https://example.invalid/ai-idea/social-proof-alert-notifier"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-mutual-icebreaker-finder",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "gcp-cost-anomaly-sentinel",
+      "name": "GCP Cost Anomaly Sentinel",
+      "pitch": "Leverages GCP Billing API to detect spend spikes per service within hours—not days when the bill arrives. Now is the right time because GCP costs are rising faster than teams can track them. Most tool",
+      "pain": "Engineering teams burning GCP budget overnight without knowing which service caused the spike",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-cost-anomaly-sentinel-gzh097",
+          "url": "https://example.invalid/ai-idea/gcp-cost-anomaly-sentinel"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "dependency-risk-assigner",
+      "name": "Dependency Risk Assigner",
+      "pitch": "Overlay showing maintenance score, recent commits, and known vulnerabilities on npm package pages. Supply chain attacks and abandonment are top developer fears; this surfaces risk at the point of eval",
+      "pain": "Developers inherit npm packages without knowing which ones are maintained, secure, or likely to break",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-dependency-risk-assigner-o413b3",
+          "url": "https://example.invalid/ai-idea/dependency-risk-assigner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pypi-safety-score-overlay",
+        "jaccard_with_nearest": 0.19
+      }
+    },
+    {
+      "id": "bug-report-console-logger",
+      "name": "Bug Report Console Logger",
+      "pitch": "One-click capture of all console errors, network failures, and state for bug reports. Integrates with Linear, Jira, GitHub Issues. The average bug report is missing critical console context; this auto",
+      "pain": "Developers spend 20 minutes reproducing bugs because users cannot capture console output",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-bug-report-console-logger-dj3jot",
+          "url": "https://example.invalid/ai-idea/bug-report-console-logger"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sentry-error-aggregator",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "gong-call-silence-segment-tagger",
+      "name": "Gong Call Silence Segment Tagger",
+      "pitch": "Automatically tags long silence segments in Gong call recordings for quick review. Gong Call Silence Segment Detector was conceptual but not built; this is the actual implementation with export to CRM",
+      "pain": "Sales managers reviewing Gong calls cannot quickly find where prospects went silent or hesitated",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-silence-segment-tagger-ibpgie",
+          "url": "https://example.invalid/ai-idea/gong-call-silence-segment-tagger"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-silence-segment-detector",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "job-posting-benefits-signal-extractor",
+      "name": "Job Posting Benefits Signal Extractor",
+      "pitch": "Extracts and normalizes benefits data (PTO, remote policy, equity, health) from job postings into a structured comparison table. Job Description Benefits Comparator was proposed but not built; this is",
+      "pain": "Recruiters and sourcers cannot quickly compare benefits packages across job postings",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-job-posting-benefits-signal-extractor-cq4yb5",
+          "url": "https://example.invalid/ai-idea/job-posting-benefits-signal-extractor"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "public-job-posting-salary-extractor",
+        "jaccard_with_nearest": 0.17
+      }
+    }
+  ]
+}

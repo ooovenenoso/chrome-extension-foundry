@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-07-15",
+  "week": "2026-W28",
+  "fetched_at": "2026-07-07T15:47:14.726Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-gcp-cost-anomaly-sentinel-gzh097",
+          "title": "GCP Cost Anomaly Sentinel",
+          "url": "https://example.invalid/ai-idea/gcp-cost-anomaly-sentinel",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Leverages GCP Billing API to detect spend spikes per service within hours—not days when the bill arrives. Now is the right time because GCP costs are rising faster than teams can track them. Most tools only alert after the damage is done; this catches intra-day anomalies.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Engineering teams burning GCP budget overnight without knowing which service caused the spike"
+        },
+        {
+          "source_id": "ai-product-feature-gap-analyzer-pz76ju",
+          "title": "Product Feature Gap Analyzer",
+          "url": "https://example.invalid/ai-idea/product-feature-gap-analyzer",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes competitor pricing pages and feature lists to auto-generate gap analysis charts for sales calls. B2B sales tooling is exploding but gap analysis is still manual. This plugs into the sales enablement stack immediately.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps waste hours manually comparing product features instead of focusing on closing deals"
+        },
+        {
+          "source_id": "ai-dependency-risk-assigner-o413b3",
+          "title": "Dependency Risk Assigner",
+          "url": "https://example.invalid/ai-idea/dependency-risk-assigner",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Overlay showing maintenance score, recent commits, and known vulnerabilities on npm package pages. Supply chain attacks and abandonment are top developer fears; this surfaces risk at the point of evaluation.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers inherit npm packages without knowing which ones are maintained, secure, or likely to break"
+        },
+        {
+          "source_id": "ai-webpage-dynamic-content-detector-y56cp4",
+          "title": "WebPage Dynamic Content Detector",
+          "url": "https://example.invalid/ai-idea/webpage-dynamic-content-detector",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Detects lazy-loaded elements, infinite scroll triggers, and dynamic content injections and marks them visually. Content consumption patterns are shifting to increasingly dynamic pages; users need help tracking what they have actually seen.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users miss content that loads after initial page render, thinking they have read the full article"
+        },
+        {
+          "source_id": "ai-api-schema-mutation-analyzer-tmnk9n",
+          "title": "API Schema Mutation Analyzer",
+          "url": "https://example.invalid/ai-idea/api-schema-mutation-analyzer",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Connects to your OpenAPI spec and git history to predict breaking changes and affected consumer endpoints before deployment. Contrast with API Breaking Change Detector which is post-deploy; this is pre-deploy prophecy for schema drift.",
+          "monetization": "per_seat",
+          "pain": "Backend teams do not know which API consumers will break when they deploy schema changes"
+        },
+        {
+          "source_id": "ai-deal-stakeholder-map-builder-nowutz",
+          "title": "Deal Stakeholder Map Builder",
+          "url": "https://example.invalid/ai-idea/deal-stakeholder-map-builder",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn for mutual connections and maps org chart signals to identify all stakeholders around a deal. Current tools only show the primary contact; this surfaces the hidden org around the deal.",
+          "monetization": "freemium_saas",
+          "pain": "AEs lose deals because they did not know about a silent vetoer buried in the prospect org"
+        },
+        {
+          "source_id": "ai-browser-fingerprint-detector-d4zymk",
+          "title": "Browser Fingerprint Detector",
+          "url": "https://example.invalid/ai-idea/browser-fingerprint-detector",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Detects and alerts when sites run Canvas, WebGL, Audio, or Font fingerprinting scripts. Privacy awareness is at an all-time high but users have zero visibility into fingerprinting—this fills the gap with clear alerts.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have no idea how many companies are secretly fingerprinting their browser for tracking"
+        },
+        {
+          "source_id": "ai-customer-email-attachment-pattern-analyz-84ikql",
+          "title": "Customer Email Attachment Pattern Analyzer",
+          "url": "https://example.invalid/ai-idea/customer-email-attachment-pattern-analyz",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Detects patterns in email attachments—shared docs, CC'd reviewers, versioned files—that signal buying committee involvement. Cold Email Reply Analyzer tracks opens; this tracks collaboration signals hidden in attachments.",
+          "monetization": "stripe_tip_jar",
+          "pain": "AEs cannot tell if a prospect is involving internal stakeholders just by looking at reply threads"
+        },
+        {
+          "source_id": "ai-social-proof-alert-notifier-74j4n9",
+          "title": "Social Proof Alert Notifier",
+          "url": "https://example.invalid/ai-idea/social-proof-alert-notifier",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Monitors LinkedIn activity of prospects and alerts when they comment, share, or engage with relevant posts. Gong Summary Forwarder captures calls; this captures social engagement signals for outreach timing.",
+          "monetization": "freemium_saas",
+          "pain": "AEs miss prime outreach moments when prospects engage with relevant content on LinkedIn"
+        },
+        {
+          "source_id": "ai-bug-report-console-logger-dj3jot",
+          "title": "Bug Report Console Logger",
+          "url": "https://example.invalid/ai-idea/bug-report-console-logger",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "One-click capture of all console errors, network failures, and state for bug reports. Integrates with Linear, Jira, GitHub Issues. The average bug report is missing critical console context; this automates the capture.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers spend 20 minutes reproducing bugs because users cannot capture console output"
+        },
+        {
+          "source_id": "ai-codebase-novelty-detector-d24asq",
+          "title": "Codebase Novelty Detector",
+          "url": "https://example.invalid/ai-idea/codebase-novelty-detector",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Highlights sections of a PR that are genuinely novel compared to repo history using embedding similarity. PR Description Readability Calculator looks at text; this looks at code novelty patterns.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Engineers reviewing PRs cannot quickly tell if the code is novel or just boilerplate"
+        },
+        {
+          "source_id": "ai-tooltip-touch-target-auditor-joet8x",
+          "title": "Tooltip Touch Target Auditor",
+          "url": "https://example.invalid/ai-idea/tooltip-touch-target-auditor",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Flags tooltip elements that are below 24x24 CSS pixels on hover or focus states. Accessibility Aura Scan audits full pages; this focuses narrowly on tooltip touch target compliance—a known gap.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Accessibility audits miss interactive tooltip touch targets failing WCAG 2.1 minimum size requirements"
+        },
+        {
+          "source_id": "ai-llm-output-consistency-scorer-yv7c6x",
+          "title": "LLM Output Consistency Scorer",
+          "url": "https://example.invalid/ai-idea/llm-output-consistency-scorer",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Runs the same prompt across multiple LLM endpoints and scores output consistency by semantic similarity. Helps users choose the right model for reliability-critical tasks. Different from Token counters or Cost calculators—focuses on output stability.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users running identical prompts across models get wildly different answers with no way to measure variance"
+        },
+        {
+          "source_id": "ai-gong-call-silence-segment-tagger-ibpgie",
+          "title": "Gong Call Silence Segment Tagger",
+          "url": "https://example.invalid/ai-idea/gong-call-silence-segment-tagger",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Automatically tags long silence segments in Gong call recordings for quick review. Gong Call Silence Segment Detector was conceptual but not built; this is the actual implementation with export to CRM notes.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales managers reviewing Gong calls cannot quickly find where prospects went silent or hesitated"
+        },
+        {
+          "source_id": "ai-job-posting-benefits-signal-extractor-cq4yb5",
+          "title": "Job Posting Benefits Signal Extractor",
+          "url": "https://example.invalid/ai-idea/job-posting-benefits-signal-extractor",
+          "timestamp": "2026-07-07T15:47:14.718Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Extracts and normalizes benefits data (PTO, remote policy, equity, health) from job postings into a structured comparison table. Job Description Benefits Comparator was proposed but not built; this is the implementation for recruiter workflow efficiency.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Recruiters and sourcers cannot quickly compare benefits packages across job postings"
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-07T15:47:14.726Z",
+        "dedup_against": 323,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
