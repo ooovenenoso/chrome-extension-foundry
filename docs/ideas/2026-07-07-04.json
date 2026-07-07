@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-07-04",
+  "week": "2026-W28",
+  "scored_at": "2026-07-07T04:58:28.813Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "ai-conversation-context-drift-monitor",
+      "name": "AI Conversation Context Drift Monitor",
+      "pitch": "Tracks conversation structure by parsing messages and maintaining a semantic thread map. Uses cosine similarity between embedding segments to flag drift. Buildable with a local embeddings model or lig",
+      "pain": "Teams lose track of how far an AI conversation has drifted from its original intent, burning tokens on tangents.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-conversation-context-drift-monitor-8iidbn",
+          "url": "https://example.invalid/ai-idea/ai-conversation-context-drift-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.3,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "ai-prompt-token-budget-sidebar",
+      "name": "AI Prompt Token Budget Sidebar",
+      "pitch": "Shows real-time token count estimate for current conversation in ChatGPT/Claude/Cursor. Maintains running budget bar. Uses approximate tokenization (tiktoken ported or word-based estimation). Directly",
+      "pain": "AI power users burn through context windows without knowing real token consumption mid-session.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-prompt-token-budget-sidebar-3du3lw",
+          "url": "https://example.invalid/ai-idea/ai-prompt-token-budget-sidebar"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-token-usage-by-tab",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "recruiter-outreach-response-heatmap",
+      "name": "Recruiter Outreach Response Heatmap",
+      "pitch": "Integrates with Gmail/LinkedIn to track open/response rates per message template variant. Builds a simple CRM-like dashboard showing template performance heatmap. Enables A/B testing at scale for recr",
+      "pain": "Recruiters send templated outreach without knowing which message structures historically got responses.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-recruiter-outreach-response-heatmap-tyfual",
+          "url": "https://example.invalid/ai-idea/recruiter-outreach-response-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "gong-call-objection-pattern-library",
+      "name": "Gong Call Objection Pattern Library",
+      "pitch": "Scrapes Gong call transcripts (with user permission) to extract objection patterns, auto-tags by type, and surfaces recommended responses from past successful calls. Requires Gong API access. Directly",
+      "pain": "Sales reps don't know how to handle common objections they encounter on calls, losing deals unnecessarily.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-objection-pattern-library-d3pepc",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-pattern-library"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-question-pattern-analyzer",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "salesforce-lead-response-velocity-score",
+      "name": "Salesforce Lead Response Velocity Score",
+      "pitch": "Tracks time between lead creation in Salesforce and first meaningful outreach action. Shows per-rep and per-team velocity scores with benchmarking. Works via Salesforce API. Turns vague SLA goals into",
+      "pain": "Sales reps don't know their real lead response times, losing deals to slower competitors.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-salesforce-lead-response-velocity-score-rpghl8",
+          "url": "https://example.invalid/ai-idea/salesforce-lead-response-velocity-score"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "edge-function-invocation-cost-tracer",
+      "name": "Edge Function Invocation Cost Tracer",
+      "pitch": "Uses Performance API and Resource Timing to capture cold start vs execution time per edge provider. Buildable by instrumenting fetch timing with custom headers. Now is the moment as edge computing hit",
+      "pain": "Developers deploying edge functions lack visibility into per-invocation latency breakdown across geographic PoPs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-edge-function-invocation-cost-tracer-pk0wkx",
+          "url": "https://example.invalid/ai-idea/edge-function-invocation-cost-tracer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "browser-console-log-volume-controller",
+      "name": "Browser Console Log Volume Controller",
+      "pitch": "Adds a floating panel to filter/collapse console messages by type, source domain, or custom regex. Persists filters per-domain. Buildable as a content script with console override. Simple but solves d",
+      "pain": "Developers debugging production sites get flooded with noisy console logs, hiding real errors.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-console-log-volume-controller-t73fhm",
+          "url": "https://example.invalid/ai-idea/browser-console-log-volume-controller"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "console-log-pattern-analyzer",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "public-api-changelog-pulse",
+      "name": "Public API Changelog Pulse",
+      "pitch": "Monitors known API changelog endpoints and RSS feeds, alerts when changes are posted. Maintains a watchlist of APIs. Buildable with fetch polling and notification API. Every developer who integrates e",
+      "pain": "Developers using third-party APIs miss breaking changes until production breaks.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-public-api-changelog-pulse-a7882f",
+          "url": "https://example.invalid/ai-idea/public-api-changelog-pulse"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-latency-scatterplot",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "legal-contract-risk-clause-highlighter",
+      "name": "Legal Contract Risk Clause Highlighter",
+      "pitch": "Leverages browser-side text analysis with regex + LLM for flagging high-risk clauses (indemnification, IP assignment, auto-renewal). Builds as content script injection. The vertical is underserved—leg",
+      "pain": "Sales reps reviewing MSAs and SLAs in browser miss liability clauses that could hurt deal terms.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-legal-contract-risk-clause-highlighter-zbr9vd",
+          "url": "https://example.invalid/ai-idea/legal-contract-risk-clause-highlighter"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "regex-live-validator",
+        "jaccard_with_nearest": 0.06
+      }
+    }
+  ]
+}

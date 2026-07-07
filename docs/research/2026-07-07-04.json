@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-07-04",
+  "week": "2026-W28",
+  "fetched_at": "2026-07-07T04:58:28.636Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-edge-function-invocation-cost-tracer-pk0wkx",
+          "title": "Edge Function Invocation Cost Tracer",
+          "url": "https://example.invalid/ai-idea/edge-function-invocation-cost-tracer",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Uses Performance API and Resource Timing to capture cold start vs execution time per edge provider. Buildable by instrumenting fetch timing with custom headers. Now is the moment as edge computing hits mainstream with Cloudflare Workers, Vercel Edge, Deno Deploy. Competitors focus on aggregate dashboards, not per-invocation browser-side tracing.",
+          "monetization": "freemium_saas",
+          "pain": "Developers deploying edge functions lack visibility into per-invocation latency breakdown across geographic PoPs."
+        },
+        {
+          "source_id": "ai-legal-contract-risk-clause-highlighter-zbr9vd",
+          "title": "Legal Contract Risk Clause Highlighter",
+          "url": "https://example.invalid/ai-idea/legal-contract-risk-clause-highlighter",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Leverages browser-side text analysis with regex + LLM for flagging high-risk clauses (indemnification, IP assignment, auto-renewal). Builds as content script injection. The vertical is underserved—legal tools focus on document management, not real-time in-browser review. Growing complexity in SaaS contracts makes this timely.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps reviewing MSAs and SLAs in browser miss liability clauses that could hurt deal terms."
+        },
+        {
+          "source_id": "ai-ai-conversation-context-drift-monitor-8iidbn",
+          "title": "AI Conversation Context Drift Monitor",
+          "url": "https://example.invalid/ai-idea/ai-conversation-context-drift-monitor",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::ai",
+          "notes": "Tracks conversation structure by parsing messages and maintaining a semantic thread map. Uses cosine similarity between embedding segments to flag drift. Buildable with a local embeddings model or lightweight API calls. Relevant as AI tool spend skyrockets and context management becomes a cost concern.",
+          "monetization": "quota_based",
+          "pain": "Teams lose track of how far an AI conversation has drifted from its original intent, burning tokens on tangents."
+        },
+        {
+          "source_id": "ai-browser-storage-quota-sentinel-dimzgp",
+          "title": "Browser Storage Quota Sentinel",
+          "url": "https://example.invalid/ai-idea/browser-storage-quota-sentinel",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Polls navigator.storage.estimate() to show per-site quota usage with breakdown (localStorage, IndexedDB, Cache API). Alerts when approaching limits. Directly addresses a hidden pain—storage quota exhaustion is cryptic. Privacy-conscious users increasingly want visibility into browser state.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users are unaware how much local storage quota websites consume, leading to unexpected failures."
+        },
+        {
+          "source_id": "ai-recruiter-outreach-response-heatmap-tyfual",
+          "title": "Recruiter Outreach Response Heatmap",
+          "url": "https://example.invalid/ai-idea/recruiter-outreach-response-heatmap",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Integrates with Gmail/LinkedIn to track open/response rates per message template variant. Builds a simple CRM-like dashboard showing template performance heatmap. Enables A/B testing at scale for recruiting outreach. The market lacks lightweight tools for recruiting-specific A/B testing beyond generic email trackers.",
+          "monetization": "per_seat",
+          "pain": "Recruiters send templated outreach without knowing which message structures historically got responses."
+        },
+        {
+          "source_id": "ai-webassembly-module-size-analyzer-gl16nf",
+          "title": "WebAssembly Module Size Analyzer",
+          "url": "https://example.invalid/ai-idea/webassembly-module-size-analyzer",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses .wasm binary to extract function-level size breakdown. Shows top-10 largest functions by byte count. Buildable using WebAssembly binary toolkit (wabt.js). Niche but growing as WASM adoption increases with on-device AI models.",
+          "monetization": "freemium_saas",
+          "pain": "Frontend developers shipping WebAssembly lack tooling to understand what code contributes to bundle bloat."
+        },
+        {
+          "source_id": "ai-gong-call-objection-pattern-library-d3pepc",
+          "title": "Gong Call Objection Pattern Library",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-pattern-library",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes Gong call transcripts (with user permission) to extract objection patterns, auto-tags by type, and surfaces recommended responses from past successful calls. Requires Gong API access. Directly solves the objection-handling knowledge gap with existing conversation data.",
+          "monetization": "per_seat",
+          "pain": "Sales reps don't know how to handle common objections they encounter on calls, losing deals unnecessarily."
+        },
+        {
+          "source_id": "ai-service-worker-update-readiness-checker-8r0z3o",
+          "title": "Service Worker Update Readiness Checker",
+          "url": "https://example.invalid/ai-idea/service-worker-update-readiness-checker",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Analyzes current SW scope, precached assets, and caches in use to predict update conflict risk. Shows a readiness score before deploy. Buildable with Cache API introspection. Critical as PWAs mature and SW updates cause UX regressions.",
+          "monetization": "freemium_saas",
+          "pain": "Developers struggle to know when it's safe to push a Service Worker update without disrupting active users."
+        },
+        {
+          "source_id": "ai-job-description-salary-band-extractor-p6wilx",
+          "title": "Job Description Salary Band Extractor",
+          "url": "https://example.invalid/ai-idea/job-description-salary-band-extractor",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Parses job listing pages to extract salary ranges using regex + heuristics, displays inline band. Handles common formats (k, $120k, 80-100K). Covers LinkedIn, Indeed, Greenhouse, Lever. Users want salary signals without leaving their workflow.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Job seekers waste time on postings that pay far outside their expectations."
+        },
+        {
+          "source_id": "ai-calendar-meeting-agenda-completeness-sco-4olosa",
+          "title": "Calendar Meeting Agenda Completeness Score",
+          "url": "https://example.invalid/ai-idea/calendar-meeting-agenda-completeness-sco",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scans calendar event description for agenda structure (bullets, numbered lists, time allocations). Assigns a completeness score. Alerts if below threshold. Works with Google Calendar API. Addresses the perennial meeting prep problem with a lightweight signal.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals join meetings without agendas, wasting time and producing unclear outcomes."
+        },
+        {
+          "source_id": "ai-browser-console-log-volume-controller-t73fhm",
+          "title": "Browser Console Log Volume Controller",
+          "url": "https://example.invalid/ai-idea/browser-console-log-volume-controller",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Adds a floating panel to filter/collapse console messages by type, source domain, or custom regex. Persists filters per-domain. Buildable as a content script with console override. Simple but solves daily friction for all developers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers debugging production sites get flooded with noisy console logs, hiding real errors."
+        },
+        {
+          "source_id": "ai-notion-page-dependency-explorer-wrb61a",
+          "title": "Notion Page Dependency Explorer",
+          "url": "https://example.invalid/ai-idea/notion-page-dependency-explorer",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Renders a mini-graph of incoming/outgoing links for the current Notion page. Uses page introspection. Alerts if deleting would orphan other pages. Solves a real Notion pain: link management at scale.",
+          "monetization": "freemium_saas",
+          "pain": "Notion users lose track of backlinks and page dependencies, making it risky to delete or move content."
+        },
+        {
+          "source_id": "ai-salesforce-lead-response-velocity-score-rpghl8",
+          "title": "Salesforce Lead Response Velocity Score",
+          "url": "https://example.invalid/ai-idea/salesforce-lead-response-velocity-score",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks time between lead creation in Salesforce and first meaningful outreach action. Shows per-rep and per-team velocity scores with benchmarking. Works via Salesforce API. Turns vague SLA goals into actionable metrics.",
+          "monetization": "per_seat",
+          "pain": "Sales reps don't know their real lead response times, losing deals to slower competitors."
+        },
+        {
+          "source_id": "ai-public-api-changelog-pulse-a7882f",
+          "title": "Public API Changelog Pulse",
+          "url": "https://example.invalid/ai-idea/public-api-changelog-pulse",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Monitors known API changelog endpoints and RSS feeds, alerts when changes are posted. Maintains a watchlist of APIs. Buildable with fetch polling and notification API. Every developer who integrates external APIs faces this.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers using third-party APIs miss breaking changes until production breaks."
+        },
+        {
+          "source_id": "ai-ai-prompt-token-budget-sidebar-3du3lw",
+          "title": "AI Prompt Token Budget Sidebar",
+          "url": "https://example.invalid/ai-idea/ai-prompt-token-budget-sidebar",
+          "timestamp": "2026-07-07T04:58:28.626Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Shows real-time token count estimate for current conversation in ChatGPT/Claude/Cursor. Maintains running budget bar. Uses approximate tokenization (tiktoken ported or word-based estimation). Directly monetizable as developers become token-conscious.",
+          "monetization": "quota_based",
+          "pain": "AI power users burn through context windows without knowing real token consumption mid-session."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-07T04:58:28.636Z",
+        "dedup_against": 308,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
