@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-08-15",
+  "week": "2026-W28",
+  "scored_at": "2026-07-08T15:26:46.438Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "competitor-changelog-pulse-monitor",
+      "name": "Competitor Changelog Pulse Monitor",
+      "pitch": "Scrapes competitor changelog pages and news feeds, alerting on new releases. One engineer can build the scraper and notification system in 4 weeks. Direct response to sales teams' demand for competiti",
+      "pain": "Sales teams miss competitor feature releases until deals are lost, lacking proactive intelligence",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-competitor-changelog-pulse-monitor-8md4ar",
+          "url": "https://example.invalid/ai-idea/competitor-changelog-pulse-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "saas-pricing-tier-monitor",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "sales-prospect-funding-round-alert",
+      "name": "Sales Prospect Funding Round Alert",
+      "pitch": "Monitors Crunchbase/News APIs for funding announcements of companies in CRM. Pushes alerts when warm prospects raise money. Strong value prop for sales teams doing account-based outreach.",
+      "pain": "Sales reps miss optimal outreach timing when prospects close funding rounds, losing urgency advantages",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-prospect-funding-round-alert-ao0rzx",
+          "url": "https://example.invalid/ai-idea/sales-prospect-funding-round-alert"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-prospect-funding-event-alert",
+        "jaccard_with_nearest": 0.18
+      }
+    },
+    {
+      "id": "pr-review-load-balancer-suggestor",
+      "name": "PR Review Load Balancer Suggestor",
+      "pitch": "Integrates with GitHub/GitLab to analyze reviewer bandwidth and PR urgency, suggesting optimal reviewer assignment. Built as a Chrome extension, it overlays suggestions directly on the PR page. Growin",
+      "pain": "Senior devs get bottleneck-review requests while junior devs sit idle, slowing down the whole team",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-review-load-balancer-suggestor-69g3qi",
+          "url": "https://example.invalid/ai-idea/pr-review-load-balancer-suggestor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-pr-review-distribution-dashboard",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "eu-traffic-gdpr-consent-tracker",
+      "name": "EU Traffic GDPR Consent Tracker",
+      "pitch": "Monitors consent management platform events and reports on consent rates by region. Built as an overlay on analytics dashboards. GDPR compliance monitoring is a growing pain point post-2024 regulation",
+      "pain": "Marketing teams lack visibility into whether EU visitors actually consent to tracking, risking compliance",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-eu-traffic-gdpr-consent-tracker-mos3xl",
+          "url": "https://example.invalid/ai-idea/eu-traffic-gdpr-consent-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "webpage-dynamic-content-auditor",
+      "name": "WebPage Dynamic Content Auditor",
+      "pitch": "Audits pages for dynamic content loading patterns and flags elements that search crawlers might miss. Provides actionable recommendations for dynamic rendering solutions. Directly addresses Google's d",
+      "pain": "SEO teams miss indexing issues when pages load content dynamically without server-rendered fallbacks",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webpage-dynamic-content-auditor-7w8re8",
+          "url": "https://example.invalid/ai-idea/webpage-dynamic-content-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-transcript-action-item-splitter",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "staging-prod-visual-route-diff",
+      "name": "Staging-Prod Visual Route Diff",
+      "pitch": "Leverages Chrome's network interception to shadow-test staging routes against production responses. One engineer can build this in 3 weeks by recording HAR files and comparing responses. No competitor",
+      "pain": "Engineers waste time manually diffing staging vs production behavior when routes diverge unexpectedly",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-staging-prod-visual-route-diff-luh4ni",
+          "url": "https://example.invalid/ai-idea/staging-prod-visual-route-diff"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "gcp-idle-resource-auto-scheduler",
+      "name": "GCP Idle Resource Auto-Scheduler",
+      "pitch": "Scans GCP console for idle resources, suggests shutdown schedules, and can auto-shutdown with approval. Chrome extension approach works well since developers already live in the browser console.",
+      "pain": "GCP bills balloon from dev resources left running 24/7 with no ownership or cleanup process",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-idle-resource-auto-scheduler-elen0p",
+          "url": "https://example.invalid/ai-idea/gcp-idle-resource-auto-scheduler"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-sentinel",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "openapi-spec-compliance-checker",
+      "name": "OpenAPI Spec Compliance Checker",
+      "pitch": "Validates live API responses against OpenAPI specs and flags mismatches in real-time. Uses a lightweight validation library and displays results as an overlay. Addresses the spec-drift problem plaguin",
+      "pain": "Backend teams ship APIs that don't match their OpenAPI spec, breaking frontend contracts",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-openapi-spec-compliance-checker-eurfcb",
+          "url": "https://example.invalid/ai-idea/openapi-spec-compliance-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.1
+      }
+    }
+  ]
+}
