@@ -1,0 +1,194 @@
+{
+  "slot": "2026-07-09-16",
+  "week": "2026-W28",
+  "fetched_at": "2026-07-09T16:05:38.291Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 13,
+      "entries": [
+        {
+          "source_id": "ai-design-handoff-pixel-diff-tool-0izsht",
+          "title": "Design Handoff Pixel Diff Tool",
+          "url": "https://example.invalid/ai-idea/design-handoff-pixel-diff-tool",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Uses canvas API to do pixel-level diff between two screenshots with threshold controls. Built-in annotation tools let users mark discrepancies. Integrates with Figma API to auto-pull latest frames. Now is the moment because design QA loops are a universal pain across remote teams.",
+          "monetization": "freemium_saas",
+          "pain": "Frontend devs waste hours manually comparing design screenshots across Figma, staging, and production environments."
+        },
+        {
+          "source_id": "ai-video-meeting-participation-balance-trac-ghn15y",
+          "title": "Video Meeting Participation Balance Tracker",
+          "url": "https://example.invalid/ai-idea/video-meeting-participation-balance-trac",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Runs locally to estimate speaker time ratios from meeting page audio without recording. Shows real-time bar chart during calls. Exports weekly balance report. Niche but actionable for sales managers coaching their teams on talk-listen ratios.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps never know if they dominated a call or let the prospect speak enough during demos."
+        },
+        {
+          "source_id": "ai-job-application-timeline-visualizer-k98mqa",
+          "title": "Job Application Timeline Visualizer",
+          "url": "https://example.invalid/ai-idea/job-application-timeline-visualizer",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes common job boards to populate a visual Kanban timeline of the job search. Drag-and-drop status updates sync across sessions. Privacy-first: all data stored locally in IndexedDB. Addresses the chaotic emotional state of job hunting.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Job seekers lose track of which companies they applied to, interviewed with, and where each application stands."
+        },
+        {
+          "source_id": "ai-browser-scroll-momentum-analyzer-rxwb6d",
+          "title": "Browser Scroll Momentum Analyzer",
+          "url": "https://example.invalid/ai-idea/browser-scroll-momentum-analyzer",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::productivity",
+          "notes": "Injects scroll velocity tracking into any page and aggregates anonymized patterns. Shows which sections lose readers and where momentum stalls. Freemium tier allows tracking 3 pages; paid unlocks unlimited. Useful for newsletter writers and blog owners.",
+          "monetization": "freemium_saas",
+          "pain": "Content creators have no idea which parts of their articles readers actually finish versus where they bounce."
+        },
+        {
+          "source_id": "ai-public-github-api-usage-example-finder-rgkkxu",
+          "title": "Public GitHub API Usage Example Finder",
+          "url": "https://example.invalid/ai-idea/public-github-api-usage-example-finder",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Indexes public repos to find concrete code examples for any API endpoint or SDK method. Shows usage frequency, popularity of patterns, and common mistakes. Builds searchable index via background workers. Targets the eternal API documentation gap.",
+          "monetization": "per_seat",
+          "pain": "Developers spend too long searching GitHub for real-world usage examples of undocumented APIs and SDKs."
+        },
+        {
+          "source_id": "ai-email-thread-reply-latency-heatmap-i5b42a",
+          "title": "Email Thread Reply Latency Heatmap",
+          "url": "https://example.invalid/ai-idea/email-thread-reply-latency-heatmap",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes Gmail thread metadata to build heatmaps of reply patterns per contact. Shows optimal send windows by day-of-week and hour. Integrates with Salesforce to correlate timing with close rates. Small market but high-stakes for SDRs.",
+          "monetization": "freemium_saas",
+          "pain": "Account execs guess wrong about when prospects are most likely to respond to follow-ups and lose deals to timing."
+        },
+        {
+          "source_id": "ai-calendar-focus-time-fragment-suggester-iht7l4",
+          "title": "Calendar Focus Time Fragment Suggester",
+          "url": "https://example.invalid/ai-idea/calendar-focus-time-fragment-suggester",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scans Google Calendar to identify the largest contiguous gaps and suggests them as protected focus blocks. Auto-creates focus events with meeting suppression. Simple utility that addresses the deep frustration of calendar fragmentation.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Knowledge workers cannot find uninterrupted 2-hour blocks because meetings scatter their calendar unpredictably."
+        },
+        {
+          "source_id": "ai-browser-session-topic-cluster-tvkwz3",
+          "title": "Browser Session Topic Cluster",
+          "url": "https://example.invalid/ai-idea/browser-session-topic-cluster",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses LLM to cluster open tabs by semantic topic and generates a visual mind map. Allows naming clusters and quick-switching between contexts. Helps recover from context-switching overhead. Novel angle on tab management.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Power users accumulate dozens of tabs with no way to understand the topics they are actively researching across sessions."
+        },
+        {
+          "source_id": "ai-json-schema-field-adoption-tracker-c2p07g",
+          "title": "JSON Schema Field Adoption Tracker",
+          "url": "https://example.invalid/ai-idea/json-schema-field-adoption-tracker",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Instruments network requests to track which schema fields appear in production traffic. Shows adoption curves over time and flags deprecated fields still in use. Helps prevent schema bloat and broken client migrations. Devtools angle with clear ROI story.",
+          "monetization": "freemium_saas",
+          "pain": "Backend teams adding fields to JSON schemas have no visibility into which fields are actually being used by clients."
+        },
+        {
+          "source_id": "ai-global-team-meeting-time-optimizer-hljjnx",
+          "title": "Global Team Meeting Time Optimizer",
+          "url": "https://example.invalid/ai-idea/global-team-meeting-time-optimizer",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Pulls team calendars and generates an interactive map showing overlap windows ranked by fairness score. Considers meeting duration and shows cost in lost sleep hours per participant. Useful for distributed teams with >3 time zones.",
+          "monetization": "per_seat",
+          "pain": "Engineering managers coordinating across multiple time zones waste hours manually finding meeting slots that do not destroy everyone."
+        },
+        {
+          "source_id": "ai-lead-social-authority-aggregator-gbb9yq",
+          "title": "Lead Social Authority Aggregator",
+          "url": "https://example.invalid/ai-idea/lead-social-authority-aggregator",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn, Twitter, and GitHub for a given domain or name. Aggregates follower counts, recent activity, and tech signals into a single authority score. Shows quick social footprint summary card. Addresses research overhead for outbound teams.",
+          "monetization": "freemium_saas",
+          "pain": "BDRs lack quick social proof signals when researching cold prospects and miss opportunities to personalize outreach."
+        },
+        {
+          "source_id": "ai-gcp-resource-cost-trend-forecaster-vc1buo",
+          "title": "GCP Resource Cost Trend Forecaster",
+          "url": "https://example.invalid/ai-idea/gcp-resource-cost-trend-forecaster",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Polls GCP Billing API to project end-of-month spend based on current daily burn rate. Alerts when trajectory crosses budget thresholds. Shows trend chart and per-service breakdown. Addresses the reactive cloud cost problem.",
+          "monetization": "per_seat",
+          "pain": "DevOps teams get surprised by month-end GCP bills because they have no early warning system for spend trajectory."
+        },
+        {
+          "source_id": "ai-css-animation-jank-detector-brgw6w",
+          "title": "CSS Animation Jank Detector",
+          "url": "https://example.invalid/ai-idea/css-animation-jank-detector",
+          "timestamp": "2026-07-09T16:05:38.281Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Overlays a real-time FPS meter on any page and logs frames-per-second during specific animations. Highlights which CSS properties trigger layout thrashing. Helps catch performance regressions before shipping. Simple but actionable utility.",
+          "monetization": "freemium_saas",
+          "pain": "Frontend developers launching animations have no in-situ FPS measurement and discover jank only from user complaints."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-09T16:05:38.291Z",
+        "dedup_against": 364,
+        "rejected_as_duplicate": 2
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

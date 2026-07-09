@@ -1,0 +1,308 @@
+{
+  "slot": "2026-07-09-16",
+  "week": "2026-W28",
+  "scored_at": "2026-07-09T16:05:38.460Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "design-handoff-pixel-diff-tool",
+      "name": "Design Handoff Pixel Diff Tool",
+      "pitch": "Uses canvas API to do pixel-level diff between two screenshots with threshold controls. Built-in annotation tools let users mark discrepancies. Integrates with Figma API to auto-pull latest frames. No",
+      "pain": "Frontend devs waste hours manually comparing design screenshots across Figma, staging, and production environments.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-design-handoff-pixel-diff-tool-0izsht",
+          "url": "https://example.invalid/ai-idea/design-handoff-pixel-diff-tool"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.55,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-handoff-color-comparator",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "email-thread-reply-latency-heatmap",
+      "name": "Email Thread Reply Latency Heatmap",
+      "pitch": "Analyzes Gmail thread metadata to build heatmaps of reply patterns per contact. Shows optimal send windows by day-of-week and hour. Integrates with Salesforce to correlate timing with close rates. Sma",
+      "pain": "Account execs guess wrong about when prospects are most likely to respond to follow-ups and lose deals to timing.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-thread-reply-latency-heatmap-i5b42a",
+          "url": "https://example.invalid/ai-idea/email-thread-reply-latency-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outbound-sequence-collision-alert",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "public-github-api-usage-example-finder",
+      "name": "Public GitHub API Usage Example Finder",
+      "pitch": "Indexes public repos to find concrete code examples for any API endpoint or SDK method. Shows usage frequency, popularity of patterns, and common mistakes. Builds searchable index via background worke",
+      "pain": "Developers spend too long searching GitHub for real-world usage examples of undocumented APIs and SDKs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-public-github-api-usage-example-finder-rgkkxu",
+          "url": "https://example.invalid/ai-idea/public-github-api-usage-example-finder"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "graphql-field-usage-analyzer",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "global-team-meeting-time-optimizer",
+      "name": "Global Team Meeting Time Optimizer",
+      "pitch": "Pulls team calendars and generates an interactive map showing overlap windows ranked by fairness score. Considers meeting duration and shows cost in lost sleep hours per participant. Useful for distri",
+      "pain": "Engineering managers coordinating across multiple time zones waste hours manually finding meeting slots that do not destroy everyone.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-global-team-meeting-time-optimizer-hljjnx",
+          "url": "https://example.invalid/ai-idea/global-team-meeting-time-optimizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "css-animation-jank-detector",
+      "name": "CSS Animation Jank Detector",
+      "pitch": "Overlays a real-time FPS meter on any page and logs frames-per-second during specific animations. Highlights which CSS properties trigger layout thrashing. Helps catch performance regressions before s",
+      "pain": "Frontend developers launching animations have no in-situ FPS measurement and discover jank only from user complaints.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-animation-jank-detector-brgw6w",
+          "url": "https://example.invalid/ai-idea/css-animation-jank-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "lead-social-authority-aggregator",
+      "name": "Lead Social Authority Aggregator",
+      "pitch": "Scrapes LinkedIn, Twitter, and GitHub for a given domain or name. Aggregates follower counts, recent activity, and tech signals into a single authority score. Shows quick social footprint summary card",
+      "pain": "BDRs lack quick social proof signals when researching cold prospects and miss opportunities to personalize outreach.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-social-authority-aggregator-gbb9yq",
+          "url": "https://example.invalid/ai-idea/lead-social-authority-aggregator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 4
+      },
+      "score_total": 5.9,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "lead-social-footprint-aggregator",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "browser-scroll-momentum-analyzer",
+      "name": "Browser Scroll Momentum Analyzer",
+      "pitch": "Injects scroll velocity tracking into any page and aggregates anonymized patterns. Shows which sections lose readers and where momentum stalls. Freemium tier allows tracking 3 pages; paid unlocks unli",
+      "pain": "Content creators have no idea which parts of their articles readers actually finish versus where they bounce.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-scroll-momentum-analyzer-rxwb6d",
+          "url": "https://example.invalid/ai-idea/browser-scroll-momentum-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "json-schema-field-adoption-tracker",
+      "name": "JSON Schema Field Adoption Tracker",
+      "pitch": "Instruments network requests to track which schema fields appear in production traffic. Shows adoption curves over time and flags deprecated fields still in use. Helps prevent schema bloat and broken ",
+      "pain": "Backend teams adding fields to JSON schemas have no visibility into which fields are actually being used by clients.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-json-schema-field-adoption-tracker-c2p07g",
+          "url": "https://example.invalid/ai-idea/json-schema-field-adoption-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "graphql-field-usage-analyzer",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "gcp-resource-cost-trend-forecaster",
+      "name": "GCP Resource Cost Trend Forecaster",
+      "pitch": "Polls GCP Billing API to project end-of-month spend based on current daily burn rate. Alerts when trajectory crosses budget thresholds. Shows trend chart and per-service breakdown. Addresses the react",
+      "pain": "DevOps teams get surprised by month-end GCP bills because they have no early warning system for spend trajectory.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-resource-cost-trend-forecaster-vc1buo",
+          "url": "https://example.invalid/ai-idea/gcp-resource-cost-trend-forecaster"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-resource-tag-compliance-checker",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "video-meeting-participation-balance-trac",
+      "name": "Video Meeting Participation Balance Tracker",
+      "pitch": "Runs locally to estimate speaker time ratios from meeting page audio without recording. Shows real-time bar chart during calls. Exports weekly balance report. Niche but actionable for sales managers c",
+      "pain": "Sales reps never know if they dominated a call or let the prospect speak enough during demos.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-video-meeting-participation-balance-trac-ghn15y",
+          "url": "https://example.invalid/ai-idea/video-meeting-participation-balance-trac"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-question-pattern-analyzer",
+        "jaccard_with_nearest": 0.11
+      }
+    }
+  ]
+}
