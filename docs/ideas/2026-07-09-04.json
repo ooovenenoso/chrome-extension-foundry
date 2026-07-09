@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-09-04",
+  "week": "2026-W28",
+  "scored_at": "2026-07-09T04:59:08.938Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-response-velocity-forecaster",
+      "name": "Email Response Velocity Forecaster",
+      "pitch": "Analyzes historical email thread reply patterns by recipient domain and time-of-day. Suggests optimal follow-up windows. Gap: no per-recipient email cadence intelligence in-browser.",
+      "pain": "Outbound reps follow up too early or too late because they lack thread velocity data.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-response-velocity-forecaster-8j3rbt",
+          "url": "https://example.invalid/ai-idea/email-response-velocity-forecaster"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tone-dna",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "schema-drift-alert-overlay",
+      "name": "Schema Drift Alert Overlay",
+      "pitch": "Intercepts JSON responses and validates against a declared OpenAPI/JSON Schema. Alerts on drift with diff view. Gap: no in-browser schema validation guard.",
+      "pain": "Backend teams discover breaking schema changes in production instead of staging.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-schema-drift-alert-overlay-zkudi2",
+          "url": "https://example.invalid/ai-idea/schema-drift-alert-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "crm-public-record-conflict-checker",
+      "name": "CRM Public Record Conflict Checker",
+      "pitch": "Scrapes LinkedIn, Crunchbase, and news for signal vs CRM field mismatches. One engineer can build the scraper layer in 4 weeks. Gap: no tool cross-validates sales data against public sources in real-t",
+      "pain": "Sales reps waste hours chasing leads whose public data contradicts their CRM records.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-crm-public-record-conflict-checker-4ji8km",
+          "url": "https://example.invalid/ai-idea/crm-public-record-conflict-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "meeting-summary-action-item-carver",
+      "name": "Meeting Summary Action Item Carver",
+      "pitch": "Extracts action items from pasted transcripts or Gong embeds using lightweight NER. Exports to CRM fields. Gap: no frictionless meeting-to-task handoff tool.",
+      "pain": "Sales and ops teams lose action items buried in meeting transcripts and notes.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-summary-action-item-carver-ybtu0j",
+          "url": "https://example.invalid/ai-idea/meeting-summary-action-item-carver"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-transcript-action-item-splitter",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "api-scaling-trajectory-forecaster",
+      "name": "API Scaling Trajectory Forecaster",
+      "pitch": "Tracks request volume trends per endpoint over rolling windows. Projects capacity needs with simple linear regression. Gap: no in-browser API traffic forecasting panel.",
+      "pain": "DevOps teams react to API traffic spikes instead of anticipating scaling needs.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-scaling-trajectory-forecaster-9q5ykt",
+          "url": "https://example.invalid/ai-idea/api-scaling-trajectory-forecaster"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-request-mirroring-proxy",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "github-trending-topic-velocity-tracker",
+      "name": "GitHub Trending Topic Velocity Tracker",
+      "pitch": "Tracks HN front-page repo mentions and GitHub star velocity patterns. Builds trending signal before saturation. Gap: no real-time trend velocity overlay exists.",
+      "pain": "Developers miss emerging library trends until after the community peak.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-trending-topic-velocity-tracker-kip1wl",
+          "url": "https://example.invalid/ai-idea/github-trending-topic-velocity-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-star-history-visualizer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "design-system-token-consistency-auditor",
+      "name": "Design System Token Consistency Auditor",
+      "pitch": "Parses CSS custom properties against a declared token manifest. Flags deviations inline. Can ship as a devtools overlay in 3 weeks. Gap: no live CSS audit for token drift exists.",
+      "pain": "Frontend teams ship UIs where design tokens drift silently across components.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-design-system-token-consistency-auditor-vurrr2",
+          "url": "https://example.invalid/ai-idea/design-system-token-consistency-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-system-token-consistency-checker",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "system-dependency-graph-mapper",
+      "name": "System Dependency Graph Mapper",
+      "pitch": "Traces import/require statements and API calls to auto-generate a local dependency graph. Visualizes in a collapsible sidebar. Gap: no browser-devtools integration for live architecture discovery.",
+      "pain": "Engineers reverse-engineer system architecture by hand when docs fall out of sync.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-system-dependency-graph-mapper-im013w",
+          "url": "https://example.invalid/ai-idea/system-dependency-graph-mapper"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "job-posting-trend-heatmap",
+      "name": "Job Posting Trend Heatmap",
+      "pitch": "Scrapes Indeed/LinkedIn for tech keyword density over time per company. Lightweight extension with cloud aggregation backend. Gap: no browser-native tool surfaces job posting trend intelligence.",
+      "pain": "Recruiters and analysts manually track competitor job postings to infer product roadmap signals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-job-posting-trend-heatmap-3elzdm",
+          "url": "https://example.invalid/ai-idea/job-posting-trend-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-company-employee-counter",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
