@@ -1,0 +1,218 @@
+{
+  "slot": "2026-07-10-15",
+  "week": "2026-W28",
+  "scored_at": "2026-07-10T15:35:14.164Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "cold-email-delivery-time-optimizer",
+      "name": "Cold Email Delivery Time Optimizer",
+      "pitch": "Overlays inbox open/click data from tracking pixels back onto send timestamps, showing optimal send windows per contact. Buildable with local ML on extension storage. Cold email tooling lacks intellig",
+      "pain": "Outbound reps blast emails at random hours, landing in spam or missing the buyer moment.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-email-delivery-time-optimizer-4czyp3",
+          "url": "https://example.invalid/ai-idea/cold-email-delivery-time-optimizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-post-optimal-send-time-recommen",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "fhir-endpoint-compliance-checker",
+      "name": "FHIR Endpoint Compliance Checker",
+      "pitch": "Uses browser network interception to scan FHIR API responses for USCDI v3 field compliance and security header gaps. Feels urgent given 2025 ONC enforcement. No tool targets FHIR specifically from the",
+      "pain": "Healthcare devs waste days hunting HIPAA technical safeguard mismatches across FHIR endpoints.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-fhir-endpoint-compliance-checker-1r9joo",
+          "url": "https://example.invalid/ai-idea/fhir-endpoint-compliance-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "s3-bucket-security-posture-checker",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "api-changelog-semantic-diff-viewer",
+      "name": "API Changelog Semantic Diff Viewer",
+      "pitch": "Parses markdown changelogs and maps them to OpenAPI spec fields, rendering a visual diff that highlights breaking vs non-breaking changes per endpoint. Builds on existing open-source changelog parsers",
+      "pain": "API consumers manually diff changelogs that lack structured field-level before/after snapshots.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-changelog-semantic-diff-viewer-youbta",
+          "url": "https://example.invalid/ai-idea/api-changelog-semantic-diff-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-breaking-change-detector",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "webhook-retry-budget-ledger",
+      "name": "Webhook Retry Budget Ledger",
+      "pitch": "Scrapes the browser-side network log for webhook delivery attempts and maintains a live ledger of retry counts per destination URL. Alerts when a destination approaches its configured budget limit.",
+      "pain": "DevOps teams lose visibility into which webhook consumers burn through retry budgets before the incident.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-retry-budget-ledger-bgcb1i",
+          "url": "https://example.invalid/ai-idea/webhook-retry-budget-ledger"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-conversation-token-counter",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "openapi-contract-gate-for-pms",
+      "name": "OpenAPI Contract Gate for PMs",
+      "pitch": "Loads the OpenAPI spec and the browser network tab side by side, highlighting any live response fields that deviate from the schema. Lets non-technical PMs do contract validation without Postman.",
+      "pain": "Product managers reviewing API contracts can't validate whether a live endpoint matches the spec.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-openapi-contract-gate-for-pms-w5ofjz",
+          "url": "https://example.invalid/ai-idea/openapi-contract-gate-for-pms"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "browser-network-retry-analyzer",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "google-meet-participation-balance-score",
+      "name": "Google Meet Participation Balance Score",
+      "pitch": "Leverages the Meet transcript API to count speaker turns and word count per participant, rendering a real-time balance bar during calls. Gong covers post-call analytics but nothing in-call.",
+      "pain": "Sales managers coaching reps can't objectively score who dominated vs. who went silent in calls.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-google-meet-participation-balance-score-pz7a9s",
+          "url": "https://example.invalid/ai-idea/google-meet-participation-balance-score"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-commitment-tracker",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "ai-crawler-fingerprint-shield",
+      "name": "AI Crawler Fingerprint Shield",
+      "pitch": "Cross-references request headers and TLS fingerprints against known AI crawler CIDR ranges, alerting the user when a page served different content. Addresses growing creator concern. Small install bas",
+      "pain": "Sites silently serve AI scrapers different content, but users have no way to detect when this happens.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-crawler-fingerprint-shield-vhlfgy",
+          "url": "https://example.invalid/ai-idea/ai-crawler-fingerprint-shield"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "regex-live-validator",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}

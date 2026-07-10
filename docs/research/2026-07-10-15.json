@@ -1,0 +1,194 @@
+{
+  "slot": "2026-07-10-15",
+  "week": "2026-W28",
+  "fetched_at": "2026-07-10T15:35:13.990Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 13,
+      "entries": [
+        {
+          "source_id": "ai-fhir-endpoint-compliance-checker-1r9joo",
+          "title": "FHIR Endpoint Compliance Checker",
+          "url": "https://example.invalid/ai-idea/fhir-endpoint-compliance-checker",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Uses browser network interception to scan FHIR API responses for USCDI v3 field compliance and security header gaps. Feels urgent given 2025 ONC enforcement. No tool targets FHIR specifically from the browser side.",
+          "monetization": "per_seat",
+          "pain": "Healthcare devs waste days hunting HIPAA technical safeguard mismatches across FHIR endpoints."
+        },
+        {
+          "source_id": "ai-cold-email-delivery-time-optimizer-4czyp3",
+          "title": "Cold Email Delivery Time Optimizer",
+          "url": "https://example.invalid/ai-idea/cold-email-delivery-time-optimizer",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Overlays inbox open/click data from tracking pixels back onto send timestamps, showing optimal send windows per contact. Buildable with local ML on extension storage. Cold email tooling lacks intelligent timing.",
+          "monetization": "freemium_saas",
+          "pain": "Outbound reps blast emails at random hours, landing in spam or missing the buyer moment."
+        },
+        {
+          "source_id": "ai-browser-idle-tab-cpu-throttler-411qfl",
+          "title": "Browser Idle Tab CPU Throttler",
+          "url": "https://example.invalid/ai-idea/browser-idle-tab-cpu-throttler",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses the Page Visibility API and Performance Observer to detect idle tabs and downgrade their requestAnimationFrame priority. Simple but high emotional satisfaction. No extension does this browser-native.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Hidden background tabs drain laptop battery and slow fan even when user is away."
+        },
+        {
+          "source_id": "ai-grpc-request-proto-binder-qgl5kn",
+          "title": "gRPC Request Proto Binder",
+          "url": "https://example.invalid/ai-idea/grpc-request-proto-binder",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts gRPC-web traffic, extracts the method name, and resolves the matching .proto definition from open source registries or local refs. Reduces a painful debug loop. Niche but high value for the right team.",
+          "monetization": "per_seat",
+          "pain": "Frontend devs manually decode gRPC binary payloads in grpcui when protos are missing from the repo."
+        },
+        {
+          "source_id": "ai-llm-output-sentiment-arc-tracer-ef9r81",
+          "title": "LLM Output Sentiment Arc Tracer",
+          "url": "https://example.invalid/ai-idea/llm-output-sentiment-arc-tracer",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Runs lightweight sentiment analysis on each LLM output block and renders a tiny sparkline arc above the chat. Helps users identify where the model started confident vs. hedging. Novel angle on AI conversation awareness.",
+          "monetization": "stripe_tip_jar",
+          "pain": "AI chatbot users can't see how tone shifts across a long conversation to adjust their prompting."
+        },
+        {
+          "source_id": "ai-api-changelog-semantic-diff-viewer-youbta",
+          "title": "API Changelog Semantic Diff Viewer",
+          "url": "https://example.invalid/ai-idea/api-changelog-semantic-diff-viewer",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses markdown changelogs and maps them to OpenAPI spec fields, rendering a visual diff that highlights breaking vs non-breaking changes per endpoint. Builds on existing open-source changelog parsers.",
+          "monetization": "per_seat",
+          "pain": "API consumers manually diff changelogs that lack structured field-level before/after snapshots."
+        },
+        {
+          "source_id": "ai-ai-crawler-fingerprint-shield-vhlfgy",
+          "title": "AI Crawler Fingerprint Shield",
+          "url": "https://example.invalid/ai-idea/ai-crawler-fingerprint-shield",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Cross-references request headers and TLS fingerprints against known AI crawler CIDR ranges, alerting the user when a page served different content. Addresses growing creator concern. Small install base but high buzz.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sites silently serve AI scrapers different content, but users have no way to detect when this happens."
+        },
+        {
+          "source_id": "ai-gdpr-consent-timeline-replay-5x6deq",
+          "title": "GDPR Consent Timeline Replay",
+          "url": "https://example.invalid/ai-idea/gdpr-consent-timeline-replay",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Uses browser history with timestamps to reconstruct a chronological log of all third-party requests made before consent was given. Useful for regulatory complaints. No consumer-facing tool does consent forensics.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users can't prove what cookies were set before a consent banner appeared on EU site visits."
+        },
+        {
+          "source_id": "ai-google-meet-participation-balance-score-pz7a9s",
+          "title": "Google Meet Participation Balance Score",
+          "url": "https://example.invalid/ai-idea/google-meet-participation-balance-score",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Leverages the Meet transcript API to count speaker turns and word count per participant, rendering a real-time balance bar during calls. Gong covers post-call analytics but nothing in-call.",
+          "monetization": "freemium_saas",
+          "pain": "Sales managers coaching reps can't objectively score who dominated vs. who went silent in calls."
+        },
+        {
+          "source_id": "ai-typescript-migration-risk-heatmap-e6h6rs",
+          "title": "TypeScript Migration Risk Heatmap",
+          "url": "https://example.invalid/ai-idea/typescript-migration-risk-heatmap",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Runs TSC in --noEmit mode on each file and scores it by error count, any-type density, and null-unsafe pattern frequency. Displays a heatmap in the file tree sidebar. Addresses a real migration pain with no browser-side solution.",
+          "monetization": "per_seat",
+          "pain": "Teams migrating to strict TypeScript lack per-file risk scores to prioritize refactor work."
+        },
+        {
+          "source_id": "ai-webhook-retry-budget-ledger-bgcb1i",
+          "title": "Webhook Retry Budget Ledger",
+          "url": "https://example.invalid/ai-idea/webhook-retry-budget-ledger",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scrapes the browser-side network log for webhook delivery attempts and maintains a live ledger of retry counts per destination URL. Alerts when a destination approaches its configured budget limit.",
+          "monetization": "per_seat",
+          "pain": "DevOps teams lose visibility into which webhook consumers burn through retry budgets before the incident."
+        },
+        {
+          "source_id": "ai-openapi-contract-gate-for-pms-w5ofjz",
+          "title": "OpenAPI Contract Gate for PMs",
+          "url": "https://example.invalid/ai-idea/openapi-contract-gate-for-pms",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Loads the OpenAPI spec and the browser network tab side by side, highlighting any live response fields that deviate from the schema. Lets non-technical PMs do contract validation without Postman.",
+          "monetization": "per_seat",
+          "pain": "Product managers reviewing API contracts can't validate whether a live endpoint matches the spec."
+        },
+        {
+          "source_id": "ai-google-calendar-focus-sprint-overlay-w3p8bl",
+          "title": "Google Calendar Focus Sprint Overlay",
+          "url": "https://example.invalid/ai-idea/google-calendar-focus-sprint-overlay",
+          "timestamp": "2026-07-10T15:35:13.975Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Monitors Google Calendar via API for focus block violations, showing a persistent overlay badge when a new invite threatens a protected sprint window. Offers one-click decline with a reason template.",
+          "monetization": "freemium_saas",
+          "pain": "Knowledge workers block deep work time but get no signal when meetings are creeping into their protected blocks."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-10T15:35:13.989Z",
+        "dedup_against": 392,
+        "rejected_as_duplicate": 2
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
