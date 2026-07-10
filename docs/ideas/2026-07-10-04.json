@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-10-04",
+  "week": "2026-W28",
+  "scored_at": "2026-07-10T04:57:56.348Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "gmail-thread-decay-detector",
+      "name": "Gmail Thread Decay Detector",
+      "pitch": "Tracks thread activity timestamps and alerts when engagement drops. Simple to build with Gmail API. Helps prevent deals from going stale.",
+      "pain": "Email threads go cold without sales reps noticing, losing deal momentum",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-thread-decay-detector-3mv6x1",
+          "url": "https://example.invalid/ai-idea/gmail-thread-decay-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-thread-reply-latency-heatmap",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "meeting-room-availability-heatmap",
+      "name": "Meeting Room Availability Heatmap",
+      "pitch": "Overlays all calendars and highlights optimal slots. Built with Google Calendar API. Improves meeting efficiency.",
+      "pain": "Scheduling meetings requires checking multiple calendars, wasting time",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-room-availability-heatmap-5np5be",
+          "url": "https://example.invalid/ai-idea/meeting-room-availability-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "calendar-event-tone-analyzer",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "gcp-resource-dependency-visualizer",
+      "name": "GCP Resource Dependency Visualizer",
+      "pitch": "Queries GCP APIs to build dependency graphs. Cloud Asset API and Resource Manager API are accessible. Essential for incident response and planning.",
+      "pain": "Engineers struggle to understand complex GCP infrastructure dependencies",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-resource-dependency-visualizer-h5abk3",
+          "url": "https://example.invalid/ai-idea/gcp-resource-dependency-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-sentinel",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "linkedin-connection-quality-score",
+      "name": "LinkedIn Connection Quality Score",
+      "pitch": "Uses engagement signals (profile views, message responses) to score connections. Built with LinkedIn data. Differentiates from basic connection managers.",
+      "pain": "Sales reps have hundreds of connections but no signal on which are worth nurturing",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-connection-quality-score-f5kwdq",
+          "url": "https://example.invalid/ai-idea/linkedin-connection-quality-score"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-connection-engagement-tracker",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "api-response-stream-visualizer",
+      "name": "API Response Stream Visualizer",
+      "pitch": "Real-time parsing and visualization of streaming responses. Easy to build with Fetch API interception. Growing trend of streaming endpoints makes this timely.",
+      "pain": "Debugging streaming API responses (SSE, chunked transfers) is painful with raw DevTools",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-response-stream-visualizer-0xjaya",
+          "url": "https://example.invalid/ai-idea/api-response-stream-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "local-llm-context-injector",
+      "name": "Local LLM Context Injector",
+      "pitch": "Captures page context and injects into local LLM tools. Uses content scripts. Streamlines AI-assisted development.",
+      "pain": "Developers manually copy-paste context from browsers into LLM prompts, breaking flow",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-local-llm-context-injector-aelg9c",
+          "url": "https://example.invalid/ai-idea/local-llm-context-injector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "semantic-version-page-diff",
+      "name": "Semantic Version Page Diff",
+      "pitch": "Parses version numbers from pages and shows visual diffs. Built with DOM parsing. Useful for dependency management.",
+      "pain": "Comparing semantic versions across documentation pages is manual and error-prone",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-semantic-version-page-diff-ejlvem",
+          "url": "https://example.invalid/ai-idea/semantic-version-page-diff"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "css-anchor-positioning-debugger",
+      "name": "CSS Anchor Positioning Debugger",
+      "pitch": "Visualizes anchor relationships and highlights positioning issues. Uses computed styles API. Streamlines CSS debugging.",
+      "pain": "Debugging CSS anchor positioning requires manual inspection, which is tedious",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-anchor-positioning-debugger-4o0ozo",
+          "url": "https://example.invalid/ai-idea/css-anchor-positioning-debugger"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-replay-inspector",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "multi-account-session-pinning",
+      "name": "Multi-Account Session Pinning",
+      "pitch": "Pins specific sessions while allowing normal browsing. Uses Chrome identity API. Improves multi-account workflows.",
+      "pain": "Managing multiple browser identities for testing is clunky and error-prone",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-multi-account-session-pinning-h7l3u3",
+          "url": "https://example.invalid/ai-idea/multi-account-session-pinning"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-test-mode-request-inspector",
+        "jaccard_with_nearest": 0.06
+      }
+    }
+  ]
+}

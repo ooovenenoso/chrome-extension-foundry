@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-10-04",
+  "week": "2026-W28",
+  "fetched_at": "2026-07-10T04:57:56.213Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-api-response-stream-visualizer-0xjaya",
+          "title": "API Response Stream Visualizer",
+          "url": "https://example.invalid/ai-idea/api-response-stream-visualizer",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Real-time parsing and visualization of streaming responses. Easy to build with Fetch API interception. Growing trend of streaming endpoints makes this timely.",
+          "monetization": "freemium_saas",
+          "pain": "Debugging streaming API responses (SSE, chunked transfers) is painful with raw DevTools"
+        },
+        {
+          "source_id": "ai-gmail-thread-decay-detector-3mv6x1",
+          "title": "Gmail Thread Decay Detector",
+          "url": "https://example.invalid/ai-idea/gmail-thread-decay-detector",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks thread activity timestamps and alerts when engagement drops. Simple to build with Gmail API. Helps prevent deals from going stale.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Email threads go cold without sales reps noticing, losing deal momentum"
+        },
+        {
+          "source_id": "ai-linkedin-connection-quality-score-f5kwdq",
+          "title": "LinkedIn Connection Quality Score",
+          "url": "https://example.invalid/ai-idea/linkedin-connection-quality-score",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses engagement signals (profile views, message responses) to score connections. Built with LinkedIn data. Differentiates from basic connection managers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps have hundreds of connections but no signal on which are worth nurturing"
+        },
+        {
+          "source_id": "ai-browser-tab-topic-classifier-bgl1pp",
+          "title": "Browser Tab Topic Classifier",
+          "url": "https://example.invalid/ai-idea/browser-tab-topic-classifier",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses lightweight ML to classify tab content and suggest groupings. Chrome tab groups API makes this easy. Helps with tab overload.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have dozens of tabs but no way to understand what topics they're researching"
+        },
+        {
+          "source_id": "ai-gcp-resource-dependency-visualizer-h5abk3",
+          "title": "GCP Resource Dependency Visualizer",
+          "url": "https://example.invalid/ai-idea/gcp-resource-dependency-visualizer",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Queries GCP APIs to build dependency graphs. Cloud Asset API and Resource Manager API are accessible. Essential for incident response and planning.",
+          "monetization": "per_seat",
+          "pain": "Engineers struggle to understand complex GCP infrastructure dependencies"
+        },
+        {
+          "source_id": "ai-conference-networking-queue-manager-p5rjwj",
+          "title": "Conference Networking Queue Manager",
+          "url": "https://example.invalid/ai-idea/conference-networking-queue-manager",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "QR code scanning to log encounters and remind about follow-ups. Easy to build with Camera API. Useful for networking-heavy events.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Introverts at conferences forget who they've met and miss follow-up opportunities"
+        },
+        {
+          "source_id": "ai-local-llm-context-injector-aelg9c",
+          "title": "Local LLM Context Injector",
+          "url": "https://example.invalid/ai-idea/local-llm-context-injector",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Captures page context and injects into local LLM tools. Uses content scripts. Streamlines AI-assisted development.",
+          "monetization": "freemium_saas",
+          "pain": "Developers manually copy-paste context from browsers into LLM prompts, breaking flow"
+        },
+        {
+          "source_id": "ai-meeting-room-availability-heatmap-5np5be",
+          "title": "Meeting Room Availability Heatmap",
+          "url": "https://example.invalid/ai-idea/meeting-room-availability-heatmap",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Overlays all calendars and highlights optimal slots. Built with Google Calendar API. Improves meeting efficiency.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Scheduling meetings requires checking multiple calendars, wasting time"
+        },
+        {
+          "source_id": "ai-readme-freshness-checker-dyh8ae",
+          "title": "README Freshness Checker",
+          "url": "https://example.invalid/ai-idea/readme-freshness-checker",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Monitors GitHub README timestamps and alerts when updates are needed. Uses GitHub API. Simple but valuable for team productivity.",
+          "monetization": "freemium_saas",
+          "pain": "Developers waste time on projects with outdated documentation"
+        },
+        {
+          "source_id": "ai-semantic-version-page-diff-ejlvem",
+          "title": "Semantic Version Page Diff",
+          "url": "https://example.invalid/ai-idea/semantic-version-page-diff",
+          "timestamp": "2026-07-10T04:57:56.204Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses version numbers from pages and shows visual diffs. Built with DOM parsing. Useful for dependency management.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Comparing semantic versions across documentation pages is manual and error-prone"
+        },
+        {
+          "source_id": "ai-interactive-element-tracer-othbrn",
+          "title": "Interactive Element Tracer",
+          "url": "https://example.invalid/ai-idea/interactive-element-tracer",
+          "timestamp": "2026-07-10T04:57:56.205Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Logs and visualizes user interactions with page elements. Built with event listeners. Helpful for usability testing.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users can't easily track what interactive elements they've engaged with on complex pages"
+        },
+        {
+          "source_id": "ai-css-anchor-positioning-debugger-4o0ozo",
+          "title": "CSS Anchor Positioning Debugger",
+          "url": "https://example.invalid/ai-idea/css-anchor-positioning-debugger",
+          "timestamp": "2026-07-10T04:57:56.205Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Visualizes anchor relationships and highlights positioning issues. Uses computed styles API. Streamlines CSS debugging.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging CSS anchor positioning requires manual inspection, which is tedious"
+        },
+        {
+          "source_id": "ai-pdf-annotation-sync-zaxcmr",
+          "title": "PDF Annotation Sync",
+          "url": "https://example.invalid/ai-idea/pdf-annotation-sync",
+          "timestamp": "2026-07-10T04:57:56.205Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Syncs annotations to cloud storage and reconciles across viewers. Built with PDF.js. Essential for document collaboration.",
+          "monetization": "stripe_tip_jar",
+          "pain": "PDF annotations don't sync across different viewers and devices"
+        },
+        {
+          "source_id": "ai-browser-extension-api-call-tracker-cnfz8k",
+          "title": "Browser Extension API Call Tracker",
+          "url": "https://example.invalid/ai-idea/browser-extension-api-call-tracker",
+          "timestamp": "2026-07-10T04:57:56.205Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Monitors API calls made by extensions and compares to manifest. Uses devtools protocol. Critical for privacy awareness.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users don't know which APIs browser extensions actually use versus what they declare"
+        },
+        {
+          "source_id": "ai-multi-account-session-pinning-h7l3u3",
+          "title": "Multi-Account Session Pinning",
+          "url": "https://example.invalid/ai-idea/multi-account-session-pinning",
+          "timestamp": "2026-07-10T04:57:56.205Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Pins specific sessions while allowing normal browsing. Uses Chrome identity API. Improves multi-account workflows.",
+          "monetization": "freemium_saas",
+          "pain": "Managing multiple browser identities for testing is clunky and error-prone"
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-10T04:57:56.213Z",
+        "dedup_against": 377,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
