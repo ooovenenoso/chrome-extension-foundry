@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-13-15",
+  "week": "2026-W29",
+  "scored_at": "2026-07-13T15:45:35.594Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "gmail-shared-warmup-inbox-matcher",
+      "name": "Gmail Shared Warmup Inbox Matcher",
+      "pitch": "Matches users who want warmup partners and schedules automated open/reply simulations between each others emails. Solves a real pain for cold emailers and has clear network effects. Tip jar model work",
+      "pain": "Cold email deliverability suffers when sending domains are new and unestablished with no engagement history.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-shared-warmup-inbox-matcher-ura1f1",
+          "url": "https://example.invalid/ai-idea/gmail-shared-warmup-inbox-matcher"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7.25,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tone-dna",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gmail-attachment-followup-reminder",
+      "name": "Gmail Attachment Followup Reminder",
+      "pitch": "Scans email threads, identifies mentioned but unlinked attachments, and surfaces a followup reminder badge. Integrates with Gmail UI. Simple build with high ROI for sales teams. Works well as a tip ja",
+      "pain": "Sales reps forget to follow up on attachments promised in emails, losing credibility and deal momentum.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-attachment-followup-reminder-pbytmx",
+          "url": "https://example.invalid/ai-idea/gmail-attachment-followup-reminder"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7.25,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-template-variable-extractor",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "github-pr-template-auto-filler",
+      "name": "GitHub PR Template Auto-Filler",
+      "pitch": "Analyzes the code diff and fills in standard PR template sections like what changed, why, and test steps. Ships as a browser extension that reads the diff API. Freemium tier unlocks custom template ru",
+      "pain": "Developers spend time manually writing PR descriptions that follow team templates when the code diff tells the story.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-pr-template-auto-filler-vvlkkm",
+          "url": "https://example.invalid/ai-idea/github-pr-template-auto-filler"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.55,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "dom-mutation-reporter",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "email-thread-summary-bullet-points",
+      "name": "Email Thread Summary Bullet Points",
+      "pitch": "Uses a lightweight LLM call to extract bullet-point summaries from email thread context. Can run client-side with a small model or call a simple API. Tip jar works well here since it is a per-use valu",
+      "pain": "Long email threads with dozens of replies are tedious to parse and key takeaways are buried in replies.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-thread-summary-bullet-points-go8tpn",
+          "url": "https://example.invalid/ai-idea/email-thread-summary-bullet-points"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "llm-prompt-version-history-vault",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "css-grid-gap-visual-inspector",
+      "name": "CSS Grid Gap Visual Inspector",
+      "pitch": "Overlays pixel measurements on all grid gaps, track gaps, and column widths directly on the page. One-click activation from devtools. Solves a frequent frustration for frontend developers and designer",
+      "pain": "Debugging CSS grid layouts requires manually calculating gaps or using browser devtools which are clunky for this specific task.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-grid-gap-visual-inspector-qv9jve",
+          "url": "https://example.invalid/ai-idea/css-grid-gap-visual-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "css-animation-jank-detector",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "gong-call-objection-density-heatmap",
+      "name": "Gong Call Objection Density Heatmap",
+      "pitch": "Runs on Gong replay pages, counts objection keyword density per call segment, and renders a heatmap timeline. Per-seat pricing targets sales teams with active Gong usage. One-engineer buildable by par",
+      "pain": "Sales managers cannot quickly see where in a call prospects raised objections and need coaching.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-objection-density-heatmap-cq7915",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-density-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "json-schema-fake-data-generator",
+      "name": "JSON Schema Fake Data Generator",
+      "pitch": "Parses JSON Schema and generates fake but realistic-looking data using Faker.js patterns. The extension injects this into request bodies or form fields with one click. Simple build, high utility for d",
+      "pain": "Creating realistic fake data for testing APIs and forms from JSON schemas is tedious and error-prone.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-json-schema-fake-data-generator-xb1bz6",
+          "url": "https://example.invalid/ai-idea/json-schema-fake-data-generator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "graphql-field-usage-analyzer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "browser-macro-conditional-executor",
+      "name": "Browser Macro Conditional Executor",
+      "pitch": "Visual rule builder that listens to DOM events and triggers actions like click, type, or redirect. Think Zapier for the browser tab. Addresses the no-code browser automation gap that tools like Automa",
+      "pain": "Repetitive browser tasks like auto-filling forms, clicking buttons, or monitoring DOM changes require custom scripts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-macro-conditional-executor-di1h8g",
+          "url": "https://example.invalid/ai-idea/browser-macro-conditional-executor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "tab-terrain",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "indexeddb-schema-side-panel",
+      "name": "IndexedDB Schema Side Panel",
+      "pitch": "Opens a side panel that reads and visualizes all IndexedDB stores, their keyPaths, and indexes for the current origin. Allows inline data browsing and export. Developer-facing tool with clear utility.",
+      "pain": "Debugging IndexedDB data requires using browser devtools which have no visualization of the data schema or relationships.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-indexeddb-schema-side-panel-0go5qv",
+          "url": "https://example.invalid/ai-idea/indexeddb-schema-side-panel"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.09
+      }
+    }
+  ]
+}

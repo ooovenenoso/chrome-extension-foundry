@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-13-15",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-13T15:45:35.419Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-screen-time-focus-budget-blocker-3bev0p",
+          "title": "Screen Time Focus Budget Blocker",
+          "url": "https://example.invalid/ai-idea/screen-time-focus-budget-blocker",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Builds on the Pomodoro and digital wellbeing trends. Chrome extension can track time per domain, enforce budgets by auto-locking tabs, and sync across devices via Firebase. Most time trackers only show stats without acting on them, creating a clear differentiator.",
+          "monetization": "freemium_saas",
+          "pain": "Knowledge workers lose hours to social media rabbit holes without realizing they have already exceeded their daily limit."
+        },
+        {
+          "source_id": "ai-email-thread-summary-bullet-points-go8tpn",
+          "title": "Email Thread Summary Bullet Points",
+          "url": "https://example.invalid/ai-idea/email-thread-summary-bullet-points",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 8
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Uses a lightweight LLM call to extract bullet-point summaries from email thread context. Can run client-side with a small model or call a simple API. Tip jar works well here since it is a per-use value-add for power users.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Long email threads with dozens of replies are tedious to parse and key takeaways are buried in replies."
+        },
+        {
+          "source_id": "ai-json-schema-fake-data-generator-xb1bz6",
+          "title": "JSON Schema Fake Data Generator",
+          "url": "https://example.invalid/ai-idea/json-schema-fake-data-generator",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses JSON Schema and generates fake but realistic-looking data using Faker.js patterns. The extension injects this into request bodies or form fields with one click. Simple build, high utility for developers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Creating realistic fake data for testing APIs and forms from JSON schemas is tedious and error-prone."
+        },
+        {
+          "source_id": "ai-github-pr-template-auto-filler-vvlkkm",
+          "title": "GitHub PR Template Auto-Filler",
+          "url": "https://example.invalid/ai-idea/github-pr-template-auto-filler",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Analyzes the code diff and fills in standard PR template sections like what changed, why, and test steps. Ships as a browser extension that reads the diff API. Freemium tier unlocks custom template rules.",
+          "monetization": "freemium_saas",
+          "pain": "Developers spend time manually writing PR descriptions that follow team templates when the code diff tells the story."
+        },
+        {
+          "source_id": "ai-gong-call-objection-density-heatmap-cq7915",
+          "title": "Gong Call Objection Density Heatmap",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-density-heatmap",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Runs on Gong replay pages, counts objection keyword density per call segment, and renders a heatmap timeline. Per-seat pricing targets sales teams with active Gong usage. One-engineer buildable by parsing transcript DOM.",
+          "monetization": "per_seat",
+          "pain": "Sales managers cannot quickly see where in a call prospects raised objections and need coaching."
+        },
+        {
+          "source_id": "ai-gmail-shared-warmup-inbox-matcher-ura1f1",
+          "title": "Gmail Shared Warmup Inbox Matcher",
+          "url": "https://example.invalid/ai-idea/gmail-shared-warmup-inbox-matcher",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Matches users who want warmup partners and schedules automated open/reply simulations between each others emails. Solves a real pain for cold emailers and has clear network effects. Tip jar model works for this community.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Cold email deliverability suffers when sending domains are new and unestablished with no engagement history."
+        },
+        {
+          "source_id": "ai-browser-macro-conditional-executor-di1h8g",
+          "title": "Browser Macro Conditional Executor",
+          "url": "https://example.invalid/ai-idea/browser-macro-conditional-executor",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Visual rule builder that listens to DOM events and triggers actions like click, type, or redirect. Think Zapier for the browser tab. Addresses the no-code browser automation gap that tools like Automa fail to fill for developers.",
+          "monetization": "freemium_saas",
+          "pain": "Repetitive browser tasks like auto-filling forms, clicking buttons, or monitoring DOM changes require custom scripts."
+        },
+        {
+          "source_id": "ai-notion-page-staleness-detector-5olmdv",
+          "title": "Notion Page Staleness Detector",
+          "url": "https://example.invalid/ai-idea/notion-page-staleness-detector",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses Notion API to track last edit timestamps and calculates a staleness score per page. Suggests archival or deletion. Simple API integration with a side panel overlay. High utility for busy teams.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Teams accumulate stale Notion pages that no one updates but everyone assumes are current, causing miscommunication."
+        },
+        {
+          "source_id": "ai-css-grid-gap-visual-inspector-qv9jve",
+          "title": "CSS Grid Gap Visual Inspector",
+          "url": "https://example.invalid/ai-idea/css-grid-gap-visual-inspector",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Overlays pixel measurements on all grid gaps, track gaps, and column widths directly on the page. One-click activation from devtools. Solves a frequent frustration for frontend developers and designers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging CSS grid layouts requires manually calculating gaps or using browser devtools which are clunky for this specific task."
+        },
+        {
+          "source_id": "ai-favicon-tracking-pixel-shield-2hsnk9",
+          "title": "Favicon Tracking Pixel Shield",
+          "url": "https://example.invalid/ai-idea/favicon-tracking-pixel-shield",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Intercepts favicon requests, strips tracking parameters, and shows a badge count of blocked attempts. Niche but real privacy concern that mainstream ad blockers miss. Simple extension, strong privacy narrative.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Favicons can embed tracking pixels that silently send your browsing history to ad networks without consent."
+        },
+        {
+          "source_id": "ai-job-description-interview-question-gener-bxrw0c",
+          "title": "Job Description Interview Question Generator",
+          "url": "https://example.invalid/ai-idea/job-description-interview-question-gener",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 8
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes the job posting page, feeds text to an LLM, and outputs likely behavioral and technical interview questions with suggested talking points. Targets job seekers who value preparation. Freemium unlocks unlimited generations.",
+          "monetization": "freemium_saas",
+          "pain": "Job seekers spend hours researching possible interview questions when the job description already contains the signals."
+        },
+        {
+          "source_id": "ai-gmail-attachment-followup-reminder-pbytmx",
+          "title": "Gmail Attachment Followup Reminder",
+          "url": "https://example.invalid/ai-idea/gmail-attachment-followup-reminder",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scans email threads, identifies mentioned but unlinked attachments, and surfaces a followup reminder badge. Integrates with Gmail UI. Simple build with high ROI for sales teams. Works well as a tip jar extension.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps forget to follow up on attachments promised in emails, losing credibility and deal momentum."
+        },
+        {
+          "source_id": "ai-indexeddb-schema-side-panel-0go5qv",
+          "title": "IndexedDB Schema Side Panel",
+          "url": "https://example.invalid/ai-idea/indexeddb-schema-side-panel",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Opens a side panel that reads and visualizes all IndexedDB stores, their keyPaths, and indexes for the current origin. Allows inline data browsing and export. Developer-facing tool with clear utility.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging IndexedDB data requires using browser devtools which have no visualization of the data schema or relationships."
+        },
+        {
+          "source_id": "ai-third-party-request-cost-overlay-f2dbki",
+          "title": "Third-Party Request Cost Overlay",
+          "url": "https://example.invalid/ai-idea/third-party-request-cost-overlay",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Intercepts all network requests, estimates data payload size being sent to third parties, and shows a cumulative badge. Educational privacy overlay with a compelling real-time visualization.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have no visibility into how much personal data is being silently transmitted to third-party trackers on each page."
+        },
+        {
+          "source_id": "ai-meeting-note-entity-auto-linker-kr5y5d",
+          "title": "Meeting Note Entity Auto-Linker",
+          "url": "https://example.invalid/ai-idea/meeting-note-entity-auto-linker",
+          "timestamp": "2026-07-13T15:45:35.408Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts entities (names, dates, project names, URLs) from meeting notes and auto-links them to relevant pages, Slack threads, or emails. Uses lightweight NLP or LLM calls. Creates a living knowledge graph from static notes.",
+          "monetization": "freemium_saas",
+          "pain": "Meeting notes in Google Docs or Notion become disconnected from the people, topics, and related documents they reference."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-13T15:45:35.419Z",
+        "dedup_against": 416,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
