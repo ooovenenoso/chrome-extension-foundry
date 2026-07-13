@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-13-04",
+  "week": "2026-W29",
+  "scored_at": "2026-07-13T04:34:31.367Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-warmup-campaign-tracker",
+      "name": "Email Warmup Campaign Tracker",
+      "pitch": "Connects to warmup provider APIs (if available) or scrapes dashboard pages to surface daily warmup stats (inbox placement, reply rate) directly in Gmail. Consolidates fragmented warmup data into one v",
+      "pain": "Salespeople using email warmup services lose visibility into campaign progress and deliverability signals.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-warmup-campaign-tracker-g1ww6y",
+          "url": "https://example.invalid/ai-idea/email-warmup-campaign-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-warmup-velocity-tracker",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "linkedin-company-tech-stack-scanner",
+      "name": "LinkedIn Company Tech Stack Scanner",
+      "pitch": "Scrapes LinkedIn company pages and job listings to extract technology mentions, enriching CRM records automatically. Lightweight DOM parsing—no backend needed. Surfaces before-meeting intel in a sidep",
+      "pain": "Sales reps waste hours manually researching prospect technology stacks before calls.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-company-tech-stack-scanner-a2wu67",
+          "url": "https://example.invalid/ai-idea/linkedin-company-tech-stack-scanner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-tech-signal-extractor",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "sales-prospect-website-change-monitor",
+      "name": "Sales Prospect Website Change Monitor",
+      "pitch": "Takes periodic lightweight screenshots or DOM diffs of prospect URLs and alerts on changes. Stores diffs locally; alerts via browser notification. Targets small sales teams lacking full competitor int",
+      "pain": "AEs miss critical website changes on prospects that signal buying intent.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-prospect-website-change-monitor-1oq1r9",
+          "url": "https://example.invalid/ai-idea/sales-prospect-website-change-monitor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "saas-pricing-tier-monitor",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "pr-review-fatigue-analyzer",
+      "name": "PR Review Fatigue Analyzer",
+      "pitch": "Analyzes GitHub PR diff size, complexity, and comment density to flag 'review overload' risk. Suggests splitting or scheduling reviews. Trivial Chrome extension with GitHub API calls and local scoring",
+      "pain": "Senior engineers avoid reviewing large PRs due to fatigue, slowing team velocity.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-review-fatigue-analyzer-cfnhsr",
+          "url": "https://example.invalid/ai-idea/pr-review-fatigue-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-code-comment-density-heatmap",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "graphql-query-complexity-analyzer",
+      "name": "GraphQL Query Complexity Analyzer",
+      "pitch": "Intercepts GraphQL requests, estimates query complexity (depth + breadth scoring), and shows a cost badge per request. Flags expensive operations before they hit production. Integrates with Apollo and",
+      "pain": "GraphQL APIs get hammered by deeply nested queries that are hard to cost-profile in development.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-graphql-query-complexity-analyzer-ug4n5f",
+          "url": "https://example.invalid/ai-idea/graphql-query-complexity-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ci-pipeline-cost-estimator",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "notion-database-schema-viewer",
+      "name": "Notion Database Schema Viewer",
+      "pitch": "Parses Notion page DOM to extract database schema (properties, types, relations) and renders a clean sidepanel map. Uses Notion's undocumented DOM structure—no API key needed for read-only views.",
+      "pain": "Teams lose track of Notion database properties across pages, causing schema drift and broken automations.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-notion-database-schema-viewer-nq0g9z",
+          "url": "https://example.invalid/ai-idea/notion-database-schema-viewer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "meeting-engagement-sentiment-tracker",
+      "name": "Meeting Engagement Sentiment Tracker",
+      "pitch": "Analyzes Google Meet participant video/mic activity patterns and chat message sentiment (simple keyword scoring) during calls to generate an 'engagement pulse' score. Writes summary to a Google Sheet ",
+      "pain": "Sales managers lack real-time signals on meeting engagement without reviewing full recordings.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-engagement-sentiment-tracker-o3tu5l",
+          "url": "https://example.invalid/ai-idea/meeting-engagement-sentiment-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-commitment-tracker",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "lead-scoring-territory-heatmap",
+      "name": "Lead Scoring Territory Heatmap",
+      "pitch": "Parses CRM lead data (location, industry, company size) and renders a territory heatmap in a sidepanel overlay on the CRM page. Suggests reassignments based on balanced territory coverage. Works with ",
+      "pain": "Sales managers assign leads by gut feel instead of geographic or firmographic clustering.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-scoring-territory-heatmap-69zy0t",
+          "url": "https://example.invalid/ai-idea/lead-scoring-territory-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.12
+      }
+    }
+  ]
+}
