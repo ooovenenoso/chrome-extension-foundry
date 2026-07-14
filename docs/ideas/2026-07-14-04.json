@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-14-04",
+  "week": "2026-W29",
+  "scored_at": "2026-07-14T04:08:07.978Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "css-container-query-match-visualizer",
+      "name": "CSS Container Query Match Visualizer",
+      "pitch": "Container queries are under-tooled—most devs rely on browser DevTools which lack a dedicated panel. A sidebar showing active containment contexts, computed query values, and breakpoint triggers would ",
+      "pain": "Debugging which container queries match and why is invisible without inspecting computed values manually",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-container-query-match-visualizer-n6qawm",
+          "url": "https://example.invalid/ai-idea/css-container-query-match-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.3,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "css-grid-gap-visual-inspector",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "ai-citation-source-verifier",
+      "name": "AI Citation Source Verifier",
+      "pitch": "LLM hallucinations are a major trust blocker. A tool that fetches cited URLs and checks whether the cited content actually supports the claim—surfacing confidence mismatches—would be broadly valuable ",
+      "pain": "Verifying that LLM citations actually support the claims requires manually cross-checking each source",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-citation-source-verifier-ctn5xp",
+          "url": "https://example.invalid/ai-idea/ai-citation-source-verifier"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-citation-truth-verifier",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "openapi-contract-conflict-analyzer",
+      "name": "OpenAPI Contract Conflict Analyzer",
+      "pitch": "Schema validation catches type mismatches but not semantic conflicts like changing enum meanings or removing behavior. Comparing provider and consumer OpenAPI specs and surfacing conflict heatmaps wou",
+      "pain": "API breaking changes silently break integrations because schema validation misses semantic conflicts",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-openapi-contract-conflict-analyzer-6xkjsv",
+          "url": "https://example.invalid/ai-idea/openapi-contract-conflict-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "lead-company-news-timeline-aggregator",
+      "name": "Lead Company News Timeline Aggregator",
+      "pitch": "Intent data platforms exist but are expensive and focus on firmographics. A lightweight scraper aggregating a company's news, LinkedIn posts, and job postings into a timeline would surface technology ",
+      "pain": "Sales reps manually research prospects and miss signals because aggregating news and job posts is time-consuming",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-company-news-timeline-aggregator-n8na1q",
+          "url": "https://example.invalid/ai-idea/lead-company-news-timeline-aggregator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 4
+      },
+      "score_total": 5.9,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "public-job-posting-salary-extractor",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "webrtc-connection-stats-dashboard",
+      "name": "WebRTC Connection Stats Dashboard",
+      "pitch": "WebRTC exposes rich connection statistics but they're buried in chrome://webrtc-internals. A real-time dashboard surfacing packet loss, jitter, bandwidth estimates, and codec info would make debugging",
+      "pain": "Diagnosing WebRTC audio/video quality issues requires manually collecting and interpreting RTCPeerConnection stats",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webrtc-connection-stats-dashboard-pqm25g",
+          "url": "https://example.invalid/ai-idea/webrtc-connection-stats-dashboard"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 6
+      },
+      "score_total": 5.85,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "llm-output-version-lens",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "css-containment-boundary-visualizer",
+      "name": "CSS Containment Boundary Visualizer",
+      "pitch": "CSS containment is powerful for performance but its effects are opaque. An overlay highlighting containment boundaries, isolation scopes, and layout responsibility would help devs understand and optim",
+      "pain": "Understanding which elements have containment applied and what layout scope they create is invisible",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-containment-boundary-visualizer-b8sjd4",
+          "url": "https://example.invalid/ai-idea/css-containment-boundary-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.7,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "sales-prospect-stack-commitment-detector",
+      "name": "Sales Prospect Stack Commitment Detector",
+      "pitch": "Existing intent tools track firmographics but miss technology hiring signals. Scraping job postings for stack-specific roles and flagging competitors fills a prospecting gap. Feeds into existing CRMs ",
+      "pain": "Outreach personalization wasted when prospect engineering team already committed to a competitor's platform",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-prospect-stack-commitment-detector-ommme6",
+          "url": "https://example.invalid/ai-idea/sales-prospect-stack-commitment-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-trend-heatmap",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "gong-call-commitment-calendar-linker",
+      "name": "Gong Call Commitment Calendar Linker",
+      "pitch": "Gong captures commitments but follow-up lives in separate systems. A flow detecting commitment language in transcripts and prompting calendar task creation would close the loop between insight and act",
+      "pain": "Sales reps lose track of commitments made on calls and fail to follow through, damaging trust",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-commitment-calendar-linker-lcsqel",
+          "url": "https://example.invalid/ai-idea/gong-call-commitment-calendar-linker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-transcript-action-item-splitter",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "cross-origin-postmessage-relay-hub",
+      "name": "Cross-Origin PostMessage Relay Hub",
+      "pitch": "postMessage is widely used for cross-origin communication but debugging tools are primitive. A structured event log with filtering, replay, and payload diffing would accelerate iframe-heavy app develo",
+      "pain": "Inspecting and replaying postMessage events between iframes requires filtering console noise",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cross-origin-postmessage-relay-hub-mbk2yg",
+          "url": "https://example.invalid/ai-idea/cross-origin-postmessage-relay-hub"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-event-playground",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "virtual-webauthn-authenticator",
+      "name": "Virtual WebAuthn Authenticator",
+      "pitch": "Passkey adoption is accelerating but local testing remains painful. A browser-native virtual authenticator that simulates credential creation and assertion would let devs test WebAuthn flows without p",
+      "pain": "Testing passkey flows locally requires hardware security keys or emulators that are clunky",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-virtual-webauthn-authenticator-v5vwto",
+          "url": "https://example.invalid/ai-idea/virtual-webauthn-authenticator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-headline-optimizer",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "real-time-accessibility-tree-sidebar",
+      "name": "Real-Time Accessibility Tree Sidebar",
+      "pitch": "The accessibility tree is the canonical source for screen readers but it's opaque. A sidebar rendering the computed tree alongside the DOM with ARIA property annotations would make a11y bugs obvious d",
+      "pain": "Accessibility bugs slip through because computing the accessibility tree from DOM requires imagination",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-real-time-accessibility-tree-sidebar-utg0n1",
+          "url": "https://example.invalid/ai-idea/real-time-accessibility-tree-sidebar"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}
