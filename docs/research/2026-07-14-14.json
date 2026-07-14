@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-14-14",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-14T14:58:39.179Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-css-specificity-battle-ground-visualizer-i9h9p3",
+          "title": "CSS Specificity Battle Ground Visualizer",
+          "url": "https://example.invalid/ai-idea/css-specificity-battle-ground-visualizer",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Uses DevTools CSSOM API to parse computed styles and render a live specificity scorecard per element. Buildable in 2 weeks. The CSS cascade is poorly visualized in browsers today — no tool shows the actual numeric breakdown in context. Targets developers who maintain design systems.",
+          "monetization": "freemium_saas",
+          "pain": "Developers waste hours debugging CSS specificity conflicts without seeing which rule actually wins."
+        },
+        {
+          "source_id": "ai-pr-description-changelog-tracker-4y6h1e",
+          "title": "PR Description Changelog Tracker",
+          "url": "https://example.invalid/ai-idea/pr-description-changelog-tracker",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Polls GitHub API on PR description edits and diffs the markdown. Notifies reviewers when descriptions mutate. Buildable with GitHub GraphQL API in 1 week. Solves the silent scope creep problem with minimal infrastructure.",
+          "monetization": "stripe_tip_jar",
+          "pain": "PR descriptions change after review but nobody notices requirements shifted silently."
+        },
+        {
+          "source_id": "ai-outbound-email-sequence-interval-optimiz-j086zf",
+          "title": "Outbound Email Sequence Interval Optimizer",
+          "url": "https://example.invalid/ai-idea/outbound-email-sequence-interval-optimiz",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Connects to Gmail via API, analyzes reply rates against send timestamps, then surfaces optimal spacing per contact. Freemium with Stripe. Buildable in 3 weeks. Cold email tools don't optimize timing — they just schedule.",
+          "monetization": "per_seat",
+          "pain": "Sales reps send follow-ups at random intervals missing the optimal reply windows."
+        },
+        {
+          "source_id": "ai-tab-group-intelligence-suggestor-3kk4gs",
+          "title": "Tab Group Intelligence Suggestor",
+          "url": "https://example.invalid/ai-idea/tab-group-intelligence-suggestor",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses local ML to cluster open tabs by semantic similarity and surface grouping suggestions. Browser-native tab grouping exists but offers no intelligence. Chrome extension API can enumerate tabs and trigger groupings programmatically.",
+          "monetization": "quota_based",
+          "pain": "Browser tabs accumulate without organization and users lose track of related content."
+        },
+        {
+          "source_id": "ai-webauthn-device-trust-inventory-7r69ep",
+          "title": "WebAuthn Device Trust Inventory",
+          "url": "https://example.invalid/ai-idea/webauthn-device-trust-inventory",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Scrapes the browser's credential store via WebAuthn API to list registered authenticators and last-used timestamps. Privacy-focused users want visibility into their passkey footprint. Buildable in 1 week.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users accumulate passkeys across devices but have no dashboard to audit which ones are still active."
+        },
+        {
+          "source_id": "ai-spreadsheet-formula-dependency-explorer-0wd0j9",
+          "title": "Spreadsheet Formula Dependency Explorer",
+          "url": "https://example.invalid/ai-idea/spreadsheet-formula-dependency-explorer",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses Google Sheets or Excel XML to build a dependency graph and renders it as an interactive tree. Targets teams with complex financial models. Google Sheets API provides formula content access. Buildable in 3 weeks.",
+          "monetization": "per_seat",
+          "pain": "Engineers refactoring spreadsheets have no way to see which cells depend on which formulas."
+        },
+        {
+          "source_id": "ai-figma-annotation-thread-exporter-uwuk9k",
+          "title": "Figma Annotation Thread Exporter",
+          "url": "https://example.invalid/ai-idea/figma-annotation-thread-exporter",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Connects to Figma API, extracts comment threads with screenshots, and formats them into Jira/Linear tickets. Buildable in 2 weeks. Design handoff friction is real — developers manually copy-paste feedback constantly.",
+          "monetization": "freemium_saas",
+          "pain": "Design feedback in Figma threads gets lost instead of converting into tracked tickets."
+        },
+        {
+          "source_id": "ai-accessibility-color-pair-batch-tester-2f9nis",
+          "title": "Accessibility Color Pair Batch Tester",
+          "url": "https://example.invalid/ai-idea/accessibility-color-pair-batch-tester",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Scrapes all CSS custom properties from the page, pairs foreground/background combinations, and scores each against WCAG 2.1. Renders a matrix overlay in DevTools. Single-pass page analysis, no backend needed for v1.",
+          "monetization": "freemium_saas",
+          "pain": "Auditing color contrast across a full design system takes manual inspection in each tool."
+        },
+        {
+          "source_id": "ai-stripe-webhook-delivery-sequence-replay-k50lfj",
+          "title": "Stripe Webhook Delivery Sequence Replay",
+          "url": "https://example.invalid/ai-idea/stripe-webhook-delivery-sequence-replay",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercepts Stripe webhook deliveries, stores payloads locally, and renders a timeline UI showing retry attempts and response codes. Uses Chrome storage API. Buildable in 1 week. Developers spend hours reconstructing webhook failures from Stripe Dashboard alone.",
+          "monetization": "per_seat",
+          "pain": "Debugging Stripe webhook failures requires reconstructing event timelines from logs manually."
+        },
+        {
+          "source_id": "ai-terminal-command-session-searcher-mpm5kx",
+          "title": "Terminal Command Session Searcher",
+          "url": "https://example.invalid/ai-idea/terminal-command-session-searcher",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Indexes zsh/bash history files locally, provides a popup search UI for fuzzy-matching past commands with timestamps. Privacy-preserving — data stays local. Buildable in 1 week. Shell history search is a known friction point.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers can't search shell history across terminal sessions when debugging past commands."
+        },
+        {
+          "source_id": "ai-product-launch-countdown-competitor-scan-gbfrjn",
+          "title": "Product Launch Countdown Competitor Scanner",
+          "url": "https://example.invalid/ai-idea/product-launch-countdown-competitor-scan",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Monitors Hacker News, Product Hunt, and press release RSS feeds for keywords matching a competitor list, alerting when launches occur. Configurable alert thresholds. Buildable in 2 weeks with feed parsers.",
+          "monetization": "freemium_saas",
+          "pain": "Product managers miss competitor launches because they don't monitor every relevant source manually."
+        },
+        {
+          "source_id": "ai-meeting-scheduling-recovery-analyzer-1elq52",
+          "title": "Meeting Scheduling Recovery Analyzer",
+          "url": "https://example.invalid/ai-idea/meeting-scheduling-recovery-analyzer",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Integrates with Google Calendar API to detect overlapping events, suggests rescheduling, and logs conflict history for analysis. Targets enterprise users with complex calendars. Buildable in 2 weeks.",
+          "monetization": "quota_based",
+          "pain": "Workers double-book or miss meetings because calendar conflicts aren't surfaced proactively."
+        },
+        {
+          "source_id": "ai-linkedin-profile-fit-scorecard-udy5sa",
+          "title": "LinkedIn Profile Fit Scorecard",
+          "url": "https://example.invalid/ai-idea/linkedin-profile-fit-scorecard",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Extracts headline, experience, skills, and activity metrics from LinkedIn profiles, scoring them against a configurable ideal candidate profile. Exports comparison cards. Buildable in 2 weeks via LinkedIn's public profile pages.",
+          "monetization": "per_seat",
+          "pain": "Recruiters and sales reps manually assess LinkedIn profiles without standardized comparison criteria."
+        },
+        {
+          "source_id": "ai-localstorage-schema-drift-detector-bh3lc8",
+          "title": "LocalStorage Schema Drift Detector",
+          "url": "https://example.invalid/ai-idea/localstorage-schema-drift-detector",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Monitors localStorage key/value shapes over time, alerts when schemas mutate unexpectedly, and surfaces a diff view. Targets developers maintaining legacy SPAs. Buildable in 1 week with MutationObserver.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Apps silently break when localStorage schema changes across versions without a migration path."
+        },
+        {
+          "source_id": "ai-api-endpoint-ownership-registry-overlay-f6ucpr",
+          "title": "API Endpoint Ownership Registry Overlay",
+          "url": "https://example.invalid/ai-idea/api-endpoint-ownership-registry-overlay",
+          "timestamp": "2026-07-14T14:58:39.167Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses OpenAPI specs or network traffic to build an endpoint inventory, then overlays ownership metadata from a config file or Jira. Surfaces owner avatars on API calls. Buildable in 3 weeks.",
+          "monetization": "per_seat",
+          "pain": "Teams don't know who owns which API endpoint causing slow response on breaking change decisions."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-14T14:58:39.179Z",
+        "dedup_against": 446,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-14-14",
+  "week": "2026-W29",
+  "scored_at": "2026-07-14T14:58:39.353Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "outbound-email-sequence-interval-optimiz",
+      "name": "Outbound Email Sequence Interval Optimizer",
+      "pitch": "Connects to Gmail via API, analyzes reply rates against send timestamps, then surfaces optimal spacing per contact. Freemium with Stripe. Buildable in 3 weeks. Cold email tools don't optimize timing —",
+      "pain": "Sales reps send follow-ups at random intervals missing the optimal reply windows.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-outbound-email-sequence-interval-optimiz-j086zf",
+          "url": "https://example.invalid/ai-idea/outbound-email-sequence-interval-optimiz"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outbound-sequence-collision-alert",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "accessibility-color-pair-batch-tester",
+      "name": "Accessibility Color Pair Batch Tester",
+      "pitch": "Scrapes all CSS custom properties from the page, pairs foreground/background combinations, and scores each against WCAG 2.1. Renders a matrix overlay in DevTools. Single-pass page analysis, no backend",
+      "pain": "Auditing color contrast across a full design system takes manual inspection in each tool.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-accessibility-color-pair-batch-tester-2f9nis",
+          "url": "https://example.invalid/ai-idea/accessibility-color-pair-batch-tester"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.7,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "linkedin-profile-fit-scorecard",
+      "name": "LinkedIn Profile Fit Scorecard",
+      "pitch": "Extracts headline, experience, skills, and activity metrics from LinkedIn profiles, scoring them against a configurable ideal candidate profile. Exports comparison cards. Buildable in 2 weeks via Link",
+      "pain": "Recruiters and sales reps manually assess LinkedIn profiles without standardized comparison criteria.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-profile-fit-scorecard-udy5sa",
+          "url": "https://example.invalid/ai-idea/linkedin-profile-fit-scorecard"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-headline-optimizer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "terminal-command-session-searcher",
+      "name": "Terminal Command Session Searcher",
+      "pitch": "Indexes zsh/bash history files locally, provides a popup search UI for fuzzy-matching past commands with timestamps. Privacy-preserving — data stays local. Buildable in 1 week. Shell history search is",
+      "pain": "Developers can't search shell history across terminal sessions when debugging past commands.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-terminal-command-session-searcher-mpm5kx",
+          "url": "https://example.invalid/ai-idea/terminal-command-session-searcher"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 4
+      },
+      "score_total": 5.55,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "curl-request-cloner",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "pr-description-changelog-tracker",
+      "name": "PR Description Changelog Tracker",
+      "pitch": "Polls GitHub API on PR description edits and diffs the markdown. Notifies reviewers when descriptions mutate. Buildable with GitHub GraphQL API in 1 week. Solves the silent scope creep problem with mi",
+      "pain": "PR descriptions change after review but nobody notices requirements shifted silently.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-description-changelog-tracker-4y6h1e",
+          "url": "https://example.invalid/ai-idea/pr-description-changelog-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-changelog-auto-author",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "figma-annotation-thread-exporter",
+      "name": "Figma Annotation Thread Exporter",
+      "pitch": "Connects to Figma API, extracts comment threads with screenshots, and formats them into Jira/Linear tickets. Buildable in 2 weeks. Design handoff friction is real — developers manually copy-paste feed",
+      "pain": "Design feedback in Figma threads gets lost instead of converting into tracked tickets.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-figma-annotation-thread-exporter-uwuk9k",
+          "url": "https://example.invalid/ai-idea/figma-annotation-thread-exporter"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "design-handoff-color-comparator",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "stripe-webhook-delivery-sequence-replay",
+      "name": "Stripe Webhook Delivery Sequence Replay",
+      "pitch": "Intercepts Stripe webhook deliveries, stores payloads locally, and renders a timeline UI showing retry attempts and response codes. Uses Chrome storage API. Buildable in 1 week. Developers spend hours",
+      "pain": "Debugging Stripe webhook failures requires reconstructing event timelines from logs manually.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-webhook-delivery-sequence-replay-k50lfj",
+          "url": "https://example.invalid/ai-idea/stripe-webhook-delivery-sequence-replay"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-signature-debugger",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "api-endpoint-ownership-registry-overlay",
+      "name": "API Endpoint Ownership Registry Overlay",
+      "pitch": "Parses OpenAPI specs or network traffic to build an endpoint inventory, then overlays ownership metadata from a config file or Jira. Surfaces owner avatars on API calls. Buildable in 3 weeks.",
+      "pain": "Teams don't know who owns which API endpoint causing slow response on breaking change decisions.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-endpoint-ownership-registry-overlay-f6ucpr",
+          "url": "https://example.invalid/ai-idea/api-endpoint-ownership-registry-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-test-mode-request-inspector",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "product-launch-countdown-competitor-scan",
+      "name": "Product Launch Countdown Competitor Scanner",
+      "pitch": "Monitors Hacker News, Product Hunt, and press release RSS feeds for keywords matching a competitor list, alerting when launches occur. Configurable alert thresholds. Buildable in 2 weeks with feed par",
+      "pain": "Product managers miss competitor launches because they don't monitor every relevant source manually.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-product-launch-countdown-competitor-scan-gbfrjn",
+          "url": "https://example.invalid/ai-idea/product-launch-countdown-competitor-scan"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "show-hn-i-made-google-trends-for-hacker-",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
