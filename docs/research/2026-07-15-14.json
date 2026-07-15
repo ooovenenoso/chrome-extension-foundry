@@ -1,0 +1,207 @@
+{
+  "slot": "2026-07-15-14",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-15T14:58:08.873Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 14,
+      "entries": [
+        {
+          "source_id": "ai-terms-of-service-change-notifier-6lhjws",
+          "title": "Terms of Service Change Notifier",
+          "url": "https://example.invalid/ai-idea/terms-of-service-change-notifier",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Buildable by capturing page snapshots and diffing on revisit using the Storage API and a simple hash comparison. The gap is consumer-grade change alerts versus enterprise legal tools. Works for any site with a ToS page.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Most users never re-read terms they agreed to, missing privacy regressions buried in updates by services they depend on."
+        },
+        {
+          "source_id": "ai-stock-price-context-overlay-px17ti",
+          "title": "Stock Price Context Overlay",
+          "url": "https://example.invalid/ai-idea/stock-price-context-overlay",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Integrates with free Yahoo Finance endpoints to show ticker context on LinkedIn/company pages. Overlay injection is straightforward. Existing tools lack the in-page context at point-of-view moment.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps lose deals when they miss stock price movements that signal a prospect's financial health or urgency."
+        },
+        {
+          "source_id": "ai-learning-platform-progress-hub-gljptt",
+          "title": "Learning Platform Progress Hub",
+          "url": "https://example.invalid/ai-idea/learning-platform-progress-hub",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses OAuth integrations with course platforms where available, fallback to page scraping. Syncs progress to a unified sidebar. Platform fragmentation is the core pain this solves.",
+          "monetization": "freemium_saas",
+          "pain": "Professionals juggling multiple courses on Coursera, Udemy, and LinkedIn Learning lose track of where they left off in each."
+        },
+        {
+          "source_id": "ai-medical-appointment-reminder-engine-ttejn8",
+          "title": "Medical Appointment Reminder Engine",
+          "url": "https://example.invalid/ai-idea/medical-appointment-reminder-engine",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes appointment dates from patient portal emails via Gmail API, sets Chrome notifications with lead-time customization. Health portal fragmentation is acute and growing.",
+          "monetization": "freemium_saas",
+          "pain": "Patients miss follow-up appointments because reminders live in separate portals from their daily workflow."
+        },
+        {
+          "source_id": "ai-real-estate-price-history-tracker-emc9is",
+          "title": "Real Estate Price History Tracker",
+          "url": "https://example.invalid/ai-idea/real-estate-price-history-tracker",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::consumer",
+          "notes": "Builds on Zillow/Redfin listing page scraping with price history extraction and badge notifications on changes. Real estate sites have stable DOM structures for reliable scraping.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Home buyers lose leverage when they miss price drops on listings they saved weeks ago."
+        },
+        {
+          "source_id": "ai-academic-citation-claim-verifier-g9jyo6",
+          "title": "Academic Citation Claim Verifier",
+          "url": "https://example.invalid/ai-idea/academic-citation-claim-verifier",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "When a PDF or paper page is viewed, parses citations and cross-references against Semantic Scholar API for claim verification. No API access for many publishers so PDF parsing is the path.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Researchers waste hours chasing citations that don't support the claims made in the papers they read."
+        },
+        {
+          "source_id": "ai-news-source-credibility-score-ccqzk0",
+          "title": "News Source Credibility Score",
+          "url": "https://example.invalid/ai-idea/news-source-credibility-score",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Looks up current domain against curated bias/fact-check databases like MBFC and NewsGuard, displays sidebar badge. Lightweight and actionable, no ML required.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Readers share news articles without understanding the source's fact-check record or known biases."
+        },
+        {
+          "source_id": "ai-recurring-subscription-price-hike-detect-n8v564",
+          "title": "Recurring Subscription Price Hike Detector",
+          "url": "https://example.invalid/ai-idea/recurring-subscription-price-hike-detect",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::consumer",
+          "notes": "Parses Stripe-powered billing emails from Gmail API, tracks amounts over time, alerts on increases. Stripe powers a large percentage of SaaS billing so coverage is broad.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Consumers miss price increases on subscriptions because billing emails get buried and changes happen silently."
+        },
+        {
+          "source_id": "ai-ad-landing-page-performance-spy-7064k1",
+          "title": "Ad Landing Page Performance Spy",
+          "url": "https://example.invalid/ai-idea/ad-landing-page-performance-spy",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Detects when a LinkedIn/email click lands on a page, injects performance metrics overlay (load time, Core Web Vitals) and screenshot preview. Useful for sales teams running ad campaigns.",
+          "monetization": "per_seat",
+          "pain": "Marketers launching cold outreach can't verify if the landing pages prospects visit are live, fast, or matching the ad copy."
+        },
+        {
+          "source_id": "ai-interview-question-context-injector-68rpwa",
+          "title": "Interview Question Context Injector",
+          "url": "https://example.invalid/ai-idea/interview-question-context-injector",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "On LinkedIn profile pages, injects a sidebar with past interview questions the candidate may have answered publicly (HN, podcasts, GitHub). Scrapes public data only, no PII scraping.",
+          "monetization": "freemium_saas",
+          "pain": "Recruiters and hiring managers go into interviews without context on candidates' publicly available professional history."
+        },
+        {
+          "source_id": "ai-travel-package-price-history-chart-5k2n3j",
+          "title": "Travel Package Price History Chart",
+          "url": "https://example.invalid/ai-idea/travel-package-price-history-chart",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::consumer",
+          "notes": "Scrapes Google Flights and booking sites, stores price history in localStorage, displays mini chart overlay on future visits. Chrome storage quota handles years of data.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Travelers buy flights and hotels at peak prices because they can't see historical trends inline on booking pages."
+        },
+        {
+          "source_id": "ai-gcp-resource-tag-completeness-checker-70kswt",
+          "title": "GCP Resource Tag Completeness Checker",
+          "url": "https://example.invalid/ai-idea/gcp-resource-tag-completeness-checker",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Integrates with GCP Resource Manager API to list resources and their tags, displays badge on non-compliant resources in the GCP Console. Tag policy enforcement gap is common at scale.",
+          "monetization": "per_seat",
+          "pain": "GCP admins get surprise billing because resources were launched without required cost-center tags."
+        },
+        {
+          "source_id": "ai-pdf-annotation-sync-across-readers-xl9p2u",
+          "title": "PDF Annotation Sync Across Readers",
+          "url": "https://example.invalid/ai-idea/pdf-annotation-sync-across-readers",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses PDF.js to extract highlights, syncs to a cloud backend via extension storage, re-injects highlights when reopening. Cross-device PDF continuity is a real pain for researchers.",
+          "monetization": "freemium_saas",
+          "pain": "Highlights and notes made in Chrome PDF viewer disappear when switching to a different browser or device."
+        },
+        {
+          "source_id": "ai-crypto-portfolio-p-l-overlay-v797hw",
+          "title": "Crypto Portfolio P&L Overlay",
+          "url": "https://example.invalid/ai-idea/crypto-portfolio-p-l-overlay",
+          "timestamp": "2026-07-15T14:58:08.860Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::consumer",
+          "notes": "Scrapes portfolio data from exchanges when authenticated, combines with live prices to show per-holding P&L on any page. Privacy-respecting local calculation only.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Crypto holders check prices on CoinGecko but miss how their specific holdings performed relative to the headline price."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-15T14:58:08.873Z",
+        "dedup_against": 473,
+        "rejected_as_duplicate": 1
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

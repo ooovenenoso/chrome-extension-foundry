@@ -1,0 +1,158 @@
+{
+  "slot": "2026-07-15-14",
+  "week": "2026-W29",
+  "scored_at": "2026-07-15T14:58:09.053Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "stock-price-context-overlay",
+      "name": "Stock Price Context Overlay",
+      "pitch": "Integrates with free Yahoo Finance endpoints to show ticker context on LinkedIn/company pages. Overlay injection is straightforward. Existing tools lack the in-page context at point-of-view moment.",
+      "pain": "Sales reps lose deals when they miss stock price movements that signal a prospect's financial health or urgency.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stock-price-context-overlay-px17ti",
+          "url": "https://example.invalid/ai-idea/stock-price-context-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "gcp-resource-tag-completeness-checker",
+      "name": "GCP Resource Tag Completeness Checker",
+      "pitch": "Integrates with GCP Resource Manager API to list resources and their tags, displays badge on non-compliant resources in the GCP Console. Tag policy enforcement gap is common at scale.",
+      "pain": "GCP admins get surprise billing because resources were launched without required cost-center tags.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-resource-tag-completeness-checker-70kswt",
+          "url": "https://example.invalid/ai-idea/gcp-resource-tag-completeness-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-resource-tag-compliance-checker",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "academic-citation-claim-verifier",
+      "name": "Academic Citation Claim Verifier",
+      "pitch": "When a PDF or paper page is viewed, parses citations and cross-references against Semantic Scholar API for claim verification. No API access for many publishers so PDF parsing is the path.",
+      "pain": "Researchers waste hours chasing citations that don't support the claims made in the papers they read.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-academic-citation-claim-verifier-g9jyo6",
+          "url": "https://example.invalid/ai-idea/academic-citation-claim-verifier"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.7,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-citation-source-verifier",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "ad-landing-page-performance-spy",
+      "name": "Ad Landing Page Performance Spy",
+      "pitch": "Detects when a LinkedIn/email click lands on a page, injects performance metrics overlay (load time, Core Web Vitals) and screenshot preview. Useful for sales teams running ad campaigns.",
+      "pain": "Marketers launching cold outreach can't verify if the landing pages prospects visit are live, fast, or matching the ad copy.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ad-landing-page-performance-spy-7064k1",
+          "url": "https://example.invalid/ai-idea/ad-landing-page-performance-spy"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-field-level-audit-overlay",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "interview-question-context-injector",
+      "name": "Interview Question Context Injector",
+      "pitch": "On LinkedIn profile pages, injects a sidebar with past interview questions the candidate may have answered publicly (HN, podcasts, GitHub). Scrapes public data only, no PII scraping.",
+      "pain": "Recruiters and hiring managers go into interviews without context on candidates' publicly available professional history.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-interview-question-context-injector-68rpwa",
+          "url": "https://example.invalid/ai-idea/interview-question-context-injector"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "s3-bucket-security-posture-checker",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
