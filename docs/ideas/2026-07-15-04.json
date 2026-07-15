@@ -1,0 +1,188 @@
+{
+  "slot": "2026-07-15-04",
+  "week": "2026-W29",
+  "scored_at": "2026-07-15T04:10:14.190Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "cold-email-sequence-step-visualizer",
+      "name": "Cold Email Sequence Step Visualizer",
+      "pitch": "Detect outreach emails in Gmail, parse sequence step indicators, render a compact sequence tracker in the Gmail sidebar. Sync with popular sequencing tools via API. Improves existing tools rather than",
+      "pain": "Sales reps using tools like Apollo or Lemlist lose track of where a prospect is in a multi-step sequence, leading to awkward duplicate outreach.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-email-sequence-step-visualizer-0j9y25",
+          "url": "https://example.invalid/ai-idea/cold-email-sequence-step-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cold-email-template-tester",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "webhook-payload-schema-tester",
+      "name": "Webhook Payload Schema Tester",
+      "pitch": "Capture webhook requests via extension, compare against JSON Schema or OpenAPI spec, highlight field mismatches and type errors. DevTools panel with diff view. Stripe, Twilio, GitHub webhook developer",
+      "pain": "QA teams waste hours manually testing webhook payloads against expected schemas because no tooling exists to validate live or recorded requests.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-payload-schema-tester-8hz0kd",
+          "url": "https://example.invalid/ai-idea/webhook-payload-schema-tester"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "github-issue-sentiment-arc-tracker",
+      "name": "GitHub Issue Sentiment Arc Tracker",
+      "pitch": "Track sentiment across comments in a GitHub issue using a lightweight sentiment API, render trend line in the issue sidebar. Helps leads spot problematic threads early. Novel angle on GitHub analytics",
+      "pain": "Engineering managers track issue velocity but miss emotional patterns—issues that escalate in frustration get reopened or cause burnout.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-issue-sentiment-arc-tracker-kpf56a",
+          "url": "https://example.invalid/ai-idea/github-issue-sentiment-arc-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-trending-topic-velocity-tracker",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "api-rate-limit-reset-countdown",
+      "name": "API Rate Limit Reset Countdown",
+      "pitch": "Extension intercepts 429 responses, extracts Retry-After header, shows live countdown badge and notification. Configurable allowlist of APIs to monitor. Dev productivity tool with clear value prop.",
+      "pain": "Developers polling rate-limited APIs get 429 errors and must manually calculate reset times from response headers, breaking flow.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-rate-limit-reset-countdown-uf66rt",
+          "url": "https://example.invalid/ai-idea/api-rate-limit-reset-countdown"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-stream-visualizer",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "indexeddb-data-export-bridge",
+      "name": "IndexedDB Data Export Bridge",
+      "pitch": "Intercept IndexedDB writes for configurable domains, expose export UI (JSON, CSV), optional cloud sync to S3/GCS. Useful for web app testing and data portability. Target QA teams and power users.",
+      "pain": "Web apps store critical data in IndexedDB but provide no export—losing data when clearing browser or switching machines is common and painful.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-indexeddb-data-export-bridge-3qxeyk",
+          "url": "https://example.invalid/ai-idea/indexeddb-data-export-bridge"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "json-schema-fake-data-generator",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "gong-call-key-quote-clipper",
+      "name": "Gong Call Key Quote Clipper",
+      "pitch": "In Gong call player, detect speaker segments, allow one-click quote clipping with context, auto-format for Slack/LinkedIn, save to shared team library. Adds workflow speed on top of Gong's existing fe",
+      "pain": "Sales teams surface great call moments but lose them in recordings—clipping and sharing key quotes to Slack or CRM is manual and slow.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-key-quote-clipper-3g2v01",
+          "url": "https://example.invalid/ai-idea/gong-call-key-quote-clipper"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-speaker-context-brief",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}

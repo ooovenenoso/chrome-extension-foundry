@@ -1,0 +1,181 @@
+{
+  "slot": "2026-07-15-04",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-15T04:10:14.018Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 12,
+      "entries": [
+        {
+          "source_id": "ai-webauthn-flow-debugger-g9nfnz",
+          "title": "WebAuthn Flow Debugger",
+          "url": "https://example.invalid/ai-idea/webauthn-flow-debugger",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Browser WebAuthn APIs return cryptic error codes. Build an overlay panel that intercepts navigator.credentials calls, logs each step (challenge generation, attestation, assertion), and shows timing breakdowns. Target frontend devs integrating passkeys. No direct competitor in extension form.",
+          "monetization": "freemium_saas",
+          "pain": "Debugging WebAuthn registration and assertion flows is opaque—errors surface as generic failures without context on which step failed."
+        },
+        {
+          "source_id": "ai-calendar-meeting-density-heatmap-unxfzj",
+          "title": "Calendar Meeting Density Heatmap",
+          "url": "https://example.invalid/ai-idea/calendar-meeting-density-heatmap",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses Google Calendar API to render a 7-day heatmap of meeting density by hour. Highlights low-density zones for deep work. Simple build—fetch calendar events, aggregate, render SVG. Growing remote-work productivity market.",
+          "monetization": "stripe_tip_jar",
+          "pain": "People blindly schedule meetings without seeing how they fragment their available focus time across the week."
+        },
+        {
+          "source_id": "ai-webhook-payload-schema-tester-8hz0kd",
+          "title": "Webhook Payload Schema Tester",
+          "url": "https://example.invalid/ai-idea/webhook-payload-schema-tester",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Capture webhook requests via extension, compare against JSON Schema or OpenAPI spec, highlight field mismatches and type errors. DevTools panel with diff view. Stripe, Twilio, GitHub webhook developers are captive audience.",
+          "monetization": "per_seat",
+          "pain": "QA teams waste hours manually testing webhook payloads against expected schemas because no tooling exists to validate live or recorded requests."
+        },
+        {
+          "source_id": "ai-github-issue-sentiment-arc-tracker-kpf56a",
+          "title": "GitHub Issue Sentiment Arc Tracker",
+          "url": "https://example.invalid/ai-idea/github-issue-sentiment-arc-tracker",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Track sentiment across comments in a GitHub issue using a lightweight sentiment API, render trend line in the issue sidebar. Helps leads spot problematic threads early. Novel angle on GitHub analytics.",
+          "monetization": "per_seat",
+          "pain": "Engineering managers track issue velocity but miss emotional patterns—issues that escalate in frustration get reopened or cause burnout."
+        },
+        {
+          "source_id": "ai-browser-clipboard-history-with-search-xouq2o",
+          "title": "Browser Clipboard History with Search",
+          "url": "https://example.invalid/ai-idea/browser-clipboard-history-with-search",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Maintain an IndexedDB-backed clipboard history with full-text search, tag support, and persistent storage. Detect duplicate copies, auto-deduplicate. Simple manifest v3 background script with search UI. Tangible daily frustration with large install potential.",
+          "monetization": "stripe_tip_jar",
+          "pain": "The browser clipboard only holds one item—accidentally overwriting a copied snippet means losing hours of gathered research."
+        },
+        {
+          "source_id": "ai-api-rate-limit-reset-countdown-uf66rt",
+          "title": "API Rate Limit Reset Countdown",
+          "url": "https://example.invalid/ai-idea/api-rate-limit-reset-countdown",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Extension intercepts 429 responses, extracts Retry-After header, shows live countdown badge and notification. Configurable allowlist of APIs to monitor. Dev productivity tool with clear value prop.",
+          "monetization": "freemium_saas",
+          "pain": "Developers polling rate-limited APIs get 429 errors and must manually calculate reset times from response headers, breaking flow."
+        },
+        {
+          "source_id": "ai-print-css-live-preview-panel-p142ac",
+          "title": "Print CSS Live Preview Panel",
+          "url": "https://example.invalid/ai-idea/print-css-live-preview-panel",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Side panel that renders print stylesheet output as a scrollable document preview without leaving the page. Extracts print CSS, applies it to a sandboxed iframe, shows pagination. Niche but solves a real friction point.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Designing @media print styles is trial-and-error because browsers only show print preview after triggering the print dialog."
+        },
+        {
+          "source_id": "ai-cold-email-sequence-step-visualizer-0j9y25",
+          "title": "Cold Email Sequence Step Visualizer",
+          "url": "https://example.invalid/ai-idea/cold-email-sequence-step-visualizer",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Detect outreach emails in Gmail, parse sequence step indicators, render a compact sequence tracker in the Gmail sidebar. Sync with popular sequencing tools via API. Improves existing tools rather than replacing them.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps using tools like Apollo or Lemlist lose track of where a prospect is in a multi-step sequence, leading to awkward duplicate outreach."
+        },
+        {
+          "source_id": "ai-indexeddb-data-export-bridge-3qxeyk",
+          "title": "IndexedDB Data Export Bridge",
+          "url": "https://example.invalid/ai-idea/indexeddb-data-export-bridge",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercept IndexedDB writes for configurable domains, expose export UI (JSON, CSV), optional cloud sync to S3/GCS. Useful for web app testing and data portability. Target QA teams and power users.",
+          "monetization": "per_seat",
+          "pain": "Web apps store critical data in IndexedDB but provide no export—losing data when clearing browser or switching machines is common and painful."
+        },
+        {
+          "source_id": "ai-browser-idle-tab-energy-saver-8e30tb",
+          "title": "Browser Idle Tab Energy Saver",
+          "url": "https://example.invalid/ai-idea/browser-idle-tab-energy-saver",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Detect tabs idle for configurable duration, throttled via requestIdleCallback or paused WebWorkers, show per-tab CPU indicator. Useful for laptop users and anyone managing many tabs.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Tabs left open in the background consume CPU and battery even when showing static content, with no visibility or control."
+        },
+        {
+          "source_id": "ai-calendar-focus-block-integrity-checker-rgwo48",
+          "title": "Calendar Focus Block Integrity Checker",
+          "url": "https://example.invalid/ai-idea/calendar-focus-block-integrity-checker",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scan Google Calendar for focus blocks surrounded by meetings, warn via notification if meetings will likely compress them. Simple heuristic but novel execution. Targets async workers and remote employees.",
+          "monetization": "stripe_tip_jar",
+          "pain": "People book focus blocks but meetings encroach on them invisibly—there's no alerting system until the conflict appears on the calendar."
+        },
+        {
+          "source_id": "ai-gong-call-key-quote-clipper-3g2v01",
+          "title": "Gong Call Key Quote Clipper",
+          "url": "https://example.invalid/ai-idea/gong-call-key-quote-clipper",
+          "timestamp": "2026-07-15T04:10:14.005Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "In Gong call player, detect speaker segments, allow one-click quote clipping with context, auto-format for Slack/LinkedIn, save to shared team library. Adds workflow speed on top of Gong's existing features.",
+          "monetization": "freemium_saas",
+          "pain": "Sales teams surface great call moments but lose them in recordings—clipping and sharing key quotes to Slack or CRM is manual and slow."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-15T04:10:14.018Z",
+        "dedup_against": 461,
+        "rejected_as_duplicate": 3
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
