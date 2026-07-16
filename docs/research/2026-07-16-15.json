@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-16-15",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-16T15:07:54.298Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-github-release-note-auto-author-8i36sv",
+          "title": "GitHub Release Note Auto-Author",
+          "url": "https://example.invalid/ai-idea/github-release-note-auto-author",
+          "timestamp": "2026-07-16T15:07:54.284Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scrapes merged PRs since last tag, categorizes by label/prefix, generates changelog draft. Simple semantic versioning prefix detection. Built with GitHub API + simple NLP. Ship in 2 weeks.",
+          "monetization": "per_seat",
+          "pain": "Engineers waste hours manually writing release notes from merged PRs before shipping."
+        },
+        {
+          "source_id": "ai-stripe-mrr-waterfall-visualizer-id07xd",
+          "title": "Stripe MRR Waterfall Visualizer",
+          "url": "https://example.invalid/ai-idea/stripe-mrr-waterfall-visualizer",
+          "timestamp": "2026-07-16T15:07:54.284Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Pulls Stripe events, renders real-time MRR waterfall showing new, expansion, contraction, churn. Uses Stripe webhooks. Niche but valuable for SaaS operators.",
+          "monetization": "freemium_saas",
+          "pain": "Founders and finance teams struggle to visualize subscription churn and expansion in a single view."
+        },
+        {
+          "source_id": "ai-cold-email-reply-intent-classifier-jlzper",
+          "title": "Cold Email Reply Intent Classifier",
+          "url": "https://example.invalid/ai-idea/cold-email-reply-intent-classifier",
+          "timestamp": "2026-07-16T15:07:54.284Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes Gmail threads, classifies replies as intent, auto-reply, unsubscribe, or dead. Uses lightweight keyword/pattern matching. Quick MVP with rule-based logic.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps waste time on auto-replies and out-of-office messages instead of real leads."
+        },
+        {
+          "source_id": "ai-browser-request-signature-debugger-txltqn",
+          "title": "Browser Request Signature Debugger",
+          "url": "https://example.invalid/ai-idea/browser-request-signature-debugger",
+          "timestamp": "2026-07-16T15:07:54.284Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Intercepts requests with signatures, replays with modified payloads, shows validation failures inline. Developer tools panel extension. Useful for API integrators.",
+          "monetization": "per_seat",
+          "pain": "Debugging HMAC or JWT request signatures is painful without seeing raw payloads side-by-side."
+        },
+        {
+          "source_id": "ai-conference-attendee-badge-scanner-5ncxy6",
+          "title": "Conference Attendee Badge Scanner",
+          "url": "https://example.invalid/ai-idea/conference-attendee-badge-scanner",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses webcam to scan badges via QR or OCR, enriches with LinkedIn/company data. GDPR-conscious with local processing. Great networking tool for solo founders.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps collect business cards at conferences but never follow up effectively due to lack of context."
+        },
+        {
+          "source_id": "ai-ai-token-budget-exhaustion-alert-vmqpjx",
+          "title": "AI Token Budget Exhaustion Alert",
+          "url": "https://example.invalid/ai-idea/ai-token-budget-exhaustion-alert",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Monitors API calls per tab, predicts token budget exhaustion, warns before hitting limits. Cross-LLM support. Critical for power users of AI tools.",
+          "monetization": "freemium_saas",
+          "pain": "Users accidentally blow through API quotas mid-conversation and get cut off unexpectedly."
+        },
+        {
+          "source_id": "ai-webhook-event-type-distribution-chart-dj6mgn",
+          "title": "Webhook Event Type Distribution Chart",
+          "url": "https://example.invalid/ai-idea/webhook-event-type-distribution-chart",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Logs all webhook events in DevTools panel, shows distribution pie chart over time. Helps identify spam vs signal in webhook streams.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers debugging webhook integrations can't see which event types fire most frequently."
+        },
+        {
+          "source_id": "ai-sales-deck-slide-reading-time-estimator-w9fckh",
+          "title": "Sales Deck Slide Reading Time Estimator",
+          "url": "https://example.invalid/ai-idea/sales-deck-slide-reading-time-estimator",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes slide content density, images, and text length, estimates realistic reading time. Warns before sending. Useful for pitch prep.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps send decks that are too long, causing prospects to lose interest halfway through."
+        },
+        {
+          "source_id": "ai-gcp-resource-zombie-hunter-5hc26e",
+          "title": "GCP Resource Zombie Hunter",
+          "url": "https://example.invalid/ai-idea/gcp-resource-zombie-hunter",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Queries GCP asset inventory API, flags resources with no traffic for 30+ days. Suggests deletion or downsizing. Integrates with billing exports.",
+          "monetization": "per_seat",
+          "pain": "Teams forget about idle cloud resources, accumulating unnecessary costs month after month."
+        },
+        {
+          "source_id": "ai-email-thread-emotional-tone-arc-j8813m",
+          "title": "Email Thread Emotional Tone Arc",
+          "url": "https://example.invalid/ai-idea/email-thread-emotional-tone-arc",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes sentiment arc across email threads, shows whether tone is trending positive/negative. Simple keyword sentiment scoring. Helps calibrate responses.",
+          "monetization": "stripe_tip_jar",
+          "pain": "People misread email tone and respond defensively, escalating unnecessary conflict."
+        },
+        {
+          "source_id": "ai-lead-company-hiring-velocity-score-sspr9u",
+          "title": "Lead Company Hiring Velocity Score",
+          "url": "https://example.invalid/ai-idea/lead-company-hiring-velocity-score",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn job postings over time, calculates hiring velocity. Shows if company is aggressively hiring or slowing down. Signals urgency.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps have no signal on whether a prospect company is growing or shrinking before outreach."
+        },
+        {
+          "source_id": "ai-browser-console-api-call-cost-tracker-4vlejv",
+          "title": "Browser Console API Call Cost Tracker",
+          "url": "https://example.invalid/ai-idea/browser-console-api-call-cost-tracker",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Instruments fetch/XHR calls, tags third-party domains, estimates cost based on typical API pricing. Shows cost per page load in DevTools.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Frontend devs have no visibility into how many third-party API calls their pages make and at what cost."
+        },
+        {
+          "source_id": "ai-recruiter-message-response-time-heatmap-dsl0zb",
+          "title": "Recruiter Message Response Time Heatmap",
+          "url": "https://example.invalid/ai-idea/recruiter-message-response-time-heatmap",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes timestamps of recruiter emails, builds heatmap of send times. Suggests optimal reply windows. Simple inbox metadata analysis.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Job seekers miss optimal reply windows because they don't know when recruiters are most active."
+        },
+        {
+          "source_id": "ai-favicon-security-risk-scanner-lvztlt",
+          "title": "Favicon Security Risk Scanner",
+          "url": "https://example.invalid/ai-idea/favicon-security-risk-scanner",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Checks favicon URLs for tracking capabilities, warns about favicon fingerprinting vectors. Educational privacy tool with actionable alerts.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users don't realize favicons can be used to track them across sites via favicon-based cookies."
+        },
+        {
+          "source_id": "ai-meeting-transcript-redaction-helper-sipsmc",
+          "title": "Meeting Transcript Redaction Helper",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-redaction-helper",
+          "timestamp": "2026-07-16T15:07:54.285Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Highlights PII, API keys, internal hostnames in transcripts. One-click redaction. Useful for async-first teams. Built with regex + heuristics.",
+          "monetization": "quota_based",
+          "pain": "Engineers waste time manually redacting sensitive data from meeting transcripts before sharing."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-16T15:07:54.297Z",
+        "dedup_against": 487,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

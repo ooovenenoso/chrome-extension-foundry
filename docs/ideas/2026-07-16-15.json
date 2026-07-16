@@ -1,0 +1,368 @@
+{
+  "slot": "2026-07-16-15",
+  "week": "2026-W29",
+  "scored_at": "2026-07-16T15:07:54.486Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "cold-email-reply-intent-classifier",
+      "name": "Cold Email Reply Intent Classifier",
+      "pitch": "Scrapes Gmail threads, classifies replies as intent, auto-reply, unsubscribe, or dead. Uses lightweight keyword/pattern matching. Quick MVP with rule-based logic.",
+      "pain": "Sales reps waste time on auto-replies and out-of-office messages instead of real leads.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-email-reply-intent-classifier-jlzper",
+          "url": "https://example.invalid/ai-idea/cold-email-reply-intent-classifier"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7.25,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-thread-decay-detector",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "ai-token-budget-exhaustion-alert",
+      "name": "AI Token Budget Exhaustion Alert",
+      "pitch": "Monitors API calls per tab, predicts token budget exhaustion, warns before hitting limits. Cross-LLM support. Critical for power users of AI tools.",
+      "pain": "Users accidentally blow through API quotas mid-conversation and get cut off unexpectedly.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-token-budget-exhaustion-alert-vmqpjx",
+          "url": "https://example.invalid/ai-idea/ai-token-budget-exhaustion-alert"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-prompt-token-budget-sidebar",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "lead-company-hiring-velocity-score",
+      "name": "Lead Company Hiring Velocity Score",
+      "pitch": "Scrapes LinkedIn job postings over time, calculates hiring velocity. Shows if company is aggressively hiring or slowing down. Signals urgency.",
+      "pain": "Sales reps have no signal on whether a prospect company is growing or shrinking before outreach.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-company-hiring-velocity-score-sspr9u",
+          "url": "https://example.invalid/ai-idea/lead-company-hiring-velocity-score"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "lead-company-news-timeline-aggregator",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "github-release-note-auto-author",
+      "name": "GitHub Release Note Auto-Author",
+      "pitch": "Scrapes merged PRs since last tag, categorizes by label/prefix, generates changelog draft. Simple semantic versioning prefix detection. Built with GitHub API + simple NLP. Ship in 2 weeks.",
+      "pain": "Engineers waste hours manually writing release notes from merged PRs before shipping.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-release-note-auto-author-8i36sv",
+          "url": "https://example.invalid/ai-idea/github-release-note-auto-author"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-changelog-semantic-diff-viewer",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "stripe-mrr-waterfall-visualizer",
+      "name": "Stripe MRR Waterfall Visualizer",
+      "pitch": "Pulls Stripe events, renders real-time MRR waterfall showing new, expansion, contraction, churn. Uses Stripe webhooks. Niche but valuable for SaaS operators.",
+      "pain": "Founders and finance teams struggle to visualize subscription churn and expansion in a single view.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-mrr-waterfall-visualizer-id07xd",
+          "url": "https://example.invalid/ai-idea/stripe-mrr-waterfall-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gcp-resource-zombie-hunter",
+      "name": "GCP Resource Zombie Hunter",
+      "pitch": "Queries GCP asset inventory API, flags resources with no traffic for 30+ days. Suggests deletion or downsizing. Integrates with billing exports.",
+      "pain": "Teams forget about idle cloud resources, accumulating unnecessary costs month after month.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-resource-zombie-hunter-5hc26e",
+          "url": "https://example.invalid/ai-idea/gcp-resource-zombie-hunter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-auto-scheduler",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "conference-attendee-badge-scanner",
+      "name": "Conference Attendee Badge Scanner",
+      "pitch": "Uses webcam to scan badges via QR or OCR, enriches with LinkedIn/company data. GDPR-conscious with local processing. Great networking tool for solo founders.",
+      "pain": "Sales reps collect business cards at conferences but never follow up effectively due to lack of context.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-conference-attendee-badge-scanner-5ncxy6",
+          "url": "https://example.invalid/ai-idea/conference-attendee-badge-scanner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-company-employee-counter",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "sales-deck-slide-reading-time-estimator",
+      "name": "Sales Deck Slide Reading Time Estimator",
+      "pitch": "Analyzes slide content density, images, and text length, estimates realistic reading time. Warns before sending. Useful for pitch prep.",
+      "pain": "Sales reps send decks that are too long, causing prospects to lose interest halfway through.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-deck-slide-reading-time-estimator-w9fckh",
+          "url": "https://example.invalid/ai-idea/sales-deck-slide-reading-time-estimator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "localstorage-json-editor",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "browser-request-signature-debugger",
+      "name": "Browser Request Signature Debugger",
+      "pitch": "Intercepts requests with signatures, replays with modified payloads, shows validation failures inline. Developer tools panel extension. Useful for API integrators.",
+      "pain": "Debugging HMAC or JWT request signatures is painful without seeing raw payloads side-by-side.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-request-signature-debugger-txltqn",
+          "url": "https://example.invalid/ai-idea/browser-request-signature-debugger"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-signature-debugger",
+        "jaccard_with_nearest": 0.17
+      }
+    },
+    {
+      "id": "webhook-event-type-distribution-chart",
+      "name": "Webhook Event Type Distribution Chart",
+      "pitch": "Logs all webhook events in DevTools panel, shows distribution pie chart over time. Helps identify spam vs signal in webhook streams.",
+      "pain": "Developers debugging webhook integrations can't see which event types fire most frequently.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-event-type-distribution-chart-dj6mgn",
+          "url": "https://example.invalid/ai-idea/webhook-event-type-distribution-chart"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-delivery-heatmap",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "browser-console-api-call-cost-tracker",
+      "name": "Browser Console API Call Cost Tracker",
+      "pitch": "Instruments fetch/XHR calls, tags third-party domains, estimates cost based on typical API pricing. Shows cost per page load in DevTools.",
+      "pain": "Frontend devs have no visibility into how many third-party API calls their pages make and at what cost.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-console-api-call-cost-tracker-4vlejv",
+          "url": "https://example.invalid/ai-idea/browser-console-api-call-cost-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "meeting-transcript-redaction-helper",
+      "name": "Meeting Transcript Redaction Helper",
+      "pitch": "Highlights PII, API keys, internal hostnames in transcripts. One-click redaction. Useful for async-first teams. Built with regex + heuristics.",
+      "pain": "Engineers waste time manually redacting sensitive data from meeting transcripts before sharing.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-transcript-redaction-helper-sipsmc",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-redaction-helper"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-summary-action-item-carver",
+        "jaccard_with_nearest": 0.09
+      }
+    }
+  ]
+}
