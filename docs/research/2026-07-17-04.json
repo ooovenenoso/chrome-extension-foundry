@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-17-04",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-17T04:12:16.297Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-tab-session-semantic-search-4ut88z",
+          "title": "Tab Session Semantic Search",
+          "url": "https://example.invalid/ai-idea/tab-session-semantic-search",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Indexes page text in background using lightweight browser storage, enabling full-text search across all open tabs. Unique angle vs. bookmark tools because it searches live page content. Builds fast with chrome.tabCapture and DOM text extraction.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users lose track of information spread across dozens of open tabs and waste time re-reading content to find what they need."
+        },
+        {
+          "source_id": "ai-api-error-pattern-clusterer-60cg7i",
+          "title": "API Error Pattern Clusterer",
+          "url": "https://example.invalid/ai-idea/api-error-pattern-clusterer",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Uses text similarity clustering on captured network errors to auto-group by error message patterns. Unique vs. generic log analyzers because it targets API error semantics. Ships as Chrome extension with optional cloud sync for team dashboards.",
+          "monetization": "freemium_saas",
+          "pain": "Developers waste hours manually grouping similar API errors to identify root causes instead of fixing them."
+        },
+        {
+          "source_id": "ai-product-spec-comparison-generator-dmzhrp",
+          "title": "Product Spec Comparison Generator",
+          "url": "https://example.invalid/ai-idea/product-spec-comparison-generator",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts structured spec data from product pages and auto-generates side-by-side comparison tables. Differentiates from price trackers by focusing on spec data. Quick build using DOM scraping with AI-assisted field extraction.",
+          "monetization": "freemium_saas",
+          "pain": "Online shoppers spend too long manually comparing product specs across multiple e-commerce pages."
+        },
+        {
+          "source_id": "ai-conference-message-queue-scheduler-ta25o4",
+          "title": "Conference Message Queue Scheduler",
+          "url": "https://example.invalid/ai-idea/conference-message-queue-scheduler",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Queues follow-up messages during conference browsing with optimal send-time scheduling. Unique timing angle vs. generic outreach tools. Simple build using LinkedIn's API surface with local storage for scheduling logic.",
+          "monetization": "quota_based",
+          "pain": "Sales reps send LinkedIn connection requests during conferences but forget to follow up with personalized messages afterward."
+        },
+        {
+          "source_id": "ai-dom-breadcrumb-navigation-tracer-utbf7d",
+          "title": "DOM Breadcrumb Navigation Tracer",
+          "url": "https://example.invalid/ai-idea/dom-breadcrumb-navigation-tracer",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Overlays interactive breadcrumb path from any element to root, clickable to jump levels. Unique visual navigation vs. DevTools tree views. Uses MutationObserver for dynamic updates.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging deep DOM hierarchies requires constant scrolling to understand element ancestry."
+        },
+        {
+          "source_id": "ai-sec-filing-funding-event-alert-pgo6vg",
+          "title": "SEC Filing Funding Event Alert",
+          "url": "https://example.invalid/ai-idea/sec-filing-funding-event-alert",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Monitors EDGAR for new filings by tracked companies and alerts when funding rounds close. Different from generic news alerts by targeting SEC-sourced signals. Simple RSS monitoring plus company matching logic.",
+          "monetization": "quota_based",
+          "pain": "Sales teams miss prospect funding announcements that signal buying readiness, losing competitive advantage."
+        },
+        {
+          "source_id": "ai-webgl-shader-compile-timer-ulwd0q",
+          "title": "WebGL Shader Compile Timer",
+          "url": "https://example.invalid/ai-idea/webgl-shader-compile-timer",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Overlays per-shader compilation times extracted from WebGL context profiling. Niche but valuable for gaming/web-graphics devs. Uses extension telemetry APIs to capture compile events.",
+          "monetization": "stripe_tip_jar",
+          "pain": "WebGL developers struggle to isolate shader compilation bottlenecks in complex 3D web applications."
+        },
+        {
+          "source_id": "ai-batch-contrast-compliance-reporter-b6bvbo",
+          "title": "Batch Contrast Compliance Reporter",
+          "url": "https://example.invalid/ai-idea/batch-contrast-compliance-reporter",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scans entire page and flags all text/background pairs failing WCAG 2.1 AA/AAA. Different from single-element checkers by operating at scale. Exports CSV report for remediation tracking.",
+          "monetization": "freemium_saas",
+          "pain": "Accessibility testers waste time checking color contrast pair-by-pair instead of getting instant batch results."
+        },
+        {
+          "source_id": "ai-gong-transcript-follow-up-drafter-ox2v48",
+          "title": "Gong Transcript Follow-up Drafter",
+          "url": "https://example.invalid/ai-idea/gong-transcript-follow-up-drafter",
+          "timestamp": "2026-07-17T04:12:16.283Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses Gong transcript API to extract key moments and auto-drafts personalized follow-up emails. Different from generic AI email writers by using call-specific context. Requires Gong OAuth integration.",
+          "monetization": "per_seat",
+          "pain": "Sales reps spend 15+ minutes drafting follow-up emails after calls instead of contacting more prospects."
+        },
+        {
+          "source_id": "ai-extension-performance-leaderboard-peit1i",
+          "title": "Extension Performance Leaderboard",
+          "url": "https://example.invalid/ai-idea/extension-performance-leaderboard",
+          "timestamp": "2026-07-17T04:12:16.284Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Shows ranked list of installed extensions by CPU/memory impact and page load delay. Unique consumer angle vs. dev-focused performance tools. Uses chrome.processes API for real-time metrics.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users notice browser slowdown but have no way to identify which of their 20+ extensions is causing it."
+        },
+        {
+          "source_id": "ai-job-posting-remote-signal-extractor-xz2v00",
+          "title": "Job Posting Remote Signal Extractor",
+          "url": "https://example.invalid/ai-idea/job-posting-remote-signal-extractor",
+          "timestamp": "2026-07-17T04:12:16.284Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Parses job posting location text to classify as remote/hybrid/onsite with confidence score. Different from tech-stack extractors by targeting work arrangement signals. Regex + light NLP on location fields.",
+          "monetization": "quota_based",
+          "pain": "Recruiters and sales reps waste time applying to or prospecting jobs that are hybrid/remote incompatible."
+        },
+        {
+          "source_id": "ai-prospect-glassdoor-sentiment-overlay-m5zblm",
+          "title": "Prospect Glassdoor Sentiment Overlay",
+          "url": "https://example.invalid/ai-idea/prospect-glassdoor-sentiment-overlay",
+          "timestamp": "2026-07-17T04:12:16.284Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Overlays Glassdoor ratings, CEO approval, and culture keywords when visiting prospect company pages. Different from tech-stack tools by measuring workplace sentiment. Uses company domain matching to Glassdoor pages.",
+          "monetization": "per_seat",
+          "pain": "Sales reps lack cultural fit signals when prospecting enterprise accounts, leading to poor meeting conversion."
+        },
+        {
+          "source_id": "ai-interactive-element-page-overlay-hao5e5",
+          "title": "Interactive Element Page Overlay",
+          "url": "https://example.invalid/ai-idea/interactive-element-page-overlay",
+          "timestamp": "2026-07-17T04:12:16.284Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Highlights all interactive elements (buttons, links, inputs) as a clean overlay panel. Different from screen readers by providing visual map. Uses pointer-events and role attribute detection.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users with motor impairments need to identify clickable elements on cluttered pages without trial-and-error."
+        },
+        {
+          "source_id": "ai-llm-context-usage-real-time-meter-tx9pwz",
+          "title": "LLM Context Usage Real-time Meter",
+          "url": "https://example.invalid/ai-idea/llm-context-usage-real-time-meter",
+          "timestamp": "2026-07-17T04:12:16.284Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Displays running token count as you type in AI chat interfaces, estimates remaining capacity. Unique real-time angle vs. periodic calculators. Works via DOM observation of chat interfaces.",
+          "monetization": "stripe_tip_jar",
+          "pain": "AI users hit context limits unexpectedly and lose conversation history because they cannot track token usage."
+        },
+        {
+          "source_id": "ai-page-text-readability-heatmap-5vgbzs",
+          "title": "Page Text Readability Heatmap",
+          "url": "https://example.invalid/ai-idea/page-text-readability-heatmap",
+          "timestamp": "2026-07-17T04:12:16.284Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Colors paragraphs by Flesch-Kincaid reading level, creating a visual difficulty map of the page. Different from summary tools by focusing on readability signal. Lightweight DOM analysis.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Content creators and readers have no quick way to assess if web article text matches their skill level."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-17T04:12:16.297Z",
+        "dedup_against": 502,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

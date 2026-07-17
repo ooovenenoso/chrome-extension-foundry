@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-17-04",
+  "week": "2026-W29",
+  "scored_at": "2026-07-17T04:12:16.487Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "api-error-pattern-clusterer",
+      "name": "API Error Pattern Clusterer",
+      "pitch": "Uses text similarity clustering on captured network errors to auto-group by error message patterns. Unique vs. generic log analyzers because it targets API error semantics. Ships as Chrome extension w",
+      "pain": "Developers waste hours manually grouping similar API errors to identify root causes instead of fixing them.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-error-pattern-clusterer-60cg7i",
+          "url": "https://example.invalid/ai-idea/api-error-pattern-clusterer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sentry-error-aggregator",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "batch-contrast-compliance-reporter",
+      "name": "Batch Contrast Compliance Reporter",
+      "pitch": "Scans entire page and flags all text/background pairs failing WCAG 2.1 AA/AAA. Different from single-element checkers by operating at scale. Exports CSV report for remediation tracking.",
+      "pain": "Accessibility testers waste time checking color contrast pair-by-pair instead of getting instant batch results.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-batch-contrast-compliance-reporter-b6bvbo",
+          "url": "https://example.invalid/ai-idea/batch-contrast-compliance-reporter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tracking-pixel-detector",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "conference-message-queue-scheduler",
+      "name": "Conference Message Queue Scheduler",
+      "pitch": "Queues follow-up messages during conference browsing with optimal send-time scheduling. Unique timing angle vs. generic outreach tools. Simple build using LinkedIn's API surface with local storage for",
+      "pain": "Sales reps send LinkedIn connection requests during conferences but forget to follow up with personalized messages afterward.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-conference-message-queue-scheduler-ta25o4",
+          "url": "https://example.invalid/ai-idea/conference-message-queue-scheduler"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cold-outreach-personalization-generator",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "sec-filing-funding-event-alert",
+      "name": "SEC Filing Funding Event Alert",
+      "pitch": "Monitors EDGAR for new filings by tracked companies and alerts when funding rounds close. Different from generic news alerts by targeting SEC-sourced signals. Simple RSS monitoring plus company matchi",
+      "pain": "Sales teams miss prospect funding announcements that signal buying readiness, losing competitive advantage.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sec-filing-funding-event-alert-pgo6vg",
+          "url": "https://example.invalid/ai-idea/sec-filing-funding-event-alert"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-prospect-funding-event-alert",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "gong-transcript-follow-up-drafter",
+      "name": "Gong Transcript Follow-up Drafter",
+      "pitch": "Uses Gong transcript API to extract key moments and auto-drafts personalized follow-up emails. Different from generic AI email writers by using call-specific context. Requires Gong OAuth integration.",
+      "pain": "Sales reps spend 15+ minutes drafting follow-up emails after calls instead of contacting more prospects.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-transcript-follow-up-drafter-ox2v48",
+          "url": "https://example.invalid/ai-idea/gong-transcript-follow-up-drafter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-key-quote-clipper",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "job-posting-remote-signal-extractor",
+      "name": "Job Posting Remote Signal Extractor",
+      "pitch": "Parses job posting location text to classify as remote/hybrid/onsite with confidence score. Different from tech-stack extractors by targeting work arrangement signals. Regex + light NLP on location fi",
+      "pain": "Recruiters and sales reps waste time applying to or prospecting jobs that are hybrid/remote incompatible.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-job-posting-remote-signal-extractor-xz2v00",
+          "url": "https://example.invalid/ai-idea/job-posting-remote-signal-extractor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-tech-signal-extractor",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "llm-context-usage-real-time-meter",
+      "name": "LLM Context Usage Real-time Meter",
+      "pitch": "Displays running token count as you type in AI chat interfaces, estimates remaining capacity. Unique real-time angle vs. periodic calculators. Works via DOM observation of chat interfaces.",
+      "pain": "AI users hit context limits unexpectedly and lose conversation history because they cannot track token usage.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-llm-context-usage-real-time-meter-tx9pwz",
+          "url": "https://example.invalid/ai-idea/llm-context-usage-real-time-meter"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.15,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-token-usage-by-tab",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "prospect-glassdoor-sentiment-overlay",
+      "name": "Prospect Glassdoor Sentiment Overlay",
+      "pitch": "Overlays Glassdoor ratings, CEO approval, and culture keywords when visiting prospect company pages. Different from tech-stack tools by measuring workplace sentiment. Uses company domain matching to G",
+      "pain": "Sales reps lack cultural fit signals when prospecting enterprise accounts, leading to poor meeting conversion.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-prospect-glassdoor-sentiment-overlay-m5zblm",
+          "url": "https://example.invalid/ai-idea/prospect-glassdoor-sentiment-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "tech-stack-fingerprint-pro",
+        "jaccard_with_nearest": 0.11
+      }
+    }
+  ]
+}
