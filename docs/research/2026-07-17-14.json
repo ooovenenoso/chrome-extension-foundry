@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-17-14",
+  "week": "2026-W29",
+  "fetched_at": "2026-07-17T14:48:32.025Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-browser-api-feature-adoption-tracker-yrirpj",
+          "title": "Browser API Feature Adoption Tracker",
+          "url": "https://example.invalid/ai-idea/browser-api-feature-adoption-tracker",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Parses browser release notes and cross-references your site usage to flag APIs you're using that are deprecated or imminent. Buildable via background script with caniuse.com API. Niche but highly valuable for teams shipping to production.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers miss browser API deprecations until production breaks, wasting hours on retroactive fixes."
+        },
+        {
+          "source_id": "ai-calendar-focus-time-integrity-guard-d9zh9m",
+          "title": "Calendar Focus Time Integrity Guard",
+          "url": "https://example.invalid/ai-idea/calendar-focus-time-integrity-guard",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scans calendar for meetings that overlap or sandwich focus blocks and alerts or auto-declines. Uses Google Calendar API. Simple concept, high frustration for knowledge workers.",
+          "monetization": "freemium_saas",
+          "pain": "Calendar invites silently erode focus blocks, making deep work impossible to protect."
+        },
+        {
+          "source_id": "ai-oauth-token-expiration-sentinel-eadg8f",
+          "title": "OAuth Token Expiration Sentinel",
+          "url": "https://example.invalid/ai-idea/oauth-token-expiration-sentinel",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Monitors storage for OAuth tokens and shows countdown timers. Extension popup displays all detected tokens with expiration warnings. Quick build, immediate utility for devs dealing with OAuth flows.",
+          "monetization": "stripe_tip_jar",
+          "pain": "OAuth tokens expire silently in dev environments, causing cryptic auth failures during demos."
+        },
+        {
+          "source_id": "ai-gcp-invoice-line-item-categorizer-bpd8lu",
+          "title": "GCP Invoice Line Item Categorizer",
+          "url": "https://example.invalid/ai-idea/gcp-invoice-line-item-categorizer",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses GCP billing exports and lets users tag services by team or product. Generates attribution reports. CSV parsing and localStorage for tags makes this fully offline-capable initially.",
+          "monetization": "freemium_saas",
+          "pain": "GCP invoices show service names without context, making it impossible to attribute costs to products."
+        },
+        {
+          "source_id": "ai-github-issue-triage-speed-tracker-1m9kez",
+          "title": "GitHub Issue Triage Speed Tracker",
+          "url": "https://example.invalid/ai-idea/github-issue-triage-speed-tracker",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Queries GitHub API to track time-to-first-response by label, area, or maintainer. Generates weekly reports. Requires GitHub token auth. Clear value prop for OSS teams.",
+          "monetization": "per_seat",
+          "pain": "Open source maintainers have no visibility into how fast issues get triaged, leading to contributor frustration."
+        },
+        {
+          "source_id": "ai-calendar-meeting-cadence-analyzer-3sx5e6",
+          "title": "Calendar Meeting Cadence Analyzer",
+          "url": "https://example.invalid/ai-idea/calendar-meeting-cadence-analyzer",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes calendar to identify recurring meeting patterns and flags meetings that are identical or could be merged. Visual dashboard in popup. High engagement for remote workers.",
+          "monetization": "freemium_saas",
+          "pain": "Recurring meetings quietly multiply in number without anyone noticing the time sink."
+        },
+        {
+          "source_id": "ai-sales-prospect-company-news-timeline-dzmuv9",
+          "title": "Sales Prospect Company News Timeline",
+          "url": "https://example.invalid/ai-idea/sales-prospect-company-news-timeline",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes prospect company pages for news, funding, or hires and surfaces timeline in CRM context. Uses NewsAPI or custom scrapers. Direct CRM integration makes this sticky.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps miss timing on prospect company news, losing the window for relevant outreach."
+        },
+        {
+          "source_id": "ai-gong-call-objection-response-library-f6oqiu",
+          "title": "Gong Call Objection Response Library",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-response-library",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Manually tagged library of objection categories linked to Gong clips. Searchable by objection type. Simple CRUD with video embedding. Low lift, high utility for sales teams.",
+          "monetization": "per_seat",
+          "pain": "Reps improvise responses to objections instead of learning from proven responses across the team."
+        },
+        {
+          "source_id": "ai-typescript-strict-mode-adoption-meter-a9ev14",
+          "title": "TypeScript Strict Mode Adoption Meter",
+          "url": "https://example.invalid/ai-idea/typescript-strict-mode-adoption-meter",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Runs tsconfig analysis locally and tracks strict flag adoption over time. Popup shows progress bars per flag. Simple file parsing, no external dependencies.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Teams migrate to strict TypeScript incrementally but lose visibility into progress across the codebase."
+        },
+        {
+          "source_id": "ai-browser-console-error-pattern-clusterer-m8sehe",
+          "title": "Browser Console Error Pattern Clusterer",
+          "url": "https://example.invalid/ai-idea/browser-console-error-pattern-clusterer",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Clusters console errors by stack trace similarity and surfaces unique errors first. Built-in pattern matching. Saves devs hours during incident debugging.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Console errors flood during debugging, hiding the root cause among similar noise."
+        },
+        {
+          "source_id": "ai-s3-bucket-policy-complexity-analyzer-38z4qk",
+          "title": "S3 Bucket Policy Complexity Analyzer",
+          "url": "https://example.invalid/ai-idea/s3-bucket-policy-complexity-analyzer",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses IAM/JSON policies and visualizes complexity with scoring. Highlights contradictory statements. Direct S3 API integration for AWS users.",
+          "monetization": "freemium_saas",
+          "pain": "S3 bucket policies become tangled over time, creating security blind spots that audits miss."
+        },
+        {
+          "source_id": "ai-gmail-attachment-version-sync-aopbom",
+          "title": "Gmail Attachment Version Sync",
+          "url": "https://example.invalid/ai-idea/gmail-attachment-version-sync",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Detects when attachments with similar names are sent and flags which is newer. Builds a simple version history per thread. Popup shows timeline.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Teams lose track of which attachment version is current, causing confusion and rework."
+        },
+        {
+          "source_id": "ai-llm-context-window-utilization-meter-nuhs2r",
+          "title": "LLM Context Window Utilization Meter",
+          "url": "https://example.invalid/ai-idea/llm-context-window-utilization-meter",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Monitors clipboard and page content to estimate context usage. Shows remaining headroom before truncation. Works with any LLM interface.",
+          "monetization": "freemium_saas",
+          "pain": "LLM users run out of context without knowing how efficiently they're using available tokens."
+        },
+        {
+          "source_id": "ai-third-party-script-privacy-risk-grader-xpr76w",
+          "title": "Third-Party Script Privacy Risk Grader",
+          "url": "https://example.invalid/ai-idea/third-party-script-privacy-risk-grader",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Scans loaded scripts and cross-references against known tracker databases. Grades each site by privacy risk. Builds awareness for privacy-conscious users.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users have no idea which third-party scripts track them beyond what websites disclose."
+        },
+        {
+          "source_id": "ai-meeting-transcript-auto-chapter-generato-hh41mx",
+          "title": "Meeting Transcript Auto-Chapter Generator",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-auto-chapter-generato",
+          "timestamp": "2026-07-17T14:48:32.014Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses speech-to-text and topic modeling to auto-generate chapters with timestamps. Saves clips with chapter markers. Gong integration or local processing.",
+          "monetization": "freemium_saas",
+          "pain": "Meeting recordings are unwatchable, and extracting relevant sections requires manual scrubbing."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-17T14:48:32.025Z",
+        "dedup_against": 517,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}

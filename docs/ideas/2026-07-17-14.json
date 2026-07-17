@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-17-14",
+  "week": "2026-W29",
+  "scored_at": "2026-07-17T14:48:32.169Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "oauth-token-expiration-sentinel",
+      "name": "OAuth Token Expiration Sentinel",
+      "pitch": "Monitors storage for OAuth tokens and shows countdown timers. Extension popup displays all detected tokens with expiration warnings. Quick build, immediate utility for devs dealing with OAuth flows.",
+      "pain": "OAuth tokens expire silently in dev environments, causing cryptic auth failures during demos.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-oauth-token-expiration-sentinel-eadg8f",
+          "url": "https://example.invalid/ai-idea/oauth-token-expiration-sentinel"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-conversation-token-counter",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "gcp-invoice-line-item-categorizer",
+      "name": "GCP Invoice Line Item Categorizer",
+      "pitch": "Parses GCP billing exports and lets users tag services by team or product. Generates attribution reports. CSV parsing and localStorage for tags makes this fully offline-capable initially.",
+      "pain": "GCP invoices show service names without context, making it impossible to attribute costs to products.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-invoice-line-item-categorizer-bpd8lu",
+          "url": "https://example.invalid/ai-idea/gcp-invoice-line-item-categorizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-resource-tag-compliance-checker",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "sales-prospect-company-news-timeline",
+      "name": "Sales Prospect Company News Timeline",
+      "pitch": "Scrapes prospect company pages for news, funding, or hires and surfaces timeline in CRM context. Uses NewsAPI or custom scrapers. Direct CRM integration makes this sticky.",
+      "pain": "Sales reps miss timing on prospect company news, losing the window for relevant outreach.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-prospect-company-news-timeline-dzmuv9",
+          "url": "https://example.invalid/ai-idea/sales-prospect-company-news-timeline"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "lead-company-news-timeline-aggregator",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "gong-call-objection-response-library",
+      "name": "Gong Call Objection Response Library",
+      "pitch": "Manually tagged library of objection categories linked to Gong clips. Searchable by objection type. Simple CRUD with video embedding. Low lift, high utility for sales teams.",
+      "pain": "Reps improvise responses to objections instead of learning from proven responses across the team.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-objection-response-library-f6oqiu",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-response-library"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-objection-pattern-library",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "meeting-transcript-auto-chapter-generato",
+      "name": "Meeting Transcript Auto-Chapter Generator",
+      "pitch": "Uses speech-to-text and topic modeling to auto-generate chapters with timestamps. Saves clips with chapter markers. Gong integration or local processing.",
+      "pain": "Meeting recordings are unwatchable, and extracting relevant sections requires manual scrubbing.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-transcript-auto-chapter-generato-hh41mx",
+          "url": "https://example.invalid/ai-idea/meeting-transcript-auto-chapter-generato"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-transcript-action-item-splitter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "github-issue-triage-speed-tracker",
+      "name": "GitHub Issue Triage Speed Tracker",
+      "pitch": "Queries GitHub API to track time-to-first-response by label, area, or maintainer. Generates weekly reports. Requires GitHub token auth. Clear value prop for OSS teams.",
+      "pain": "Open source maintainers have no visibility into how fast issues get triaged, leading to contributor frustration.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-issue-triage-speed-tracker-1m9kez",
+          "url": "https://example.invalid/ai-idea/github-issue-triage-speed-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-pr-review-response-time-tracker",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "s3-bucket-policy-complexity-analyzer",
+      "name": "S3 Bucket Policy Complexity Analyzer",
+      "pitch": "Parses IAM/JSON policies and visualizes complexity with scoring. Highlights contradictory statements. Direct S3 API integration for AWS users.",
+      "pain": "S3 bucket policies become tangled over time, creating security blind spots that audits miss.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-s3-bucket-policy-complexity-analyzer-38z4qk",
+          "url": "https://example.invalid/ai-idea/s3-bucket-policy-complexity-analyzer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "browser-console-error-pattern-clusterer",
+      "name": "Browser Console Error Pattern Clusterer",
+      "pitch": "Clusters console errors by stack trace similarity and surfaces unique errors first. Built-in pattern matching. Saves devs hours during incident debugging.",
+      "pain": "Console errors flood during debugging, hiding the root cause among similar noise.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-console-error-pattern-clusterer-m8sehe",
+          "url": "https://example.invalid/ai-idea/browser-console-error-pattern-clusterer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-error-pattern-clusterer",
+        "jaccard_with_nearest": 0.15
+      }
+    }
+  ]
+}
