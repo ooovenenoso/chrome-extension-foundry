@@ -1,0 +1,278 @@
+{
+  "slot": "2026-07-20-15",
+  "week": "2026-W30",
+  "scored_at": "2026-07-20T15:15:30.352Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "gong-call-follow-up-email-drafter",
+      "name": "Gong Call Follow-up Email Drafter",
+      "pitch": "Uses the Gong API to pull call summaries and drafts personalized follow-up emails with key points and next steps. Freemium tier limits drafts per month. Targets sales teams who live in Gong.",
+      "pain": "Sales reps spend 20+ minutes writing follow-up emails after calls instead of moving to the next call.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-follow-up-email-drafter-iway4y",
+          "url": "https://example.invalid/ai-idea/gong-call-follow-up-email-drafter"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-key-quote-clipper",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "email-signature-consistency-auditor",
+      "name": "Email Signature Consistency Auditor",
+      "pitch": "Scans outgoing Gmail for signature inconsistencies and suggests corrections based on team templates stored in a simple config. Flags when reps deviate from brand guidelines.",
+      "pain": "Sales teams send emails with inconsistent signatures, undermining professional brand credibility.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-signature-consistency-auditor-ll7imq",
+          "url": "https://example.invalid/ai-idea/email-signature-consistency-auditor"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-shared-warmup-inbox-matcher",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "pr-story-point-calibrator",
+      "name": "PR Story Point Calibrator",
+      "pitch": "Uses diff size, cyclomatic complexity, and test coverage to suggest story points with confidence intervals. Built as a simple overlay panel on GitHub PR pages. Most teams struggle with estimation cons",
+      "pain": "Engineers spend too long debating story points during sprint planning instead of focusing on actual work.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-story-point-calibrator-pn2imj",
+          "url": "https://example.invalid/ai-idea/pr-story-point-calibrator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-code-comment-density-heatmap",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gcp-resource-right-sizing-recommender",
+      "name": "GCP Resource Right-Sizing Recommender",
+      "pitch": "Pulls from GCP Billing API to analyze resource utilization and suggests downsize recommendations. Shows potential savings per instance. Built as a dashboard overlay for the GCP Console.",
+      "pain": "Engineering teams overspend on cloud resources because they don't have visibility into actual utilization patterns.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-resource-right-sizing-recommender-fybo30",
+          "url": "https://example.invalid/ai-idea/gcp-resource-right-sizing-recommender"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-resource-tag-compliance-checker",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "gcp-invoice-anomaly-alert",
+      "name": "GCP Invoice Anomaly Alert",
+      "pitch": "Monitors GCP billing data feeds and alerts when spend deviates significantly from baseline trends. Configurable thresholds per project or service. Desktop notification when anomalies appear.",
+      "pain": "Finance teams discover cloud billing surprises only at month-end instead of catching issues in real-time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-invoice-anomaly-alert-bmflza",
+          "url": "https://example.invalid/ai-idea/gcp-invoice-anomaly-alert"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gong-call-objection-density-mapper",
+      "name": "Gong Call Objection Density Mapper",
+      "pitch": "Runs client-side on Gong transcripts to build a heatmap of objection types by deal stage. Simple NLP clustering on the frontend with local storage. Positions reps to rehearse top objections before sim",
+      "pain": "Sales reps don't know which objections appear most frequently in their calls until it's too late to prepare.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gong-call-objection-density-mapper-iygdqr",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-density-mapper"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gong-call-objection-response-library",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "sales-prospect-company-culture-scanner",
+      "name": "Sales Prospect Company Culture Scanner",
+      "pitch": "Scrapes the target company's careers page, about page, and recent blog posts to surface culture signals like DEI initiatives, remote policies, and value statements. Generates a quick culture brief bef",
+      "pain": "Outbound sales reps personalize outreach generically because they can't quickly assess a prospect's company culture.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-prospect-company-culture-scanner-nvjt14",
+          "url": "https://example.invalid/ai-idea/sales-prospect-company-culture-scanner"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-prospect-company-news-timeline",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "code-review-turnaround-timer",
+      "name": "Code Review Turnaround Timer",
+      "pitch": "Tracks PR review response times per reviewer and surfaces historical patterns. Shows expected wait times directly on the GitHub PR page. Helps teams identify bottlenecks and set realistic expectations",
+      "pain": "Pull requests stall in review because there's no visibility into when reviewers will actually look at them.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-code-review-turnaround-timer-nzw1rt",
+          "url": "https://example.invalid/ai-idea/code-review-turnaround-timer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-pr-review-distribution-dashboard",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "api-endpoint-compute-cost-estimator",
+      "name": "API Endpoint Compute Cost Estimator",
+      "pitch": "Injects timing and payload size data into network requests and estimates cloud compute costs based on average pricing models. Shows cost estimates directly in DevTools network panel.",
+      "pain": "Backend developers don't know the compute cost of their endpoints until the bill arrives unexpectedly.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-endpoint-compute-cost-estimator-c3pbl4",
+          "url": "https://example.invalid/ai-idea/api-endpoint-compute-cost-estimator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ci-pipeline-cost-estimator",
+        "jaccard_with_nearest": 0.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-20-15",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-20T15:15:30.178Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-pr-story-point-calibrator-pn2imj",
+          "title": "PR Story Point Calibrator",
+          "url": "https://example.invalid/ai-idea/pr-story-point-calibrator",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Uses diff size, cyclomatic complexity, and test coverage to suggest story points with confidence intervals. Built as a simple overlay panel on GitHub PR pages. Most teams struggle with estimation consistency—this bridges the gap between gut feel and data.",
+          "monetization": "per_seat",
+          "pain": "Engineers spend too long debating story points during sprint planning instead of focusing on actual work."
+        },
+        {
+          "source_id": "ai-gong-call-objection-density-mapper-iygdqr",
+          "title": "Gong Call Objection Density Mapper",
+          "url": "https://example.invalid/ai-idea/gong-call-objection-density-mapper",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Runs client-side on Gong transcripts to build a heatmap of objection types by deal stage. Simple NLP clustering on the frontend with local storage. Positions reps to rehearse top objections before similar future calls.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps don't know which objections appear most frequently in their calls until it's too late to prepare."
+        },
+        {
+          "source_id": "ai-gmail-email-thread-velocity-predictor-cd7t9m",
+          "title": "Gmail Email Thread Velocity Predictor",
+          "url": "https://example.invalid/ai-idea/gmail-email-thread-velocity-predictor",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Learns your sending patterns and calculates expected response windows based on recipient history. Lightweight—runs entirely in the browser. Useful for managing expectations and deciding when to follow up.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals anxiously refresh email waiting for responses without knowing when to realistically expect them."
+        },
+        {
+          "source_id": "ai-browser-tab-semantic-deduplicator-zifw64",
+          "title": "Browser Tab Semantic Deduplicator",
+          "url": "https://example.invalid/ai-idea/browser-tab-semantic-deduplicator",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses lightweight embedding to cluster open tabs by semantic similarity, not just URL. Lets you collapse redundant research tabs and find the right one faster. Builds on top of the Tab Groups API.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Browser tab clutter grows because similar content gets lost in the noise of dozens of open pages."
+        },
+        {
+          "source_id": "ai-sales-prospect-company-culture-scanner-nvjt14",
+          "title": "Sales Prospect Company Culture Scanner",
+          "url": "https://example.invalid/ai-idea/sales-prospect-company-culture-scanner",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes the target company's careers page, about page, and recent blog posts to surface culture signals like DEI initiatives, remote policies, and value statements. Generates a quick culture brief before outreach.",
+          "monetization": "per_seat",
+          "pain": "Outbound sales reps personalize outreach generically because they can't quickly assess a prospect's company culture."
+        },
+        {
+          "source_id": "ai-code-review-turnaround-timer-nzw1rt",
+          "title": "Code Review Turnaround Timer",
+          "url": "https://example.invalid/ai-idea/code-review-turnaround-timer",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Tracks PR review response times per reviewer and surfaces historical patterns. Shows expected wait times directly on the GitHub PR page. Helps teams identify bottlenecks and set realistic expectations.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Pull requests stall in review because there's no visibility into when reviewers will actually look at them."
+        },
+        {
+          "source_id": "ai-meeting-note-action-item-tracker-7wm3h2",
+          "title": "Meeting Note Action Item Tracker",
+          "url": "https://example.invalid/ai-idea/meeting-note-action-item-tracker",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Extracts action items from meeting notes copied into any text field and creates a persistent to-do list synced to local storage. Auto-assigns owners based on mention patterns. Simple but surprisingly useful for busy professionals.",
+          "monetization": "freemium_saas",
+          "pain": "Action items from meetings get lost in notes and never get followed up on."
+        },
+        {
+          "source_id": "ai-gcp-resource-right-sizing-recommender-fybo30",
+          "title": "GCP Resource Right-Sizing Recommender",
+          "url": "https://example.invalid/ai-idea/gcp-resource-right-sizing-recommender",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Pulls from GCP Billing API to analyze resource utilization and suggests downsize recommendations. Shows potential savings per instance. Built as a dashboard overlay for the GCP Console.",
+          "monetization": "per_seat",
+          "pain": "Engineering teams overspend on cloud resources because they don't have visibility into actual utilization patterns."
+        },
+        {
+          "source_id": "ai-email-signature-consistency-auditor-ll7imq",
+          "title": "Email Signature Consistency Auditor",
+          "url": "https://example.invalid/ai-idea/email-signature-consistency-auditor",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scans outgoing Gmail for signature inconsistencies and suggests corrections based on team templates stored in a simple config. Flags when reps deviate from brand guidelines.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales teams send emails with inconsistent signatures, undermining professional brand credibility."
+        },
+        {
+          "source_id": "ai-notion-page-complexity-scorer-a0xzc7",
+          "title": "Notion Page Complexity Scorer",
+          "url": "https://example.invalid/ai-idea/notion-page-complexity-scorer",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes Notion page content for paragraph density, code block ratio, and structural complexity. Shows a quick readability and depth score. Useful for quickly vetting content before deep reading.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users paste long Notion pages without knowing if the content is actually dense or just padded."
+        },
+        {
+          "source_id": "ai-api-endpoint-compute-cost-estimator-c3pbl4",
+          "title": "API Endpoint Compute Cost Estimator",
+          "url": "https://example.invalid/ai-idea/api-endpoint-compute-cost-estimator",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Injects timing and payload size data into network requests and estimates cloud compute costs based on average pricing models. Shows cost estimates directly in DevTools network panel.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Backend developers don't know the compute cost of their endpoints until the bill arrives unexpectedly."
+        },
+        {
+          "source_id": "ai-gong-call-follow-up-email-drafter-iway4y",
+          "title": "Gong Call Follow-up Email Drafter",
+          "url": "https://example.invalid/ai-idea/gong-call-follow-up-email-drafter",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses the Gong API to pull call summaries and drafts personalized follow-up emails with key points and next steps. Freemium tier limits drafts per month. Targets sales teams who live in Gong.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps spend 20+ minutes writing follow-up emails after calls instead of moving to the next call."
+        },
+        {
+          "source_id": "ai-browser-scroll-behavior-optimizer-f9o6f1",
+          "title": "Browser Scroll Behavior Optimizer",
+          "url": "https://example.invalid/ai-idea/browser-scroll-behavior-optimizer",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Profiles how you typically scroll and consume content, then auto-adjusts article rendering (line height, font size, column width) based on your preference pattern. Learns over time without explicit configuration.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Articles render poorly for different reading styles, causing eye strain and slower comprehension."
+        },
+        {
+          "source_id": "ai-gcp-invoice-anomaly-alert-bmflza",
+          "title": "GCP Invoice Anomaly Alert",
+          "url": "https://example.invalid/ai-idea/gcp-invoice-anomaly-alert",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Monitors GCP billing data feeds and alerts when spend deviates significantly from baseline trends. Configurable thresholds per project or service. Desktop notification when anomalies appear.",
+          "monetization": "per_seat",
+          "pain": "Finance teams discover cloud billing surprises only at month-end instead of catching issues in real-time."
+        },
+        {
+          "source_id": "ai-linkedin-post-comment-sentiment-tracker-70jpkg",
+          "title": "LinkedIn Post Comment Sentiment Tracker",
+          "url": "https://example.invalid/ai-idea/linkedin-post-comment-sentiment-tracker",
+          "timestamp": "2026-07-20T15:15:30.164Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Runs sentiment analysis on comments for your LinkedIn posts using a lightweight client-side model. Shows aggregate sentiment trends and flags negative clusters. No API calls needed—runs entirely in browser.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Content creators don't know the emotional tone of responses to their posts until they manually read through all comments."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-20T15:15:30.178Z",
+        "dedup_against": 546,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
