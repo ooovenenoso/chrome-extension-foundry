@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-20-04",
+  "week": "2026-W30",
+  "scored_at": "2026-07-20T04:40:07.947Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "lead-intent-signal-aggregator",
+      "name": "Lead Intent Signal Aggregator",
+      "pitch": "Scrapes and aggregates public signals (job postings, funding news, tech stack changes, LinkedIn activity) into a single sidebar panel. Buildable with web scraping + a lightweight dashboard. Competitor",
+      "pain": "Sales reps spend hours researching prospects but miss obvious buying intent signals hidden in public data.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-intent-signal-aggregator-we0cmg",
+          "url": "https://example.invalid/ai-idea/lead-intent-signal-aggregator"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 4
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-tech-signal-extractor",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "pr-review-complexity-forecaster",
+      "name": "PR Review Complexity Forecaster",
+      "pitch": "Pulls GitHub PR metrics (files changed, test coverage, dependency graph depth, churn) and trains a simple heuristic model to predict review time. Buildable with the GitHub API + local scoring model in",
+      "pain": "Developers waste time on unexpectedly complex PRs because they can't gauge review difficulty before diving in.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-review-complexity-forecaster-ebwdpn",
+          "url": "https://example.invalid/ai-idea/pr-review-complexity-forecaster"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-code-comment-density-heatmap",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "gcp-committed-use-savings-calculator",
+      "name": "GCP Committed Use Savings Calculator",
+      "pitch": "Scrapes GCP console pages, identifies stable instance patterns, and overlays potential savings from CUDs. Buildable with content scripts reading the console DOM. GCP cost tools exist but none focus on",
+      "pain": "Cloud teams don't realize how much money they're burning on on-demand instances that could use committed use discounts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-committed-use-savings-calculator-kjhqyy",
+          "url": "https://example.invalid/ai-idea/gcp-committed-use-savings-calculator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "third-party-script-cost-reporter",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "multi-channel-sales-cadence-optimizer",
+      "name": "Multi-Channel Sales Cadence Optimizer",
+      "pitch": "Tracks outreach touchpoints across channels, suggests optimal sequencing based on engagement data, and warns about over-contacting. Buildable by integrating with outreach tools via APIs. No unified ca",
+      "pain": "Sales teams juggle LinkedIn, email, and cold calls without knowing the optimal sequence or timing.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-multi-channel-sales-cadence-optimizer-4jur7w",
+          "url": "https://example.invalid/ai-idea/multi-channel-sales-cadence-optimizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "b2b-pricing-negotiation-intelligence",
+      "name": "B2B Pricing Negotiation Intelligence",
+      "pitch": "Overlays public pricing data, competitor quotes, and historical deal size data when visiting pricing pages. Buildable with web scraping + a reference database. Gong does call analysis but doesn't prov",
+      "pain": "Sales reps go into pricing negotiations without knowing competitor pricing or deal size benchmarks.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-b2b-pricing-negotiation-intelligence-eqgj06",
+          "url": "https://example.invalid/ai-idea/b2b-pricing-negotiation-intelligence"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-data-export-bridge",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "outbound-sequence-collision-detector",
+      "name": "Outbound Sequence Collision Detector",
+      "pitch": "Checks prospect email domains against recent outreach history from connected tools and warns before sending. Buildable with outreach tool API integration. Sales engagement platforms don't prevent inte",
+      "pain": "BDRs unknowingly contact the same prospect multiple times across the team, embarrassing the company.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-outbound-sequence-collision-detector-meakcq",
+          "url": "https://example.invalid/ai-idea/outbound-sequence-collision-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-shared-warmup-inbox-matcher",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "lead-scoring-calibration-tool",
+      "name": "Lead Scoring Calibration Tool",
+      "pitch": "Analyzes historical CRM data to suggest score weight adjustments based on what actually converted. Buildable with CRM API integration + simple correlation analysis. Lead scoring exists but self-calibr",
+      "pain": "Sales teams use static lead scores that don't reflect actual conversion patterns in their specific market.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-lead-scoring-calibration-tool-9tfbme",
+          "url": "https://example.invalid/ai-idea/lead-scoring-calibration-tool"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "conference-lead-qualifier",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "api-contract-playground",
+      "name": "API Contract Playground",
+      "pitch": "A browser-side panel that lets developers craft, execute, and assert on API requests against OpenAPI specs without leaving the page. Buildable with a service worker intercepting requests + a UI overla",
+      "pain": "Developers switch between browser and Postman when testing API contracts, losing context and wasting time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-contract-playground-oon470",
+          "url": "https://example.invalid/ai-idea/api-contract-playground"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-schema-side-panel",
+        "jaccard_with_nearest": 0.12
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "slot": "2026-07-20-04",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-20T04:40:07.832Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 14,
+      "entries": [
+        {
+          "source_id": "ai-pr-review-complexity-forecaster-ebwdpn",
+          "title": "PR Review Complexity Forecaster",
+          "url": "https://example.invalid/ai-idea/pr-review-complexity-forecaster",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Pulls GitHub PR metrics (files changed, test coverage, dependency graph depth, churn) and trains a simple heuristic model to predict review time. Buildable with the GitHub API + local scoring model in under 3 weeks. No direct competitor offers pre-review complexity scoring.",
+          "monetization": "per_seat",
+          "pain": "Developers waste time on unexpectedly complex PRs because they can't gauge review difficulty before diving in."
+        },
+        {
+          "source_id": "ai-api-contract-playground-oon470",
+          "title": "API Contract Playground",
+          "url": "https://example.invalid/ai-idea/api-contract-playground",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "A browser-side panel that lets developers craft, execute, and assert on API requests against OpenAPI specs without leaving the page. Buildable with a service worker intercepting requests + a UI overlay. Postman exists but requires leaving the browser context.",
+          "monetization": "freemium_saas",
+          "pain": "Developers switch between browser and Postman when testing API contracts, losing context and wasting time."
+        },
+        {
+          "source_id": "ai-lead-intent-signal-aggregator-we0cmg",
+          "title": "Lead Intent Signal Aggregator",
+          "url": "https://example.invalid/ai-idea/lead-intent-signal-aggregator",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes and aggregates public signals (job postings, funding news, tech stack changes, LinkedIn activity) into a single sidebar panel. Buildable with web scraping + a lightweight dashboard. Competitors like Crunchbase charge premium; this fills the free tier gap.",
+          "monetization": "per_seat",
+          "pain": "Sales reps spend hours researching prospects but miss obvious buying intent signals hidden in public data."
+        },
+        {
+          "source_id": "ai-console-error-ticket-creator-i9busk",
+          "title": "Console Error Ticket Creator",
+          "url": "https://example.invalid/ai-idea/console-error-ticket-creator",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "One-click button on console errors that pre-fills a Jira/GitHub issue with error stack, URL, user actions, and system context. Buildable with Chrome debugger API in under a week. Niche but saves real daily friction for developers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Logging console errors and manually creating tickets is tedious and leads to lost bug reports."
+        },
+        {
+          "source_id": "ai-webassembly-binary-analyzer-81zrrk",
+          "title": "WebAssembly Binary Analyzer",
+          "url": "https://example.invalid/ai-idea/webassembly-binary-analyzer",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Loads WASM modules, visualizes function sizes, unused exports, and suggests tree-shaking or lazy loading opportunities. Buildable by parsing WASM binary format in JavaScript. WASM ecosystem tools are sparse; this fills a tooling gap.",
+          "monetization": "freemium_saas",
+          "pain": "WASM developers have no easy way to identify bloat or optimization opportunities in production binaries."
+        },
+        {
+          "source_id": "ai-gcp-committed-use-savings-calculator-kjhqyy",
+          "title": "GCP Committed Use Savings Calculator",
+          "url": "https://example.invalid/ai-idea/gcp-committed-use-savings-calculator",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scrapes GCP console pages, identifies stable instance patterns, and overlays potential savings from CUDs. Buildable with content scripts reading the console DOM. GCP cost tools exist but none focus on committed use arbitrage at this granularity.",
+          "monetization": "freemium_saas",
+          "pain": "Cloud teams don't realize how much money they're burning on on-demand instances that could use committed use discounts."
+        },
+        {
+          "source_id": "ai-multi-channel-sales-cadence-optimizer-4jur7w",
+          "title": "Multi-Channel Sales Cadence Optimizer",
+          "url": "https://example.invalid/ai-idea/multi-channel-sales-cadence-optimizer",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks outreach touchpoints across channels, suggests optimal sequencing based on engagement data, and warns about over-contacting. Buildable by integrating with outreach tools via APIs. No unified cadence optimizer exists for solo reps.",
+          "monetization": "per_seat",
+          "pain": "Sales teams juggle LinkedIn, email, and cold calls without knowing the optimal sequence or timing."
+        },
+        {
+          "source_id": "ai-browser-tab-audio-fingerprint-detector-vt3oow",
+          "title": "Browser Tab Audio Fingerprint Detector",
+          "url": "https://example.invalid/ai-idea/browser-tab-audio-fingerprint-detector",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Monitors WebAudio API usage across tabs, identifies AudioContext fingerprinting patterns, and alerts users. Buildable with tab audio monitoring APIs. Privacy tools detect cookies and trackers but audio fingerprinting detection is novel.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users don't know which tabs are using audio fingerprinting to track them across the web."
+        },
+        {
+          "source_id": "ai-notion-page-seo-score-calculator-1idwus",
+          "title": "Notion Page SEO Score Calculator",
+          "url": "https://example.invalid/ai-idea/notion-page-seo-score-calculator",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes Notion pages for heading structure, keyword density, meta description patterns, and internal linking opportunities. Buildable by scraping Notion published pages. Notion lacks any SEO tooling despite being used for public documentation.",
+          "monetization": "freemium_saas",
+          "pain": "Notion users publishing content don't know if their pages are optimized for search engines."
+        },
+        {
+          "source_id": "ai-calendar-meeting-prep-time-estimator-ghqfsv",
+          "title": "Calendar Meeting Prep Time Estimator",
+          "url": "https://example.invalid/ai-idea/calendar-meeting-prep-time-estimator",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Analyzes calendar events for attendee count, recurring patterns, and agenda presence to suggest minimum prep time. Buildable with Google Calendar API. Time tracking exists but no tool specifically estimates meeting prep time.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals underestimate prep time for meetings, leading to underprepared calls and wasted time."
+        },
+        {
+          "source_id": "ai-b2b-pricing-negotiation-intelligence-eqgj06",
+          "title": "B2B Pricing Negotiation Intelligence",
+          "url": "https://example.invalid/ai-idea/b2b-pricing-negotiation-intelligence",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Overlays public pricing data, competitor quotes, and historical deal size data when visiting pricing pages. Buildable with web scraping + a reference database. Gong does call analysis but doesn't provide real-time negotiation intelligence.",
+          "monetization": "per_seat",
+          "pain": "Sales reps go into pricing negotiations without knowing competitor pricing or deal size benchmarks."
+        },
+        {
+          "source_id": "ai-webpage-section-engagement-heatmap-650c3i",
+          "title": "WebPage Section Engagement Heatmap",
+          "url": "https://example.invalid/ai-idea/webpage-section-engagement-heatmap",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Tracks scroll depth, time on section, and interaction patterns to build a visual engagement heatmap per page section. Buildable with Intersection Observer API + local storage. Generic heatmaps exist but section-level granularity for any page is novel.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Content creators and marketers have no idea which sections of their long-form content readers actually engage with."
+        },
+        {
+          "source_id": "ai-outbound-sequence-collision-detector-meakcq",
+          "title": "Outbound Sequence Collision Detector",
+          "url": "https://example.invalid/ai-idea/outbound-sequence-collision-detector",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Checks prospect email domains against recent outreach history from connected tools and warns before sending. Buildable with outreach tool API integration. Sales engagement platforms don't prevent internal collisions effectively.",
+          "monetization": "per_seat",
+          "pain": "BDRs unknowingly contact the same prospect multiple times across the team, embarrassing the company."
+        },
+        {
+          "source_id": "ai-lead-scoring-calibration-tool-9tfbme",
+          "title": "Lead Scoring Calibration Tool",
+          "url": "https://example.invalid/ai-idea/lead-scoring-calibration-tool",
+          "timestamp": "2026-07-20T04:40:07.822Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Analyzes historical CRM data to suggest score weight adjustments based on what actually converted. Buildable with CRM API integration + simple correlation analysis. Lead scoring exists but self-calibrating against own data is rare for SMBs.",
+          "monetization": "per_seat",
+          "pain": "Sales teams use static lead scores that don't reflect actual conversion patterns in their specific market."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-20T04:40:07.832Z",
+        "dedup_against": 532,
+        "rejected_as_duplicate": 1
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
