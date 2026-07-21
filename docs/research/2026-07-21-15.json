@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-21-15",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-21T15:08:26.006Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-gcp-reserved-instance-coverage-overlay-7a4zxh",
+          "title": "GCP Reserved Instance Coverage Overlay",
+          "url": "https://example.invalid/ai-idea/gcp-reserved-instance-coverage-overlay",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Pulls GCP Resource Manager API to list compute instances, cross-references with existing reservations via Cloud Billing API, shows coverage % badge per project. Simple dashboard with a donut chart and export to CSV. Niche tool that GCP cost optimization teams will discover via search.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Engineers waste money on on-demand resources when reserved capacity would cut cloud bills by 30% but tracking coverage is manual."
+        },
+        {
+          "source_id": "ai-email-thread-decision-point-tagger-v74fl9",
+          "title": "Email Thread Decision Point Tagger",
+          "url": "https://example.invalid/ai-idea/email-thread-decision-point-tagger",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses keyword detection (approve, reject, decide, wait for) plus sender authority scoring to highlight decision nodes in Gmail threads. Free tier caps at 10 threads/month. Solves a real daily pain that no email app addresses natively.",
+          "monetization": "freemium_saas",
+          "pain": "Workers lose track of where critical decisions happen in long email threads, causing delays and missed context."
+        },
+        {
+          "source_id": "ai-css-cascade-layer-weight-visualizer-pr7teq",
+          "title": "CSS Cascade Layer Weight Visualizer",
+          "url": "https://example.invalid/ai-idea/css-cascade-layer-weight-visualizer",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Inspects the CSS cascade, extracts @layer declarations, renders a visual hierarchy showing which layers override others. Injects a floating panel on any page. Niche but discoverable via CSS community posts about cascade layers.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Debugging cascade layer precedence requires mental gymnastics; developers can't see which layers win without computed styles hunting."
+        },
+        {
+          "source_id": "ai-cold-email-icebreaker-asset-detector-uoxi1o",
+          "title": "Cold Email Icebreaker Asset Detector",
+          "url": "https://example.invalid/ai-idea/cold-email-icebreaker-asset-detector",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes LinkedIn profile, finds mutual groups, shared college alumni, co-authored content, then drafts personalized icebreakers. Free tier gives 5 lookups/day. Bridges the personalization gap that makes cold email feel cold.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps spend 15+ minutes researching prospects manually when mutual connections or shared interests could be found automatically."
+        },
+        {
+          "source_id": "ai-jwt-token-structure-inspector-7puxmj",
+          "title": "JWT Token Structure Inspector",
+          "url": "https://example.invalid/ai-idea/jwt-token-structure-inspector",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Detects JWTs in network requests and localStorage, decodes header/payload/signature, highlights expired tokens and missing claims. Adds an overlay icon when JWT is present. Quick win tool for any auth-heavy app.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers debugging auth issues waste time decoding JWTs manually when a quick visual breakdown would instantly show claims, expiry, and errors."
+        },
+        {
+          "source_id": "ai-lead-company-funding-event-monitor-p3tzmr",
+          "title": "Lead Company Funding Event Monitor",
+          "url": "https://example.invalid/ai-idea/lead-company-funding-event-monitor",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Monitors SEC filings, Crunchbase, and news APIs for funding announcements, alerts when a prospect raises money. Per-seat pricing for CRM integration. High intent signal that sales teams actively seek.",
+          "monetization": "per_seat",
+          "pain": "Sales teams miss timing their outreach to funding events, losing the moment when prospects have budget and urgency."
+        },
+        {
+          "source_id": "ai-gong-call-filler-word-coach-piwhfa",
+          "title": "Gong Call Filler Word Coach",
+          "url": "https://example.invalid/ai-idea/gong-call-filler-word-coach",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uploads Gong transcript, counts filler words per speaker, compares to team average, suggests improvement. Free tier analyzes 2 calls/month. Simple NLP that Gong users will find when searching for call coaching.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps have no idea how often they say um, like, and basically during calls, missing easy coaching opportunities."
+        },
+        {
+          "source_id": "ai-browser-tab-semantic-clusterer-itptxv",
+          "title": "Browser Tab Semantic Clusterer",
+          "url": "https://example.invalid/ai-idea/browser-tab-semantic-clusterer",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses LLM to analyze tab titles and URLs, auto-groups tabs into semantic clusters with labels. Single-click to collapse/expand clusters. Lightweight compared to full tab managers; adds intelligence rather than just grouping.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Professionals accumulate 50+ tabs with no organization, making finding the right tab a frustrating scavenger hunt."
+        },
+        {
+          "source_id": "ai-webhook-schema-evolution-tracker-pmfpuu",
+          "title": "Webhook Schema Evolution Tracker",
+          "url": "https://example.invalid/ai-idea/webhook-schema-evolution-tracker",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Logs webhook payloads over time, detects schema additions/removals/changes, alerts on breaking modifications. Stores history locally and shows diffs. Useful for teams integrating with Stripe, Twilio, and similar.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Teams miss when webhook providers silently change payload schemas, causing silent failures in production."
+        },
+        {
+          "source_id": "ai-sales-deck-reading-pace-advisor-1debng",
+          "title": "Sales Deck Reading Pace Advisor",
+          "url": "https://example.invalid/ai-idea/sales-deck-reading-pace-advisor",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Uses screen share analysis to detect slide change frequency, estimates reading pace, shows a subtle speedometer overlay. Presenter can glance at it to self-regulate. Novel angle on sales coaching.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Sales reps often present too fast in meetings, but have no real-time feedback to slow down and land key points."
+        },
+        {
+          "source_id": "ai-api-error-message-search-engine-5dqvbo",
+          "title": "API Error Message Search Engine",
+          "url": "https://example.invalid/ai-idea/api-error-message-search-engine",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Right-click any error message in console, searches Stack Overflow, GitHub issues, and vendor docs, returns ranked solutions with upvote counts. Context-aware filtering by framework. Replaces manual search habit.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers copy-paste cryptic error messages into Google and sift through stale Stack Overflow links to find solutions."
+        },
+        {
+          "source_id": "ai-competitor-glassdoor-sentiment-shift-ale-fjzdzs",
+          "title": "Competitor Glassdoor Sentiment Shift Alert",
+          "url": "https://example.invalid/ai-idea/competitor-glassdoor-sentiment-shift-ale",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes Glassdoor reviews weekly, tracks sentiment trends by category (management, culture, compensation), alerts on sudden drops. B2B SaaS pricing for teams. Rare data angle that outbound teams will value.",
+          "monetization": "per_seat",
+          "pain": "Sales teams miss employee sentiment changes at competitors that signal hiring freezes, morale issues, or departures worth exploiting."
+        },
+        {
+          "source_id": "ai-browser-notification-priority-sorter-0xgydx",
+          "title": "Browser Notification Priority Sorter",
+          "url": "https://example.invalid/ai-idea/browser-notification-priority-sorter",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "AI-scores notifications by sender importance, recency, and keywords, auto-collapses low-priority ones, surfaces high-priority to top. Learns from user behavior over time. Simple but addresses a universal pain.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Chrome notifications flood workers constantly, making it impossible to focus on what actually matters without a manual triage system."
+        },
+        {
+          "source_id": "ai-pr-description-completion-scorer-vc6q1m",
+          "title": "PR Description Completion Scorer",
+          "url": "https://example.invalid/ai-idea/pr-description-completion-scorer",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "GitHub PR listener that analyzes description length, presence of what/why/testing sections, linked tickets, and screenshots. Scores 0-100 with specific improvement suggestions. Integrates as a PR check. Dev team productivity angle.",
+          "monetization": "freemium_saas",
+          "pain": "Code reviewers waste time on PRs with vague descriptions, often requesting clarification that could be avoided if completeness were scored upfront."
+        },
+        {
+          "source_id": "ai-design-token-diffusion-tracker-3ccxw7",
+          "title": "Design Token Diffusion Tracker",
+          "url": "https://example.invalid/ai-idea/design-token-diffusion-tracker",
+          "timestamp": "2026-07-21T15:08:25.991Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Scans DOM for CSS custom properties, maps them to design token names, shows adoption percentage across components. Highlights outdated hardcoded values. Dashboard view for design system health. Niche but searchable.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Design systems teams lose track of which components adopt new tokens, creating visual inconsistency that goes undetected until user complaints."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-21T15:08:26.006Z",
+        "dedup_against": 576,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
