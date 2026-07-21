@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-21-04",
+  "week": "2026-W30",
+  "scored_at": "2026-07-21T04:19:00.344Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "email-thread-decay-velocity-predictor",
+      "name": "Email Thread Decay Velocity Predictor",
+      "pitch": "Tracks open/click patterns from tracking pixels plus thread reply velocity to score likelihood. Uses browser-side signals + optional SMTP integration. Niche gap: no existing extension predicts reply p",
+      "pain": "Sales reps waste days on cold email threads that will never reply, lacking signals to prioritize.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-thread-decay-velocity-predictor-xebcvo",
+          "url": "https://example.invalid/ai-idea/email-thread-decay-velocity-predictor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.65,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gmail-thread-decay-detector",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "linkedin-profile-update-change-alert",
+      "name": "LinkedIn Profile Update Change Alert",
+      "pitch": "Periodically scrapes watched LinkedIn profiles and alerts on headline, company, location, or bio changes. Uses LinkedIn's public pages. Niche gap: no outreach-specific profile change tracker.",
+      "pain": "AEs miss timing outreach when prospects change jobs or get promoted, losing urgency.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-profile-update-change-alert-599hj0",
+          "url": "https://example.invalid/ai-idea/linkedin-profile-update-change-alert"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-headline-optimizer",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "prospect-website-tech-stack-visualizer",
+      "name": "Prospect Website Tech Stack Visualizer",
+      "pitch": "On site load, fingerprints technology stack (CMS, analytics, hosting, CRM) from script tags and meta headers. Shows badge with stack icons. Built with Wappalyzer-style detection.",
+      "pain": "AEs visit prospect sites without knowing what tools they run, missing personalization hooks.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-prospect-website-tech-stack-visualizer-bkvnx3",
+          "url": "https://example.invalid/ai-idea/prospect-website-tech-stack-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 6.2,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "tech-stack-fingerprint-pro",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "webhook-payload-encryption-gate",
+      "name": "Webhook Payload Encryption Gate",
+      "pitch": "Intercepts outbound webhook requests and scans payloads for credit cards, SSNs, API keys, emails. Flags violations before sent. Competitors require manual review or backend scanning.",
+      "pain": "Developers accidentally leak PII or secrets in webhook payloads sent to third-party endpoints.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-payload-encryption-gate-ntsgba",
+          "url": "https://example.invalid/ai-idea/webhook-payload-encryption-gate"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-payload-schema-validator",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "stripe-revenue-event-accounting-mapper",
+      "name": "Stripe Revenue Event Accounting Mapper",
+      "pitch": "Listens to Stripe webhook events and generates a journal entry mapping for each payment, refund, subscription change. Exports CSV for accounting software. Gap: no browser-side Stripe-to-accounting bri",
+      "pain": "Finance teams struggle to map Stripe events to revenue recognition entries manually.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-revenue-event-accounting-mapper-1mmg16",
+          "url": "https://example.invalid/ai-idea/stripe-revenue-event-accounting-mapper"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-event-playground",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "meeting-recording-chapter-auto-generator",
+      "name": "Meeting Recording Chapter Auto-Generator",
+      "pitch": "For Google Meet/Zoom local recordings, transcribes audio and segments into topical chapters with timestamps. Uses browser speech-to-text API. Gap: no extension auto-chapters local recordings.",
+      "pain": "RevOps teams manually chapter recorded calls for search, wasting hours per week.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-meeting-recording-chapter-auto-generator-4lmmgw",
+          "url": "https://example.invalid/ai-idea/meeting-recording-chapter-auto-generator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-transcript-auto-chapter-generato",
+        "jaccard_with_nearest": 0.17
+      }
+    },
+    {
+      "id": "sales-deck-slide-dwell-time-tracker",
+      "name": "Sales Deck Slide Dwell Time Tracker",
+      "pitch": "Logs active tab focus time while presenting PDF/HTML deck and generates a heatmap per slide. Uses Page Visibility API. Gap: no lightweight presenter analytics for sales decks.",
+      "pain": "AEs don't know which slides resonate or bore prospects during screen-share presentations.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-deck-slide-dwell-time-tracker-fi8sgp",
+          "url": "https://example.invalid/ai-idea/sales-deck-slide-dwell-time-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-deck-slide-reading-time-estimator",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "pr-comment-toxicity-sentiment-balancer",
+      "name": "PR Comment Toxicity Sentiment Balancer",
+      "pitch": "Analyzes tone of PR comments and shows a dashboard of balance across team members. Built with regex sentiment + LLM fallback. Competition gap: no free tool tracks emotional balance over time in code r",
+      "pain": "Code review comments with harsh tone damage team morale and slow PR merges.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pr-comment-toxicity-sentiment-balancer-1vdrxs",
+          "url": "https://example.invalid/ai-idea/pr-comment-toxicity-sentiment-balancer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-pr-review-distribution-dashboard",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "api-response-schema-drift-sentinel",
+      "name": "API Response Schema Drift Sentinel",
+      "pitch": "Captures live API responses and validates against imported OpenAPI/JSON Schema. Highlights new fields, missing fields, type changes. Built in 3 weeks with existing JSON Schema validators.",
+      "pain": "Backend changes break frontend apps silently when API response shapes diverge from contracts.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-response-schema-drift-sentinel-jarn4i",
+          "url": "https://example.invalid/ai-idea/api-response-schema-drift-sentinel"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-stream-visualizer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "browser-console-api-call-mistake-detecto",
+      "name": "Browser Console API Call Mistake Detector",
+      "pitch": "Injects runtime analyzer in console that flags missing error handling, wrong status code assumptions, and unhandled promise rejections. Lightweight AST parser.",
+      "pain": "Junior devs make common HTTP mistakes in frontend code that only surface in production.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-console-api-call-mistake-detecto-i3sibv",
+          "url": "https://example.invalid/ai-idea/browser-console-api-call-mistake-detecto"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "browser-console-api-call-cost-tracker",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "github-issue-duplicate-cluster-detector",
+      "name": "GitHub Issue Duplicate Cluster Detector",
+      "pitch": "On GitHub issues page, uses embedding similarity to suggest existing issues that likely cover the same problem. Built with lightweight sentence embeddings. Niche gap: no GitHub-native duplicate detect",
+      "pain": "Teams waste time on duplicate GitHub issues that could be merged with existing ones.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-issue-duplicate-cluster-detector-u6dwix",
+          "url": "https://example.invalid/ai-idea/github-issue-duplicate-cluster-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-issue-sentiment-arc-tracker",
+        "jaccard_with_nearest": 0.09
+      }
+    }
+  ]
+}

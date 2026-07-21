@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-21-04",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-21T04:19:00.160Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-pr-comment-toxicity-sentiment-balancer-1vdrxs",
+          "title": "PR Comment Toxicity Sentiment Balancer",
+          "url": "https://example.invalid/ai-idea/pr-comment-toxicity-sentiment-balancer",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Analyzes tone of PR comments and shows a dashboard of balance across team members. Built with regex sentiment + LLM fallback. Competition gap: no free tool tracks emotional balance over time in code review.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Code review comments with harsh tone damage team morale and slow PR merges."
+        },
+        {
+          "source_id": "ai-email-thread-decay-velocity-predictor-xebcvo",
+          "title": "Email Thread Decay Velocity Predictor",
+          "url": "https://example.invalid/ai-idea/email-thread-decay-velocity-predictor",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks open/click patterns from tracking pixels plus thread reply velocity to score likelihood. Uses browser-side signals + optional SMTP integration. Niche gap: no existing extension predicts reply probability per thread.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps waste days on cold email threads that will never reply, lacking signals to prioritize."
+        },
+        {
+          "source_id": "ai-webhook-payload-encryption-gate-ntsgba",
+          "title": "Webhook Payload Encryption Gate",
+          "url": "https://example.invalid/ai-idea/webhook-payload-encryption-gate",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Intercepts outbound webhook requests and scans payloads for credit cards, SSNs, API keys, emails. Flags violations before sent. Competitors require manual review or backend scanning.",
+          "monetization": "per_seat",
+          "pain": "Developers accidentally leak PII or secrets in webhook payloads sent to third-party endpoints."
+        },
+        {
+          "source_id": "ai-linkedin-profile-update-change-alert-599hj0",
+          "title": "LinkedIn Profile Update Change Alert",
+          "url": "https://example.invalid/ai-idea/linkedin-profile-update-change-alert",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Periodically scrapes watched LinkedIn profiles and alerts on headline, company, location, or bio changes. Uses LinkedIn's public pages. Niche gap: no outreach-specific profile change tracker.",
+          "monetization": "quota_based",
+          "pain": "AEs miss timing outreach when prospects change jobs or get promoted, losing urgency."
+        },
+        {
+          "source_id": "ai-browser-tab-visual-similarity-merger-hov3b6",
+          "title": "Browser Tab Visual Similarity Merger",
+          "url": "https://example.invalid/ai-idea/browser-tab-visual-similarity-merger",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses Canvas screenshot + perceptual hashing to find visually duplicate tabs and merge them into one with a tab list. Lightweight, runs client-side. No existing tool does perceptual dedup for browser tabs.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users accumulate dozens of tabs with near-identical content across windows, wasting mental load."
+        },
+        {
+          "source_id": "ai-api-response-schema-drift-sentinel-jarn4i",
+          "title": "API Response Schema Drift Sentinel",
+          "url": "https://example.invalid/ai-idea/api-response-schema-drift-sentinel",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Captures live API responses and validates against imported OpenAPI/JSON Schema. Highlights new fields, missing fields, type changes. Built in 3 weeks with existing JSON Schema validators.",
+          "monetization": "freemium_saas",
+          "pain": "Backend changes break frontend apps silently when API response shapes diverge from contracts."
+        },
+        {
+          "source_id": "ai-meeting-recording-chapter-auto-generator-4lmmgw",
+          "title": "Meeting Recording Chapter Auto-Generator",
+          "url": "https://example.invalid/ai-idea/meeting-recording-chapter-auto-generator",
+          "timestamp": "2026-07-21T04:19:00.141Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "For Google Meet/Zoom local recordings, transcribes audio and segments into topical chapters with timestamps. Uses browser speech-to-text API. Gap: no extension auto-chapters local recordings.",
+          "monetization": "per_seat",
+          "pain": "RevOps teams manually chapter recorded calls for search, wasting hours per week."
+        },
+        {
+          "source_id": "ai-gcp-resource-carbon-intensity-overlay-05itlr",
+          "title": "GCP Resource Carbon Intensity Overlay",
+          "url": "https://example.invalid/ai-idea/gcp-resource-carbon-intensity-overlay",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Queries GCP billing export and maps Compute Engine usage to carbon intensity by region and time. Shows badge in browser. Simple build using GCP Cost Management APIs.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Developers lack visibility into cloud resource carbon footprint during day-to-day work."
+        },
+        {
+          "source_id": "ai-sales-deck-slide-dwell-time-tracker-fi8sgp",
+          "title": "Sales Deck Slide Dwell Time Tracker",
+          "url": "https://example.invalid/ai-idea/sales-deck-slide-dwell-time-tracker",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Logs active tab focus time while presenting PDF/HTML deck and generates a heatmap per slide. Uses Page Visibility API. Gap: no lightweight presenter analytics for sales decks.",
+          "monetization": "freemium_saas",
+          "pain": "AEs don't know which slides resonate or bore prospects during screen-share presentations."
+        },
+        {
+          "source_id": "ai-browser-console-api-call-mistake-detecto-i3sibv",
+          "title": "Browser Console API Call Mistake Detector",
+          "url": "https://example.invalid/ai-idea/browser-console-api-call-mistake-detecto",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Injects runtime analyzer in console that flags missing error handling, wrong status code assumptions, and unhandled promise rejections. Lightweight AST parser.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Junior devs make common HTTP mistakes in frontend code that only surface in production."
+        },
+        {
+          "source_id": "ai-notion-page-external-link-health-monitor-8zv4kc",
+          "title": "Notion Page External Link Health Monitor",
+          "url": "https://example.invalid/ai-idea/notion-page-external-link-health-monitor",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scrapes current Notion page, checks all external links for HTTP status, shows broken link badge inline. Scheduled rechecks. Niche gap: Notion-specific link rot checker doesn't exist.",
+          "monetization": "freemium_saas",
+          "pain": "Users embed hundreds of links in Notion pages that rot over time, creating dead end traps."
+        },
+        {
+          "source_id": "ai-stripe-revenue-event-accounting-mapper-1mmg16",
+          "title": "Stripe Revenue Event Accounting Mapper",
+          "url": "https://example.invalid/ai-idea/stripe-revenue-event-accounting-mapper",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Listens to Stripe webhook events and generates a journal entry mapping for each payment, refund, subscription change. Exports CSV for accounting software. Gap: no browser-side Stripe-to-accounting bridge.",
+          "monetization": "per_seat",
+          "pain": "Finance teams struggle to map Stripe events to revenue recognition entries manually."
+        },
+        {
+          "source_id": "ai-calendar-conflict-resolution-time-slot-a-9col15",
+          "title": "Calendar Conflict Resolution Time-Slot Advisor",
+          "url": "https://example.invalid/ai-idea/calendar-conflict-resolution-time-slot-a",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Reads Google Calendar free/busy blocks and suggests optimal meeting windows with timezone-aware overlay. Uses Calendar API. Simple but high-frequency pain.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Scheduling meetings across time zones requires manual back-and-forth that kills momentum."
+        },
+        {
+          "source_id": "ai-github-issue-duplicate-cluster-detector-u6dwix",
+          "title": "GitHub Issue Duplicate Cluster Detector",
+          "url": "https://example.invalid/ai-idea/github-issue-duplicate-cluster-detector",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::devtools",
+          "notes": "On GitHub issues page, uses embedding similarity to suggest existing issues that likely cover the same problem. Built with lightweight sentence embeddings. Niche gap: no GitHub-native duplicate detection.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Teams waste time on duplicate GitHub issues that could be merged with existing ones."
+        },
+        {
+          "source_id": "ai-prospect-website-tech-stack-visualizer-bkvnx3",
+          "title": "Prospect Website Tech Stack Visualizer",
+          "url": "https://example.invalid/ai-idea/prospect-website-tech-stack-visualizer",
+          "timestamp": "2026-07-21T04:19:00.142Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "On site load, fingerprints technology stack (CMS, analytics, hosting, CRM) from script tags and meta headers. Shows badge with stack icons. Built with Wappalyzer-style detection.",
+          "monetization": "quota_based",
+          "pain": "AEs visit prospect sites without knowing what tools they run, missing personalization hooks."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M2.7-highspeed",
+        "generated_at": "2026-07-21T04:19:00.160Z",
+        "dedup_against": 561,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M2.7-highspeed",
+    "schema_version": "1.1.0"
+  }
+}
