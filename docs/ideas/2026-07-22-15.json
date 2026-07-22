@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-22-15",
+  "week": "2026-W30",
+  "scored_at": "2026-07-22T15:09:00.139Z",
+  "rubric_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "gmail-attachment-open-receipt-detector",
+      "name": "Gmail Attachment Open Receipt Detector",
+      "pitch": "Injects a tracking pixel into PDF/Excel attachments on send and shows a toast notification when opened. Lightweight fetch endpoint needed. Now matters because attachment-based outreach is high-stakes ",
+      "pain": "Sales reps sending proposals via Gmail do not know when recipients actually open attachments, losing timing advantage on follow-ups.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-attachment-open-receipt-detector-iiwqb4",
+          "url": "https://example.invalid/ai-idea/gmail-attachment-open-receipt-detector"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-tracking-pixel-detector",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "email-warmup-config-deliverability-teste",
+      "name": "Email Warmup Config Deliverability Tester",
+      "pitch": "Sends test emails through configured warmup pools to known seed accounts and reports deliverability signals. Now matters because warmup services proliferate but verification is absent. No tool lets yo",
+      "pain": "Sales teams using email warmup tools do not know if their warmup configuration is actually improving inbox placement.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-email-warmup-config-deliverability-teste-zb17mh",
+          "url": "https://example.invalid/ai-idea/email-warmup-config-deliverability-teste"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.05,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-warmup-campaign-tracker",
+        "jaccard_with_nearest": 0.16
+      }
+    },
+    {
+      "id": "gcp-credits-expiration-sentinel",
+      "name": "GCP Credits Expiration Sentinel",
+      "pitch": "Queries GCP billing API on interval and shows a persistent badge when credits are within 7 days of expiring. Configurable threshold. Now matters because many indie devs and startups rely on trial cred",
+      "pain": "Developers on GCP free tier or trial credits lose services unexpectedly because expiration dates are buried in billing dashboards.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gcp-credits-expiration-sentinel-ruf0oj",
+          "url": "https://example.invalid/ai-idea/gcp-credits-expiration-sentinel"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "gcp-idle-resource-sentinel",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "github-pr-story-point-estimator",
+      "name": "GitHub PR Story Point Estimator",
+      "pitch": "Reads diff size, file count, test coverage, and review history from GitHub PR page, applies a heuristic model, suggests a point value. Now matters because PR-based estimation workflows are common but ",
+      "pain": "Engineering managers cannot quickly estimate story points for PRs because no tool analyzes PR characteristics to suggest point values.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-github-pr-story-point-estimator-39y799",
+          "url": "https://example.invalid/ai-idea/github-pr-story-point-estimator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-pr-template-auto-filler",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "browser-request-annotation-sticky",
+      "name": "Browser Request Annotation Sticky",
+      "pitch": "Builds a side panel overlay on Network tab allowing text annotations per request. Ships as a DevTools extension snippet or full manifest. Now matters because local-first storage + sync makes cross-ses",
+      "pain": "Devs lose context when reviewing network requests later because they cannot add notes to specific API calls in DevTools.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-request-annotation-sticky-alfv5g",
+          "url": "https://example.invalid/ai-idea/browser-request-annotation-sticky"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-schema-side-panel",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "css-scroll-driven-animation-inspector",
+      "name": "CSS Scroll-Driven Animation Inspector",
+      "pitch": "Parses CSS scroll-driven animation specs and renders a scrubber showing progress at each scroll position. Uses Intersection Observer + scroll events. Now matters because scroll-driven animations shipp",
+      "pain": "Frontend devs struggle to debug scroll-driven animations because Chrome DevTools lacks a dedicated panel for visualizing timeline progress.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-css-scroll-driven-animation-inspector-y53w2f",
+          "url": "https://example.invalid/ai-idea/css-scroll-driven-animation-inspector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "css-grid-gap-visual-inspector",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "json-response-diff-on-repeat-requests",
+      "name": "JSON Response Diff on Repeat Requests",
+      "pitch": "Detects duplicate request patterns in Network tab, stores previous payloads, and shows inline diff in Response panel. Lightweight diff algorithm. Now matters because API stability testing is manual an",
+      "pain": "QA engineers manually compare API responses across identical requests because no tool auto-highlights what changed between calls.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-json-response-diff-on-repeat-requests-7zup5i",
+          "url": "https://example.invalid/ai-idea/json-response-diff-on-repeat-requests"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-request-diff-viewer",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "webhook-schema-example-generator",
+      "name": "Webhook Schema Example Generator",
+      "pitch": "Detects webhook endpoints in Network tab, infers schema from payloads, generates TypeScript/fake-data examples in side panel. Now matters because webhook-first integrations are growing. No extension a",
+      "pain": "Backend developers building webhook integrations waste time constructing realistic payloads because documentation lacks working examples.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webhook-schema-example-generator-ucgmz6",
+          "url": "https://example.invalid/ai-idea/webhook-schema-example-generator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "json-schema-fake-data-generator",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "browser-network-retry-count-overlay",
+      "name": "Browser Network Retry Count Overlay",
+      "pitch": "Instruments fetch/XHR to track retry count, shows a badge per request in Network tab. Now matters because retry-heavy APIs are common and debugging retries is painful. No DevTools extension surfaces r",
+      "pain": "Frontend developers cannot see how many times each network request retried without digging into individual request timing details.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-network-retry-count-overlay-uolxuy",
+          "url": "https://example.invalid/ai-idea/browser-network-retry-count-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "browser-network-retry-analyzer",
+        "jaccard_with_nearest": 0.14
+      }
+    },
+    {
+      "id": "gmail-unsubscribe-shortcut-injector",
+      "name": "Gmail Unsubscribe Shortcut Injector",
+      "pitch": "Detects List-Unsubscribe headers and injects a prominent one-click unsubscribe button in Gmail. Now matters because CCPA/GDPR rights exist but exercising them is tedious. No extension auto-surfaces Li",
+      "pain": "Users frustrated by email newsletters have no quick way to unsubscribe because the link is buried behind multiple clicks.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-unsubscribe-shortcut-injector-xd211k",
+          "url": "https://example.invalid/ai-idea/gmail-unsubscribe-shortcut-injector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "pr-changelog-auto-author",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "browser-dom-mutation-diff-replayer",
+      "name": "Browser DOM Mutation Diff Replayer",
+      "pitch": "Records MutationObserver events and generates a reproducible script to replay mutations. Side panel shows a timeline of DOM changes. Now matters because SPAs have more complex DOM dynamics. No extensi",
+      "pain": "Debugging intermittent DOM bugs is hard because developers cannot replay exactly what DOM mutations occurred between two points in time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-dom-mutation-diff-replayer-xy3i44",
+          "url": "https://example.invalid/ai-idea/browser-dom-mutation-diff-replayer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-schema-side-panel",
+        "jaccard_with_nearest": 0.09
+      }
+    }
+  ]
+}
