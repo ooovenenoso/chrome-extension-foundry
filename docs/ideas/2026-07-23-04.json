@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-23-04",
+  "week": "2026-W30",
+  "scored_at": "2026-07-23T04:21:36.049Z",
+  "rubric_version": "2.0.0",
+  "candidates": [
+    {
+      "id": "pipeline-deal-email-reply-time-predictor",
+      "name": "Pipeline Deal Email Reply Time Predictor",
+      "pitch": "Sidebar widget on Gmail/Outlook for sales reps predicts reply probability by sender reply-history pattern, throttling follow-ups. Per-seat for sales managers. Existing reply-time tools are generic ema",
+      "pain": "Sales reps can't predict when prospects will reply, so they send redundant follow-ups that hurt reply rates and burn leads.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-pipeline-deal-email-reply-time-predictor-oawa8p",
+          "url": "https://example.invalid/ai-idea/pipeline-deal-email-reply-time-predictor"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outbound-email-sequence-interval-optimiz",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "hubspot-deal-stage-aging-alert",
+      "name": "HubSpot Deal Stage Aging Alert",
+      "pitch": "Browser notifications and sidebar widget on HubSpot CRM pages when deals cross configurable age thresholds per stage. Per-seat for sales managers. HubSpot's own deal aging is buried in workflows; reps",
+      "pain": "HubSpot deal stages quietly age past sales SLA thresholds and reps only notice during weekly pipeline reviews.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-hubspot-deal-stage-aging-alert-ao9et8",
+          "url": "https://example.invalid/ai-idea/hubspot-deal-stage-aging-alert"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.95,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "deal-stage-momentum-forecaster",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "local-ai-document-citation-checker",
+      "name": "Local AI Document Citation Checker",
+      "pitch": "Local LLM sidebar on documents highlights any sentence containing a citation and verifies the reference actually appears in the source. Freemium for 100 pages/mo. Hallucinated citations are AI's top t",
+      "pain": "Local AI summarizers hallucinate citations that don't exist in the source document, eroding trust in the output.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-local-ai-document-citation-checker-k72np6",
+          "url": "https://example.invalid/ai-idea/local-ai-document-citation-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 6,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.9,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-citation-source-verifier",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "ga4-event-firing-reliability-checker",
+      "name": "GA4 Event Firing Reliability Checker",
+      "pitch": "Captures GA4 events fired in-page via content script and validates against declared triggers. Detects duplicate gtag/GTM conflicts common in 2026 due to consent-mode updates. Free tier covers 1 site; ",
+      "pain": "GA4 events fail silently when gtag conflicts with GTM, leaving marketing teams with broken attribution they don't notice for weeks.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ga4-event-firing-reliability-checker-xxzznv",
+          "url": "https://example.invalid/ai-idea/ga4-event-firing-reliability-checker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "schema-property-suggester",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "stripe-subscription-metering-drift-detec",
+      "name": "Stripe Subscription Metering Drift Detector",
+      "pitch": "Captures Stripe metered usage events via webhook replay and diffs against dashboard-reported totals. Free tier allows 100 events/mo for hobby projects. Usage-based billing market grew 60% YoY with no ",
+      "pain": "Usage-based billing meters drift between server-recorded and Stripe-reported values, causing invisible revenue leakage until audit.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-subscription-metering-drift-detec-lckacg",
+          "url": "https://example.invalid/ai-idea/stripe-subscription-metering-drift-detec"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "vercel-edge-function-cold-start-visualiz",
+      "name": "Vercel Edge Function Cold Start Visualizer",
+      "pitch": "Pulls Vercel API logs and renders a geographic heatmap of cold-start latency by region and function. Buildable in 2 weeks. Vercel's edge runtime expanded to 20+ regions in 2026; no extension covers th",
+      "pain": "Vercel edge function cold starts are buried in dashboard logs without per-region breakdowns, making optimization guesswork.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-vercel-edge-function-cold-start-visualiz-rvw8hp",
+          "url": "https://example.invalid/ai-idea/vercel-edge-function-cold-start-visualiz"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "edge-function-invocation-cost-tracer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "mixpanel-event-schema-drift-overlay",
+      "name": "Mixpanel Event Schema Drift Overlay",
+      "pitch": "Captures Mixpanel events in-page and compares to declared schema in Mixpanel Lexicon, flagging drift by severity. Quota-based pricing aligned with event volume. Mixpanel released Lexicon but no browse",
+      "pain": "Mixpanel events arrive with new properties or types that break downstream dashboards but nobody notices for weeks.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-mixpanel-event-schema-drift-overlay-66y9ve",
+          "url": "https://example.invalid/ai-idea/mixpanel-event-schema-drift-overlay"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "stripe-event-schema-validator",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "linear-issue-cycle-time-estimator",
+      "name": "Linear Issue Cycle Time Estimator",
+      "pitch": "Sidebar widget reads Linear GraphQL API and projects completion date per issue from team's trailing 30-day cycle time. Local-first; SaaS bridge for multi-team rollups. Linear lacks native predictive a",
+      "pain": "Engineering leads need early warning when a Linear issue is at risk of slipping its target, but the UI hides this until status changes.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linear-issue-cycle-time-estimator-wihnq9",
+          "url": "https://example.invalid/ai-idea/linear-issue-cycle-time-estimator"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.65,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linkedin-mutual-icebreaker-finder",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "sales-enablement-asset-usage-tracker",
+      "name": "Sales Enablement Asset Usage Tracker",
+      "pitch": "Tracks which sales enablement assets (decks, case studies, one-pagers) get opened/downloaded from HubSpot and reports usage. Per-seat for enablement managers. Sales enablement is a $5B market with thi",
+      "pain": "Sales enablement teams don't know which decks and one-pagers reps actually use, so they keep producing the wrong assets.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-sales-enablement-asset-usage-tracker-y17wvt",
+          "url": "https://example.invalid/ai-idea/sales-enablement-asset-usage-tracker"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "webflow-cms-field-usage-heatmap",
+      "name": "Webflow CMS Field Usage Heatmap",
+      "pitch": "Scrapes Webflow designer DOM to map which CMS fields each component references; highlights orphan fields in collection view. Buildable in 2 weeks. Webflow's user base grew 40% YoY with no usage analyt",
+      "pain": "Webflow CMS collections accumulate unused fields after redesigns, bloating API responses and confusing editors who don't know what's safe to delete.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webflow-cms-field-usage-heatmap-vtwly2",
+          "url": "https://example.invalid/ai-idea/webflow-cms-field-usage-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "crm-field-dust-detector",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "api-mock-server-quick-launcher",
+      "name": "API Mock Server Quick Launcher",
+      "pitch": "Sidebar reads OpenAPI specs from the current page and launches a hosted mock server via extension's backend. SaaS bridge to per-seat for teams. Existing mock tools (Prism, Mockoon) require leaving the",
+      "pain": "Spinning up a mock server requires leaving the browser, opening a terminal, and configuring OpenAPI every time.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-api-mock-server-quick-launcher-w6c33f",
+          "url": "https://example.invalid/ai-idea/api-mock-server-quick-launcher"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.15,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "openapi-endpoint-coverage-mapper",
+        "jaccard_with_nearest": 0.11
+      }
+    }
+  ]
+}

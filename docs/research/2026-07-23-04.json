@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-23-04",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-23T04:21:35.905Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-ga4-event-firing-reliability-checker-xxzznv",
+          "title": "GA4 Event Firing Reliability Checker",
+          "url": "https://example.invalid/ai-idea/ga4-event-firing-reliability-checker",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::analytics",
+          "notes": "Captures GA4 events fired in-page via content script and validates against declared triggers. Detects duplicate gtag/GTM conflicts common in 2026 due to consent-mode updates. Free tier covers 1 site; paid for multi-property.",
+          "monetization": "freemium_saas",
+          "pain": "GA4 events fail silently when gtag conflicts with GTM, leaving marketing teams with broken attribution they don't notice for weeks."
+        },
+        {
+          "source_id": "ai-webflow-cms-field-usage-heatmap-vtwly2",
+          "title": "Webflow CMS Field Usage Heatmap",
+          "url": "https://example.invalid/ai-idea/webflow-cms-field-usage-heatmap",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::webflow",
+          "notes": "Scrapes Webflow designer DOM to map which CMS fields each component references; highlights orphan fields in collection view. Buildable in 2 weeks. Webflow's user base grew 40% YoY with no usage analytics tool.",
+          "monetization": "freemium_saas",
+          "pain": "Webflow CMS collections accumulate unused fields after redesigns, bloating API responses and confusing editors who don't know what's safe to delete."
+        },
+        {
+          "source_id": "ai-linear-issue-cycle-time-estimator-wihnq9",
+          "title": "Linear Issue Cycle Time Estimator",
+          "url": "https://example.invalid/ai-idea/linear-issue-cycle-time-estimator",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "developer_internal::pm",
+          "notes": "Sidebar widget reads Linear GraphQL API and projects completion date per issue from team's trailing 30-day cycle time. Local-first; SaaS bridge for multi-team rollups. Linear lacks native predictive analytics and is API-rich.",
+          "monetization": "freemium_saas",
+          "pain": "Engineering leads need early warning when a Linear issue is at risk of slipping its target, but the UI hides this until status changes."
+        },
+        {
+          "source_id": "ai-stripe-subscription-metering-drift-detec-lckacg",
+          "title": "Stripe Subscription Metering Drift Detector",
+          "url": "https://example.invalid/ai-idea/stripe-subscription-metering-drift-detec",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::billing",
+          "notes": "Captures Stripe metered usage events via webhook replay and diffs against dashboard-reported totals. Free tier allows 100 events/mo for hobby projects. Usage-based billing market grew 60% YoY with no consumer-grade audit tool.",
+          "monetization": "quota_based",
+          "pain": "Usage-based billing meters drift between server-recorded and Stripe-reported values, causing invisible revenue leakage until audit."
+        },
+        {
+          "source_id": "ai-chrome-profile-cookie-wall-18ipyx",
+          "title": "Chrome Profile Cookie Wall",
+          "url": "https://example.invalid/ai-idea/chrome-profile-cookie-wall",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Forces per-profile cookie partitioning for sites that share storage and surfaces a visual audit of cross-profile leaks. Pure client-side; no SaaS needed. Regulatory pressure on cross-context tracking (EU DSA, CA) drives consumer demand.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Chrome profiles still share cookies and local storage through Chrome Sync, letting one account's session leak into another silently."
+        },
+        {
+          "source_id": "ai-vercel-edge-function-cold-start-visualiz-rvw8hp",
+          "title": "Vercel Edge Function Cold Start Visualizer",
+          "url": "https://example.invalid/ai-idea/vercel-edge-function-cold-start-visualiz",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::vercel",
+          "notes": "Pulls Vercel API logs and renders a geographic heatmap of cold-start latency by region and function. Buildable in 2 weeks. Vercel's edge runtime expanded to 20+ regions in 2026; no extension covers this yet.",
+          "monetization": "freemium_saas",
+          "pain": "Vercel edge function cold starts are buried in dashboard logs without per-region breakdowns, making optimization guesswork."
+        },
+        {
+          "source_id": "ai-mixpanel-event-schema-drift-overlay-66y9ve",
+          "title": "Mixpanel Event Schema Drift Overlay",
+          "url": "https://example.invalid/ai-idea/mixpanel-event-schema-drift-overlay",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::analytics",
+          "notes": "Captures Mixpanel events in-page and compares to declared schema in Mixpanel Lexicon, flagging drift by severity. Quota-based pricing aligned with event volume. Mixpanel released Lexicon but no browser-side validator exists.",
+          "monetization": "quota_based",
+          "pain": "Mixpanel events arrive with new properties or types that break downstream dashboards but nobody notices for weeks."
+        },
+        {
+          "source_id": "ai-hubspot-deal-stage-aging-alert-ao9et8",
+          "title": "HubSpot Deal Stage Aging Alert",
+          "url": "https://example.invalid/ai-idea/hubspot-deal-stage-aging-alert",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::crm",
+          "notes": "Browser notifications and sidebar widget on HubSpot CRM pages when deals cross configurable age thresholds per stage. Per-seat for sales managers. HubSpot's own deal aging is buried in workflows; reps want passive alerts.",
+          "monetization": "per_seat",
+          "pain": "HubSpot deal stages quietly age past sales SLA thresholds and reps only notice during weekly pipeline reviews."
+        },
+        {
+          "source_id": "ai-google-docs-suggestion-diff-tracker-u6799q",
+          "title": "Google Docs Suggestion Diff Tracker",
+          "url": "https://example.invalid/ai-idea/google-docs-suggestion-diff-tracker",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::docs",
+          "notes": "Adds a side panel grouping suggestions by author/section with auto-generated rationale summaries via local LLM. Free for personal use; paid for team workspaces. Google Docs suggestion mode adoption jumped with remote work.",
+          "monetization": "freemium_saas",
+          "pain": "Suggestion-mode edits in Google Docs are hard to summarize for reviewers; checking 200 suggestions takes hours."
+        },
+        {
+          "source_id": "ai-conference-talk-recording-topic-indexer-onjtsp",
+          "title": "Conference Talk Recording Topic Indexer",
+          "url": "https://example.invalid/ai-idea/conference-talk-recording-topic-indexer",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::video",
+          "notes": "Side panel on YouTube conference videos generates a clickable topic timeline from auto-generated captions. Pure client-side processing. Conferences like Strange Loop and JSConf host 50+ hours of unsearched video each.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Long conference talk recordings are unsearchable; viewers scrub for 10 minutes to find the relevant 30 seconds."
+        },
+        {
+          "source_id": "ai-api-mock-server-quick-launcher-w6c33f",
+          "title": "API Mock Server Quick Launcher",
+          "url": "https://example.invalid/ai-idea/api-mock-server-quick-launcher",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::api",
+          "notes": "Sidebar reads OpenAPI specs from the current page and launches a hosted mock server via extension's backend. SaaS bridge to per-seat for teams. Existing mock tools (Prism, Mockoon) require leaving the browser.",
+          "monetization": "freemium_saas",
+          "pain": "Spinning up a mock server requires leaving the browser, opening a terminal, and configuring OpenAPI every time."
+        },
+        {
+          "source_id": "ai-pipeline-deal-email-reply-time-predictor-oawa8p",
+          "title": "Pipeline Deal Email Reply Time Predictor",
+          "url": "https://example.invalid/ai-idea/pipeline-deal-email-reply-time-predictor",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Sidebar widget on Gmail/Outlook for sales reps predicts reply probability by sender reply-history pattern, throttling follow-ups. Per-seat for sales managers. Existing reply-time tools are generic email, not deal-aware.",
+          "monetization": "per_seat",
+          "pain": "Sales reps can't predict when prospects will reply, so they send redundant follow-ups that hurt reply rates and burn leads."
+        },
+        {
+          "source_id": "ai-sales-enablement-asset-usage-tracker-y17wvt",
+          "title": "Sales Enablement Asset Usage Tracker",
+          "url": "https://example.invalid/ai-idea/sales-enablement-asset-usage-tracker",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Tracks which sales enablement assets (decks, case studies, one-pagers) get opened/downloaded from HubSpot and reports usage. Per-seat for enablement managers. Sales enablement is a $5B market with thin browser tooling.",
+          "monetization": "per_seat",
+          "pain": "Sales enablement teams don't know which decks and one-pagers reps actually use, so they keep producing the wrong assets."
+        },
+        {
+          "source_id": "ai-outlook-email-delay-predictor-xl086c",
+          "title": "Outlook Email Delay Predictor",
+          "url": "https://example.invalid/ai-idea/outlook-email-delay-predictor",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "consumer_productivity::email",
+          "notes": "Scores Outlook threads by sender response-history patterns and labels 'likely delayed' to reduce redundant follow-ups. Pure client-side heuristics; tip-jar monetization. Outlook market underserved by Gmail-focused extensions.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Outlook users can't tell whether an unanswered thread is forgotten or simply delayed, so they re-send unnecessarily."
+        },
+        {
+          "source_id": "ai-local-ai-document-citation-checker-k72np6",
+          "title": "Local AI Document Citation Checker",
+          "url": "https://example.invalid/ai-idea/local-ai-document-citation-checker",
+          "timestamp": "2026-07-23T04:21:35.893Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Local LLM sidebar on documents highlights any sentence containing a citation and verifies the reference actually appears in the source. Freemium for 100 pages/mo. Hallucinated citations are AI's top trust problem in 2026.",
+          "monetization": "freemium_saas",
+          "pain": "Local AI summarizers hallucinate citations that don't exist in the source document, eroding trust in the output."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M3",
+        "generated_at": "2026-07-23T04:21:35.905Z",
+        "dedup_against": 625,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M3",
+    "schema_version": "1.1.0"
+  }
+}
