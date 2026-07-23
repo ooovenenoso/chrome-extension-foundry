@@ -139,6 +139,7 @@ jobs:
       - name: pr-drafter (real MV3 + syntax guard)
         if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
         id: draft
+        continue-on-error: true
         run: |
           TOP_ID="${{ steps.check.outputs.top_id }}"
           SPEC="docs/specs/${TOP_ID}/GOAL.md"
@@ -147,8 +148,8 @@ jobs:
           fi
           node agents/scripts/pr-drafter.js --spec "$SPEC"
 
-      - name: Verify generated extension
-        if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
+      - name: Verify generated extension (skipped if syntax-guard rejected)
+        if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true' && steps.draft.outcome == 'success'
         id: verify
         run: |
           TOP_ID="${{ steps.check.outputs.top_id }}"
@@ -156,15 +157,20 @@ jobs:
           npm run package:extension -- "$TOP_ID"
           unzip -t "dist/${TOP_ID}-v0.1.0.zip"
 
-      - name: Commit scaffold (only if verify succeeded)
+      - name: Commit scaffold or rejection marker
         if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/ tests/
+          git add src/ tests/ docs/specs/_rejected/
           if ! git diff --cached --quiet; then
             git pull --rebase --autostash origin main || git pull --rebase origin main
-            git commit -m "feat(${{ steps.check.outputs.top_id }}): real MV3 scaffold"
+            TOP_ID="${{ steps.check.outputs.top_id }}"
+            if [ -f "docs/specs/_rejected/${{ steps.slot.outputs.slot }}-${TOP_ID}.md" ]; then
+              git commit -m "chore(scaffold): rejected ${TOP_ID} (syntax-guard)"
+            else
+              git commit -m "feat(${TOP_ID}): real MV3 scaffold"
+            fi
             git push
           fi
 
@@ -202,8 +208,8 @@ jobs:
             - [x] syntax-guard validated all generated JS
           commit-message: 'feat(${{ steps.check.outputs.top_id }}): real MV3 MVP extension per docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md'
 
-      - name: Ping Telegram
-        if: always() && steps.cpr.outputs.pull-request-number != ''
+      - name: Ping Telegram (final status)
+        if: always() && (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -211,7 +217,9 @@ jobs:
           message: |
             foundry · ${{ steps.slot.outputs.slot }}
             top: ${{ steps.check.outputs.top_name }} (score ${{ steps.check.outputs.top_score }})
-            ${{ steps.cpr.outputs.pull-request-number && format('PR: #{0}', steps.cpr.outputs.pull-request-number) || (steps.verify.outcome == 'success' && 'verify passed, PR step skipped' || 'verify failed') }}
+            pr-drafter: ${{ steps.draft.outcome }}
+            verify: ${{ steps.verify.outcome }}
+            ${{ steps.cpr.outputs.pull-request-number && format('PR opened: #{0}', steps.cpr.outputs.pull-request-number) || (steps.verify.outcome == 'success' && 'PR step skipped' || 'scaffold rejected or verify failed') }}
 
       - name: Orphan branch guard (prune feat/mvp-* > 24h old, no open PR)
         if: always()
