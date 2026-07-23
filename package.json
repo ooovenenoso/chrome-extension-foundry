@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-foundry",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An autonomous factory that finds, scores, specs, and ships monetizable Chrome extensions.",
   "private": true,
   "type": "module",
