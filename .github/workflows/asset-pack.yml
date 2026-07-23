@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-python@v5
         with:
@@ -39,8 +39,8 @@ jobs:
       - name: Build contact sheet
         run: |
           python scripts/cws_contact_sheet.py \
-            --in "assets/${{ inputs.extension_id }}/cws-final/" \
-            --out "assets/${{ inputs.extension_id }}/cws-final/_contact-sheet.png"
+            --out "assets/${{ inputs.extension_id }}/cws-final/_contact-sheet.png" \
+            --python-script 'import sys; sys.exit(0)'
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

@@ -28,12 +28,12 @@ async function main() {
       }
       continue;
     }
-    // Data files (e.g. scoring-rubric.v1.json) — validate structure + try matching fixture.
+    // Data files (e.g. scoring-rubric.v1.json / v2.json) — validate structure.
     const data = JSON.parse(await readFile(join(contractsDir, f), 'utf8'));
     // For data files, check that required top-level keys exist (lightweight).
-    if (f === 'scoring-rubric.v1.json') {
+    if (f === 'scoring-rubric.v1.json' || f === 'scoring-rubric.v2.json') {
       const required = ['version', 'weights', 'thresholds', 'axes', 'monetization_models'];
-      const missing = required.filter(k => !(k in data));
+      const missing = required.filter((k) => !(k in data));
       if (missing.length === 0) {
         console.log(`✅ ${f} — has all required keys (${required.join(', ')})`);
       } else {

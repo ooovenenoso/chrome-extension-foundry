@@ -34,17 +34,17 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GITHUB_TOKEN: ${{ github.token }}
       MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-      MINIMAX_MODEL: ${{ vars.MINIMAX_MODEL || 'MiniMax-M2.7-highspeed' }}
+      MINIMAX_MODEL: ${{ vars.MINIMAX_MODEL || 'MiniMax-M3' }}
       MINIMAX_BASE_URL: ${{ vars.MINIMAX_BASE_URL || 'https://api.minimax.io/v1' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install deps

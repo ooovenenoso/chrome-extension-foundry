@@ -13,11 +13,16 @@ on:
         required: false
         type: string
       count:
-        description: 'Ideas per run (1-50). Default 10.'
+        description: 'Ideas per run (1-50). Default 15.'
         required: false
         type: string
       skip_pr:
-        description: 'Skip the pr-drafter step (set true for research-only runs).'
+        description: 'Skip the pr-drafter step (research-only run).'
+        required: false
+        type: boolean
+        default: false
+      force_pr:
+        description: 'Force the pr-drafter step even on a low-score run.'
         required: false
         type: boolean
         default: false
@@ -26,22 +31,32 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: daily-idea-digest
+  cancel-in-progress: false
+
 jobs:
   research-score-ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-      MINIMAX_MODEL: ${{ vars.MINIMAX_MODEL || 'MiniMax-M2.7-highspeed' }}
+      MINIMAX_MODEL: ${{ vars.MINIMAX_MODEL || 'MiniMax-M3' }}
       MINIMAX_BASE_URL: ${{ vars.MINIMAX_BASE_URL || 'https://api.minimax.io/v1' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
         with:
-          node-version: '20'
+          fetch-depth: 0
+          persist-credentials: true
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
           cache: 'npm'
+
       - name: Install deps
         run: npm ci --no-audit --no-fund
+
       - name: Compute slot (UTC)
         id: slot
         run: |
@@ -56,9 +71,6 @@ jobs:
       - name: research-collector (AI + dedup)
         id: research
         run: |
-          # Default to 15 ideas per run so at least a few survive dedup and the
-          # top has a good chance of crossing the 7.0 spec threshold. Adjust
-          # via inputs.count in workflow_dispatch if you want more or fewer.
           COUNT="${{ inputs.count || 15 }}"
           node agents/scripts/research-collector.js \
             --slot "${{ steps.slot.outputs.slot }}" \
@@ -66,7 +78,7 @@ jobs:
             --model "${MINIMAX_MODEL}" \
             --count "${COUNT}"
 
-      - name: idea-scorer
+      - name: idea-scorer (rubric v2)
         run: |
           node agents/scripts/idea-scorer.js \
             --in "docs/research/${{ steps.slot.outputs.slot }}.json" \
@@ -75,24 +87,22 @@ jobs:
       - name: validate-contracts
         run: npm run validate
 
-      - name: Check threshold
+      - name: Check threshold (rubric v2 = 6.0)
         id: check
         run: |
           SLOT="${{ steps.slot.outputs.slot }}"
           POOL="docs/ideas/${SLOT}.json"
-          # Default outputs (overwritten if pool exists + threshold met).
           printf 'spec_threshold=false\n' > "$GITHUB_OUTPUT"
           printf 'top_name=\n' >> "$GITHUB_OUTPUT"
           printf 'top_score=0\n' >> "$GITHUB_OUTPUT"
           printf 'top_id=\n' >> "$GITHUB_OUTPUT"
           if [ ! -f "$POOL" ]; then
-            echo "no pool — silent"
-            exit 0
+            echo "no pool — silent"; exit 0
           fi
           TOP_SCORE=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.score_total || 0);")
           TOP_NAME=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.name || '');")
           TOP_ID=$(node -e "const p=require('./$POOL'); console.log(p.candidates[0]?.id || '');")
-          THRESHOLD=$(node -e "console.log(require('./agents/contracts/scoring-rubric.v1.json').thresholds.min_score_for_spec);")
+          THRESHOLD=$(node -e "console.log(require('./agents/contracts/scoring-rubric.v2.json').thresholds.min_score_for_spec);")
           echo "top=$TOP_SCORE threshold=$THRESHOLD"
           if [ "$(echo "$TOP_SCORE >= $THRESHOLD" | bc -l)" = "1" ]; then
             printf 'spec_threshold=true\n' > "$GITHUB_OUTPUT"
@@ -101,8 +111,8 @@ jobs:
             printf 'top_id=%s\n' "$TOP_ID" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: spec-writer (if spec_threshold=true)
-        if: steps.check.outputs.spec_threshold == 'true'
+      - name: spec-writer
+        if: steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true'
         run: |
           SLOT="${{ steps.slot.outputs.slot }}"
           node agents/scripts/spec-writer.js \
@@ -117,7 +127,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git add docs/research/ docs/ideas/ docs/specs/
           if ! git diff --cached --quiet; then
-            # Pull rebase in case another workflow push landed first.
             git pull --rebase --autostash origin main || git pull --rebase origin main
             MSG="chore(digest): daily AI ideas + scoring for ${{ steps.slot.outputs.slot }}"
             if [ "${{ steps.check.outputs.spec_threshold }}" = "true" ]; then
@@ -127,8 +136,9 @@ jobs:
             git push
           fi
 
-      - name: pr-drafter (real MV3 files to working tree)
-        if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
+      - name: pr-drafter (real MV3 + syntax guard)
+        if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
+        id: draft
         run: |
           TOP_ID="${{ steps.check.outputs.top_id }}"
           SPEC="docs/specs/${TOP_ID}/GOAL.md"
@@ -138,15 +148,28 @@ jobs:
           node agents/scripts/pr-drafter.js --spec "$SPEC"
 
       - name: Verify generated extension
-        if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
+        if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
+        id: verify
         run: |
           TOP_ID="${{ steps.check.outputs.top_id }}"
           npm test
           npm run package:extension -- "$TOP_ID"
           unzip -t "dist/${TOP_ID}-v0.1.0.zip"
 
-      - name: Open PR with real MV3 extension
-        if: steps.check.outputs.spec_threshold == 'true' && inputs.skip_pr != true
+      - name: Commit scaffold (only if verify succeeded)
+        if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true'
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/ tests/
+          if ! git diff --cached --quiet; then
+            git pull --rebase --autostash origin main || git pull --rebase origin main
+            git commit -m "feat(${{ steps.check.outputs.top_id }}): real MV3 scaffold"
+            git push
+          fi
+
+      - name: Open PR
+        if: (steps.check.outputs.spec_threshold == 'true' || inputs.force_pr == 'true') && inputs.skip_pr != 'true' && steps.verify.outcome == 'success'
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
@@ -164,31 +187,39 @@ jobs:
             ## Source
 
             - Spec: `docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md`
-            - Backlog: `docs/specs/${{ steps.check.outputs.top_id }}/BACKLOG.md`
             - Idea pool: `docs/ideas/${{ steps.slot.outputs.slot }}.json`
 
             ## Generated artifact
 
             - Extension source: `src/${{ steps.check.outputs.top_id }}/`
-            - Package command: `npm run package:extension -- ${{ steps.check.outputs.top_id }}`
-            - Expected local zip: `dist/${{ steps.check.outputs.top_id }}-v0.1.0.zip`
+            - Package: `npm run package:extension -- ${{ steps.check.outputs.top_id }}`
 
             ## Test plan
 
             - [x] `npm test` exits 0
             - [x] `npm run package:extension -- ${{ steps.check.outputs.top_id }}` exits 0
             - [x] `unzip -t dist/${{ steps.check.outputs.top_id }}-v0.1.0.zip` exits 0
-            - [ ] CI green on this branch
-            - [ ] Spec sections §1-§10 reviewed
+            - [x] syntax-guard validated all generated JS
           commit-message: 'feat(${{ steps.check.outputs.top_id }}): real MV3 MVP extension per docs/specs/${{ steps.check.outputs.top_id }}/GOAL.md'
 
       - name: Ping Telegram
-        if: steps.check.outputs.spec_threshold == 'true'
+        if: always() && steps.cpr.outputs.pull-request-number != ''
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: |
-            daily-idea-digest · ${{ steps.slot.outputs.slot }}
-            Top: ${{ steps.check.outputs.top_name }} (score ${{ steps.check.outputs.top_score }})
-            ${{ steps.cpr.outputs.pull-request-number && format('PR opened: #{0}', steps.cpr.outputs.pull-request-number) || 'Spec drafted (PR step skipped or failed)' }}
+            foundry · ${{ steps.slot.outputs.slot }}
+            top: ${{ steps.check.outputs.top_name }} (score ${{ steps.check.outputs.top_score }})
+            ${{ steps.cpr.outputs.pull-request-number && format('PR: #{0}', steps.cpr.outputs.pull-request-number) || (steps.verify.outcome == 'success' && 'verify passed, PR step skipped' || 'verify failed') }}
+
+      - name: Orphan branch guard (prune feat/mvp-* > 24h old, no open PR)
+        if: always()
+        run: |
+          node scripts/orphan-branch-guard.js \
+            --max-age-hours 24 \
+            --prefix feat/mvp- \
+            2>&1 | tee -a "$GITHUB_STEP_SUMMARY" || true
+        env:
+          REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

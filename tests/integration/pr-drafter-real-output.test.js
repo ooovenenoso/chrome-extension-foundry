@@ -70,6 +70,9 @@ test('pr-drafter generates a loadable real MV3 scaffold instead of placeholder h
   assert.equal(run('git', ['add', 'docs'], dir).status, 0);
   assert.equal(run('git', ['-c', 'user.name=Test', '-c', 'user.email=test@example.invalid', 'commit', '-m', 'spec'], dir).status, 0);
 
+  // syntax-guard is invoked by pr-drafter via an absolute path resolved from
+  // its own import.meta.url, so it works without copying scripts/ into the cwd.
+
   const result = run('node', [PR_DRAFTER, '--spec', 'docs/specs/sample-crm-signal-helper/GOAL.md'], dir);
   assert.equal(result.status, 0, result.stderr || result.stdout);
 
