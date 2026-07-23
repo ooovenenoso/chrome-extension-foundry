@@ -1,0 +1,248 @@
+{
+  "slot": "2026-07-23-02",
+  "week": "2026-W30",
+  "scored_at": "2026-07-23T01:26:49.755Z",
+  "rubric_version": "2.0.0",
+  "candidates": [
+    {
+      "id": "ai-cold-email-subject-variant-generator",
+      "name": "AI Cold Email Subject Variant Generator",
+      "pitch": "Buildable in 2-3 weeks using OpenAI's API and a small prompt-engine prompt pack per persona. The wave of AI-powered sales tooling (Smartlead, Instantly) created a pipeline gap: nothing scores subject ",
+      "pain": "Sales reps waste hours A/B testing subject lines with no signal on which phrasing actually drives replies.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-cold-email-subject-variant-generator-hiq8j8",
+          "url": "https://example.invalid/ai-idea/ai-cold-email-subject-variant-generator"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "cold-email-domain-reputation-pulse",
+      "name": "Cold Email Domain Reputation Pulse",
+      "pitch": "Detects the user's outbound sending domain from mailto: links and inbox headers, then pings reputation APIs (Google Postmaster, MXToolbox, Spamhaus) to surface a live health badge in Gmail/Outlook. 2-",
+      "pain": "Outbound teams don't learn their sending domain reputation has tanked until deliverability collapses and pipeline dries up.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cold-email-domain-reputation-pulse-m3u28w",
+          "url": "https://example.invalid/ai-idea/cold-email-domain-reputation-pulse"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-warmup-domain-health-monitor",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "ai-response-hallucination-spotter",
+      "name": "AI Response Hallucination Spotter",
+      "pitch": "Runs a side panel over ChatGPT/Claude/Gemini; cross-references claims against search snippets and highlights unsupported sentences in real time. 4-5 weeks using SerpApi + cheap classifiers. Why now: e",
+      "pain": "Users paste AI outputs into client work and emails without knowing which factual claims are unsourced or contradicted.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-response-hallucination-spotter-7mrdmd",
+          "url": "https://example.invalid/ai-idea/ai-response-hallucination-spotter"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 6,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.4,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-token-usage-by-tab",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "job-description-ai-exposure-index",
+      "name": "Job Description AI Exposure Index",
+      "pitch": "Scores any LinkedIn/Indeed posting on a 0-100 AI exposure scale using task taxonomy + LLM zero-shot classification, with a side-panel rationale. 2 weeks of model work plus a small labeled set. Why now",
+      "pain": "Job seekers can't quantify how AI-vulnerable a posting's role is before investing hours tailoring an application.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-job-description-ai-exposure-index-iyqs90",
+          "url": "https://example.invalid/ai-idea/job-description-ai-exposure-index"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.8,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10)",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-schema-side-panel",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "supabase-rls-policy-coverage-heatmap",
+      "name": "Supabase RLS Policy Coverage Heatmap",
+      "pitch": "Detects a Supabase project from cookies/JWT and walks the public REST schema to flag tables without RLS or with policy gaps. Buildable in 3 weeks using supabase-js in the page context. Why now: Supaba",
+      "pain": "Teams ship Supabase projects to staging not knowing which tables lack row-level security policies until an audit finds exposed rows.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-supabase-rls-policy-coverage-heatmap-t38lem",
+          "url": "https://example.invalid/ai-idea/supabase-rls-policy-coverage-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "css-grid-gap-visual-inspector",
+        "jaccard_with_nearest": 0.1
+      }
+    },
+    {
+      "id": "linkedin-promotion-velocity-heatmap",
+      "name": "LinkedIn Promotion Velocity Heatmap",
+      "pitch": "Aggregates LinkedIn job-posting cadence and promotion-tagged profile updates per company into a 12-week velocity score surfaced as a Sales Navigator overlay. 3-4 weeks of scraping + heuristics. Why no",
+      "pain": "AEs burn prospecting cycles on accounts showing no recent hiring momentum in the roles their product actually targets.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-promotion-velocity-heatmap-fkngm4",
+          "url": "https://example.invalid/ai-idea/linkedin-promotion-velocity-heatmap"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "lead-company-news-timeline-aggregator",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "local-llm-page-q-a-sidebar",
+      "name": "Local LLM Page Q&A Sidebar",
+      "pitch": "Pairs with WebLLM/transformers.js to run a 1-3B param model in a sidebar; zero data leaves the browser. Buildable in 3-4 weeks since the heavy lifting is inference plumbing. Why now: Chrome's prompt A",
+      "pain": "Users want to query any webpage with AI but cloud tools leak their reading habits and clipboard contents to vendors.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-local-llm-page-q-a-sidebar-kf4y3q",
+          "url": "https://example.invalid/ai-idea/local-llm-page-q-a-sidebar"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.05,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "llm-prompt-version-history-vault",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "browser-cookie-scope-origin-mapper",
+      "name": "Browser Cookie Scope Origin Mapper",
+      "pitch": "Parses Set-Cookie attributes on every response and renders an interactive graph of cookie scope across origins, highlighting SameSite=None and cross-domain reads. 2 weeks of pure DevTools work. Why no",
+      "pain": "Users can't tell which third-party domains can read cookies set on the site they're currently visiting.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-cookie-scope-origin-mapper-6tzkh0",
+          "url": "https://example.invalid/ai-idea/browser-cookie-scope-origin-mapper"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.05,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-response-time-benchmarker",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}

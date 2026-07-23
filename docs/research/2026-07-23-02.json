@@ -1,0 +1,155 @@
+{
+  "slot": "2026-07-23-02",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-23T01:26:49.599Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-ai-cold-email-subject-variant-generator-hiq8j8",
+          "title": "AI Cold Email Subject Variant Generator",
+          "url": "https://example.invalid/ai-idea/ai-cold-email-subject-variant-generator",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Buildable in 2-3 weeks using OpenAI's API and a small prompt-engine prompt pack per persona. The wave of AI-powered sales tooling (Smartlead, Instantly) created a pipeline gap: nothing scores subject lines pre-send. Clear freemium hook (5 free variants/month) before $19/mo seat. Competitor gap: existing tools optimize send time, not the line itself.",
+          "monetization": "freemium_saas",
+          "pain": "Sales reps waste hours A/B testing subject lines with no signal on which phrasing actually drives replies."
+        },
+        {
+          "source_id": "ai-local-llm-page-q-a-sidebar-kf4y3q",
+          "title": "Local LLM Page Q&A Sidebar",
+          "url": "https://example.invalid/ai-idea/local-llm-page-q-a-sidebar",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_privacy::ai",
+          "notes": "Pairs with WebLLM/transformers.js to run a 1-3B param model in a sidebar; zero data leaves the browser. Buildable in 3-4 weeks since the heavy lifting is inference plumbing. Why now: Chrome's prompt API and local model story matured in 2026. Competitor gap: Merlin/Harvey all hit server APIs; nobody owns the local-first AI wrapper category.",
+          "monetization": "freemium_saas",
+          "pain": "Users want to query any webpage with AI but cloud tools leak their reading habits and clipboard contents to vendors."
+        },
+        {
+          "source_id": "ai-supabase-rls-policy-coverage-heatmap-t38lem",
+          "title": "Supabase RLS Policy Coverage Heatmap",
+          "url": "https://example.invalid/ai-idea/supabase-rls-policy-coverage-heatmap",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Detects a Supabase project from cookies/JWT and walks the public REST schema to flag tables without RLS or with policy gaps. Buildable in 3 weeks using supabase-js in the page context. Why now: Supabase crossed 5M projects and security incidents are surfacing. Competitor gap: Supabase linter is server-side and noisy; this is a focused browser-side auditor.",
+          "monetization": "freemium_saas",
+          "pain": "Teams ship Supabase projects to staging not knowing which tables lack row-level security policies until an audit finds exposed rows."
+        },
+        {
+          "source_id": "ai-conference-cfp-topic-fit-scorer-ufwbt7",
+          "title": "Conference CFP Topic Fit Scorer",
+          "url": "https://example.invalid/ai-idea/conference-cfp-topic-fit-scorer",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::productivity",
+          "notes": "Scrapes a CFP's past accepted talks (or uses user-pasted archive), clusters topics, and scores a draft abstract's fit. 2-3 weeks of scraping + embeddings. Why now: CFP platforms (Sessionize, Pretalx) expose data but offer no AI scoring. Niche but loyal dev audience; donation + conference sponsor pitch is the play.",
+          "monetization": "donation",
+          "pain": "Developers miss speaking deadlines because assessing whether their topic fits a CFP's historical vibe takes longer than drafting the talk."
+        },
+        {
+          "source_id": "ai-linkedin-promotion-velocity-heatmap-fkngm4",
+          "title": "LinkedIn Promotion Velocity Heatmap",
+          "url": "https://example.invalid/ai-idea/linkedin-promotion-velocity-heatmap",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Aggregates LinkedIn job-posting cadence and promotion-tagged profile updates per company into a 12-week velocity score surfaced as a Sales Navigator overlay. 3-4 weeks of scraping + heuristics. Why now: Clay and Apollo lead-gen tools exploded but none focus on org-chart momentum signals. Per-seat $39/mo for SDR teams.",
+          "monetization": "per_seat",
+          "pain": "AEs burn prospecting cycles on accounts showing no recent hiring momentum in the roles their product actually targets."
+        },
+        {
+          "source_id": "ai-browser-cookie-scope-origin-mapper-6tzkh0",
+          "title": "Browser Cookie Scope Origin Mapper",
+          "url": "https://example.invalid/ai-idea/browser-cookie-scope-origin-mapper",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Parses Set-Cookie attributes on every response and renders an interactive graph of cookie scope across origins, highlighting SameSite=None and cross-domain reads. 2 weeks of pure DevTools work. Why now: cookie phaseout in Chrome makes scope metadata even more opaque. Differentiator from consent tools: visual-first, no regulatory framing.",
+          "monetization": "freemium_saas",
+          "pain": "Users can't tell which third-party domains can read cookies set on the site they're currently visiting."
+        },
+        {
+          "source_id": "ai-cold-email-domain-reputation-pulse-m3u28w",
+          "title": "Cold Email Domain Reputation Pulse",
+          "url": "https://example.invalid/ai-idea/cold-email-domain-reputation-pulse",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Detects the user's outbound sending domain from mailto: links and inbox headers, then pings reputation APIs (Google Postmaster, MXToolbox, Spamhaus) to surface a live health badge in Gmail/Outlook. 2-3 weeks. Why now: Gmail/Yahoo 2024 sender rules raised the stakes; SDR teams need pre-flight checks. Competitor gap: existing tools are dashboards, not in-inbox nudges.",
+          "monetization": "freemium_saas",
+          "pain": "Outbound teams don't learn their sending domain reputation has tanked until deliverability collapses and pipeline dries up."
+        },
+        {
+          "source_id": "ai-web3-wallet-connection-risk-auditor-ag1zgz",
+          "title": "Web3 Wallet Connection Risk Auditor",
+          "url": "https://example.invalid/ai-idea/web3-wallet-connection-risk-auditor",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Hooks window.ethereum and WalletConnect request events, decodes ERC-7715 permissions and eth_sign typed-data payloads, then grades risk against a signature abuse database. 3-4 weeks. Why now: wallet drainers cost users $1B+ in 2025; consumers want a Slither-for-wallets layer. Freemium with pro scam-feed sync.",
+          "monetization": "freemium_saas",
+          "pain": "Users blindly approve wallet connection requests without seeing which on-chain permissions and signatures the dApp is actually asking for."
+        },
+        {
+          "source_id": "ai-job-description-ai-exposure-index-iyqs90",
+          "title": "Job Description AI Exposure Index",
+          "url": "https://example.invalid/ai-idea/job-description-ai-exposure-index",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Scores any LinkedIn/Indeed posting on a 0-100 AI exposure scale using task taxonomy + LLM zero-shot classification, with a side-panel rationale. 2 weeks of model work plus a small labeled set. Why now: AI job displacement anxiety is the dominant career story of 2026. Tip jar at $3/mo plus referral to career coaches.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Job seekers can't quantify how AI-vulnerable a posting's role is before investing hours tailoring an application."
+        },
+        {
+          "source_id": "ai-ai-response-hallucination-spotter-7mrdmd",
+          "title": "AI Response Hallucination Spotter",
+          "url": "https://example.invalid/ai-idea/ai-response-hallucination-spotter",
+          "timestamp": "2026-07-23T01:26:49.590Z",
+          "metric": {
+            "llm_demand": 8
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Runs a side panel over ChatGPT/Claude/Gemini; cross-references claims against search snippets and highlights unsupported sentences in real time. 4-5 weeks using SerpApi + cheap classifiers. Why now: enterprise AI policies in 2026 mandate provenance metadata on AI-generated copy. Clear freemium wedge (10 checks/day) before $15/mo.",
+          "monetization": "freemium_saas",
+          "pain": "Users paste AI outputs into client work and emails without knowing which factual claims are unsourced or contradicted."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M3",
+        "generated_at": "2026-07-23T01:26:49.599Z",
+        "dedup_against": 605,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M3",
+    "schema_version": "1.1.0"
+  }
+}
