@@ -1,0 +1,368 @@
+{
+  "slot": "2026-07-23-15",
+  "week": "2026-W30",
+  "scored_at": "2026-07-23T15:16:22.079Z",
+  "rubric_version": "2.0.0",
+  "candidates": [
+    {
+      "id": "mailchimp-campaign-subject-line-a-b-winn",
+      "name": "Mailchimp Campaign Subject Line A/B Winner Predictor",
+      "pitch": "Reads the A/B setup screen in Mailchimp and scores each subject variant using historical open-rate embeddings plus an LLM judge. Freemium: 10 predictions/month. Differentiator from warmup tools: focus",
+      "pain": "Email marketers can't predict which Mailchimp subject line variant will win before sending, wasting send volume on losers.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-mailchimp-campaign-subject-line-a-b-winn-osvg0y",
+          "url": "https://example.invalid/ai-idea/mailchimp-campaign-subject-line-a-b-winn"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "email-warmup-campaign-tracker",
+        "jaccard_with_nearest": 0.12
+      }
+    },
+    {
+      "id": "local-browser-ai-long-doc-summarizer",
+      "name": "Local Browser AI Long-Doc Summarizer",
+      "pitch": "Uses Chrome's built-in Gemini Nano via the Prompt API to summarize articles and PDFs locally, never sending content off-device. Why now: Prompt API stabilized in Chrome 131+. Differentiator: Web Artic",
+      "pain": "Long web docs and PDFs eat hours of reading time, but cloud AI summarizers leak proprietary content to vendors.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-local-browser-ai-long-doc-summarizer-3xn168",
+          "url": "https://example.invalid/ai-idea/local-browser-ai-long-doc-summarizer"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 6,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.4,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-mock-server-quick-launcher",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "calendly-round-robin-distribution-fairne",
+      "name": "Calendly Round Robin Distribution Fairness Checker",
+      "pitch": "Scrapes Calendly admin analytics over rolling 30-day windows and computes distribution skew versus tenure, ramp status, and timezone. Per-team pricing for SDR orgs. Niche but sticky because fairness c",
+      "pain": "Sales managers suspect Calendly round-robin favors tenured reps but can't prove distribution is unfair without manual audit.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-calendly-round-robin-distribution-fairne-idxgi2",
+          "url": "https://example.invalid/ai-idea/calendly-round-robin-distribution-fairne"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "gmail-receipt-auto-categorizer-for-expen",
+      "name": "Gmail Receipt Auto-Categorizer for Expenses",
+      "pitch": "Scans Gmail for receipt-like emails and extracts vendor, amount, date, and category via local LLM, exporting to CSV or QuickBooks IIF. Free = 25 receipts/month, paid unlimited with custom category rul",
+      "pain": "Freelancers and small biz owners dig through Gmail monthly hunting for receipts to file into expense reports.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gmail-receipt-auto-categorizer-for-expen-uprm2z",
+          "url": "https://example.invalid/ai-idea/gmail-receipt-auto-categorizer-for-expen"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.8,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10)",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "local-llm-page-q-a-sidebar",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "vercel-deployment-preview-comment-collec",
+      "name": "Vercel Deployment Preview Comment Collector",
+      "pitch": "Scrapes GitHub PR comments tied to a Vercel deployment URL and overlays them on the preview page in a side panel. Buildable in ~3 weeks using Vercel deploy hooks + GitHub REST API. Existing Vercel-adj",
+      "pain": "Reviewers leave scattered PR comments but the Vercel preview has no native way to thread them back to the deployment.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-vercel-deployment-preview-comment-collec-p2ze2i",
+          "url": "https://example.invalid/ai-idea/vercel-deployment-preview-comment-collec"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-schema-side-panel",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "aws-console-service-limit-headroom-calcu",
+      "name": "AWS Console Service Limit Headroom Calculator",
+      "pitch": "Reads AWS Service Quotas via the console sidebar and overlays headroom % next to relevant resources. Free tier = 10 services tracked, paid = full coverage with alert routing. Why now: AWS Trusted Acce",
+      "pain": "DevOps engineers discover they're at 95% of an AWS service limit only when a deployment fails or an API throttles.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-aws-console-service-limit-headroom-calcu-h95whr",
+          "url": "https://example.invalid/ai-idea/aws-console-service-limit-headroom-calcu"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-token-budget-exhaustion-alert",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "jira-sprint-scope-creep-detector",
+      "name": "Jira Sprint Scope Creep Detector",
+      "pitch": "Tracks Jira sprint board changes in real time on the sprint page and computes scope drift % vs committed scope at planning time. Buildable in ~2 weeks. Strong cross-sell potential into a Linear/Asana ",
+      "pain": "Mid-sprint tickets silently balloon sprint scope, but standups never surface how much new work entered after planning.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-jira-sprint-scope-creep-detector-12xmuy",
+          "url": "https://example.invalid/ai-idea/jira-sprint-scope-creep-detector"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.65,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "linear-issue-cycle-time-estimator",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "shopify-customer-review-authenticity-sco",
+      "name": "Shopify Customer Review Authenticity Scorer",
+      "pitch": "Analyzes review metadata, language patterns, and reviewer history to score authenticity per product page. Side panel overlay on any Shopify storefront. Competitor gap: Yotpo/Judge.me focus on collecti",
+      "pain": "Shopify merchants can't tell which product reviews are genuine versus paid/imported junk that tanks conversion trust.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-shopify-customer-review-authenticity-sco-a2quy8",
+          "url": "https://example.invalid/ai-idea/shopify-customer-review-authenticity-sco"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "job-posting-trend-heatmap",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "salesforce-opportunity-stakeholder-chang",
+      "name": "Salesforce Opportunity Stakeholder Change Tracker",
+      "pitch": "Monitors OpportunityContactRole history via Salesforce REST API and posts alerts when stakeholder composition shifts mid-cycle. Buildable in 2-3 weeks. Complementary to existing close-date slippage an",
+      "pain": "AEs miss when a champion leaves a deal or a new economic buyer shows up, both critical signals for forecast calls.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-salesforce-opportunity-stakeholder-chang-3f4kka",
+          "url": "https://example.invalid/ai-idea/salesforce-opportunity-stakeholder-chang"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "salesforce-opportunity-close-date-slippa",
+        "jaccard_with_nearest": 0.15
+      }
+    },
+    {
+      "id": "adobe-analytics-workspace-adoption-track",
+      "name": "Adobe Analytics Workspace Adoption Tracker",
+      "pitch": "Pulls Adobe Analytics admin logs and ranks projects by usage, dwell time, and export frequency; surfaces a leaderboard while users are in the AA UI. Niche but high willingness-to-pay because it justif",
+      "pain": "Analytics teams build dozens of Workspace projects nobody opens, but leadership has no data on actual report consumption.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-adobe-analytics-workspace-adoption-track-hrzl12",
+          "url": "https://example.invalid/ai-idea/adobe-analytics-workspace-adoption-track"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "llm-context-usage-real-time-meter",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "docusign-envelope-field-anomaly-detector",
+      "name": "DocuSign Envelope Field Anomaly Detector",
+      "pitch": "Pre-flight check on the DocuSign envelope editor flags unusual field placement, missing required signers, and off-template usage. Buildable in ~3 weeks using the eSignature API. Per-seat pricing for l",
+      "pain": "Legal teams catch misconfigured DocuSign envelopes (wrong signer, missing initials) only after sending, causing rework and embarrassment.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-docusign-envelope-field-anomaly-detector-ds6suq",
+          "url": "https://example.invalid/ai-idea/docusign-envelope-field-anomaly-detector"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-spend-meter",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "linear-issue-acceptance-criteria-coverag",
+      "name": "Linear Issue Acceptance Criteria Coverage Checker",
+      "pitch": "Parses Linear issue descriptions and child issues, flags missing edge cases, ambiguity markers, and untestable criteria in a side panel. Sales motion: per-team pricing for product orgs. Builds on Line",
+      "pain": "Linear issues ship to engineers with vague or missing acceptance criteria, leading to rework and 'that's not what I meant' PR ping-pong.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linear-issue-acceptance-criteria-coverag-4m05ti",
+          "url": "https://example.invalid/ai-idea/linear-issue-acceptance-criteria-coverag"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 7,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.15,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10) + optional sponsor link",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webfont-license-checker",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
