@@ -1,0 +1,155 @@
+{
+  "slot": "2026-07-23-03",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-23T01:30:56.966Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 10,
+      "entries": [
+        {
+          "source_id": "ai-cloudflare-worker-cpu-time-budget-sentin-9jpf47",
+          "title": "Cloudflare Worker CPU Time Budget Sentinel",
+          "url": "https://example.invalid/ai-idea/cloudflare-worker-cpu-time-budget-sentin",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Instruments fetch handlers or scrapes wrangler tail output to plot p95 CPU time per route against the budget. Hot because Workers Paid plans tier compute and edge runtimes now dominate cost dashboards. No browser-side budget monitor exists today.",
+          "monetization": "freemium_saas",
+          "pain": "Engineers overshoot Cloudflare Workers' 10ms CPU budget on paid plans and don't realize until billed."
+        },
+        {
+          "source_id": "ai-stripe-webhook-signing-secret-rotation-t-np0rg3",
+          "title": "Stripe Webhook Signing Secret Rotation Tracker",
+          "url": "https://example.invalid/ai-idea/stripe-webhook-signing-secret-rotation-t",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Injects into the Stripe dashboard, watches each endpoint secret's age, and alerts when rotation is overdue or a new whsec_ is sitting unused. Why now: PCI 4.0 tightens key rotation expectations. No competitor monitors secret lifecycle specifically.",
+          "monetization": "freemium_saas",
+          "pain": "Stripe webhook signing secrets get rotated but downstream endpoints don't update, silently dropping events."
+        },
+        {
+          "source_id": "ai-hubspot-lifecycle-stage-misfire-detector-r4bryi",
+          "title": "HubSpot Lifecycle Stage Misfire Detector",
+          "url": "https://example.invalid/ai-idea/hubspot-lifecycle-stage-misfire-detector",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Sidebar on HubSpot contact/company pages flags stage transitions that violate the configured stage logic and surfaces zombie leads. Targets RevOps teams at SMB SaaS. Why now: HubSpot's 2026 AI-suggested stage moves are overwriting correct labels.",
+          "monetization": "per_seat",
+          "pain": "HubSpot contacts get stuck in wrong lifecycle stages and reps don't notice until quarterly reviews."
+        },
+        {
+          "source_id": "ai-salesforce-opportunity-close-date-slippa-0ltwlf",
+          "title": "Salesforce Opportunity Close-Date Slippage Radar",
+          "url": "https://example.invalid/ai-idea/salesforce-opportunity-close-date-slippa",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Plots close-date revision history per opportunity as a slippage curve inside the opp page and emails a weekly digest to RevOps. Why now: CFOs are tightening forecast accuracy requirements post-2025 budget cuts.",
+          "monetization": "per_seat",
+          "pain": "Salesforce close dates keep getting pushed and reps don't see the slippage trend until forecast calls."
+        },
+        {
+          "source_id": "ai-oauth-scope-creep-across-connected-apps-yqtzm9",
+          "title": "OAuth Scope Creep Across Connected Apps",
+          "url": "https://example.invalid/ai-idea/oauth-scope-creep-across-connected-apps",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Inspects OAuth grant screens and account connected-apps pages, scores each app's scope creep risk against least-privilege norms. Browser-only via DOM scraping. Why now: consumer anxiety about data brokers is peaking in 2026.",
+          "monetization": "freemium_saas",
+          "pain": "I don't know which connected apps have read or write access to my Google, Drive, and Slack and whether they over-scoped."
+        },
+        {
+          "source_id": "ai-webpage-keyboard-trap-accessibility-dete-bfsink",
+          "title": "Webpage Keyboard Trap Accessibility Detector",
+          "url": "https://example.invalid/ai-idea/webpage-keyboard-trap-accessibility-dete",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_privacy::accessibility",
+          "notes": "Detects focus-trap libraries that fail to restore focus on close, posts an overlay warning and exports an audit log. Why now: the EU EAA enforcement wave in 2026 makes keyboard nav compliance a board-level topic.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Keyboard users get trapped inside widgets or modals with no escape hatch and auditors miss it in WCAG checks."
+        },
+        {
+          "source_id": "ai-browser-storage-eviction-risk-predictor-eejrxf",
+          "title": "Browser Storage Eviction Risk Predictor",
+          "url": "https://example.invalid/ai-idea/browser-storage-eviction-risk-predictor",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "developer_internal::devtools",
+          "notes": "Wraps storage API calls in dev mode, projects per-origin quota usage against ITP/Chrome eviction thresholds, and flags at-risk keys. Useful for extension QA teams. Donation-supported.",
+          "monetization": "donation",
+          "pain": "My extension's IndexedDB or localStorage gets silently evicted under Safari ITP and I can't reproduce the bug."
+        },
+        {
+          "source_id": "ai-local-llm-token-budget-by-tool-call-9gh7z7",
+          "title": "Local LLM Token Budget by Tool Call",
+          "url": "https://example.invalid/ai-idea/local-llm-token-budget-by-tool-call",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Hooks into web-based agent playgrounds (OpenAI, Anthropic console, Open WebUI), parses tool-call JSON, and renders a per-call token histogram with cost. Why now: context cost is the new API cost as agent loops multiply.",
+          "monetization": "freemium_saas",
+          "pain": "I can't tell which tool calls inside my agent loop are eating the Claude or Ollama context budget."
+        },
+        {
+          "source_id": "ai-ai-coding-assistant-prompt-history-diff-eh6u3a",
+          "title": "AI Coding Assistant Prompt History Diff",
+          "url": "https://example.invalid/ai-idea/ai-coding-assistant-prompt-history-diff",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Snapshots the visible system prompts of major AI coding tools when their web views are open, then diffs across versions and posts changelog notes. Why now: prompt versioning is becoming a developer pain as models swap underneath.",
+          "monetization": "freemium_saas",
+          "pain": "Cursor or Copilot silently changed system prompts in the last release and my output quality tanked with no diff to look at."
+        },
+        {
+          "source_id": "ai-calendar-meeting-series-health-score-9xva6n",
+          "title": "Calendar Meeting Series Health Score",
+          "url": "https://example.invalid/ai-idea/calendar-meeting-series-health-score",
+          "timestamp": "2026-07-23T01:30:56.956Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Reads Google Calendar event metadata, attendee churn, agenda presence, and RSVP patterns to score each recurring series on engagement decay. Tip-jar supported. Why now: meeting fatigue is the top post-pandemic productivity complaint.",
+          "monetization": "stripe_tip_jar",
+          "pain": "My recurring standup has degraded into a status update nobody reads but I can't prove it to my manager."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M3",
+        "generated_at": "2026-07-23T01:30:56.966Z",
+        "dedup_against": 615,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M3",
+    "schema_version": "1.1.0"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "slot": "2026-07-23-03",
+  "week": "2026-W30",
+  "scored_at": "2026-07-23T01:30:57.121Z",
+  "rubric_version": "2.0.0",
+  "candidates": [
+    {
+      "id": "ai-coding-assistant-prompt-history-diff",
+      "name": "AI Coding Assistant Prompt History Diff",
+      "pitch": "Snapshots the visible system prompts of major AI coding tools when their web views are open, then diffs across versions and posts changelog notes. Why now: prompt versioning is becoming a developer pa",
+      "pain": "Cursor or Copilot silently changed system prompts in the last release and my output quality tanked with no diff to look at.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-coding-assistant-prompt-history-diff-eh6u3a",
+          "url": "https://example.invalid/ai-idea/ai-coding-assistant-prompt-history-diff"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 6,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.9,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "ai-prompt-diff-viewer",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "cloudflare-worker-cpu-time-budget-sentin",
+      "name": "Cloudflare Worker CPU Time Budget Sentinel",
+      "pitch": "Instruments fetch handlers or scrapes wrangler tail output to plot p95 CPU time per route against the budget. Hot because Workers Paid plans tier compute and edge runtimes now dominate cost dashboards",
+      "pain": "Engineers overshoot Cloudflare Workers' 10ms CPU budget on paid plans and don't realize until billed.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cloudflare-worker-cpu-time-budget-sentin-9jpf47",
+          "url": "https://example.invalid/ai-idea/cloudflare-worker-cpu-time-budget-sentin"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "cloud-spend-context-overlay",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "stripe-webhook-signing-secret-rotation-t",
+      "name": "Stripe Webhook Signing Secret Rotation Tracker",
+      "pitch": "Injects into the Stripe dashboard, watches each endpoint secret's age, and alerts when rotation is overdue or a new whsec_ is sitting unused. Why now: PCI 4.0 tightens key rotation expectations. No co",
+      "pain": "Stripe webhook signing secrets get rotated but downstream endpoints don't update, silently dropping events.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-webhook-signing-secret-rotation-t-np0rg3",
+          "url": "https://example.invalid/ai-idea/stripe-webhook-signing-secret-rotation-t"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "font-lineage-tracker",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "hubspot-lifecycle-stage-misfire-detector",
+      "name": "HubSpot Lifecycle Stage Misfire Detector",
+      "pitch": "Sidebar on HubSpot contact/company pages flags stage transitions that violate the configured stage logic and surfaces zombie leads. Targets RevOps teams at SMB SaaS. Why now: HubSpot's 2026 AI-suggest",
+      "pain": "HubSpot contacts get stuck in wrong lifecycle stages and reps don't notice until quarterly reviews.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-hubspot-lifecycle-stage-misfire-detector-r4bryi",
+          "url": "https://example.invalid/ai-idea/hubspot-lifecycle-stage-misfire-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sitemap-depth-analyzer",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "salesforce-opportunity-close-date-slippa",
+      "name": "Salesforce Opportunity Close-Date Slippage Radar",
+      "pitch": "Plots close-date revision history per opportunity as a slippage curve inside the opp page and emails a weekly digest to RevOps. Why now: CFOs are tightening forecast accuracy requirements post-2025 bu",
+      "pain": "Salesforce close dates keep getting pushed and reps don't see the slippage trend until forecast calls.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-salesforce-opportunity-close-date-slippa-0ltwlf",
+          "url": "https://example.invalid/ai-idea/salesforce-opportunity-close-date-slippa"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "outreach-snippet-vault",
+        "jaccard_with_nearest": 0.08
+      }
+    },
+    {
+      "id": "local-llm-token-budget-by-tool-call",
+      "name": "Local LLM Token Budget by Tool Call",
+      "pitch": "Hooks into web-based agent playgrounds (OpenAI, Anthropic console, Open WebUI), parses tool-call JSON, and renders a per-call token histogram with cost. Why now: context cost is the new API cost as ag",
+      "pain": "I can't tell which tool calls inside my agent loop are eating the Claude or Ollama context budget.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-local-llm-token-budget-by-tool-call-9gh7z7",
+          "url": "https://example.invalid/ai-idea/local-llm-token-budget-by-tool-call"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 6,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.35,
+      "monetization_hint": {
+        "model": "Freemium with monthly quota",
+        "tier": "quota_based",
+        "monthly_price_usd": 8
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "browser-console-api-call-cost-tracker",
+        "jaccard_with_nearest": 0.13
+      }
+    },
+    {
+      "id": "oauth-scope-creep-across-connected-apps",
+      "name": "OAuth Scope Creep Across Connected Apps",
+      "pitch": "Inspects OAuth grant screens and account connected-apps pages, scores each app's scope creep risk against least-privilege norms. Browser-only via DOM scraping. Why now: consumer anxiety about data bro",
+      "pain": "I don't know which connected apps have read or write access to my Google, Drive, and Slack and whether they over-scoped.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-oauth-scope-creep-across-connected-apps-yqtzm9",
+          "url": "https://example.invalid/ai-idea/oauth-scope-creep-across-connected-apps"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 5,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.05,
+      "monetization_hint": {
+        "model": "Donation + paid support tier",
+        "tier": "donation",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "indexeddb-data-export-bridge",
+        "jaccard_with_nearest": 0.08
+      }
+    }
+  ]
+}
