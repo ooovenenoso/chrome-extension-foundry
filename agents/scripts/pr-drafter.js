@@ -6,10 +6,18 @@
 //   node agents/scripts/pr-drafter.js --spec docs/specs/<id>/GOAL.md
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { statSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { argv, exit } from 'node:process';
-import { basename } from 'node:path';
+import { basename, dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { deflateSync } from 'node:zlib';
+
+// Resolve scripts/ relative to this file's location so the syntax-guard works
+// regardless of cwd (especially under tests that chdir into a temp dir).
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const SYNTAX_GUARD = resolve(__dirname, '../../scripts/syntax-guard.js');
 
 const args = parseArgs(argv.slice(2));
 if (!args.spec) { console.error('required: --spec <GOAL.md>'); exit(2); }
@@ -53,6 +61,14 @@ for (const size of [16, 32, 48, 128]) {
   await writeFile(`${srcDir}/assets/icons/icon${size}.png`, pngIcon(size));
 }
 
+// Run syntax-guard BEFORE staging. If it rejects, it removes the staged files
+// itself and writes a docs/specs/_rejected/<slot>-<id>.md marker.
+const guard = spawnSync('node', [SYNTAX_GUARD, '--extension-id', extId, '--slot', slotFor(extId)], { encoding: 'utf8', stdio: 'inherit' });
+if (guard.status !== 0) {
+  console.error(`pr-drafter: syntax-guard rejected the scaffold for ${extId} — see docs/specs/_rejected/`);
+  exit(guard.status || 1);
+}
+
 spawnSync('git', ['add', `${srcDir}/`, `tests/unit/${extId}-priority.test.js`, `tests/integration/${extId}-manifest.test.js`], { stdio: 'inherit' });
 
 console.log(`pr-draft · ${extId} · real MV3 scaffold staged (${extName})`);
@@ -62,6 +78,20 @@ function titleFromSpec(markdown, fallback) {
   const heading = markdown.match(/^#\s+GOAL\.md\s+—\s+(.+)$/m)?.[1]?.trim();
   if (heading && !heading.includes('<')) return heading;
   return fallback.split('-').map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(' ');
+}
+
+function slotFor(extId) {
+  // Slot = YYYY-MM-DD-HH derived from current spec mtime (so two drafts in the
+  // same hour overwrite gracefully). Fallback: now.
+  try {
+    const t = statSync(specPath).mtime;
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${t.getUTCFullYear()}-${pad(t.getUTCMonth() + 1)}-${pad(t.getUTCDate())}-${pad(t.getUTCHours())}`;
+  } catch {
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}-${pad(d.getUTCHours())}`;
+  }
 }
 
 function manifest(id, name) {

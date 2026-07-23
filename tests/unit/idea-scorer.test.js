@@ -21,7 +21,7 @@ test('idea-scorer: produces valid idea-pool from fixture', () => {
     const out = JSON.parse(readFileSync(outFile, 'utf8'));
     assert.equal(out.slot, FIXTURE_SLOT);
     assert.equal(out.week, '2026-W26');
-    assert.equal(out.rubric_version, '1.0.0');
+    assert.equal(out.rubric_version, '2.0.0');
     assert.ok(Array.isArray(out.candidates));
     assert.ok(out.candidates.length >= 1, 'at least one candidate');
 

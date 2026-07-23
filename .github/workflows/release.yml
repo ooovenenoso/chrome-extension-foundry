@@ -2,20 +2,89 @@ name: release
 
 on:
   push:
-    tags: ['v*.*.*']
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: release
+  cancel-in-progress: false
+
 jobs:
+  detect-extensions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      extensions: ${{ steps.detect.outputs.extensions }}
+      version: ${{ steps.detect.outputs.version }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - id: detect
+        run: |
+          # Discover every src/<ext-id>/ that has a manifest.json.
+          # Auto-detect means we ship every extension in the repo, every push.
+          EXTS=$(ls -1 src/ 2>/dev/null | while read d; do
+            if [ -f "src/$d/manifest.json" ]; then echo "$d"; fi
+          done | jq -R . | jq -cs 'map(select(. != ""))')
+          echo "extensions=$EXTS" >> "$GITHUB_OUTPUT"
+
+          # Bump package.json patch on every main push.
+          CURRENT=$(node -p "require('./package.json').version")
+          IFS='.' read -ra PARTS <<< "$CURRENT"
+          MAJOR=${PARTS[0]}; MINOR=${PARTS[1]}; PATCH=${PARTS[2]}
+          NEW_PATCH=$((PATCH + 1))
+          NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+          echo "version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
+          echo "Detected extensions: $EXTS · current=$CURRENT → new=$NEW_VERSION"
+
+  bump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs: detect-extensions
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Bump package.json patch
+        run: |
+          CURRENT=$(node -p "require('./package.json').version")
+          IFS='.' read -ra PARTS <<< "$CURRENT"
+          NEW="${{ needs.detect-extensions.outputs.version }}"
+          node -e "
+            const fs=require('fs');
+            const p=JSON.parse(fs.readFileSync('package.json','utf8'));
+            p.version='$NEW';
+            fs.writeFileSync('package.json', JSON.stringify(p,null,2)+'\n');
+          "
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add package.json
+          if ! git diff --cached --quiet; then
+            git pull --rebase --autostash origin main || git pull --rebase origin main
+            git commit -m "chore(release): bump version to $NEW"
+            git push
+          fi
+
   package-extension:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    needs: [detect-extensions, bump]
+    continue-on-error: true
     strategy:
       matrix:
-        extension-id: []
+        extension-id: ${{ fromJson(needs.detect-extensions.outputs.extensions) }}
+      fail-fast: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Package ${{ matrix.extension-id }}
         run: |
@@ -24,17 +93,31 @@ jobs:
           if [ ! -d "$SRC_DIR" ]; then
             echo "::error::src/${EXT_ID} does not exist"; exit 1
           fi
-          OUT="${EXT_ID}-${GITHUB_REF_NAME}.zip"
-          # Exclude dev screenshots, .git, node_modules, dev folders
-          (cd "$SRC_DIR" && zip -r "../../$OUT" . \
-            -x '*.map' 'screenshots/dev/*' '.DS_Store')
+          OUT="${EXT_ID}-${{ needs.detect-extensions.outputs.version }}.zip"
+          npm run package:extension -- "$EXT_ID"
+          ZIP_PATH="dist/${EXT_ID}-v0.1.0.zip"  # version is fixed at 0.1.0 for the MV3 MVP
+          # Rename to factory-versioned for the Release asset.
+          cp "$ZIP_PATH" "$OUT"
           echo "asset=$OUT" >> "$GITHUB_OUTPUT"
-        id: zip
+
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ext-${{ matrix.extension-id }}
+          path: ${{ matrix.extension-id }}-${{ needs.detect-extensions.outputs.version }}.zip
+
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs: [detect-extensions, bump, package-extension]
+    steps:
+      - uses: actions/checkout@v5
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: v${{ needs.detect-extensions.outputs.version }}
+          name: "Chrome Extension Foundry v${{ needs.detect-extensions.outputs.version }}"
           generate_release_notes: true
-          files: ${{ steps.zip.outputs.asset }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Each package-extension job uploads its zip via upload-artifact; we
+          # could also attach as release assets, but artifact-only is fine for now.

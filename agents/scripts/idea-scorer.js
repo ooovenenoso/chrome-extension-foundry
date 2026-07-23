@@ -10,7 +10,8 @@ import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { argv, exit } from 'node:process';
 import Ajv from 'ajv';
-import rubric from '../contracts/scoring-rubric.v1.json' with { type: 'json' };
+import rubricV1 from '../contracts/scoring-rubric.v1.json' with { type: 'json' };
+import rubricV2 from '../contracts/scoring-rubric.v2.json' with { type: 'json' };
 import poolSchema from '../contracts/idea-pool.schema.json' with { type: 'json' };
 
 const args = parseArgs(argv.slice(2));
@@ -18,6 +19,9 @@ if (!args.in) {
   console.error('required: --in <research-snapshot.json>');
   exit(2);
 }
+
+// v2 is the active rubric. v1 retained for back-compat scoring of legacy pools.
+const rubric = rubricV2;
 
 const inPath = args.in;
 const outDir = args.out || 'docs/ideas';
