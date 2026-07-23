@@ -20,8 +20,14 @@
 // (lower quality, flagged in CHANGELOG). Deterministic — good enough for v0.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 import { argv, exit } from 'node:process';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// Active rubric is v2. Threshold lives there. v1 retained for back-compat reads.
+const RUBRIC_PATH = join(__dirname, '../contracts/scoring-rubric.v2.json');
 
 const args = parseArgs(argv.slice(2));
 if (!args.idea) { console.error('required: --idea <idea-pool.json>'); exit(2); }
@@ -29,6 +35,12 @@ if (!args.idea) { console.error('required: --idea <idea-pool.json>'); exit(2); }
 const topN = Number(args.top || 1);
 const outDir = args.out || 'docs/specs';
 const templatePath = args.template || 'docs/specs/_template/GOAL.md';
+
+const rubric = JSON.parse(readFileSync(RUBRIC_PATH, 'utf8'));
+const MIN_SCORE = rubric.thresholds.min_score_for_spec;
+const MIN_PITCH = 50;
+const MIN_PAIN = 80;
+const DEDUP_JACCARD_MAX = 0.5;
 
 const pool = JSON.parse(await readFile(args.idea, 'utf8'));
 const candidate = pool.candidates?.[topN - 1];
@@ -98,13 +110,13 @@ function inferHostPatterns(c) {
 }
 
 function checkRejects(c) {
-  if ((c.score_total || 0) < 7.0) return `score_total ${c.score_total} < 7.0`;
-  if (c.dedup_state?.is_duplicate && (c.dedup_state?.jaccard_with_nearest || 0) >= 0.5) {
+  if ((c.score_total || 0) < MIN_SCORE) return `score_total ${c.score_total} < ${MIN_SCORE}`;
+  if (c.dedup_state?.is_duplicate && (c.dedup_state?.jaccard_with_nearest || 0) >= DEDUP_JACCARD_MAX) {
     return `duplicate of ${c.dedup_state.nearest_match_id} (jaccard ${c.dedup_state.jaccard_with_nearest})`;
   }
   if (!c.monetization_hint || !c.monetization_hint.model) return 'monetization_hint missing';
-  if ((c.pitch || '').length < 50) return 'pitch too short';
-  if ((c.pain || '').length < 80) return 'pain too short';
+  if ((c.pitch || '').length < MIN_PITCH) return `pitch too short (${(c.pitch || '').length} < ${MIN_PITCH})`;
+  if ((c.pain || '').length < MIN_PAIN) return `pain too short (${(c.pain || '').length} < ${MIN_PAIN})`;
   return null;
 }
 
