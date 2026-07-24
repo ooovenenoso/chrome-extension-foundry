@@ -1,0 +1,338 @@
+{
+  "slot": "2026-07-24-04",
+  "week": "2026-W30",
+  "scored_at": "2026-07-24T04:20:39.088Z",
+  "rubric_version": "2.0.0",
+  "candidates": [
+    {
+      "id": "ai-coding-copilot-context-token-allocato",
+      "name": "AI Coding Copilot Context Token Allocator",
+      "pitch": "Side panel shows which files and context chunks currently consume tokens in the active AI session, ranks them by contribution score. Cursor and Copilot now expose context telemetry. Strong wedge into ",
+      "pain": "Developers using Copilot or Cursor burn quota on background files dragged into context that never contribute to the final answer.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-ai-coding-copilot-context-token-allocato-vcs76p",
+          "url": "https://example.invalid/ai-idea/ai-coding-copilot-context-token-allocato"
+        }
+      ],
+      "scores": {
+        "demand": 7,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 7.3,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "local-llm-token-budget-by-tool-call",
+        "jaccard_with_nearest": 0.11
+      }
+    },
+    {
+      "id": "linkedin-inmail-reply-rate-by-industry-c",
+      "name": "LinkedIn InMail Reply Rate by Industry Comparator",
+      "pitch": "Logs anonymized reply outcomes from opted-in SDRs, normalizes by industry and seniority bucket, shows a benchmark overlay on LinkedIn Sales Navigator. Network-effect value. Distinct from generic reply",
+      "pain": "B2B SDRs have no reference for what InMail reply rate is realistic for their target industry before launching a campaign.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-linkedin-inmail-reply-rate-by-industry-c-yhr1f7",
+          "url": "https://example.invalid/ai-idea/linkedin-inmail-reply-rate-by-industry-c"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 6.5,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "meeting-context-prep",
+        "jaccard_with_nearest": 0.07
+      }
+    },
+    {
+      "id": "stripe-connect-multi-party-split-reconci",
+      "name": "Stripe Connect Multi-Party Split Reconciliation Panel",
+      "pitch": "Scrapes Stripe dashboard, cross-references with CSV exports, flags unmatched splits. Built with manifest v3 sidepanel and Stripe API proxy. Demand grows as marketplaces scale payouts. Alternatives lik",
+      "pain": "Stripe Connect marketplace finance teams spend hours matching payouts to dozens of connected accounts and tax obligations.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-stripe-connect-multi-party-split-reconci-cwexl1",
+          "url": "https://example.invalid/ai-idea/stripe-connect-multi-party-split-reconci"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.75,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "api-budget-depletion-notifier",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "shopify-cart-abandonment-forensic-inspec",
+      "name": "Shopify Cart Abandonment Forensic Inspector",
+      "pitch": "Hooks Shopify storefront script events, captures anonymized checkout step timings, surfaces drop-off causes per session. Competes with Hotjar but native to Shopify. Increases conversion by 3-7% in pub",
+      "pain": "DTC ecommerce operators cannot replay what happened inside abandoned Shopify carts to diagnose checkout UX failures.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-shopify-cart-abandonment-forensic-inspec-rotc07",
+          "url": "https://example.invalid/ai-idea/shopify-cart-abandonment-forensic-inspec"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "mixpanel-event-schema-drift-overlay",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "prospect-content-topic-burst-detector",
+      "name": "Prospect Content Topic Burst Detector",
+      "pitch": "Subscribes to RSS/Atom feeds of prospect domains, computes topic embeddings with a local model, alerts when topic velocity spikes. Wedges into the ABM tech stack alongside 6sense and Demandbase. Niche",
+      "pain": "B2B marketers miss when a target account's blog or press releases suddenly start publishing about a new initiative worth pitching.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-prospect-content-topic-burst-detector-f07xrg",
+          "url": "https://example.invalid/ai-idea/prospect-content-topic-burst-detector"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 8,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.45,
+      "monetization_hint": {
+        "model": "Per-seat subscription",
+        "tier": "per_seat",
+        "monthly_price_usd": 20
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "sales-prospect-stack-commitment-detector",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "notion-ai-credit-burn-rate-visualizer",
+      "name": "Notion AI Credit Burn Rate Visualizer",
+      "pitch": "Uses Notion's admin API for audit logs, attributes credit usage per page, user, and template. Notion AI is sold on credit packs and overage bills shock admins. No competitor exists at this grain.",
+      "pain": "Notion workspace admins see an AI credit line item but cannot tell which pages or teammates are spending it.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-notion-ai-credit-burn-rate-visualizer-n4h3br",
+          "url": "https://example.invalid/ai-idea/notion-ai-credit-burn-rate-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 5,
+        "wtp": 4,
+        "buildability": 5,
+        "defensibility": 9
+      },
+      "score_total": 5.3,
+      "monetization_hint": {
+        "model": "Stripe tip jar (Payment Links $3/$5/$10)",
+        "tier": "tip_jar",
+        "monthly_price_usd": null
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "public-github-api-usage-example-finder",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "webgpu-compute-pass-timing-visualizer",
+      "name": "WebGPU Compute Pass Timing Visualizer",
+      "pitch": "Hooks the GPUCommandEncoder timing queries and renders a flamegraph overlay next to Performance panel. WebGPU went stable in Chrome 113 and adoption is climbing for ML-on-browser teams. No competitor ",
+      "pain": "Browser graphics engineers cannot profile WebGPU compute passes alongside their existing Chrome DevTools panels without context switching.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-webgpu-compute-pass-timing-visualizer-jywr3t",
+          "url": "https://example.invalid/ai-idea/webgpu-compute-pass-timing-visualizer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "multi-channel-sales-cadence-optimizer",
+        "jaccard_with_nearest": 0.09
+      }
+    },
+    {
+      "id": "salesforce-flow-execution-dead-path-dete",
+      "name": "Salesforce Flow Execution Dead Path Detector",
+      "pitch": "Uses Salesforce Tooling API to traverse flow metadata, builds a reachable-state graph, highlights dead branches. Targets orgs with 50+ flows where legacy debt is real. Existing tools like Elements.clo",
+      "pain": "Salesforce admins inherit flows with unreachable branches that ship to production unnoticed until quarterly audits find them.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-salesforce-flow-execution-dead-path-dete-ruqk58",
+          "url": "https://example.invalid/ai-idea/salesforce-flow-execution-dead-path-dete"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "github-issue-duplicate-cluster-detector",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "gdpr-dsar-response-sla-timer",
+      "name": "GDPR DSAR Response SLA Timer",
+      "pitch": "Parses inbox for DSAR patterns, opens a timer in Gmail sidebar, escalates via webhook to Slack at 20/25/30 day marks. Targets DPOs at mid-market SaaS. Apple App Store privacy labels raised DSAR volume",
+      "pain": "Privacy teams tracking Data Subject Access Requests risk missing the 30-day GDPR clock and exposing their company to enforcement.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-gdpr-dsar-response-sla-timer-57kle8",
+          "url": "https://example.invalid/ai-idea/gdpr-dsar-response-sla-timer"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webhook-provider-fingerprinter",
+        "jaccard_with_nearest": 0.05
+      }
+    },
+    {
+      "id": "browser-extension-manifest-v3-permission",
+      "name": "Browser Extension Manifest V3 Permission Auditor",
+      "pitch": "Loads any CRX in a sandboxed iframe, traces declared vs actually-called Chrome APIs, emits a risk score. Chrome Web Store killed V2 uploads in 2024, so V3 audits are now urgent for enterprise security",
+      "pain": "Security teams installing vendor Chrome extensions cannot verify which manifest V3 permissions are actually used and which are over-broad.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-browser-extension-manifest-v3-permission-9v03rj",
+          "url": "https://example.invalid/ai-idea/browser-extension-manifest-v3-permission"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "webfont-license-checker",
+        "jaccard_with_nearest": 0.06
+      }
+    },
+    {
+      "id": "cloudflare-worker-bundle-size-watcher",
+      "name": "Cloudflare Worker Bundle Size Watcher",
+      "pitch": "Wraps wrangler build, compares output bundle size per PR, posts a diff comment to GitHub. Cloudflare added a 10MB paid tier in 2025 so monitoring is now cost-relevant. Niche but loyal audience at edge",
+      "pain": "Edge developers ship Workers that quietly grow past the 1MB compressed limit after a dependency bump without CI catching it.",
+      "source_refs": [
+        {
+          "source": "ai_generated",
+          "source_id": "ai-cloudflare-worker-bundle-size-watcher-jnnsgv",
+          "url": "https://example.invalid/ai-idea/cloudflare-worker-bundle-size-watcher"
+        }
+      ],
+      "scores": {
+        "demand": 3,
+        "wtp": 9,
+        "buildability": 5,
+        "defensibility": 2
+      },
+      "score_total": 5.25,
+      "monetization_hint": {
+        "model": "Freemium → SaaS bridge (paid tier via external Stripe)",
+        "tier": "freemium_saas",
+        "monthly_price_usd": 15
+      },
+      "dedup_state": {
+        "is_duplicate": false,
+        "nearest_match_id": "edge-function-invocation-cost-tracer",
+        "jaccard_with_nearest": 0.07
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-24-04",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-24T04:20:38.917Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-stripe-connect-multi-party-split-reconci-cwexl1",
+          "title": "Stripe Connect Multi-Party Split Reconciliation Panel",
+          "url": "https://example.invalid/ai-idea/stripe-connect-multi-party-split-reconci",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::fintech",
+          "notes": "Scrapes Stripe dashboard, cross-references with CSV exports, flags unmatched splits. Built with manifest v3 sidepanel and Stripe API proxy. Demand grows as marketplaces scale payouts. Alternatives like Baremetrics focus on top-line MRR, not the ugly reconciliation.",
+          "monetization": "freemium_saas",
+          "pain": "Stripe Connect marketplace finance teams spend hours matching payouts to dozens of connected accounts and tax obligations."
+        },
+        {
+          "source_id": "ai-webgpu-compute-pass-timing-visualizer-jywr3t",
+          "title": "WebGPU Compute Pass Timing Visualizer",
+          "url": "https://example.invalid/ai-idea/webgpu-compute-pass-timing-visualizer",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::graphics",
+          "notes": "Hooks the GPUCommandEncoder timing queries and renders a flamegraph overlay next to Performance panel. WebGPU went stable in Chrome 113 and adoption is climbing for ML-on-browser teams. No competitor tool exists for this yet.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Browser graphics engineers cannot profile WebGPU compute passes alongside their existing Chrome DevTools panels without context switching."
+        },
+        {
+          "source_id": "ai-salesforce-flow-execution-dead-path-dete-ruqk58",
+          "title": "Salesforce Flow Execution Dead Path Detector",
+          "url": "https://example.invalid/ai-idea/salesforce-flow-execution-dead-path-dete",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::crm-admin",
+          "notes": "Uses Salesforce Tooling API to traverse flow metadata, builds a reachable-state graph, highlights dead branches. Targets orgs with 50+ flows where legacy debt is real. Existing tools like Elements.cloud focus on field usage, not flow path coverage.",
+          "monetization": "per_seat",
+          "pain": "Salesforce admins inherit flows with unreachable branches that ship to production unnoticed until quarterly audits find them."
+        },
+        {
+          "source_id": "ai-insider-transaction-activity-overlay-npexmw",
+          "title": "Insider Transaction Activity Overlay",
+          "url": "https://example.invalid/ai-idea/insider-transaction-activity-overlay",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_productivity::finance",
+          "notes": "Pulls Form 4 data from SEC's free EDGAR API, overlays buy/sell icons on any Yahoo Finance or brokerage page. Insider buying clusters historically signal conviction. Premium tier adds cluster detection and historical charts.",
+          "monetization": "freemium_saas",
+          "pain": "Retail investors checking stock pages must jump to SEC EDGAR to see whether insiders have been buying or selling their holdings."
+        },
+        {
+          "source_id": "ai-shopify-cart-abandonment-forensic-inspec-rotc07",
+          "title": "Shopify Cart Abandonment Forensic Inspector",
+          "url": "https://example.invalid/ai-idea/shopify-cart-abandonment-forensic-inspec",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::ecommerce",
+          "notes": "Hooks Shopify storefront script events, captures anonymized checkout step timings, surfaces drop-off causes per session. Competes with Hotjar but native to Shopify. Increases conversion by 3-7% in published case studies.",
+          "monetization": "freemium_saas",
+          "pain": "DTC ecommerce operators cannot replay what happened inside abandoned Shopify carts to diagnose checkout UX failures."
+        },
+        {
+          "source_id": "ai-linkedin-inmail-reply-rate-by-industry-c-yhr1f7",
+          "title": "LinkedIn InMail Reply Rate by Industry Comparator",
+          "url": "https://example.invalid/ai-idea/linkedin-inmail-reply-rate-by-industry-c",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales-outreach",
+          "notes": "Logs anonymized reply outcomes from opted-in SDRs, normalizes by industry and seniority bucket, shows a benchmark overlay on LinkedIn Sales Navigator. Network-effect value. Distinct from generic reply predictors like SmartWriter.",
+          "monetization": "freemium_saas",
+          "pain": "B2B SDRs have no reference for what InMail reply rate is realistic for their target industry before launching a campaign."
+        },
+        {
+          "source_id": "ai-gdpr-dsar-response-sla-timer-57kle8",
+          "title": "GDPR DSAR Response SLA Timer",
+          "url": "https://example.invalid/ai-idea/gdpr-dsar-response-sla-timer",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::privacy",
+          "notes": "Parses inbox for DSAR patterns, opens a timer in Gmail sidebar, escalates via webhook to Slack at 20/25/30 day marks. Targets DPOs at mid-market SaaS. Apple App Store privacy labels raised DSAR volume 4x in 2025.",
+          "monetization": "per_seat",
+          "pain": "Privacy teams tracking Data Subject Access Requests risk missing the 30-day GDPR clock and exposing their company to enforcement."
+        },
+        {
+          "source_id": "ai-ai-coding-copilot-context-token-allocato-vcs76p",
+          "title": "AI Coding Copilot Context Token Allocator",
+          "url": "https://example.invalid/ai-idea/ai-coding-copilot-context-token-allocato",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_devtool::ai-devtools",
+          "notes": "Side panel shows which files and context chunks currently consume tokens in the active AI session, ranks them by contribution score. Cursor and Copilot now expose context telemetry. Strong wedge into dev tool budgets.",
+          "monetization": "freemium_saas",
+          "pain": "Developers using Copilot or Cursor burn quota on background files dragged into context that never contribute to the final answer."
+        },
+        {
+          "source_id": "ai-notion-ai-credit-burn-rate-visualizer-n4h3br",
+          "title": "Notion AI Credit Burn Rate Visualizer",
+          "url": "https://example.invalid/ai-idea/notion-ai-credit-burn-rate-visualizer",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::ai-productivity",
+          "notes": "Uses Notion's admin API for audit logs, attributes credit usage per page, user, and template. Notion AI is sold on credit packs and overage bills shock admins. No competitor exists at this grain.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Notion workspace admins see an AI credit line item but cannot tell which pages or teammates are spending it."
+        },
+        {
+          "source_id": "ai-browser-extension-manifest-v3-permission-9v03rj",
+          "title": "Browser Extension Manifest V3 Permission Auditor",
+          "url": "https://example.invalid/ai-idea/browser-extension-manifest-v3-permission",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_devtool::security",
+          "notes": "Loads any CRX in a sandboxed iframe, traces declared vs actually-called Chrome APIs, emits a risk score. Chrome Web Store killed V2 uploads in 2024, so V3 audits are now urgent for enterprise security. No equivalent open tool.",
+          "monetization": "per_seat",
+          "pain": "Security teams installing vendor Chrome extensions cannot verify which manifest V3 permissions are actually used and which are over-broad."
+        },
+        {
+          "source_id": "ai-prospect-content-topic-burst-detector-f07xrg",
+          "title": "Prospect Content Topic Burst Detector",
+          "url": "https://example.invalid/ai-idea/prospect-content-topic-burst-detector",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales-intel",
+          "notes": "Subscribes to RSS/Atom feeds of prospect domains, computes topic embeddings with a local model, alerts when topic velocity spikes. Wedges into the ABM tech stack alongside 6sense and Demandbase. Niche but high-intent signal.",
+          "monetization": "freemium_saas",
+          "pain": "B2B marketers miss when a target account's blog or press releases suddenly start publishing about a new initiative worth pitching."
+        },
+        {
+          "source_id": "ai-local-tab-context-vector-semantic-index-x3gq5j",
+          "title": "Local Tab Context Vector Semantic Index",
+          "url": "https://example.invalid/ai-idea/local-tab-context-vector-semantic-index",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_ai_wrapper::ai-research",
+          "notes": "Extracts readable text from each tab in real time, embeds locally with a quantized model like all-MiniLM, powers a chat sidebar over the corpus. Competes with browser.ai but stays local for privacy. Growing pain with information workers.",
+          "monetization": "freemium_saas",
+          "pain": "Researchers with 50+ open tabs cannot ask natural-language questions across them because no tool indexes tab content semantically."
+        },
+        {
+          "source_id": "ai-compensation-transparency-law-posting-au-17u0zb",
+          "title": "Compensation Transparency Law Posting Auditor",
+          "url": "https://example.invalid/ai-idea/compensation-transparency-law-posting-au",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 4
+          },
+          "category": "b2b_sales::hr-compliance",
+          "notes": "Scrapes a job board's ATS-detected region, validates required disclosures against a maintained rule set, highlights gaps before publishing. Law count expanded to 14 states in 2025. First-mover niche with no extension equivalent.",
+          "monetization": "freemium_saas",
+          "pain": "HR and recruiters posting jobs across CA, NY, CO and WA face daily fines for omitting salary bands or misrepresenting pay ranges."
+        },
+        {
+          "source_id": "ai-zoom-participant-bandwidth-heatmap-t1y5q8",
+          "title": "Zoom Participant Bandwidth Heatmap",
+          "url": "https://example.invalid/ai-idea/zoom-participant-bandwidth-heatmap",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "consumer_productivity::video-meetings",
+          "notes": "Uses WebRTC getStats() exposed via Zoom's web client and any embedded stream to render a live bandwidth heatmap by participant. Targets distributed engineering teams. Differs from Meet Engagement Pulse which scores sentiment, not connection health.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Remote meeting hosts cannot tell which participants are dropping frames or freezing because there is no in-meeting bandwidth telemetry."
+        },
+        {
+          "source_id": "ai-cloudflare-worker-bundle-size-watcher-jnnsgv",
+          "title": "Cloudflare Worker Bundle Size Watcher",
+          "url": "https://example.invalid/ai-idea/cloudflare-worker-bundle-size-watcher",
+          "timestamp": "2026-07-24T04:20:38.905Z",
+          "metric": {
+            "llm_demand": 3
+          },
+          "category": "b2b_devtool::edge-devtools",
+          "notes": "Wraps wrangler build, compares output bundle size per PR, posts a diff comment to GitHub. Cloudflare added a 10MB paid tier in 2025 so monitoring is now cost-relevant. Niche but loyal audience at edge-first startups.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Edge developers ship Workers that quietly grow past the 1MB compressed limit after a dependency bump without CI catching it."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M3",
+        "generated_at": "2026-07-24T04:20:38.917Z",
+        "dedup_against": 655,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M3",
+    "schema_version": "1.1.0"
+  }
+}
