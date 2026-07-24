@@ -1,0 +1,220 @@
+{
+  "slot": "2026-07-24-15",
+  "week": "2026-W30",
+  "fetched_at": "2026-07-24T15:00:28.105Z",
+  "partial": false,
+  "sources": {
+    "ai_generated": {
+      "status": "ok",
+      "fetched_count": 15,
+      "entries": [
+        {
+          "source_id": "ai-stripe-webhook-idempotency-key-visualize-kdd8d4",
+          "title": "Stripe Webhook Idempotency Key Visualizer",
+          "url": "https://example.invalid/ai-idea/stripe-webhook-idempotency-key-visualize",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Hook into Chrome devtools network panel on dashboard.stripe.com, parse webhook logs, and overlay idempotency key reuse patterns. Strong buildability with the existing Stripe CLI and a side panel UI. No competitor visualizes this specifically; most teams grep JSON.",
+          "monetization": "freemium_saas",
+          "pain": "Developers can't tell when a retried Stripe webhook will be treated as a duplicate vs new, leading to lost revenue events."
+        },
+        {
+          "source_id": "ai-linkedin-comment-thread-velocity-pulse-csmq0e",
+          "title": "LinkedIn Comment Thread Velocity Pulse",
+          "url": "https://example.invalid/ai-idea/linkedin-comment-thread-velocity-pulse",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Inject into linkedin.com feed/posts, classify comment authors (1st-degree, employee, influencer) and track velocity in the first 6 hours. Sidebar overlay shows a 'lead heat' score. Differentiates from comment sentiment trackers by surfacing author identity, not just tone.",
+          "monetization": "freemium_saas",
+          "pain": "AEs cannot tell which posts by prospects are gaining real engagement vs bot comments, missing warm signal for outreach."
+        },
+        {
+          "source_id": "ai-vercel-build-cache-hit-rate-inspector-fmup2e",
+          "title": "Vercel Build Cache Hit Rate Inspector",
+          "url": "https://example.invalid/ai-idea/vercel-build-cache-hit-rate-inspector",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Reads vercel.com build logs via the page DOM, parses cache events, and shows a per-project cache hit ratio with culprits. Buildable in a weekend using DOM scraping plus a small IndexedDB store. No first-party Vercel UI shows this rollup.",
+          "monetization": "freemium_saas",
+          "pain": "Engineers don't know which Vercel builds are busting the cache and burning build minutes unnecessarily."
+        },
+        {
+          "source_id": "ai-gong-call-pricing-mention-extractor-l2cwu7",
+          "title": "Gong Call Pricing Mention Extractor",
+          "url": "https://example.invalid/ai-idea/gong-call-pricing-mention-extractor",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Pull transcripts from app.gong.io, regex-match competitor product names plus currency/percent patterns, and pin a sidebar of mentions per deal. Highly monetizable per-seat to RevOps teams. Differentiates from generic call summary tools by focusing on competitive intel specifically.",
+          "monetization": "per_seat",
+          "pain": "RevOps wants to know how often competitors' pricing comes up on calls but reps never tag it in Gong."
+        },
+        {
+          "source_id": "ai-browser-cookie-samesite-policy-auditor-m7q225",
+          "title": "Browser Cookie SameSite Policy Auditor",
+          "url": "https://example.invalid/ai-idea/browser-cookie-samesite-policy-auditor",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "developer_internal::privacy",
+          "notes": "Uses chrome.cookies API plus devtools Application panel overlay to flag SameSite, Secure, and third-party context per cookie. Buildable in a few days using existing APIs. Fills a gap DevTools shows cookies but never audits their security posture in aggregate.",
+          "monetization": "stripe_tip_jar",
+          "pain": "QA engineers can't quickly see which cookies a site sets with SameSite=None vs default and which will break in cross-site flows."
+        },
+        {
+          "source_id": "ai-calendly-routing-rule-fairness-visualize-v0h1qw",
+          "title": "Calendly Routing Rule Fairness Visualizer",
+          "url": "https://example.invalid/ai-idea/calendly-routing-rule-fairness-visualize",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Scrapes calendly.com/event_types admin pages, computes assigned-meeting distribution per rep over selectable windows. Sidebar chart highlights variance and outliers. No native Calendly admin view exposes this skew; positioned for sales ops.",
+          "monetization": "freemium_saas",
+          "pain": "Sales managers can't prove round-robin distribution is actually balanced across reps after manual reassignments."
+        },
+        {
+          "source_id": "ai-local-rag-chunk-quality-side-panel-zbb799",
+          "title": "Local RAG Chunk Quality Side Panel",
+          "url": "https://example.invalid/ai-idea/local-rag-chunk-quality-side-panel",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::ai",
+          "notes": "Detects pages with embedded vector stores (common in LangChain/llamaindex demos) and injects a panel showing retrieval scores per chunk with a relevance toggle. Why now: local RAG stacks exploded 2025-26 and there is no good in-browser debugger. Single dev, ~3 weeks build.",
+          "monetization": "freemium_saas",
+          "pain": "Engineers building local RAG on private docs can't tell which chunks their retriever surfaces are actually relevant."
+        },
+        {
+          "source_id": "ai-aws-iam-policy-blast-radius-calculator-ewlk81",
+          "title": "AWS IAM Policy Blast Radius Calculator",
+          "url": "https://example.invalid/ai-idea/aws-iam-policy-blast-radius-calculator",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_devtool::security",
+          "notes": "Parses IAM policy JSON when opened in console.aws.amazon.com, walks action wildcards against the AWS service catalog, and shows a service count plus data-plane risk badge. Buildable by scraping console JSON with manifest V3 content scripts. Direct competitor gap: IAM Access Analyzer only flags within-account issues, not service breadth.",
+          "monetization": "freemium_saas",
+          "pain": "Platform engineers can't quickly judge whether a new IAM policy grants access to more services than intended."
+        },
+        {
+          "source_id": "ai-cold-email-domain-blacklist-pre-flight-yofqyd",
+          "title": "Cold Email Domain Blacklist Pre-Flight",
+          "url": "https://example.invalid/ai-idea/cold-email-domain-blacklist-pre-flight",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "b2b_sales::sales",
+          "notes": "When composing in Gmail/Outlook web, runs the From domain against DNSBL lists in the background and shows a warning chip before send. Why now: Gmail tightened bulk sender rules again in 2026, so domain reputation is hot. Quota model suits heavy SDR teams.",
+          "monetization": "quota_based",
+          "pain": "Outbound reps hit spam folders without warning because their sending domain is already on a blocklist they never checked."
+        },
+        {
+          "source_id": "ai-browser-tab-focus-score-by-domain-74h4fl",
+          "title": "Browser Tab Focus Score by Domain",
+          "url": "https://example.invalid/ai-idea/browser-tab-focus-score-by-domain",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_productivity::productivity",
+          "notes": "Uses chrome.tabs + chrome.idle to bucket time per domain, lets user tag each domain as 'deep work', 'shallow', or 'distraction', and outputs a daily focus ratio. Buildable in <2 weeks with extension APIs only. Differs from existing screen-time blockers by being diagnostic, not punitive.",
+          "monetization": "freemium_saas",
+          "pain": "Knowledge workers can't tell which domains actually drive their output versus which just drain attention during the day."
+        },
+        {
+          "source_id": "ai-supabase-edge-function-latency-heatmap-blamhm",
+          "title": "Supabase Edge Function Latency Heatmap",
+          "url": "https://example.invalid/ai-idea/supabase-edge-function-latency-heatmap",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 5
+          },
+          "category": "b2b_devtool::devtools",
+          "notes": "Parses the Supabase dashboard logs panel and reconstructs cold-start vs warm latency per function across regions. Side panel overlay with heatmap. Why now: Supabase crossed 5M projects in 2026 and observability is still weak. Clean solo build using DOM scraping.",
+          "monetization": "freemium_saas",
+          "pain": "Developers using Supabase Edge Functions don't have a per-region latency view to know where to colocate reads."
+        },
+        {
+          "source_id": "ai-hubspot-email-open-time-by-industry-heat-m8ixr1",
+          "title": "HubSpot Email Open Time by Industry Heatmap",
+          "url": "https://example.invalid/ai-idea/hubspot-email-open-time-by-industry-heat",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "b2b_sales::sales",
+          "notes": "Reads app.hubspot.com marketing reports, groups contacts by industry, and renders a 7x24 heatmap of opens and clicks. Per-seat pitch to marketing ops managers. Differentiator: HubSpot itself shows aggregate heatmaps but never segmented by ICP.",
+          "monetization": "per_seat",
+          "pain": "Marketing ops can't tell which industries engage with nurture emails at which hour, so send-time defaults are guesses."
+        },
+        {
+          "source_id": "ai-webpage-form-field-autofill-privacy-scan-qi6qg7",
+          "title": "Webpage Form Field Autofill Privacy Scanner",
+          "url": "https://example.invalid/ai-idea/webpage-form-field-autofill-privacy-scan",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "consumer_privacy::privacy",
+          "notes": "Watches for off-screen, zero-opacity, and CSS-hidden inputs on any form page and labels them with a privacy warning badge. Pure DOM inspection, no network needed. Why now: privacy regulation is tightening globally and form-based scraping is widespread. Tip jar fits solo dev model.",
+          "monetization": "stripe_tip_jar",
+          "pain": "Users don't realize how many invisible autofill honeypot fields are harvesting data when they paste into forms."
+        },
+        {
+          "source_id": "ai-linear-issue-priority-aging-visualizer-xkysc8",
+          "title": "Linear Issue Priority Aging Visualizer",
+          "url": "https://example.invalid/ai-idea/linear-issue-priority-aging-visualizer",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 6
+          },
+          "category": "developer_internal::productivity",
+          "notes": "Hooks linear.app views via DOM scraping, colors issues by days-since-priority-set vs current priority, surfaces a per-cycle SLA breach list. Buildable in ~2 weeks. No native Linear dashboard shows priority-versus-age scatter; this is a familiar pattern from incident review tools.",
+          "monetization": "freemium_saas",
+          "pain": "Engineering leads can't see when a P1 Linear issue has been sitting too long without triage or close."
+        },
+        {
+          "source_id": "ai-notion-ai-block-cost-attribution-sidebar-qomudg",
+          "title": "Notion AI Block Cost Attribution Sidebar",
+          "url": "https://example.invalid/ai-idea/notion-ai-block-cost-attribution-sidebar",
+          "timestamp": "2026-07-24T15:00:28.095Z",
+          "metric": {
+            "llm_demand": 7
+          },
+          "category": "consumer_ai_wrapper::ai",
+          "notes": "Monitors Notion AI usage events fired in the page, attributes each invocation to a block type and a page, and shows a credit burn leaderboard in a sidebar. Bridges a known Notion pain point that the official UI only gives a single monthly number. Solo build ~3 weeks using injected content scripts and local aggregation.",
+          "monetization": "freemium_saas",
+          "pain": "Notion power users can't tell which AI blocks in their workspace are burning through their monthly AI credits."
+        }
+      ],
+      "meta": {
+        "model": "MiniMax-M3",
+        "generated_at": "2026-07-24T15:00:28.105Z",
+        "dedup_against": 670,
+        "rejected_as_duplicate": 0
+      }
+    }
+  },
+  "meta": {
+    "ai_generated": true,
+    "model": "MiniMax-M3",
+    "schema_version": "1.1.0"
+  }
+}
